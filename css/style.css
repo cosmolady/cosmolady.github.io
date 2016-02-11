@@ -1,5 +1,15 @@
+h1 { 
+	font-size: 18pt; 
+	text-align: center; 
+} 
+
 body {
 	background-color: gainsboro;
+}
+
+img {
+	width: 150px;
+	height: 150px;
 }
 
 .doc { 
@@ -13,23 +23,12 @@ body {
 	font: 16pt "Open Sans"; 
 } 
 
-h1 { 
-	font-size: 18pt; 
-	text-align: center; 
-} 
-
-img {
-	width: 150;
-	height: 150;
-}
-
 .img-box { 
-	margin: 0px auto;
-	
-} 	
+	text-align: center;
+	} 	
 
 .job { 
-	text-align:center; 
+	margin: 0px auto;
 } 
 
 .phone { 
