@@ -5,7 +5,7 @@ body {
 .doc { 
     width: 515px; 
 	height: 753px; 
-	padding: 10mm 10mm 10mm 15mm; 
+	padding: 10px 10px 10px 15px; 
 	margin: 10px auto 20px; 
 	box-shadow: 10px 10px 20px black; 
 	background-color: white; 
@@ -18,9 +18,15 @@ h1 {
 	text-align: center; 
 } 
 
-.photo { 
-	text-align:center; 
-} 
+img {
+	width: 150;
+	height: 150;
+}
+
+.img-box { 
+	margin: 0 auto;
+	
+} 	
 
 .job { 
 	text-align:center; 
