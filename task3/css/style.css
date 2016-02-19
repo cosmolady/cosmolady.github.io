@@ -1,0 +1,232 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background:  url("../img/bg.png");
+	font-family: "Tahoma", sans-serif;
+    background-repeat: repeat-x;
+    color: #2c2c2c;
+	position: relative;
+	height: 1050px;
+	background-color: #2B78A3;
+}
+
+ul{
+	list-style: none;
+}
+
+.page{
+	height: 1005px;
+	width: 1000px;
+	margin: 0px auto 20px;
+	background-color: #ffffff;
+	box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+.header{
+	width: 100%;
+	height: 175px;
+	position: relative;
+}
+
+.contacts{
+	float: right;
+	position: absolute;
+	right: 20px;
+	top: 4px;
+	font-size: 13px;
+	color: #128aa7;
+}
+
+.contacts a{
+	text-decoration: none;
+	color: #128aa7;
+}
+
+.contries{
+	float: right;
+	position: absolute;
+	top: 110px;
+	right: 15px;
+}
+
+.contries li {
+	text-align: center;
+	display: inline-block;
+	 width: 67px;
+}
+
+.contries a{
+	display: block;
+	padding: 3px 1px 1px 20px;
+	font-size: 9px;
+	color: #128aa7;
+}
+
+.contries a:hover{
+    color: black;
+}
+
+.logo{
+	left: 28px;
+    bottom: 0;
+    position: absolute;
+}
+
+.menu{
+	display: block;
+	box-shadow: 0 3px 10px rgba(0,0,0, 0.5);
+
+}
+
+.navigation {
+	height: 30px;
+	width: 100%;
+	background: #343434;
+}
+
+.navigation li {
+	float: left;
+	padding: 4px 35px;
+	
+}
+
+.navigation a{
+	
+	padding: 3px 5px;
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+ul.menu  li {
+    float: left;
+    position: relative;
+}
+
+ul.navigation  li  a {
+    display: block;
+    text-decoration: none;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 110px;
+    background-color: #343434;
+}
+
+ul.submenu  li {
+    display: block;
+	padding: 1px 1px;
+}
+
+ul.submenu  li  a{
+    display: block;
+    text-decoration: none;
+}
+
+ul.submenu li a:hover{
+    text-decoration: underline;
+}
+
+
+ul.navigation li:hover ul.submenu {
+    display: block;
+}
+
+.sub_list{
+	position: relative;
+}
+
+.sub_list:after{
+	content: '';
+	position: absolute; /* Абсолютное позиционирование */
+	border: 2px solid transparent;
+	border-top: 5px solid white;
+	margin: 5px 4px;
+}
+
+.clearfix:after {
+	content		: ".";
+	visibility	: hidden;
+	display		: block;
+	height		: 0;
+	clear		: both;
+}
+
+.picture{
+	bottom: 0;
+}
+.sidebar1 {
+	font-size: 14px;
+}
+
+.sidebar1 li {
+	margin-bottom: 5px;  делаем отступ чтобы пункты меню не сливались
+}
+
+.sidebar1 li p {
+	display: block; /* меняем отображение на блок, чтобы иметь возможность задавать внутренние отступы */
+	padding: 3px 1px 1px 15px;
+	color: #000;
+}
+
+.sidebar2 {
+	font-size: 14px;
+}
+
+.sidebar2 li{
+	margin-bottom: 5px; /* делаем отступ чтобы пункты меню не сливались */
+}
+
+.sidebar2 li p {
+	display: block; /* меняем отображение на блок, чтобы иметь возможность задавать внутренние отступы */
+	padding: 3px 1px 1px 15px;
+	color: #000;
+}
+
+.fon {
+	width: 1000px;
+	overflow: hidden; /* чтобы лишее обрезалось */
+}
+
+.leftsidebar{
+	width: 200px;
+	float: left;
+	background: #edeef0;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+.content{
+	width: 600px;
+	float: left;
+	background: white;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+.rightsidebar{
+	width: 200px;
+	float: left;
+	background:  #edeef0;
+	padding-bottom: 20000px;
+	margin-bottom: -20000px;
+}
+
+.footer{
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	color: white;
+}
+
+h2{
+	text-align: center;
+}
