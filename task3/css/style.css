@@ -6,8 +6,8 @@
 body {
 	background:  url("../img/bg.png");
 	font-family: "Tahoma", sans-serif;
-  background-repeat: repeat-x;
-  color: #2c2c2c;
+	background-repeat: repeat-x;
+  	color: #2c2c2c;
 	position: relative;
 	height: 1050px;
 	background-color: #0c739f;
@@ -18,7 +18,6 @@ ul {
 }
 
 .page {
-	height: 1005px;
 	width: 1000px;
 	margin: 0px auto 20px;
 	background-color: #ffffff;
@@ -68,13 +67,13 @@ ul {
 }
 
 .contries a:hover{
-    color: black;
+    	color: black;
 }
 
 .logo{
-    left: 28px;
-    bottom: 0;
-    position: absolute;
+	left: 28px;
+    	bottom: 0;
+    	position: absolute;
 }
 
 .menu{
@@ -107,39 +106,39 @@ ul {
 }
 
 ul.menu  li {
-    float: left;
-    position: relative;
+    	float: left;
+    	position: relative;
 }
 
 ul.navigation  li  a {
-    display: block;
-    text-decoration: none;
+    	display: block;
+    	text-decoration: none;
 }
 
 ul.submenu {
-    display: none;
-    position: absolute;
-    width: 110px;
-    background-color: #343434;
+    	display: none;
+    	position: absolute;
+    	width: 110px;
+    	background-color: #343434;
 }
 
 ul.submenu  li {
-    display: block;
+    	display: block;
 	padding: 1px 1px;
 }
 
 ul.submenu  li  a{
-    display: block;
-    text-decoration: none;
+    	display: block;
+    	text-decoration: none;
 }
 
 ul.submenu li a:hover{
-    text-decoration: underline;
+    	text-decoration: underline;
 }
 
 
 ul.navigation li:hover ul.submenu {
-    display: block;
+    	display: block;
 }
 
 .sub_list{
