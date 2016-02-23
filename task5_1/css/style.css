@@ -13,133 +13,146 @@ body {
   	background-color: #074986;
   	display: block;
   	overflow: hidden;
-	font-size: 15px;
-	background-image: url("../img/header.png");
+		font-size: 15px;
+		background-image: url("../img/header.png");
 }
 
 .navigation .flag a{
-	color: white;
+		color: white;
 }
 
 .navigation li .line {
-	border-right: 1px solid #60b5ed;
-	display:inline;
-	padding: 8px 20px 8px 4px;
+		border-right: 1px solid #60b5ed;
+		display:inline;
+		padding: 8px 20px 8px 4px;
 }
 
 .navigation .flag::before{
-	content: url("../img/flag.png.gif");
-	display: block;
-	float: left;
-	margin: -5px 9px 0 0;
+		content: url("../img/flag.png");
+		display: block;
+		float: left;
+		margin: -5px 9px 0 0;
 }
 
 .header ul {
-	margin: 0;
-	padding-left: 450px;
+		margin: 0;
+		padding-left: 450px;
 }
 
 .navigation li{
-  	float: left;
-	margin: 0px;
-	padding: 13px 10px;
-	display: block;
-	color: #60b5ed;
+	  float: left;
+		margin: 0px;
+		padding: 13px 10px;
+		display: block;
+		color: #60b5ed;
 }
 
 .navigation li:hover {
-	color:white;
-	background-color: #4eabda;
+		color:white;
+		background-color: #4eabda;
 }
 
 
 .navigation li:hover a {
-	color:white;
+		color:white;
 }
 
 .navigation li a{
-  text-decoration: none;
-	color: #60b5ed;
+  	text-decoration: none;
+		color: #60b5ed;
 }
 
 .navigation li .under{
-	text-decoration: underline;
-	color: #60b5ed;
+		text-decoration: underline;
+		color: #60b5ed;
 
 }
 
 /*CONTENT*/
 
 .content {
-	margin: 0 auto;
+		margin: 0 auto;
 }
 
 .regform {
-	display: block;
-	padding: 10px;
-	width: 600px;
+		display: block;
+		padding: 10px;
+		width: 600px;
     margin: 165px auto;
 }
 
 .fblogin {
-	padding: 30px 0 0 0;
+		padding: 30px 0 0 0;
 }
 
 .registration li {
-	padding: 5px 5px;
-	margin: 1px 5px 10px 5px;
+		padding: 5px 5px;
+		margin: 1px 5px 10px 5px;
 }
 
 .headform {
-	text-align: center;
-	background-color: rgba(0, 0, 0, 0.6);
-	margin-bottom: 2px;
-	padding: 15px 30px;
-	font-size: 24px;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.6);
+		margin-bottom: 2px;
+		padding: 15px 30px;
+		font-size: 24px;
 }
 
 .registration {
-	text-align: center;
-	background-color: rgba(0, 0, 0, 0.6);
-	color: grey;
-	height: 510px;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.6);
+		color: grey;
+		height: 510px;
 }
 
 
 .fields input {
-	width: 240px;
-	height: 30px;
-	background-color:black;
-    border: none;
-	border-bottom: 1px solid grey;
-	padding: 0px 15px;
-	font-size: 14px;
+		width: 240px;
+		height: 30px;
+		background-color:black;
+	  border: none;
+		border-bottom: 1px solid grey;
+		padding: 0px 15px;
+		font-size: 14px;
+		color: white;
 }
 
 .checkbox_update, .terms{
-	font-size: 11px;
-	line-height: 1px;
+		font-size: 11px;
+		line-height: 1px;
 }
+
+#ou::after {
+		content: url("../img/line.png") ;
+		margin-left: 5px;
+		padding: 1px 0;
+}
+
+#ou::before {
+		content: url("../img/line.png") ;
+		margin-right: 5px;
+}
+
 
 input[type=text]:focus, input[type=password]:focus {
    	border: none;
    	box-shadow:0 0 10px #666;
-	background-color: rgba(0, 142, 255, 0.5);
+		background-color: rgba(0, 142, 255, 0.5);
 }
 
 #updates {
-	margin: 0;
-	padding: 0;
-	width:16px;
-	height:15px;
-	vertical-align:-3px;
+		margin: 0;
+		padding: 0;
+		width:16px;
+		height:15px;
+		vertical-align:-3px;
 }
 
 .createaccount input[type=button]{
-	background-color: #60b5ed;
-	width: 140px;
-	height: 30px;
-	position: relative;
+		background-color: #60b5ed;
+		width: 140px;
+		height: 30px;
+		position: relative;
   	display: inline-block;
     text-align: center;
   	text-decoration: none;
