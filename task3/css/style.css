@@ -6,24 +6,25 @@
 body {
 	background:  url("../img/bg.png");
 	font-family: "Tahoma", sans-serif;
-    background-repeat: repeat-x;
-    color: #2c2c2c;
+	background-repeat: repeat-x;
+  	color: #2c2c2c;
 	position: relative;
 	height: 1050px;
-	background-color: #2B78A3;
+	background-color: #0c739f;
 }
 
-ul{
+ul {
 	list-style: none;
 }
 
-.page{
-	height: 1005px;
+.page {
 	width: 1000px;
 	margin: 0px auto 20px;
 	background-color: #ffffff;
 	box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
+
+/* HEADER */
 
 .header{
 	width: 100%;
@@ -66,19 +67,18 @@ ul{
 }
 
 .contries a:hover{
-    color: black;
+    	color: black;
 }
 
 .logo{
 	left: 28px;
-    bottom: 0;
-    position: absolute;
+    	bottom: 0;
+    	position: absolute;
 }
 
 .menu{
 	display: block;
 	box-shadow: 0 3px 10px rgba(0,0,0, 0.5);
-
 }
 
 .navigation {
@@ -90,51 +90,55 @@ ul{
 .navigation li {
 	float: left;
 	padding: 4px 35px;
-	
+
 }
 
 .navigation a{
-	
+
 	padding: 3px 5px;
 	color: white;
 	font-size: 12px;
 	text-decoration: none;
 }
 
+.menu{
+	position: relative;
+}
+
 ul.menu  li {
-    float: left;
-    position: relative;
+    	float: left;
+    	position: relative;
 }
 
 ul.navigation  li  a {
-    display: block;
-    text-decoration: none;
+    	display: block;
+    	text-decoration: none;
 }
 
 ul.submenu {
-    display: none;
-    position: absolute;
-    width: 110px;
-    background-color: #343434;
+    	display: none;
+    	position: absolute;
+    	width: 110px;
+    	background-color: #343434;
 }
 
 ul.submenu  li {
-    display: block;
+    	display: block;
 	padding: 1px 1px;
 }
 
 ul.submenu  li  a{
-    display: block;
-    text-decoration: none;
+    	display: block;
+    	text-decoration: none;
 }
 
 ul.submenu li a:hover{
-    text-decoration: underline;
+    	text-decoration: underline;
 }
 
 
 ul.navigation li:hover ul.submenu {
-    display: block;
+    	display: block;
 }
 
 .sub_list{
@@ -143,7 +147,7 @@ ul.navigation li:hover ul.submenu {
 
 .sub_list:after{
 	content: '';
-	position: absolute; /* Абсолютное позиционирование */
+	position: absolute; 
 	border: 2px solid transparent;
 	border-top: 5px solid white;
 	margin: 5px 4px;
@@ -157,19 +161,23 @@ ul.navigation li:hover ul.submenu {
 	clear		: both;
 }
 
-.picture{
+.picture img{
 	bottom: 0;
+	display: block;
 }
+
+/* SIDEBAR */
+
 .sidebar1 {
 	font-size: 14px;
 }
 
 .sidebar1 li {
-	margin-bottom: 5px;  делаем отступ чтобы пункты меню не сливались
+	margin-bottom: 5px;
 }
 
 .sidebar1 li p {
-	display: block; /* меняем отображение на блок, чтобы иметь возможность задавать внутренние отступы */
+	display: block;
 	padding: 3px 1px 1px 15px;
 	color: #000;
 }
@@ -179,18 +187,18 @@ ul.navigation li:hover ul.submenu {
 }
 
 .sidebar2 li{
-	margin-bottom: 5px; /* делаем отступ чтобы пункты меню не сливались */
+	margin-bottom: 5px;
 }
 
 .sidebar2 li p {
-	display: block; /* меняем отображение на блок, чтобы иметь возможность задавать внутренние отступы */
+	display: block;
 	padding: 3px 1px 1px 15px;
 	color: #000;
 }
 
 .fon {
 	width: 1000px;
-	overflow: hidden; /* чтобы лишее обрезалось */
+	overflow: hidden;
 }
 
 .leftsidebar{
@@ -217,13 +225,18 @@ ul.navigation li:hover ul.submenu {
 	margin-bottom: -20000px;
 }
 
+/* FOOTER */
+
 .footer{
-	position: absolute;
-	left: 0;
-	bottom: 10px;
 	width: 100%;
 	text-align: center;
 	font-size: 13px;
+	color: white;
+	margin: 22px 0;
+}
+
+.footer a{
+	text-decoration: none;
 	color: white;
 }
 
