@@ -40,9 +40,10 @@ select {
 	font-size: 11px;
 	background: linear-gradient(180deg, rgb(20, 69, 88) 30%, rgb(0, 32, 56) 100%);
 	width: 495px;
-  height: 27px;
+  	height: 27px;
 	border-radius: 5px;
-  margin: 3px 0px 0 26px;
+  	margin: 3px 0px 0 26px;
+	list-style: none;
 }
 
 .login input {
@@ -106,25 +107,21 @@ select {
 
 .minimenu {
 	display: block;
-  float: right;
-	height: 36px;
-  width: 80px;
-	padding: 3px 6px 0 0px;
-}
-
-.bordermini {
-	height: 17px;
-	width: 70px;
+  	float: right;
+	height: 18px;
+  	width: 75px;
 	border: 1px solid grey;
 	border-radius: 10px;
-	text-align: center;
-	padding: 1px 0;
-	margin: 0 0 0 0;
+	margin: 4px 7px 0 8px;
 	box-shadow:  0 0 3px rgba(0,0,0,0.5);
 }
 
-.bordermini a {
-	padding: 0 0 0 0;
+.minimenu a {
+	margin: 0 0 0 6px;
+}
+
+header .logo {
+	margin-top: 40px;
 }
 
 nav {
@@ -265,7 +262,6 @@ nav .menu li {
 	width: 61px;
 	margin-right: 43px;
 	background-image: url(../img/short.png);
-
 }
 
 .search_auto label {
@@ -328,9 +324,9 @@ nav .menu li {
 
 .linksearch1 {
 	float: right;
-  height: 12px;
-  width: 52px;
-  margin: 110px 17px 0 0;
+ 	height: 12px;
+ 	width: 52px;
+ 	margin: 110px 17px 0 0;
 	color: #114165;
 	font-family: "Arial", sans-serif;
 	font-style: italic;
@@ -923,8 +919,8 @@ nav .menu li {
 }
 
 .sidebar2 li{
-	margin: 0 0 0 6px;
-	padding: 6px 0 0 30px;
+	margin: -1px 0 0 3px;
+	padding: 6px 0 0 32px;
 }
 
 .sidebar2 li p {
@@ -934,8 +930,10 @@ nav .menu li {
 }
 
 .sidebar2 .sidetitle2 {
-	margin: 9px 0 0 18px;
-	padding: 8px 0 0 33px;
+	margin: 4px 0 0 19px;
+	padding: 12px 0 0 31px;
+	  background: url(../img/bgmenu2.png) no-repeat 0 5px;
+
 }
 
 .sidebar2  .chb {
@@ -962,10 +960,18 @@ nav .menu li {
 	padding: 6px 0 0 25px;
 }
 
+.logos {
+	width: auto;
+	height: 66px;
+	background-color: #fff;
+	display: block;
+	margin-left: 94px;
+}
+
 .logos img {
 	display: block;
-	margin: 0 auto;
-	padding-top: 39px;
+	float: left;
+	padding: 38px 0 0 17px;
 }
 
 footer {
@@ -979,13 +985,23 @@ footer {
 }
 
 footer ul {
-  padding: 8px 22px 0px 0;
+  padding: 8px 21px 0px 7px;
 }
 
 footer ul li {
   display: inline;
   color: #bec6c9;
   font-size: 13px;
+	padding: 0 0 0 0;
+}
+
+footer ul li a {
+	padding: 0 0 0 0;
+}
+
+footer ul li a:hover {
+    color: #52abcb;
+    text-decoration: none;
 }
 
 a {
@@ -994,7 +1010,7 @@ a {
 }
 
 footer p {
-  padding: 14px 0 3px 23px;
+  padding: 14px 0 3px 15px;
   color: #d04435;
   font-size: 11px;
 }
