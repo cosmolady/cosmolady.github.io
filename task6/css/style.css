@@ -722,20 +722,22 @@ nav .menu li {
 	font: 14px/15px "Lucida Sans Unicode", Verdana, Arial;
 	color: #206988;
 	padding-left: 5px;
-
+	font-weight: bolder;
 }
 
 .item2 figure span {
 	font: 14px/15px "Lucida Sans Unicode", Verdana, Arial;
 	color: #206988;
 	margin-left: -5px;
+	font-weight: bolder;
 }
 
 .item3 figure span {
 	font: 14px/15px "Lucida Sans Unicode", Verdana, Arial;
 	color: #206988;
 	margin-left: -13px;
- }
+	font-weight: bolder;
+}
 
 .item figure p, .item2 figure p,.item3 figure p {
 	font: 12px/13px "Lucida Sans Unicode", Verdana, Arial;
@@ -974,6 +976,38 @@ nav .menu li {
 	padding: 38px 0 0 17px;
 }
 
+.logos .toyo img {
+	margin-left: 6px;
+}
+
+.logos .bridge img {
+	margin-left: -7px;
+}
+
+.logos .continental img {
+	margin-left: -7px;
+}
+
+.logos .cooper img {
+	margin-left: -5px;
+}
+
+.logos .avon img {
+	margin-left: -7px;
+}
+
+.logos .tire img {
+	margin-left: -6px;
+}
+
+.logos .firelly img {
+	margin-left: -7px;
+}
+
+.logos .dunlop img {
+	margin-left: -4px;
+}
+
 footer {
 	margin: 25px auto;
 	width: 910px;
@@ -995,8 +1029,20 @@ footer ul li {
 	padding: 0 0 0 0;
 }
 
-footer ul li a {
-	padding: 0 0 0 0;
+footer .about {
+	margin-right: -1px;
+}
+
+footer .delivery {
+	margin-right: -1px;
+}
+
+footer .article {
+	margin-right: -1px;
+}
+
+footer .contacts {
+	margin-right: -1px;
 }
 
 footer ul li a:hover {
@@ -1015,6 +1061,13 @@ footer p {
   font-size: 11px;
 }
 
+footer ul span {
+	color: #bec6c9;
+  	font-size: 13px;
+	margin-left: 5px;
+}
+
 footer p a {
   color: #d04435;
 }
+
