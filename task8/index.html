@@ -12,12 +12,14 @@
 			<div class=logo><img src="img/logo.png" alt="Logo">
 				</div>
 			<nav class="menu">
-				<a class="menu__link" href="#">HOME</a>
-				<a class="menu__link" href="#">ABOUT</a>
-				<a class="menu__link" href="#">BLOG</a>
-				<a class="menu__link" href="#">PRODUCTS</a>
-				<a class="menu__link" href="#">LOREM IPSUM</a>
-				<a class="menu__link" href="#">DOLOR SIT AMET</a>
+				<ul>
+					<li><a class="menu__link" href="#">HOME</a></li>
+					<li><a class="menu__link" href="#">ABOUT</a></li>
+					<li><a class="menu__link" href="#">BLOG</a></li>
+					<li><a class="menu__link" href="#">PRODUCTS</a></li>
+					<li><a class="menu__link" href="#">LOREM IPSUM</a></li>
+					<li><a class="menu__link" href="#">DOLOR SIT AMET</a></li>
+				</ul>
 			</nav>
 		</header>
 		<div class="slider">
@@ -28,9 +30,9 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sit numquam accusantium esse tenetur iusto temporibus! Doloribus excepturi, provident ullam consectetur perferendis recusandae quasi commodi tenetur sit sequi a? Aspernatur.</p>
 				</div>
 				<img class="slider__inner__iphone" src="img/iphone.png" alt="iphone">
-			</div>
 				<a class="slider__arrows__right" href="#"></a>
 				<a class="slider__arrows__left" href="#"></a>
+			</div>
 			<div class="slider__switch">
 				<input type="radio" name="slider1" id="slider1_1" checked="checked">
 					<label for="slider1_1"></label>
@@ -48,23 +50,23 @@
 		</div>
 		<div class="information">
 			<div class="information__container">
-				<section class="information__block">
+				<section class="information__block information__settings">
 						<div class="information__block--settings"></div>
 						<h1>ABOUT OUR COMPANY</h1>
-						<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. </p>
-						<a class="information__more" href="#">READ MORE</a>
+						<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. </p>
+						<a href="#">READ MORE</a>
 				</section>
-				<section class="information__block">
+				<section class="information__block  information__message">
 					<div class="information__block--message"></div>
 					<h1>ABOUT OUR COMPANY</h1>
-					<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.</p>
-					<a class="information__more" href="#">READ MORE</a>
+					<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.</p>
+					<a href="#">READ MORE</a>
 				</section>
-				<section class="information__block">
+				<section class="information__block information__music">
 					<div class="information__block--music"></div>
 					<h1>ABOUT OUR COMPANY</h1>
-					<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.</p>
-					<a class="information__more" href="#">READ MORE</a>
+					<p>Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.</p>
+					<a href="#">READ MORE</a>
 				</section>
 			</div>
 		</div>
@@ -73,7 +75,7 @@
 				<div class="slider__inner resent__comment">
 						<div class="slider__inner__text resent__last">
 							<img class="slider__inner__photo" src="img/photo.png" alt="Photo">
-							<h1>PINGBULLER <span class="pink">STARTS HERE</span></h1>
+							<h3>PINGBULLER <span class="pink">STARTS HERE</span></h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum sit numquam accusantium esse tenetur iusto temporibus! Doloribus excepturi, provident ullam consectetur perferendis recusandae quasi commodi tenetur sit sequi a? Aspernatur.</p>
 						</div>
 					</div>
@@ -111,7 +113,7 @@
 							<p>Posted by Admin on March 13 2012 in Blog Updates</p>
 						</li>
 					</ul>
-					<a class="information__more" href="#">READ MORE HERE</a>
+					<a id="information__more" href="#">READ MORE HERE</a>
 				</div>
 			</div>
 			<div class="companies">
@@ -136,44 +138,46 @@
 					</li>
 				</ul>
 			</div>
-			<div class="information information--overall">
+			<div class="information--overall">
         <div class="information__container">
-            <section class="information__block information-longer">
-							<h1 id="color_dark-gray">PINGBULL<span id="color_light-gray">ER</span> </h1>
+            <section class="information__block information-longer left__block">
+							<h1 id="color_dark-gray__big">PIGBULL<span id="color_light-gray">ER</span> </h1>
+           					<h1 id="color_dark-gray__small">NEWS CATEGORIES</h1>
 							<p id="copyright">
 									Copyright 2013, PingBull AS
 							</p>
 							<p id="color_dark-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam atque cum cumque delectus,
 									eos expedita in laborum, modi neque perspiciatis quaerat quas quidem quis quo quos sint tempore tenetur!
 							</p>
-            </section>
-            <section class="information__block information-longer">
-                <h1 id="color_dark-gray">RECENT COMMENTS</h2>
+           	</section>
+            <section class="information__block information-longer left__block">
+                <h1 id="color_dark-gray__center">RECENT COMMENTS</h1>
+                <h1 id="color_dark-gray__small">NEWS CATEGORIES</h1>
                 <p id="color_dark-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam atque cum cumque delectus,
                     eos expedita in laborum, modi neque perspiciatis quaerat quas quidem quis quo quos sint tempore tenetur!
                 </p>
-            </div>
+            </section>
             <section class="information__block information-longer">
-							<h1 id="color_dark-gray">NEW CATEGORIES</h1>
+							<h1 id="color_dark-gray">NEWS CATEGORIES</h1>
 							<p id="color_dark-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam atque cum cumque delectus,
 									eos expedita in laborum, modi neque perspiciatis quaerat quas quidem quis quo quos sint tempore tenetur!
 							</p>
-            </div>
-
-    <footer class="footer">
+						</section>
+				</div>
+			</div>
+  	  <footer class="footer">
         <nav class="menu footer__menu">
-					<a class="menu__link" href="#">HOME</a>
-					<a class="menu__link" href="#">ABOUT</a>
-					<a class="menu__link" href="#">BLOG</a>
-					<a class="menu__link" href="#">PRODUCTS</a>
-					<a class="menu__link" href="#">LOREM IPSUM</a>
-					<a class="menu__link" href="#">DOLOR SIT AMET</a>
+					<a class="menu__link footer__link" href="#">HOME</a>
+					<a class="menu__link footer__link" href="#">ABOUT</a>
+					<a class="menu__link footer__link" href="#">BLOG</a>
+					<a class="menu__link footer__link" href="#">PRODUCTS</a>
+					<a class="menu__link footer__link" href="#">LOREM IPSUM</a>
+					<a class="menu__link footer__link" href="#">DOLOR SIT AMET</a>
 				</nav>
           <div class="designed">
                 Designed by <b>Pingbull As</b>
             </div>
-        </div>
-    </footer>
-			</div>
+        </footer>
+	</div>
 </body>
 </html>
