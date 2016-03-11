@@ -252,8 +252,8 @@ body {
 }
 
 .slider__arrows__left {
-    top: 42%;
-    left: -33%;
+    top: 20%;
+    left: 10%;
     width: 28px;
     height: 7px;
     padding-top: 32px;
@@ -266,8 +266,8 @@ body {
 
 .slider__arrows__right {
 	position: absolute;
-    top: 42%;
-    right: -33%;
+    top: 20%;
+    right: 10%;
     width: 25px;
     height: 7px;
     padding-top: 32px;
