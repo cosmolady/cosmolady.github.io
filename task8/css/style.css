@@ -159,7 +159,7 @@ body {
   background: #fff url("../img/footer.png") no-repeat;
 }
 
-@media (min-width: 960px) and (max-width: 320px) {
+@media (min-width: 960px) and (max-width: 319px) {
 .header {
 	  width: 960px;
     height: 279px;
@@ -1577,20 +1577,57 @@ border-bottom: 2px solid #edbfff;
 	.menu li {
 		display: none;
 	}
+	
 	.menu li:first-child {
-		display:  block;
+		display: block;
 		height: 30px;
 		padding-bottom: 10px;
+/*		border-bottom: 1px solid #695272;*/
 	}
 
-.menu__link {
+	
+.menu:hover  li{
+	display: block;
+border-bottom: 1px solid #695272;
+
+}
+
+	.menu li:hover {
+	border-bottom: 2px solid #edbfff;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	
+	.menu li:first-child a:hover {
+ 
+}
+
+.menu:hover li:first-child{
+  border-bottom: 1px solid #695272;
+  background-color:inherit;
+  text-shadow: 0 0 10px #fff;
+}
+	
+ .menu:hover li:first-child a{
+border-bottom: 4px solid #edbfff;
+}	
+	
+ .menu li:last-child {
+  border-bottom: none;
+ }
+
+	 .menu li:last-child:hover {
+border-bottom: 2px solid #edbfff;
+	}
+	
+	.menu__link {
 		font-size: 24px;
 		color: #fff;
 	}
-	.menu__link:hover {
-		text-decoration: none;
-		border-bottom: 2px solid #edbfff;
-	}
+
+.menu__link:hover {
+  text-decoration: none;
+}
+
 
 .slider {
    width: 100%;
