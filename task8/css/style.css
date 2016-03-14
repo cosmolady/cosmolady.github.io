@@ -1064,9 +1064,9 @@ text-shadow: none;
     z-index: 10;
     margin-left: 20%;
     margin-top: 132px;
-     background-color: rgba(54, 41, 62, 0.9);
+  
     text-align: center;
-    border-radius: 13px;
+   
 }
 
 	.menu li {
@@ -1081,22 +1081,29 @@ text-shadow: none;
 	}
 
 	
+	.menu:hover {
+			background-color: rgba(54, 41, 62, 0.9);
+	 border-radius: 13px;
+	}
+	
 .menu:hover  li{
 	display: block;
 border-bottom: 1px solid #695272;
-
+	 background-color: rgba(54, 41, 62, 0.9);
 }
 
 	.menu li:hover {
 	border-bottom: 2px solid #edbfff;
-		background-color: rgba(0, 0, 0, 0.3);
-	}
+			background-color: rgba(0, 0, 0, 0.3);
+		
 
+	}
 
 .menu:hover li:first-child{
   border-bottom: 1px solid #695272;
   background-color:inherit;
   text-shadow: 0 0 10px #fff;
+
 }
 	
  .menu:hover li:first-child a{
@@ -1105,10 +1112,12 @@ border-bottom: 4px solid #edbfff;
 	
  .menu li:last-child {
   border-bottom: none;
+	 border-radius: 13px;
  }
 
 	 .menu li:last-child:hover {
 border-bottom: 2px solid #edbfff;
+		 
 	}
 	
 	.menu__link {
@@ -1580,25 +1589,33 @@ border-bottom: 2px solid #edbfff;
 		display: block;
 		height: 30px;
 		padding-bottom: 10px;
-
+/*		border-bottom: 1px solid #695272;*/
 	}
 
+	
+	.menu:hover {
+			background-color: rgba(54, 41, 62, 0.9);
+	 border-radius: 13px;
+	}
 	
 .menu:hover  li{
 	display: block;
 border-bottom: 1px solid #695272;
-
+	 background-color: rgba(54, 41, 62, 0.9);
 }
 
 	.menu li:hover {
 	border-bottom: 2px solid #edbfff;
-		background-color: rgba(0, 0, 0, 0.3);
+			background-color: rgba(0, 0, 0, 0.3);
+		
+
 	}
-	
+
 .menu:hover li:first-child{
   border-bottom: 1px solid #695272;
   background-color:inherit;
   text-shadow: 0 0 10px #fff;
+
 }
 	
  .menu:hover li:first-child a{
@@ -1607,12 +1624,13 @@ border-bottom: 4px solid #edbfff;
 	
  .menu li:last-child {
   border-bottom: none;
+	 border-radius: 13px;
  }
 
 	 .menu li:last-child:hover {
 border-bottom: 2px solid #edbfff;
+		 
 	}
-	
 	.menu__link {
 		font-size: 24px;
 		color: #fff;
