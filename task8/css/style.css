@@ -1091,10 +1091,7 @@ border-bottom: 1px solid #695272;
 	border-bottom: 2px solid #edbfff;
 		background-color: rgba(0, 0, 0, 0.3);
 	}
-	
-	.menu li:first-child a:hover {
- 
-}
+
 
 .menu:hover li:first-child{
   border-bottom: 1px solid #695272;
@@ -1572,6 +1569,7 @@ border-bottom: 2px solid #edbfff;
     margin-top: 130px;
     text-align: center;
     border-radius: 13px;
+
 }
 
 	.menu li {
@@ -1597,10 +1595,6 @@ border-bottom: 1px solid #695272;
 		background-color: rgba(0, 0, 0, 0.3);
 	}
 	
-	.menu li:first-child a:hover {
- 
-}
-
 .menu:hover li:first-child{
   border-bottom: 1px solid #695272;
   background-color:inherit;
