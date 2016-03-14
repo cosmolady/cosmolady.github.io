@@ -1,0 +1,40 @@
+h1 { 
+	font-size: 18pt; 
+	text-align: center; 
+} 
+
+body {
+	background-color: gainsboro;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+.doc { 
+    width: 515px; 
+	height: 753px; 
+	padding: 10px 10px 10px 15px; 
+	margin: 10px auto 20px; 
+	box-shadow: 10px 10px 20px black; 
+	background-color: white; 
+	line-height: 1.5; 
+	font: 16pt "Open Sans"; 
+} 
+
+.img-box { 
+	text-align: center;
+	} 	
+
+.job { 
+	margin: 0px auto;
+} 
+
+.phone { 
+	line-height: 0.3; 
+} 
+
+.vk { 
+	line-height: 0.3; 
+}
