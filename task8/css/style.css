@@ -159,7 +159,7 @@ body {
   background: #fff url("../img/footer.png") no-repeat;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 960px) and (max-width: 320px) {
 .header {
 	  width: 960px;
     height: 279px;
