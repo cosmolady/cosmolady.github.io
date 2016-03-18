@@ -2,14 +2,13 @@ body {
   	background-color: #f9f9f9;
  	line-height: 1.5;
  	font-family:  "League Gothic";
-	width: 100%
 }
 
 .wrapper {
-	background: url(../img/bg.png) center 0 no-repeat;
-	width: 100%;
+	width:1500px;
 	margin: 0 auto;
 	position: relative;
+	
 }
 
 .menu__link:hover{
@@ -138,20 +137,22 @@ body {
   background: #fff url("../img/footer.png") no-repeat;
 }
 .header {
-	  width: 960px;
+	  width:100%;
     height: 279px;
     margin: 0 auto;
+	background: url(../img/bg.png) 0 0 no-repeat;
 }
 
 .logo {
 	float: left;
-	padding-top: 7%;
+	padding-top: 4%;
+/*	padding-left: 40%;*/
 }
 
 .menu {
 	float: left;
-	margin-left: 119px;
-    padding-top: 7%;
+	margin:0 auto;
+    padding-top: 4%;
     position: relative;
 }
 
@@ -165,7 +166,7 @@ body {
 	color: #fff;
 	font-size: 24px;
     display: inline;
-	 padding-left: 42px;
+	 margin-left: 42px;
 
 }
 
@@ -188,10 +189,11 @@ body {
 .slider__inner__text {
 	float: left;
 	width: 55%;
+	margin-left: 30%
 }
 
 .slider__inner {
-	  width: 960px;
+	 width: 960px;
     height: 430px;
     margin: 0 auto;
     position: relative;
@@ -279,12 +281,7 @@ body {
   		float: left;
 }
 
-/*
-.slider__switch input + label:hover {
-        background: url(../img/switch.png);
-		background-position: 0 14;
-}
-*/
+
 
 .slider__switch  input:checked + label {
         background: url(../img/switch.png);
@@ -590,4 +587,4 @@ color: #b9b9b9;
     margin-right: 15%;
     font-family: "Open Sans Light";
     font-size: 12px;
-}
+}*/
