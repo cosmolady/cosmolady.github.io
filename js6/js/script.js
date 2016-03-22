@@ -5,11 +5,13 @@ function handlerStart(){
   } else {
     this.innerHTML = 'PAUSE';
   }
-  console.log(buttonName);
 }
 
 function handlerClear(){
-  buttonStart[0].innerHTML = 'START';
+	buttonStart[0].innerHTML = 'START';
+	time.clear();
+	timer[0].innerHTML = time.toString();
+	clearInterval(intervalID);
 }
 
 var buttonStart = document.getElementsByClassName('btn-success');
@@ -27,22 +29,25 @@ var time = {
 	sec: 0,
 	
 	clear : function() {
-		this.hour = 00;
-		this.min = 00;
-		this.sec = 00;
+		this.hour = 0;
+		this.min = 0;
+		this.sec = 0;
 	},
 	incSec : function() {
 		this.sec++;
 		if (this.sec == 60){
-			this.sec = 00;
+			this.sec = 0;
 			this.min++;
 			if (this.min==60){
-				this.min = 00;
+				this.min = 0;
 				this.hour++;
 	}}
 	},
 	toString: function() {
-		return this.hour+':'+this.min+':'+this.sec;
+		var strHour = (this.hour>9)?this.hour:'0'+this.hour;
+    	var strMin = (this.min>9)?this.min:'0'+this.min;
+    	var strSec = (this.sec>9)?this.sec:'0'+this.sec;
+    	return strHour + ' : ' + strMin + ' : ' + strSec;
 	}
 }
 
@@ -51,4 +56,4 @@ function startTimer(){
 	timer[0].innerHTML = time.toString();
 }
 
-setInterval(startTimer,1000);
+var intervalID = setInterval(startTimer,1000);
