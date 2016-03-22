@@ -16,6 +16,11 @@
   text-align: center;
 }
 
+.timer p {
+	font-size: 20px;	
+	margin-left: 460px;
+}
+
 .buttons {
  text-align: center;
  margin-top: 20px;

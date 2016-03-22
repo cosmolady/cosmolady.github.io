@@ -1,9 +1,12 @@
+var intervalID;
 function handlerStart(){
-  var buttonName = this.innerHTML;
-  if (buttonName === 'PAUSE') {
+	var buttonName = this.innerHTML;
+	if (buttonName === 'PAUSE') {
+	clearInterval(intervalID);
     this.innerHTML = 'CONTINUE';
   } else {
     this.innerHTML = 'PAUSE';
+	 intervalID = setInterval(startTimer,1000);
   }
 }
 
@@ -27,11 +30,13 @@ var time = {
 	hour: 0,
 	min: 0,
 	sec: 0,
+	millisec: 0;
 	
 	clear : function() {
 		this.hour = 0;
 		this.min = 0;
 		this.sec = 0;
+		this.millisec = 0;
 	},
 	incSec : function() {
 		this.sec++;
@@ -44,9 +49,10 @@ var time = {
 	}}
 	},
 	toString: function() {
-		var strHour = (this.hour>9)?this.hour:'0'+this.hour;
-    	var strMin = (this.min>9)?this.min:'0'+this.min;
-    	var strSec = (this.sec>9)?this.sec:'0'+this.sec;
+		var strHour = (this.hour > 9)? this.hour: '0' + this.hour;
+    	var strMin = (this.min > 9)? this.min:'0'+ this.min;
+    	var strSec = (this.sec > 9)? this.sec:'0' + this.sec;
+		var strMillisec = (this.millisec > 9)? '0' + '0' + this.millisec: '0'+'0'+this.millisec
     	return strHour + ' : ' + strMin + ' : ' + strSec;
 	}
 }
@@ -56,4 +62,3 @@ function startTimer(){
 	timer[0].innerHTML = time.toString();
 }
 
-var intervalID = setInterval(startTimer,1000);
