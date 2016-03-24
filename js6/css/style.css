@@ -3,10 +3,10 @@
   padding: 0;
 }
 .wrapper {
-  width: 600px;
+  width: 660px;
   margin: 0 auto;
 }
-.timer {
+.timerWrapper {
   margin-top: 40px;
   font-size: 100px;
   font-weight: bolder;
@@ -16,8 +16,8 @@
   text-align: center;
 }
 
-.timer p {
-	font-size: 20px;	
+.millisec {
+	font-size: 20px;
 	margin-left: 460px;
 }
 
@@ -31,6 +31,7 @@
   border: 10px solid #000;
 }
 
-.btn-success {
-  margin-right: 50px;
+.splits {
+  font-size: 50px;
+  text-align: center;
 }
