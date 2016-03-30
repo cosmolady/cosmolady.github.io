@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,700);
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Maven Pro","Tahoma",sans-serif;
+	font-size: 20px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: antiquewhite;
+}
+
+
+.wrapper {
+	width:600px;
+	margin: 15px auto;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 10px;
+}
+
+.panel {
+	border:  1px solid grey;
+	border-radius: 5px;
+}
+
+.menu {
+	background-color: darkseagreen;
+	margin: 5px auto;
+	width: 95%;
+	height: 30px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.menu li {
+	float: left;
+	width: 20%;
+	bottom: 0;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color: seagreen;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-left: 2px;
+}
+
+.menu li a  {
+	display: block;
+	text-align: center;
+}
+.text {
+	margin: 15px;
+	clear: both;
+}
