@@ -25,9 +25,14 @@ $(function () {
 	
 	function defaultStyle (){
 		for (var i = 0; i < tabsMenu.length; i++) {
+            $(tabsMenu[i]).parent().css({
+                backgroundColor: 'seagreen',
+                borderRadius: '5px'
+            });
             $(tabsMenu[i]).css({
-				backgroundColor: 'darkseagreen',
 				color: 'antiquewhite',
-			});
+                backgroundColor: 'seagreen',
+                borderRadius: '5px'
+			})
 		}}
 })
