@@ -30,7 +30,6 @@ a {
 }
 
 .panel {
-	border:  1px solid grey;
 	border-radius: 5px;
 }
 
@@ -39,7 +38,6 @@ a {
 	margin: 5px auto;
 	width: 95%;
 	height: 30px;
-	border: 1px solid grey;
 	border-radius: 5px;
 }
 
@@ -47,11 +45,10 @@ a {
 	float: left;
 	width: 20%;
 	bottom: 0;
-	border: 1px solid grey;
 	border-radius: 5px;
 	background-color: seagreen;
 	margin-right: 5px;
-	margin-top: 5px;
+	margin-top: 7px;
 	margin-left: 2px;
 }
 

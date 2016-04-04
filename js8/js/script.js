@@ -1,13 +1,16 @@
 $(function () {
 	var tabsText = $('.text div');
-    var tabsMenu = $('.menu li');
+    var tabsMenu = $('.menu li a');
 
 	tabsText.hide().filter(':first').show();
     
-	$('.menu li').on('click', function () {
+	$('.menu li a').on('click', function () {
         var i = findPosition(this);
         tabsText.hide().filter(tabsText[i]).fadeIn();
-        $(this).css('color','darkorchid');
+        $(this).css ({
+			backgroundColor: 'blanchedalmond',
+			color: 'black'
+		});
     });
     
 	function findPosition(curLi) {
