@@ -59,6 +59,12 @@ a {
 	display: block;
 	text-align: center;
 }
+
+.menu li a:hover {
+    color:darkorchid;
+    background-color: forestgreen;
+}
+
 .text {
 	margin: 15px;
 	clear: both;
