@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Raleway",sans-serif;
+	font-size: 20px;
+	background-image: url(../img/gradient-background.jpg);
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: antiquewhite;
+}
+
+form {
+	float:left;
+	margin: 10px auto;
+}
+
+form div {
+	clear:both; 
+	text-align:right;
+	line-height:25px;
+}
+
+label {
+	float:left;
+	padding-right:10px;
+}
+
+input {
+	height: 20px;
+	float:left;
+	clear:both;
+}
+
+.hint {
+	display: none;
+	background-color: gainsboro;
+	float: right;
+	border: 1px solid black;
+	margin-left: 15px;
+}
+
+.wrapper {
+	width:700px;
+	height: 300px;
+	margin: 15px auto;
+	background-color: lemonchiffon;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 10px;
+}

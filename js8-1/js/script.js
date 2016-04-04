@@ -11,7 +11,8 @@ $(function () {
 			backgroundColor: 'blanchedalmond',
 			color: 'black'
 		});
-    });
+		
+	});
     
 	function findPosition(curLi) {
         for (var i = 0; i < tabsMenu.length; i++) {
@@ -20,4 +21,12 @@ $(function () {
             }
         }
     }
+	
+	function defaultStyle (){
+		for (var i = 0; i < tabsMenu.length; i++) {
+            (tabsMenu[i]).css({
+				backgroundColor: 'darkseagreen',
+				color: 'antiquewhite'
+			});
+	}
 });
