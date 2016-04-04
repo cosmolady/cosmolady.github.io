@@ -7,6 +7,7 @@ $(function () {
 	$('.menu li a').on('click', function () {
         var i = findPosition(this);
         tabsText.hide().filter(tabsText[i]).fadeIn();
+		defaultStyle ();
         $(this).css ({
 			backgroundColor: 'blanchedalmond',
 			color: 'black'
@@ -24,9 +25,9 @@ $(function () {
 	
 	function defaultStyle (){
 		for (var i = 0; i < tabsMenu.length; i++) {
-            (tabsMenu[i]).css({
+            $(tabsMenu[i]).css({
 				backgroundColor: 'darkseagreen',
-				color: 'antiquewhite'
+				color: 'antiquewhite',
 			});
 		}}
 })
