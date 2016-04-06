@@ -51,7 +51,6 @@ button {
 .hint {
 	display: none;
 	background-color: gainsboro;
-	float: right;
 	border: 1px solid black;
 	margin-left: 15px;
 }

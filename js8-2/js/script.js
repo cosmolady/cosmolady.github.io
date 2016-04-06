@@ -9,9 +9,11 @@ $(function () {
 		$('label.hint[for="' + name + '"]').hide();
 	});
 	var $buttonHelp = $('button:button');
-	var $textHelp = $('label .hint');
-	console.log ($textHelp);
-	$buttonHelp[0].click(function () {
-		$textHelp.fadeIn();
+	var $textHelp = $('label.hint');
+	console.log($textHelp);
+	$buttonHelp.click(function () {
+		for (var i = 0; i < ($textHelp.length); i++){
+			$textHelp.fadeIn();
+		}
 	});
 });
