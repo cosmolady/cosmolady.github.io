@@ -41,6 +41,13 @@ input {
 	clear:both;
 }
 
+button {
+	clear: both;
+	float: left;
+	height: 25px;
+	width: 100px;
+}
+
 .hint {
 	display: none;
 	background-color: gainsboro;
@@ -57,3 +64,4 @@ input {
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	padding: 10px;
 }
+
