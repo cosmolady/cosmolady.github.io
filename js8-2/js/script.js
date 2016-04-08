@@ -2,11 +2,11 @@ $(function () {
 	var $formField = $('input:text');
 	$formField.mouseover(function () {
 		var name = $(this).attr('name');
-		$('label.hint[for="' + name + '"]').fadeIn();
+		$('label.hint[for="' + name + '"]').stop(true, true).fadeIn();
 	});
 	$formField.mouseout(function () {
 		var name = $(this).attr('name');
-		$('label.hint[for="' + name + '"]').hide();
+		$('label.hint[for="' + name + '"]').stop(true,true).fadeOut('fast');
 	});
 	var $buttonHelp = $('button:button');
 	var $textHelp = $('label.hint');
