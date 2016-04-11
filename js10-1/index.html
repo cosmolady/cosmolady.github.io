@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Carousel</title>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<link href="css/jquery.selectBox.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-2.2.3.js"></script>
 	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<script src="js/jquery.selectBox.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
@@ -24,6 +25,36 @@
   			<a class="jcarousel-next" href="#">&rsaquo;</a>
 			<a class="jcarousel-prev" href="#">&lsaquo;</a>
 		</div>
-	</div>
+		<div class="wrap_select">
+			<label for="standard-dropdown"><strong>Your favorite time of year</strong></label><br/>
+        	<select id="standard-dropdown" name="standard-dropdown" class="custom-class1 custom-class2" style="width: 200px;">
+				<option value="1" class="test-class-1">Winter</option>
+				<option value="2" class="test-class-2" selected="selected"> Spring </option>
+				<option value="3" class="test-class-3">Summer</option>
+				<option value="4" class="test-class-4">Autumn</option>
+				<option value="5" disabled="disabled">I don't know (disabled)</option>
+         </select>
+		</div>
+    	<div class="wrap_check">
+    	
+    		<form><strong>Checkbox with jquery</strong><br/>
+    		<div>
+				<label for="ch1">The morning</label>
+				<input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> 
+    		</div>
+    		<div>
+				<label for="ch1">The afternoon</label>
+				<input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> 
+    		</div>
+			<div>
+				<label for="ch2">The evening</label>
+				<input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" />
+			</div>
+			<div>
+    			<label for="ch3">I don't know</label><input type="checkbox" class="niceCheck" id="ch3" disabled="disabled" />
+    		</div>
+			</form>
+    	</div>
+     </div>
 </body>
 </html>
