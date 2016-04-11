@@ -25,6 +25,7 @@ img {
 	font-family: 'Montserrat';
 }
 
+
 .wrap_jcarousel {
 	margin: 20px auto;
     position: relative;
@@ -85,6 +86,17 @@ img {
 	margin: 20px;
 }
 
+
+.jcheck {
+	float: left;
+	margin: 20px;
+}
+
+.csscheck {
+	float: left;
+	margin: 20px;
+}
+
 .niceCheck {
 	width: 17px;
 	height: 17px;
@@ -101,4 +113,31 @@ img {
 }
 .niceCheckDisabled {
 	background-image: url(../img/checkbox-disabled.png);
+}
+
+.csscheck input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.csscheck label {
+	cursor: pointer;
+}
+.csscheck label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-2.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.csscheck input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+.csscheck label:hover:after {
+background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
 }
