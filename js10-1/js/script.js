@@ -14,8 +14,7 @@ $(function() {
 	$('select').selectBox();
 	jQuery(document).ready(function(){
 
-jQuery(".niceCheck").each(
-/* при загрузке страницы меняем обычные на стильные checkbox */
+$(".niceCheck").each(
 function() {
      
      changeCheckStart(jQuery(this));
@@ -26,11 +25,7 @@ function() {
 
 
 function changeCheck(el)
-/* 
-	функция смены вида и значения чекбокса при клике на контейнер чекбокса (тот, который отвечает за новый вид)
-	el - span контейнер для обычного чекбокса
-	input - чекбокс
-*/
+
 {
 
 	var el = el,
@@ -52,9 +47,7 @@ function changeCheck(el)
 
 function changeVisualCheck(input)
 {
-/*
-	меняем вид чекбокса при смене значения
-*/
+
 var wrapInput = input.parent();
 	if(!input.attr("checked")) {
 		wrapInput.removeClass("niceChecked");
@@ -66,10 +59,7 @@ var wrapInput = input.parent();
 }
 
 function changeCheckStart(el)
-/* 
-	новый чекбокс выглядит так <span class="niceCheck"><input type="checkbox" name="[name check]" id="[id check]" [checked="checked"] /></span>
-	новый чекбокс получает теже name, id и другие атрибуты что и были у обычного
-*/
+
 {
 
 try
@@ -97,14 +87,12 @@ var el = el,
              "value='"+checkValue+"'"+
 			"tabindex='"+checkTab+"' /></span>");
 	
-	/* если checkbox disabled - добавляем соотвсмтвующи класс для нужного вида и добавляем атрибут disabled для вложенного chekcbox */		
 	if(checkDisabled)
 	{
 		el.next().addClass("niceCheckDisabled");
 		el.next().find("input").eq(0).attr("disabled","disabled");
 	}
 	
-	/* цепляем обработчики стилизированным checkbox */		
 	el.next().bind("mousedown", function(e) { changeCheck(jQuery(this)) });
 	el.next().find("input").eq(0).bind("change", function(e) { changeVisualCheck(jQuery(this)) });
 	if(jQuery.browser.msie)
@@ -115,7 +103,6 @@ var el = el,
 }
 catch(e)
 {
-	// если ошибка, ничего не делаем
 }
 
     return true;

@@ -89,12 +89,12 @@ img {
 
 .jcheck {
 	float: left;
-	margin: 20px;
+	margin-left: 20px;
 }
 
 .csscheck {
 	float: left;
-	margin: 20px;
+	margin-left: 20px;
 }
 
 .niceCheck {
