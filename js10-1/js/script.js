@@ -95,10 +95,10 @@ var el = el,
 	
 	el.next().bind("mousedown", function(e) { changeCheck(jQuery(this)) });
 	el.next().find("input").eq(0).bind("change", function(e) { changeVisualCheck(jQuery(this)) });
-	if(jQuery.browser.msie)
-	{
-		el.next().find("input").eq(0).bind("click", function(e) { changeVisualCheck(jQuery(this)) });	
-	}
+//	if(jQuery.browser.msie)
+//	{
+//		el.next().find("input").eq(0).bind("click", function(e) { changeVisualCheck(jQuery(this)) });	
+//	}
 	el.remove();
 }
 catch(e)

@@ -1,7 +1,7 @@
 $(function(){
 
 	$('.dropdown').on('hover',function() {
-	   $('.submenu').show();
+	   $('.submenu').toggle();
 	
 	});
 	
