@@ -43,11 +43,27 @@ main {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
+	position: relative;
+	clear: both;
 }
 
 .navigation__item {
 	display: inline-block;
 	padding: 15px;
+	position: relative;
+
+}
+
+.navigation__item ul {    
+    
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:102px;
+}
+
+.navigation__item ul li{    
+    padding: 15px;
 }
 /*
 
@@ -58,12 +74,15 @@ main {
 	padding-left: 2px;
 }
 */
+.dropdown {
+	position: relative;
+}
 
-.navigation li:hover {
+.navigation__item:hover {
 	background-color: #FF7F50;
 }
 
-.navigation li:hover a{
+.navigation__item:hover a{
 	color: #00FFFF;
 }
 

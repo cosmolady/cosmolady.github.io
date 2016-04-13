@@ -7,13 +7,15 @@ $(function(){
 		console.log ($submenuList);
 
 	$dropdownMenu.on('mouseover',function() {
-	   $(this).children($dropdownMenu).slideDown(1000, stop()); 
+	   $(this).children($dropdownMenu).slideDown(200,function(){
+          $submenuList.css("background-color","#FF7F50");
+      }); 
 	});
 	
 	$dropdownMenu.on('mouseout',function() {
-	   $(this).children($dropdownMenu).slideUp(1000, stop()); 
-	});
-	
+	   $(this).children($dropdownMenu).slideUp(200);
+      }); 
+
 })
 	
 	
