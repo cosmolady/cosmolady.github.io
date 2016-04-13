@@ -45,17 +45,19 @@ main {
 	width: 50%;
 }
 
-.navigation li {
+.navigation__item {
 	display: inline-block;
 	padding: 15px;
 }
+/*
 
-.dropdown ::after {
+.dropdown a::after {
   content: '▼';
   font-size: 80%;
   color: #000;
 	padding-left: 2px;
 }
+*/
 
 .navigation li:hover {
 	background-color: #FF7F50;
@@ -69,3 +71,6 @@ ul.submenu {
     display:none;
 }
 
+ul.submenu li {
+	padding-top: 15px;
+}
