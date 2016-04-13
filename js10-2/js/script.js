@@ -1,19 +1,13 @@
 $(function(){
 
-	var $dropdownMenu = $('.dropdown');
-	console.log ($dropdownMenu);
+	var $dropdownMenu = $('.dropdown a');
+		console.log ($dropdownMenu);
 	
-	var $submenuList =  $('.submenu');
-		console.log ($submenuList);
-
-	$dropdownMenu.on('mouseover',function() {
-	   $(this).children($dropdownMenu).slideDown(200,function(){
-          $submenuList.css("background-color","#FF7F50");
-      }).on('mouseout',function() {
-	   $(this).children($dropdownMenu).slideUp(200);
-      }); 
-
-});
+	
+	$dropdownMenu.on('mouseover',function(e) {
+	   var $subMenu = $(this).siblings('ul');
+		e.preventDefault();
+		$subMenu.slideToggle();
+		$('.dropdown li').css("background-color","#FF7F50");
+	});
 })
-	
-	

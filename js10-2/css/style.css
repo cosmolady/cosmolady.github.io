@@ -86,7 +86,11 @@ main {
 	color: #00FFFF;
 }
 
-ul.submenu {
+.navigation ul  {
+    display:none;
+}
+
+.submenu  {
     display:none;
 }
 
