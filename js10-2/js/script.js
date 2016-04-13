@@ -9,13 +9,11 @@ $(function(){
 	$dropdownMenu.on('mouseover',function() {
 	   $(this).children($dropdownMenu).slideDown(200,function(){
           $submenuList.css("background-color","#FF7F50");
-      }); 
-	});
-	
-	$dropdownMenu.on('mouseout',function() {
+      }).on('mouseout',function() {
 	   $(this).children($dropdownMenu).slideUp(200);
       }); 
 
+});
 })
 	
 	
