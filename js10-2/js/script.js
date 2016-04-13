@@ -1,13 +1,16 @@
-$(function(){
-
-	var $dropdownMenu = $('.dropdown a');
-		console.log ($dropdownMenu);
-	
-	
-	$dropdownMenu.on('mouseover',function(e) {
-	   var $subMenu = $(this).siblings('ul');
-		e.preventDefault();
-		$subMenu.slideToggle();
-		$('.dropdown li').css("background-color","#FF7F50");
+function mainmenu(){
+	$(".dropdown").hover(function(){
+	$(this).find('ul:first').css({
+	visibility: "visible",
+	display: "none",
+	backgroundColor: "#FF7F50"
+	}).show(400);
+	},function(){
+	$(this).find('ul:first').css({visibility: "hidden"});
 	});
-})
+}
+
+
+$(document).ready(function(){
+	mainmenu();
+});
