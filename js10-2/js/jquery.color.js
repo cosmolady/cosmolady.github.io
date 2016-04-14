@@ -1,3 +1,4 @@
+
 /*
  * jQuery Color Animations
  * Copyright 2007 John Resig

@@ -12,15 +12,13 @@ $(function(){
 	};
 	
 
-	$('.dropdown').mouseenter(
-  	function () {
-		alert('hi');
-		$('.submenu').animate({backgroundColor:"#03C", }, 500 )
-  	}, function() {
-	$('.submenu').animate({
-		backgroundColor:"#0CF",
-    }, 500 );
-	});
+	$('.submenu').hover(
+		function (){
+    		$('.submenu li').animate({backgroundColor:'#0df284'}, 500 );
+		},
+		function(){
+			$('.submenu').animate({backgroundColor:'#088b0a'}, 500 );
+});
 
 
 });
