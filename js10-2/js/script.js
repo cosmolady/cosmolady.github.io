@@ -1,16 +1,26 @@
-function mainmenu(){
-	$(".dropdown").hover(function(){
-	$(this).find('ul:first').css({
-	visibility: "visible",
-	display: "none",
-	backgroundColor: "#FF7F50"
-	}).show(400);
-	},function(){
-	$(this).find('ul:first').css({visibility: "hidden"});
+$(function(){
+	$('.dropdown').hover(
+		function(){
+			$(this).children('.submenu').slideDown(400,stop()); 
+		},
+		function(){
+			$(this).children('.submenu').slideUp(400,stop()); 
+		}
+	);
+	function stop(){
+		$('.submenu').stop(true, true);
+	};
+	
+
+	$('.dropdown').mouseenter(
+  	function () {
+		alert('hi');
+		$('.submenu').animate({backgroundColor:"#03C", }, 500 )
+  	}, function() {
+	$('.submenu').animate({
+		backgroundColor:"#0CF",
+    }, 500 );
 	});
-}
 
 
-$(document).ready(function(){
-	mainmenu();
 });
