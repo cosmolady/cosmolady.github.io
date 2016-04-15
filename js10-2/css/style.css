@@ -81,13 +81,13 @@ nav a {
 }
 
 nav li:hover {
-	 background-color:#FF7F50;
+	 background-color:#EE82EE;
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
-    color:#00FFFF;
+    color:#FFF8DC;
 }
 
 nav li li a {

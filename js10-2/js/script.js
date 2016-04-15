@@ -12,13 +12,17 @@ $(function(){
 	};
 	
 
-	$('.submenu').hover(
+	$('li').mouseover(
 		function (){
-    		$('.submenu li').animate({backgroundColor:'#0df284'}, 500 );
+    		$(this).animate({
+				backgroundColor:'#4B0082'
+			}, 500);
 		},
 		function(){
-			$('.submenu').animate({backgroundColor:'#088b0a'}, 500 );
-});
+			$(this).animate({
+				backgroundColor:'#0CF'
+			}, 500 );
+		});
 
 
 });
