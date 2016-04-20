@@ -3,16 +3,17 @@ $(document).ready(function () {
 	var rightUIEl = $('.carousel-arrow-right');
 	var elementsList = $('.carousel-list');
 
-	var pixelsOffset = 125;
+	var pixelsOffset = 325;
 	var currentLeftValue = 0;
+	var elementsItem = $('.carousel-list li');
 
-	var elementsCount = elementsList.find('li').length;
+	var elementsCount = elementsItem.length;
 	var minimumOffset = -((elementsCount - 5) * pixelsOffset);
 	var maximumOffset = 0;
 
 	leftUIEl.click(function () {
 		if (currentLeftValue != maximumOffset) {
-			currentLeftValue += 125;
+			currentLeftValue += 325;
 			elementsList.animate({
 				left: currentLeftValue + "px"
 			}, 500);
@@ -21,7 +22,7 @@ $(document).ready(function () {
 
 	rightUIEl.click(function () {
 		if (currentLeftValue != minimumOffset) {
-			currentLeftValue -= 125;
+			currentLeftValue -= 325;
 			elementsList.animate({
 				left: currentLeftValue + "px"
 			}, 500);
