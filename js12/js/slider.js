@@ -1,45 +1,50 @@
 (function ($) {
-	var defaults = { 
+	var defaults = {
 		pixelsOffset: 325,
 		amountPict: 2
 	};
-	
+
 	var options;
 	$.fn.jMyCarousel = function (params) {
+		return this.each(function() {
+		
 		options = $.extend({}, defaults, options, params);
 		var leftUIEl = $('.carousel-arrow-left');
 		var rightUIEl = $('.carousel-arrow-right');
-		
-		var pixelsOffset = options.pixelsOffset ;
+
+		var pixelsOffset = options.pixelsOffset;
 		var currentLeftValue = 0;
 		var elementsItem = $('.carousel-list li');
 
 		var elementsCount = elementsItem.length;
 		var minimumOffset = -((elementsCount - (options.amountPict)) * pixelsOffset);
 		var maximumOffset = 0;
+	
+		function slideImg() {
+
+			this.animate({
+				left: currentLeftValue + "px"
+			}, 500);
+		}
 
 		leftUIEl.click(function () {
 			if (currentLeftValue != maximumOffset) {
 				currentLeftValue += pixelsOffset;
-				$('.carousel-list').animate({
-					left: currentLeftValue + "px"
-				}, 500);
+				slideImg();
 			}
 		});
 
 		rightUIEl.click(function () {
 			if (currentLeftValue != minimumOffset) {
 				currentLeftValue -= pixelsOffset;
-				$('.carousel-list').animate({
-					left: currentLeftValue + "px"
-				}, 500);
+
+				slideImg();
 			}
 		});
-		return this;
-	}
+		
 })(jQuery);
 
 
-$(function(){
-	$('.carousel-list').jMyCarousel()
-});
+$(function () {
+	$('.carousel-hider').jMyCarousel()
+})
