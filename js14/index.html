@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+	<h1>Тест по программированию</h1>
+	<script type="text/template" id="list-template">
+		
+			<ol>
+				<% for (var i=1; i<=dataTest.length; i++) { %>
+					<li>
+
+						<%= dataTest[i].title %>
+							<ul>
+								<% for (var j = 1; j <= dataTest.length; j++) { %>
+									<li>
+										<label for="check<%=j%>">
+											<input type="checkbox" id="check<%=j%><%= dataTest[i].answers[j] %>									
+										</label>
+									</li>
+									<% }; %>
+							</ul>
+					</li>
+					<% } %>
+			</ol>
+		
+
+	</script>
+</div>
+</body>
+
+</html>
