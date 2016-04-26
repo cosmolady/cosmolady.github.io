@@ -1,32 +1,35 @@
+'use strict';
 $(function (){
+var task = $('#list-template').html();
 
-var page = $('#list-template').html();
-var dataTest= [
+var data = [
 	{
 		title: 'Вопрос №1',
-		answers: ['Ответ 1', 'Ответ 2', 'Ответ 3']
+		content: ['Ответ 1', 'Ответ 2', 'Ответ 3']
 	},
-	
 	{
 		title: 'Вопрос №2',
-		answers: ['Ответ 1', 'Ответ 2', 'Ответ 3']
+		content: ['Ответ 1', 'Ответ 2', 'Ответ 3']
 	},
-	
 	{
 		title: 'Вопрос №3',
-		answers: ['Ответ 1', 'Ответ 2', 'Ответ 3']
-	}
+		content: ['Ответ 1', 'Ответ 2', 'Ответ 3']
+	},
 ];
-	console.log(dataTest);
-//
-//localStorage.setItem('testQuestions',JSON.stringify(test));
-//var testData = localStorage.getItem('testQuestions');
-//var testObj = JSON.parse (testData);
 
-
-
-var testList = tmpl(page, {data: dataTest});
-
-$('body').append(testList);
+var doc = tmpl(task, {data: data});
+$('body').append(doc);
 	
 })
+//localStorage.setItem('testQuestions',JSON.stringify(dataTest));
+//	
+//var test = localStorage.getItem('testQuestions');
+//var testObj = JSON.parse (test);
+//
+//var page = $('#list-template').html();
+//
+//var testList = tmpl(page, {data: testObj});
+//
+//$('body').append(testList);
+//	
+//})

@@ -1,8 +1,25 @@
+body {
+	font-family: 'Arial', sans-serif;
+	font-size: 20px;
+}
+
 ul li {
 	list-style-type: none;
+}
+ol  {
+	display: block;
+	margin: 10px auto;
+	width: 20%;
+}
+ol ul {
+	margin: 10px;
+}
+ol li {
+	text-align: left;
 }
 .wrapper {
 	width:60%;
 	margin: 10px auto;
 	text-align: center;
 }
+
