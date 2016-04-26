@@ -12,18 +12,19 @@
 
 <body>
 <div class="wrapper">
-	<h1>Тест по программированию</h1>
+	
 	<script type="text/template" id="list-template">
+	<h1>Тест по программированию</h1>
 		<div class="wrapper">
 			<ol>
 			<% for (var i = 0; i < data.length; i++) { %>
 
 				<li><%= data[i].title %></li>
 				<ul>
-					<% for (var j = 0; j < data[i].content.length; j++) { %>
+					<% for (var j = 0; j < data[i].answers.length; j++) { %>
 						<li>
 							<label for="check<%=i%>_<%=j%>">
-							<input type="checkbox" id="check<%=i%>_<%=j%>"><%= data[i].content[j] %>
+							<input type="checkbox" id="check<%=i%>_<%=j%>"><%= data[i].answers[j] %>
 							</label>
 						</li>
 						<% }; %>
