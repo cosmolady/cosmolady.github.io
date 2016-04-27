@@ -11,32 +11,34 @@
 </head>
 
 <body>
-<div class="wrapper">
-	
-	<script type="text/template" id="list-template">
-	<h1>Тест по программированию</h1>
-		<div class="wrapper">
-			<ol>
-			<% for (var i = 0; i < data.length; i++) { %>
+	<div class="wrapper">
 
-				<li><%= data[i].title %></li>
-				<ul>
-					<% for (var j = 0; j < data[i].answers.length; j++) { %>
+		<script type="text/template" id="list-template">
+			<h1>Тест по программированию</h1>
+			<div class="wrapper">
+				<ol>
+					<% for (var i = 0; i < data.length; i++) { %>
+
 						<li>
-							<label for="check<%=i%>_<%=j%>">
-							<input type="checkbox" id="check<%=i%>_<%=j%>"><%= data[i].answers[j] %>
-							</label>
+							<%= data[i].title %>
 						</li>
-						<% }; %>
-				</ul>
-				<br>
+						<ul>
+							<% for (var j = 0; j < data[i].answers.length; j++) { %>
+								<li>
+									<label>
+										<input type="checkbox" value="<%=i%>">
+										<%= data[i].answers[j] %>
+									</label>
+								</li>
+								<% }; %>
+						</ul>
+						<br>
 
-				<% }; %>
-			</ol>
-			<button type="submit"> Проверить результат </button>	
-		</div>
-	</script>
-			
+						<% }; %>
+				</ol>
+				<button type="submit"> Проверить результат </button>
+			</div>
+		</script>
 	
 
 
