@@ -39,21 +39,23 @@ buttonCheck.click(function () {
 })
 
 function checkAnswer() {
-	// считаем что ответы правильные
+
 	var error = false;
-	// чекбоксы
+
 	var inputs = $("input[value='0']");
 	
 	for (var i = 0; i < inputs.length; i++) {
-		// галка
+
 		var checked = $("input[value='0']:checked");
-			
-		// является ли вариант правильным
-		var right = testObj[i].rightAns[i] == true;
-		// если отметка не является правильной
+					
+
+		var right = testObj[0].rightAns[i+1] == true;
+			console.log(testObj[0].rightAns[i+1]);
+						console.log(checked);
+
 		if (checked !== right) {
 			error = true;
-			// дальше можно не проверять
+		
 			break;
 		}
 	}
