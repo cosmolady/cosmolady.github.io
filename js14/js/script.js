@@ -19,45 +19,48 @@ $(function () {
 			rightAns: [false, false, true]
 	},
 	];
-localStorage.setItem('testQuestions', JSON.stringify(dataTest));
-var test = localStorage.getItem('testQuestions');
-var testObj = JSON.parse(test);
+	localStorage.setItem('testQuestions', JSON.stringify(dataTest));
+	var test = localStorage.getItem('testQuestions');
+	var testObj = JSON.parse(test);
 
-var page = $('#list-template').html();
-var testList = tmpl(page, {
-	data: testObj
-});
-$('body').append(testList);
+	var page = $('#list-template').html();
+	var testList = tmpl(page, {
+		data: testObj
+	});
+	$('body').append(testList);
 
-var buttonCheck = $(":submit");
+	var buttonCheck = $(":submit");
 
-var mark = 0;
+	var mark = 0;
 
-buttonCheck.click(function () {
-	checkAnswer();
+	buttonCheck.click(function () {
+		checkAnswer();
 
-})
+	})
 
-function checkAnswer() {
+	function checkAnswer() {
 
-	var error = false;
+		var error = false;
+		for (var i = 0; i < testObj.length; i++) {
+			var inputs = $("input[value='i']");
 
-	var inputs = $("input[value='0']");
-	
-	for (var i = 0; i < inputs.length; i++) {
+			for (var j = 0; j < inputs.length; j++) {
 
-		var checked = $("input[value='0']:checked");
-					
+				var checked = inputs[j].checked;
 
-		var right = testObj[0].rightAns[i+1] == true;
-			console.log(testObj[0].rightAns[i+1]);
-						console.log(checked);
 
-		if (checked !== right) {
-			error = true;
-		
-			break;
+				var right = testObj[i].rightAns[j] == true;
+				console.log(testObj[i].rightAns[j]);
+				console.log(checked);
+
+				if (checked !== right) {
+					error = true;
+
+					break;
+				}
+			}
 		}
+
+		console.log(error ? 'Ошибка!!!' : 'Зачот!!!')
 	}
-console.log(error ? 'Ошибка!!!' : 'Зачот!!!')}
 })
