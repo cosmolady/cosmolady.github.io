@@ -17,7 +17,7 @@ $(function () {
 			title: 'Вопрос №3',
 			answers: ['Ответ 1', 'Ответ 2', 'Ответ 3'],
 			rightAns: [false, false, true]
-	},
+	}
 	];
 	localStorage.setItem('testQuestions', JSON.stringify(dataTest));
 	var test = localStorage.getItem('testQuestions');
@@ -36,7 +36,8 @@ $(function () {
 	buttonCheck.click(function () {
 		var modal = $('.modal_form');
 		event.preventDefault();
-		$('.modal_result').text(checkAnswer())
+		$('.modal_result').text(checkAnswer());
+		console.log(result);
 		$('.overlay').fadeIn(400,
 			function () {
 				modal
@@ -64,25 +65,25 @@ $(function () {
 		var error = false;
 		for (var i = 0; i < testObj.length; i++) {
 			var inputs = $("input[value='" + i + "']");
-			
+			var countUserRight = 0;
+			var mark = 0;
 			for (var j = 0; j < inputs.length; j++) {
-				
+
 				var checked = inputs[j].checked;
-				
-				var countUserRight = 0;
 				var right = testObj[i].rightAns[j] == true;
-				if (checked !== right) {
-					error = true;
-					countUserRight++;
-					break;
+				if (checked == right) {
+					countUserRight++
 				}
 			}
-			if (countUserRight==(testObj.length)){
-				var mark=countUserRight*10;
+			if (countUserRight == (testObj[i].rightAns.length)) {
+				mark++;
 			}
 		}
-		var result = ((error ? 'Тест не пройден!!!' : 'Тест пройден успешно!')+ 'Количество набранных баллов' + mark);
-		
-		return result;
+
 	}
+
+	var result = ((mark === testObj.length) ? 'Тест пройден успешно!' : 'Тест не пройден!') + 'Количество правильных ответов' + ' ' + mark;
+	
+	return result;
+	
 })
