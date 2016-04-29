@@ -34,33 +34,55 @@ $(function () {
 	var mark = 0;
 
 	buttonCheck.click(function () {
-		checkAnswer();
-
+		var modal = $('.modal_form');
+		event.preventDefault();
+		$('.modal_result').text(checkAnswer())
+		$('.overlay').fadeIn(400,
+			function () {
+				modal
+					.css('display', 'block')
+					.animate({
+						opacity: 1,
+						top: '50%'
+					}, 200)
+			});
+		$('.modal_close, .overlay').click(function () {
+			modal.animate({
+					opacity: 0,
+					top: '45%'
+				}, 200,
+				function () {
+					$(this).css('display', 'none');
+					$('.overlay').fadeOut(400);
+				}
+			);
+		});
 	})
 
 	function checkAnswer() {
 
 		var error = false;
 		for (var i = 0; i < testObj.length; i++) {
-			var inputs = $("input[value='i']");
-
+			var inputs = $("input[value='" + i + "']");
+			
 			for (var j = 0; j < inputs.length; j++) {
-
+				
 				var checked = inputs[j].checked;
-
-
+				
+				var countUserRight = 0;
 				var right = testObj[i].rightAns[j] == true;
-				console.log(testObj[i].rightAns[j]);
-				console.log(checked);
-
 				if (checked !== right) {
 					error = true;
-
+					countUserRight++;
 					break;
 				}
 			}
+			if (countUserRight==(testObj.length)){
+				var mark=countUserRight*10;
+			}
 		}
-
-		console.log(error ? 'Ошибка!!!' : 'Зачот!!!')
+		var result = ((error ? 'Тест не пройден!!!' : 'Тест пройден успешно!')+ 'Количество набранных баллов' + mark);
+		
+		return result;
 	}
 })
