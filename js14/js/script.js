@@ -46,7 +46,10 @@ $(function () {
 						top: '50%'
 					}, 200)
 			});
+
+
 		$('.modal_close, .overlay').click(function () {
+			clearResult();
 			modal.animate({
 					opacity: 0,
 					top: '45%'
@@ -57,6 +60,7 @@ $(function () {
 				}
 			);
 		});
+
 	})
 
 	function checkAnswer() {
@@ -82,5 +86,7 @@ $(function () {
 
 	}
 
-
+	function clearResult() {
+		$('input').removeAttr('checked');
+	}
 });
