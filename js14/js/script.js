@@ -31,13 +31,12 @@ $(function () {
 
 	var buttonCheck = $(":submit");
 
-	var mark = 0;
+	//var mark = 0;
 
 	buttonCheck.click(function () {
 		var modal = $('.modal_form');
 		event.preventDefault();
 		$('.modal_result').text(checkAnswer());
-		console.log(result);
 		$('.overlay').fadeIn(400,
 			function () {
 				modal
@@ -47,7 +46,10 @@ $(function () {
 						top: '50%'
 					}, 200)
 			});
+
+
 		$('.modal_close, .overlay').click(function () {
+			clearResult();
 			modal.animate({
 					opacity: 0,
 					top: '45%'
@@ -58,15 +60,15 @@ $(function () {
 				}
 			);
 		});
+
 	})
 
 	function checkAnswer() {
 
-		var error = false;
+		var mark = 0;
 		for (var i = 0; i < testObj.length; i++) {
 			var inputs = $("input[value='" + i + "']");
 			var countUserRight = 0;
-			var mark = 0;
 			for (var j = 0; j < inputs.length; j++) {
 
 				var checked = inputs[j].checked;
@@ -79,11 +81,12 @@ $(function () {
 				mark++;
 			}
 		}
+		var result = ((mark === testObj.length) ? 'Тест пройден успешно!' : 'Тест не пройден!') + 'Количество правильных ответов' + ' ' + mark;
+		return result;
 
 	}
 
-	var result = ((mark === testObj.length) ? 'Тест пройден успешно!' : 'Тест не пройден!') + 'Количество правильных ответов' + ' ' + mark;
-	
-	return result;
-	
-})
+	function clearResult() {
+		$('input').removeAttr('checked');
+	}
+});
