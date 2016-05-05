@@ -1,0 +1,15 @@
+.wrapper {
+	width: 60%;
+	margin:0 auto;
+	text-align: center;
+}
+
+
+
+.logo {
+	width: 30%;
+	height: auto;
+}
+form {
+	display: block;
+}
