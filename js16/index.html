@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
+
 <body>
 	<div class="wrapper">
 		<img class="logo" src="img/googlelogo.png" alt="Logo">
-		<form>
-			<input type="text" value="Введите поисковый запрос">
+		<form id="searchForm" method="post">
+			<input id="s" type="text" value="Введите поисковый запрос">
+			<button type="submit">Найти</button>
 		</form>
+		<div class="gs-result">
+			
+		</div>
 	</div>
 </body>
+
 </html>

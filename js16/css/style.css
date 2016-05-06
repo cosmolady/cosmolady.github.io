@@ -1,6 +1,10 @@
+body {
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+}
 .wrapper {
 	width: 60%;
-	margin:0 auto;
+	margin:100px auto;
 	text-align: center;
 }
 
@@ -10,6 +14,21 @@
 	width: 30%;
 	height: auto;
 }
+
 form {
 	display: block;
+}
+
+input {
+	width:670px;
+	height: 36px;
+	color: darkgrey;
+	font-family: "Arial", sans-serif;
+	font-size: 16px;
+	box-sizing: border-box;
+
+}
+button {
+	height: 36px;
+    padding-top: 3px;
 }
