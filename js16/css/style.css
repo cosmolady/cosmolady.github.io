@@ -15,6 +15,7 @@ body {
 	height: auto;
 }
 
+/*
 form {
 	display: block;
 }
@@ -31,4 +32,8 @@ input {
 button {
 	height: 36px;
     padding-top: 3px;
+}
+*/
+.gsc-search-button{
+	height: 50px;
 }

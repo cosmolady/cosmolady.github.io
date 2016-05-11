@@ -1,7 +1,7 @@
 /*Поиск Google*/
  (function() {
     var cx = '015945377729752521238:rcpe7z7tike';
-	  var gcse = document.createElement('script');
+	var gcse = document.createElement('script');
     gcse.async = true;
     gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0];
@@ -40,13 +40,13 @@ worker2 = new Worker();
 stud1 = new Student();
 stud2 = new Student();
 
-//console.log (worker1.job);
-//console.log (worker2.name);
-//console.log (worker1.height);
-//console.log (worker2.method);
-//
-//console.log (stud1.grants);
-//console.log (stud1.age);
-//console.log (stud2.method);
-//console.log (stud2.sex);
-//
+console.log (worker1.job);
+console.log (worker2.name);
+console.log (worker1.height);
+console.log (worker2.method);
+
+console.log (stud1.grants);
+console.log (stud1.age);
+console.log (stud2.method);
+console.log (stud2.sex);
+
