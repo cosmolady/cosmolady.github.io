@@ -25,14 +25,17 @@ Student.prototype = new Human();
 function Worker () {
 	this.job = 'manager';
 	this.salary = '500$';
-	this.method = "Let's work!";
+	this.method = function (){
+		console.log("Let's work!");
+	};
 }
 
 function Student (){
 	this.univercity = 'Oxford';
 	this.grants = '100$';
-	this.method = "Let's watch series";
-}
+	this.method = function (){
+		console.log ("Let's watch series");
+}}
 
 worker1 = new Worker();
 worker2 = new Worker();
@@ -43,10 +46,10 @@ stud2 = new Student();
 console.log (worker1.job);
 console.log (worker2.name);
 console.log (worker1.height);
-console.log (worker2.method);
+worker2.method();
 
 console.log (stud1.grants);
 console.log (stud1.age);
-console.log (stud2.method);
+stud2.method();
 console.log (stud2.sex);
 
