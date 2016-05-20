@@ -31,16 +31,25 @@ $(function () {
 
 	});
 	$.each(countries, function (key, val) {
-		$('#countries').append('<option value="' + val + '">' + val + '</option>');
-		for (key in cities) {
-			if (countries.key === key.country) {
-				$.each(cities, function (key, val) {
-					$('#cities').append('<option value="' + val + '">' + val.name + '</option>');
-				});
-			}
-
-		}
+		$('#countries').append('<option value="' + key + '" >' + val + '</option>');
 	});
+
+
+
+	$("#countries").change(function () {
+			$("#countries option:selected").each(function () {
+				console.log(this);
+				var numCountry = this.value;
+				$.each(cities, function (key, val) {
+											console.log(val);
+					if (val.country === numCountry) {
+						$('#cities').append('<option value="' + key + '" >' + val.name + '</option>');
+					}
+				});
+			});
+
+		})
+		.trigger("change");
 	var fb = $('#form-check-fb');
 	var labelFb = $('.label-fb');
 	var vk = $('#form-check-vk');
@@ -49,31 +58,31 @@ $(function () {
 	var labelTw = $('.label-tw');
 	var ok = $('#form-check-ok');
 	var labelOk = $('.label-ok');
-		
-	fb.on('click',function(){
+
+	fb.on('click', function () {
 		if ($(this).is(':checked')) {
 			labelFb.append('<input class="add-field" type="url" placeholder="fb.com/lun">');
-		}}
-		);
-	vk.on('click',function(){
+		}
+	});
+	vk.on('click', function () {
 		if ($(this).is(':checked')) {
 			labelVk.append('<input class="add-field" type="url"  placeholder="vk.com/lun">');
-		}}
-		);
-	tw.on('click',function(){
+		}
+	});
+	tw.on('click', function () {
 		if ($(this).is(':checked')) {
 			labelTw.append('<input class="add-field" type="url"  placeholder="twitter.com/lun">');
-		}}
-		);
-	ok.on('click',function(){
+		}
+	});
+	ok.on('click', function () {
 		if ($(this).is(':checked')) {
 			labelOk.append('<input  class="add-field" type="url"  placeholder="ok.ru/lun">');
-		}}
-		);
-	
-	var cat=$('.item__cat');
+		}
+	});
+
+	var cat = $('.item__cat');
 	var dog = $('.item__dog');
-	dog.on('click',function(){
+	dog.on('click', function () {
 		$('.picture__list').append('<p>Вы выбрали собачку. А надо котика.</p>')
 	})
-	})
+})
