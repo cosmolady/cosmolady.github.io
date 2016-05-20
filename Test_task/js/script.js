@@ -38,7 +38,6 @@ $(function () {
 
 	$("#countries").change(function () {
 			$("#countries option:selected").each(function () {
-				console.log(this);
 				var numCountry = this.value;
 				$('#cities').empty();
 				$.each(cities, function (key, val) {
