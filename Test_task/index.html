@@ -26,19 +26,24 @@
 
 		</div>
 		<div class="forms" >
-            <form class="form-signin" id="signin" action="" method="post">
+            <form class="form-signin ui-tabs-panel " id="signin" action="" method="post">
                 <p class="form-signin-heading"> 1.Введите имя и e-mail</p>
-                <input type="text" name="name" class="form-control" placeholder="Имя" required autofocus>
-                <input type="email" name="email" class="form-control" placeholder="example@example.com" required>
+                <input type="text" name="name" class="form-control" placeholder="Имя"  autofocus>
+                <input type="email" name="email" class="form-control" placeholder="example@example.com" >
+<!--                    <button id="prev" type="submit" class="btn btn-default"> &lt; Предыдущий</button>-->
+                    <button id="next" type="button" class="btn btn-default myButton btnNext"> Следующий &gt;</button>
+            
             </form>
             <form class="form-select" id="select">
                 <p class="form-signin-heading">2.Выберите страну и город</p>
                 <select name="select__country" id="countries">
-                    <option selected> </option>
+                    <option selected>Страна </option>
                 </select>
                 <select name="select__city" id="cities">
                     <option selected>Город</option>
                 </select>
+                <button id="prev" type="button" class="btn btn-default myButton btnPrev"> &lt; Предыдущий</button>
+                <button id="next" type="button" class="btn btn-default myButton btnNext"> Следующий &gt;</button>
             </form>
             <form class="form-social" id="social">
                 <p class="form-signin-heading">3.Отметьте социальные сети</p>
@@ -50,8 +55,10 @@
                     <input id="form-check-tw" type="checkbox">Twitter</label>
                 <label class="label-ok">
                     <input id="form-check-ok" type="checkbox">Одноклассники</label>
+                <button id="prev" type="button" class="btn btn-default myButton btnPrev"> &lt; Предыдущий</button>
+                <button id="next" type="button" class="btn btn-default myButton btnNext"> Следующий &gt;</button>
             </form>
-            <form class="form-pictures" id="pictures">
+            <form class="form-pictures ui-tabs-panel  ui-tabs-hide" id="pictures">
                 <p class="form-signin-heading">4.Выберите любимого котика</p>
                 <ul class="picture__list">
                     <li class="picture__block item__cat"><img src="img/cat1.jpg" alt="cat1"></li>
@@ -59,11 +66,15 @@
                     <li class="picture__block item__cat"><img src="img/cat3.jpg" alt="cat3"></li>
                     <li class="picture__block item__dog"><img src="img/dog4.jpg" alt="dog"></li>
                 </ul>
+                <button id="prev" type="button" class="btn btn-default myButton btnPrev"> &lt; Предыдущий</button>
+                <button id="next" type="button" class="btn btn-default myButton btnNext"> Следующий &gt;</button>
             </form>
+<!--
             <div class="buttons row">
-                <button type="submit" class="btn btn-default"> &lt; Предыдущий</button>
-                <button type="submit" class="btn btn-default"> Следующий &gt;</button>
+                <button id="prev" type="submit" class="btn btn-default"> &lt; Предыдущий</button>
+                <button id="next" type="submit" class="btn btn-default"> Следующий &gt;</button>
             </div>
+-->
         </div>
         <div class="final" id="">
             <div class="row">
