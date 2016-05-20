@@ -40,16 +40,16 @@ $(function () {
 			$("#countries option:selected").each(function () {
 				console.log(this);
 				var numCountry = this.value;
+				$('#cities').empty();
 				$.each(cities, function (key, val) {
-											console.log(val);
-					if (val.country === numCountry) {
+					//console.log(val.countr);
+					if (val.country == numCountry) {
 						$('#cities').append('<option value="' + key + '" >' + val.name + '</option>');
 					}
 				});
 			});
 
 		})
-		.trigger("change");
 	var fb = $('#form-check-fb');
 	var labelFb = $('.label-fb');
 	var vk = $('#form-check-vk');
