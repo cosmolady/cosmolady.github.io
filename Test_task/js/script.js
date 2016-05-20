@@ -30,4 +30,17 @@ $(function (){
        }
 
     });
+	$.each(countries, function(key, val) {
+                    $('#countries').append('<option value="' + val + '">' + val + '</option>');
+		for (key in cities){
+			if (countries.key===key.country){
+				$.each(cities, function(key, val) {
+                    		$('#cities').append('<option value="' + val + '">' + val.name + '</option>');
+					});
+					}
+	
+                }});
+
+	
+
 })

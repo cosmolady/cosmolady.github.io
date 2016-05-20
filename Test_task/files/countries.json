@@ -1,4 +1,4 @@
-{
+var countries = {
     "1": "Ukraine",
     "2": "Germany",
     "3": "France",
