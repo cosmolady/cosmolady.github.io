@@ -27,7 +27,7 @@ body {
 .form-social {
 	display: none;
 }
-.pictures {
+.form-pictures {
 	display: none;
 }
 .picture__block {
@@ -84,6 +84,9 @@ body {
 	border-radius: 2px;
 	margin-bottom: 16px;
 }
+#name-error, #email-error {
+	color: #f00;
+}
 .form-signin-heading {
 	margin-bottom: 40px;
 }
@@ -96,4 +99,8 @@ select {
 }
 label {
 	display: block;
+}
+.picture__list{
+	width: 230%;
+    margin-left: -80%;
 }
