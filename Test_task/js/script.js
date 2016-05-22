@@ -288,9 +288,13 @@ $(function () {
         validatorSignin.resetForm();
         validatorSelect.resetForm();
         validatorSocial.resetForm();
+        for(var i=0;i<4;i++){
+            $('form').get(i).reset();    
+        }
+        
         cat.css('border','none');
         user={};
-        $('#tabs').css('display', 'block').tabs( "option", "active", 1 );
+        $('#tabs').css('display', 'block').tabs( "option", "active", 0 );
 ;
     });
 
