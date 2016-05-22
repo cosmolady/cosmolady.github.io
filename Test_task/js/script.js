@@ -1,10 +1,9 @@
-'use strrict';
+'use strict';
 $(function () {
 
     $.validator.addMethod('noequals', function (value, element, params) {
         return this.optional(element) || (value !== "Страна" & value !== "Город")
     }, "");
-
 
     var validatorSignin = $("#signin").validate({
         rules: {
@@ -93,10 +92,10 @@ $(function () {
     var forms = $(".forms").children();
 
     $("#tabs").tabs({
-  disabled: [ 1,2,3 ]
-});
-    var activeTab = $('#tabs').tabs('option','active');
-    console.log(activeTab);
+        disabled: [1, 2, 3]
+    });
+    var activeTab = $('#tabs').tabs('option', 'active');
+
     $(".btnNext").on('click', function () {
         if (isFillForm($("#tabs").tabs('option', 'active'))) {
             $("#tabs").tabs("option", "active", $("#tabs").tabs('option', 'active') + 1);
@@ -109,7 +108,7 @@ $(function () {
             return checkSignInForm();
         case 1:
             return checkSelectForm();
-            case 2:
+        case 2:
             return checkSocialForm();;
         case 3:
             break;
@@ -119,12 +118,12 @@ $(function () {
 
     function checkSocialForm() {
         var social = {};
-        var FLAG = true; //TODO
+        var fill = true; 
         if (checkBox(fb)) {
             if (validatorSocial.element('#fbLink')) {
                 social.fb = $("#fbLink").val();
             } else {
-                FLAG = false;
+                fill = false;
             }
 
         }
@@ -132,44 +131,44 @@ $(function () {
             if (validatorSocial.element('#vkLink')) {
                 social.vk = $("#vkLink").val();
             } else {
-                FLAG = false;
+                fill = false;
             }
         }
         if (checkBox(tw)) {
             if (validatorSocial.element('#twLink')) {
                 social.tw = $("#twLink").val();
             } else {
-                FLAG = false;
+                fill = false;
             }
         }
         if (checkBox(ok)) {
             if (validatorSocial.element('#okLink')) {
                 social.ok = $("#okLink").val();
             } else {
-                FLAG = false;
+                fill = false;
             }
         }
         user.social = social;
-        return FLAG;
+        return fill;
     }
 
     function checkBox(el) {
-         if(validatorSocial.form()){
+        if (validatorSocial.form()) {
             $('#tabs').tabs("option", "disabled", false);
         }
         return el.prop("checked");
     }
 
     function checkSelectForm() {
-         if(validatorSelect.form()){
-            $('#tabs').tabs( "option", "disabled", [ 3 ] );
+        if (validatorSelect.form()) {
+            $('#tabs').tabs("option", "disabled", [3]);
         }
         return validatorSelect.form();
     }
 
     function checkSignInForm() {
-        if(validatorSignin.form()){
-            $('#tabs').tabs( "option", "disabled", [ 2,3 ] );
+        if (validatorSignin.form()) {
+            $('#tabs').tabs("option", "disabled", [2, 3]);
         }
         return validatorSignin.form();
     }
@@ -241,12 +240,12 @@ $(function () {
     var src;
     cat.on('click', function () {
         $('.error_cat').empty();
-        cat.css('border','none');
-        $(this).css('border','4px solid #ff9800');
+        cat.css('border', 'none');
+        $(this).css('border', '4px solid #ff9800');
         src = $(this.firstChild).attr('src');
-        
+
     });
-        
+
     var finalBtn = $('.btnFinal');
     var finalWrap = $('.final_wrapper');
     var finalScreen = $('.final');
@@ -258,44 +257,43 @@ $(function () {
         if (src !== undefined) {
             $('.container').css('display', 'none');
             finalWrap.css('display', 'block');
-            finalScreen.append('<img class="final-img" src="'+src+'">').append('<h2 class="last">' + user.name + '</h2>').append('<p class="last">' + user.email + '</p>').append('<p class="last">' + user.citie + ',' + ' ' + user.country);
-            if (user.social !== undefined){
+            finalScreen.append('<img class="final-img" src="' + src + '">').append('<h2 class="last">' + user.name + '</h2>').append('<p class="last">' + user.email + '</p>').append('<p class="last">' + user.citie + ',' + ' ' + user.country);
+            if (user.social !== undefined) {
                 if (user.social.fb !== undefined) {
-                finalScreen.append('<p class="last">' + user.social.fb + '</p>');
+                    finalScreen.append('<p class="last">' + user.social.fb + '</p>');
+                }
+                if (user.social.vk !== undefined) {
+                    finalScreen.append('<p class="last">' + user.social.vk + '</p>')
+                }
+                if (user.social.tw !== undefined) {
+                    finalScreen.append('<p class="last">' + user.social.tw + '</p>');
+                }
+                if (user.social.ok !== undefined) {
+                    finalScreen.append('<p class="last">' + user.social.ok + '</p>');
+                }
             }
-            if (user.social.vk !== undefined) {
-               finalScreen.append('<p class="last">' + user.social.vk + '</p>')
-            }
-            if (user.social.tw !== undefined) {
-               finalScreen.append('<p class="last">' + user.social.tw + '</p>');
-            }
-            if (user.social.ok !== undefined) {
-                finalScreen.append('<p class="last">' + user.social.ok + '</p>');
-            }    
-            }
-            
+
         } else {
             $('.error_cat').empty();
             $('.error_cat').append('<p>Выберите котика</p>');
         }
     });
-    
+
     var btnAgain = $('.btn-again');
-    btnAgain.on('click',function(){
-        
+    btnAgain.on('click', function () {
+
         finalScreen.empty();
         finalWrap.css('display', 'none');
         validatorSignin.resetForm();
         validatorSelect.resetForm();
         validatorSocial.resetForm();
-        for(var i=0;i<4;i++){
-            $('form').get(i).reset();    
+        for (var i = 0; i < 4; i++) {
+            $('form').get(i).reset();
         }
-        
-        cat.css('border','none');
-        user={};
-        $('#tabs').css('display', 'block').tabs( "option", "active", 0 );
-;
+
+        cat.css('border', 'none');
+        user = {};
+        $('#tabs').css('display', 'block').tabs("option", "active", 0);;
     });
 
 })
