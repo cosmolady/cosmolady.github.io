@@ -15,7 +15,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
-
+a {
+	text-decoration: none; }
 body {
   line-height: 1; }
 
@@ -29,7 +30,9 @@ blockquote {
   &:before, &:after {
     content: '';
     content: none; } }
-
+h3:focus{
+	outline: none;
+}
 q {
   &:before, &:after {
     content: '';

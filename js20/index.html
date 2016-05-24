@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Build home</title>
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet'>
-	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/build/global.css">
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jcarousel.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
+
 <body>
 	<div class="wrapper">
 		<header class="header">
@@ -16,233 +20,252 @@
 				<img src="img/logo.png" alt="Logo">
 			</div>
 			<div class="header__social">
-				<div class="header__link">
-					<a class="social__link social__fb" href="https://www.facebook.com/">fb</a>
+				<div class="header__link social__fb">
+					<a class="social__link " href="https://www.facebook.com/"></a>
 				</div>
-				<div class="header__link">
-					<a class="social__link social__twitter" href="https://twitter.com/">tw</a>
+				<div class="header__link social__twitter">
+					<a class="social__link " href="https://twitter.com/"></a>
 				</div>
-				<div class="header__link">
-					<a class="social__link social__rss" href="#" alt="rss"></a>
+				<div class="header__link social__rss">
+					<a class="social__link " href="#" alt="rss"></a>
 				</div>
-				<div class="header__link">
-					<a class="social__link social__li" href="https://www.linkedin.com">li</a>
+				<div class="header__link social__li">
+					<a class="social__link " href="https://www.linkedin.com"></a>
 				</div>
-				<div class="header__link">
-					<a class="social__link social__skype" href="https://www.skype.com">sk</a>
+				<div class="header__link social__skype">
+					<a class="social__link " href="https://www.skype.com"></a>
 				</div>
 			</div>
 		</header>
 		<nav class="nav">
-			<div class="nav__menu">
-				<a href="#" class="nav__menu link_menu_active">HOME</a>
-				<a href="#" class="nav__menu link_menu">FEATURES</a>
-				<a href="#" class="nav__menu link_menu">SERVICES</a>
-				<a href="#" class="nav__menu link_menu">NEWS</a>
-				<a href="#" class="nav__menu link_menu">SHOP</a>
+			<div class="nav__item nav__menu">
+				<a href="#" class="nav__link link_menu_active">HOME</a>
+				<a href="#" class="nav__link link_menu">FEATURES</a>
+				<a href="#" class="nav__link link_menu">SERVICES</a>
+				<a href="#" class="nav__link link_menu">NEWS</a>
+				<a href="#" class="nav__link link_menu">SHOP</a>
 			</div>
-			<div class="nav__search">
+			<div class="nav__item nav__search">
 				<div class="search__input">
-					 <input type="text" class="input input_search" placeholder="Search"> 
-					 <a class="search-button" href="#">&#128269;</a>
+					<input type="text" class="input_search" placeholder="Search">
+					<a id="search-button" href="#">&#128269;</a>
 				</div>
 			</div>
 		</nav>
 		<div class="slider">
 			<div class="jcarousel">
-				<ul>
+				<ul class="slides">
 					<li class="image_slider"><img src="img/img.png"></li>
-					<li class="image_slider"><img src="img/"></li>
-					<li class="image_slider"><img src="img/"></li>
+					<li class="image_slider "><img src="img/img.png"></li>
+					<li class="image_slider "><img src="img/img.png"></li>
 				</ul>
 			</div>
-  			<a class="jcarousel--next" href="#"><input type="checkbox"></a>
-  			<a class="jcarousel--next" href="#"><input type="checkbox"></a>
-  			<a class="jcarousel--next" href="#"><input type="checkbox"></a>
+			<p class="jcarousel-pagination">
+				<a class="pagination-link" href="#1"></a>
+				<a class="pagination-link" href="#2"></a>
+				<a class="pagination-link" href="#3"></a>
+			</p>
 		</div>
 		<div class="articles">
 			<article class="article__advantage">
 				<div class="article__number">01</div>
-				<div class="article__icon icon__power"></div>
-				<h3 class="article__title">Power Inside</h3>
-				<div class="article__text">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. </div>
-				<div class="article__more">
-				<a class="article__more article__link" href="#">Read More&rarr;</a>
+				<div class="article_inner">
+					<div class="article__icon icon__power"></div>
+					<h3 class="article__title">Power Inside</h3>
+					<div class="article__text">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. </div>
+					<div class="article__more">
+						<a class="article__more article__link" href="#">Read More&rarr;</a>
+					</div>
 				</div>
 			</article>
 			<article class="article__advantage">
 				<div class="article__number">02</div>
-				<div class="article__icon icon__tech"></div>
-				<h3 class="article__title">New Technologies</h3>
-				<div class="article__text">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. </div>
-				<div class="article__more">
-				<a class="article__more article__link" href="#">Read More&rarr;</a>
+				<div class="article_inner">
+					<div class="article__icon icon__tech"></div>
+					<h3 class="article__title">New Technologies</h3>
+					<div class="article__text">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. </div>
+					<div class="article__more">
+						<a class="article__more article__link" href="#">Read More&rarr;</a>
+					</div>
 				</div>
+
 			</article>
 			<article class="article__advantage">
 				<div class="article__number">03</div>
-				<div class="article__icon icon__support"></div>
-				<h3 class="article__title">Fast Support</h3>
-				<div class="article__text">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. </div>
-				<div class="article__more">
-				<a class="article__more article__link" href="#">Read More&rarr;</a>
+				<div class="article_inner">
+					<div class="article__icon icon__support"></div>
+					<h3 class="article__title">Fast Support</h3>
+					<div class="article__text">In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. </div>
+					<div class="article__more">
+						<a class="article__more article__link" href="#">Read More&rarr;</a>
+					</div>
 				</div>
 			</article>
 		</div>
 		<main class="main">
-			<h2 class="main__title">Our Sevices</h2>
+			<h2 class="main__title">Our Services</h2>
 			<div class="main__items">
-				<div class="item__images">
-					<a class="item__link item__shedule" href="#">Schedule Services</a>
+				<div class="item__block">
+					<figure class="item__image">
+						<div class="item__schedule"></div>
+						<div class="item__hover"></div>
+						<figcaption><a class="item__link" href="#">Schedule Services</a></figcaption>
+					</figure>
 				</div>
-				<div class="item__images">
-					<a class="item__link item__maintence" href="#">Preventive Maintence</a>
+				<div class="item__block">
+					<figure class="item__image">
+						<div class="item__maintence"></div>
+						<div class="item__hover"></div>
+						<figcaption> <a class="item__link" href="#">Preventive Maintence</a>
+						</figcaption>
+					</figure>
 				</div>
-				<div class="item__images">
-					<a class="item__link item__tires" href="#">Tire &amp; Wheel Services</a>
+				<div class=item__block>
+					<figure class="item__image">
+						<div class="item__tires"></div>
+						<div class="item__hover"></div>
+						<figcaption><a class="item__link " href="#">Tire &amp; Wheel Services</a>
+						</figcaption>
+					</figure>
 				</div>
-				<div class="item__images">
-					<a class="item__link item__repair" href="#">Repair Services</a>
+				<div class="item__block">
+					<figure class="item__image">
+						<div class="item__repair"></div>
+						<div class="item__hover"></div>
+						<figcaption> <a class="item__link " href="#">Repair Services</a>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</main>
 		<div class="news">
 			<div class="news__block latest__news">
 				<h2 class="news__title">Latest News</h2>
-					<div class="latest__news latest__item">
-						<div class="latest__item news__img"></div>
-						<div class="latest__item item__title">Advanced Machinery Helps Improve Quality</div>
-						<div class="latest__item item__author">by <a href="#">cmsmasters</a></div>
-						<span class="latest__item item__comments">Comments <a href="#">(6)</a></span>
-						<div class="latest__item item__text">
-							In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. 
-						</div>
+				<div class="latest__news">
+					<div class="latest__item news__img1"></div>
+					<div class="latest__item item__text">
+						<h4 class="item__title">Advanced Machinery Helps Improve Quality</h4>
+						<p class="item__author">by <a href="#">cmsmasters</a></p>
+						<span class=" item__comments">Comments <a href="#">(6)</a></span>
+						<p class=" item__note">
+							In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc.
+						</p>
 					</div>
-					<div class="latest__news latest__item">
-						<div class="latest__item news__img"></div>
-						<div class="latest__item item__title">Powerful Techniques for Advanced Service</div>
-						<div class="latest__item item__author">by <a href="#">cmsmasters</a></div>
+				</div>
+				<div class="latest__news latest__item">
+					<div class="latest__item news__img2"></div>
+					<h4 class="latest__item item__title">Powerful Techniques for Advanced Service</h4>
+						<p class="latest__item item__author">by <a href="#">cmsmasters</a></p>
 						<span class="latest__item item__comments">Comments <a href="#">(3)</a></span>
-						<div class="latest__item item__text">
-							In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. 
+						<p class="latest__item item__text">
+							In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc.
+						</p>
+					</div>
+				</div>
+				<div class="news__block banners__block">
+					<h2 class="news__title">Banners Place</h2>
+					<div class="banners__item" id="accordion">
+						<h3>Accordion panel 1</h3>
+						<div>
+							<p> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+							</p>
+						</div>
+						<h3>Accordion panel 2</h3>
+						<div>
+							<p> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+							</p>
+						</div>
+						<h3>Accordion panel 3</h3>
+						<div>
+							<p> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+							</p>
+						</div>
+						<h3>Accordion panel 4</h3>
+						<div>
+							<p> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+							</p>
 						</div>
 					</div>
-			</div>
-			<div class="news__block banners__block">
-				<h2 class="news__title">Banners Place</h2>
-				<div class="banners__item" id="accordion">
-					<h3>Accordion panel 1</h3>
-					<div>
-						<p> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-							ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-							amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-							odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-						</p>
- 					</div>
- 					<h3>Accordion panel 2</h3>
-					<div>
-						<p> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-							ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-							amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-							odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-						</p>
- 					</div>
- 					<h3>Accordion panel 3</h3>
-					<div>
-						<p> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-							ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-							amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-							odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-						</p>
- 					</div>
- 					<h3>Accordion panel 4</h3>
-					<div>
-						<p> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-							ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-							amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-							odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-						</p>
- 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="companies">
-			<div class="companies__item">
-				<a class="companies__link" href="#"></a>
-			</div>
-			<div class="companies__item">
-				<a class="companies__link" href="#"></a>
-			</div>
-			<div class="companies__item">
-				<a class="companies__link" href="#"></a>
-			</div>
-			<div class="companies__item">
-				<a class="companies__link" href="#"></a>
-			</div>
-			<div class="companies__item">
-				<a class="companies__link" href="#"></a>
-			</div>
-			<div class="companies__item">
-				<a class="companies__link" href="#"></a>
-			</div>
-		</div>
-		<footer class="footer">
-			<div class="footer__row">
-				<div class="footer__block block__socials">
-					<h4 class="footer__block block__title">SOCIALS</h4>
-					<ul>
-						<li class="footer__block block__item"><a href="https://www.facebook.com/">Facebook</a></li>
-						<li class="footer__block block__item"><a href="https://www.flickr.com/">Flickr</a></li>
-						<li class="footer__block block__item"><a href="https://www.twitter.com/">Twitter</a></li>
-						<li class="footer__block block__item"><a href="https://www.vimeo.com/">Vimeo</a></li>
-					</ul>
+			<div class="companies">
+				<div class="companies__item">
+					<a class="companies__link" href="#"></a>
 				</div>
-				<div class="footer__block block__links">
-					<h4 class="footer__block block__title">LINKS</h4>
-					<ul>
-						<li class="footer__block block__item"><a href="#">How to write a blog</a></li>
-						<li class="footer__block block__item"><a href="#">Create a blog in 4 steps</a></li>
-						<li class="footer__block block__item"><a href="#">15 Tips to increase Traffic</a></li>
-						<li class="footer__block block__item"><a href="#">20 Blog post ideas</a></li>
-					</ul>
+				<div class="companies__item">
+					<a class="companies__link" href="#"></a>
 				</div>
-				<div class="footer__block block__blogroll">
-					<h4 class="footer__block block__title">BLOGROLL</h4>
-					<ul>
-						<li class="footer__block block__item"><a href="#">Blogs blog</a></li>
-						<li class="footer__block block__item"><a href="#">Roll Up Roll Up</a></li>
-						<li class="footer__block block__item"><a href="#">Blog free</a></li>
-						<li class="footer__block block__item"><a href="#">Wordpress Blog</a></li>
-					</ul>
+				<div class="companies__item">
+					<a class="companies__link" href="#"></a>
 				</div>
-				<div class="footer__block block__about">
-					<h4 class="footer__block block__title">ABOUT US</h4>
-					<ul>
-						<li class="footer__block block__item"><a href="#">Agriculture</a></li>
-						<li class="footer__block block__item"><a href="#">Harveast</a></li>
-						<li class="footer__block block__item"><a href="#">Company news</a></li>
-						<li class="footer__block block__item"><a href="#">Investor relations</a></li>
-					</ul>
+				<div class="companies__item">
+					<a class="companies__link" href="#"></a>
+				</div>
+				<div class="companies__item">
+					<a class="companies__link" href="#"></a>
+				</div>
+				<div class="companies__item">
+					<a class="companies__link" href="#"></a>
 				</div>
 			</div>
-			<div class="footer__row">
-				<span class="footer__item location">
+			<footer class="footer">
+				<div class="footer__row">
+					<div class="footer__block block__socials">
+						<h4 class="footer__block block__title">SOCIALS</h4>
+						<ul>
+							<li class="footer__block block__item"><a href="https://www.facebook.com/">Facebook</a></li>
+							<li class="footer__block block__item"><a href="https://www.flickr.com/">Flickr</a></li>
+							<li class="footer__block block__item"><a href="https://www.twitter.com/">Twitter</a></li>
+							<li class="footer__block block__item"><a href="https://www.vimeo.com/">Vimeo</a></li>
+						</ul>
+					</div>
+					<div class="footer__block block__links">
+						<h4 class="footer__block block__title">LINKS</h4>
+						<ul>
+							<li class="footer__block block__item"><a href="#">How to write a blog</a></li>
+							<li class="footer__block block__item"><a href="#">Create a blog in 4 steps</a></li>
+							<li class="footer__block block__item"><a href="#">15 Tips to increase Traffic</a></li>
+							<li class="footer__block block__item"><a href="#">20 Blog post ideas</a></li>
+						</ul>
+					</div>
+					<div class="footer__block block__blogroll">
+						<h4 class="footer__block block__title">BLOGROLL</h4>
+						<ul>
+							<li class="footer__block block__item"><a href="#">Blogs blog</a></li>
+							<li class="footer__block block__item"><a href="#">Roll Up Roll Up</a></li>
+							<li class="footer__block block__item"><a href="#">Blog free</a></li>
+							<li class="footer__block block__item"><a href="#">Wordpress Blog</a></li>
+						</ul>
+					</div>
+					<div class="footer__block block__about">
+						<h4 class="footer__block block__title">ABOUT US</h4>
+						<ul>
+							<li class="footer__block block__item"><a href="#">Agriculture</a></li>
+							<li class="footer__block block__item"><a href="#">Harveast</a></li>
+							<li class="footer__block block__item"><a href="#">Company news</a></li>
+							<li class="footer__block block__item"><a href="#">Investor relations</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__row">
+					<span class="footer__item location">
 					<div class="item__img location__icon"></div>
-					<span>BuildHomeLtd Streer Name 123 23 45 Cityname</span> 
-				</span>
-				<span class="footer__item  phone">
+					<span>BuildHomeLtd Streer Name 123 23 45 Cityname</span>
+					</span>
+					<span class="footer__item  phone">
 					<div class="item__img phone__icon"></div>
 					<span>+123 900 123 456</span>
-				</span>
-				<span class="footer__item  mail">
+					</span>
+					<span class="footer__item  mail">
 					<div class= "item__img mail__icon"></div>
 					<span>info@buildhome.web</span>
-				</span>
-				<span class="footer__item copy">
+					</span>
+					<span class="footer__item copy">
 					&copy; 2014 BuildHome
 				</span>
-			</div>
-		</footer>
-	</div>
+				</div>
+			</footer>
+		</div>
 </body>
+
 </html>

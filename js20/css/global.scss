@@ -1,0 +1,284 @@
+	@import 'reset';
+	@mixin clearfix() {
+		&:before,
+		&:after {
+			content: "";
+			display: table;
+		}
+		&:after {
+			clear: both;
+		}
+	}
+	;
+	@mixin sprite ($url, $sprite-position, $height, $width) {
+		background: $url;
+		background-position: $sprite-position;
+		width: $width;
+		height: $height;
+	}
+	;
+	$font-stack: "Ubuntu Condensed",
+	sans-serif;
+	$primary-color: #fff;
+	$primary-bg: #2a2d32;
+	$color-hover:#f4b60d;
+	$colorlight:#828385;
+	$yellow:#f4b60d;
+	$black:#000;
+	body {
+		font-family: $font-stack;
+	}
+	.wrapper {
+		width: 100%;
+		margin: 15px auto;
+	}
+	.header {
+		@include clearfix();
+		width: 86%;
+		margin: 0 auto;
+	}
+	.header__social {
+		float: right;
+		padding-top: 20px;
+	}
+	.header__logo {
+		float: left;
+	}
+	.header__link {
+		display: inline-block;
+	}
+	.social__link {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	.social__fb {
+		@include sprite( url(../../img/socnet.png), 3px 67px, 20px, 25px);
+	}
+	.social__twitter {
+		@include sprite( url(../../img/socnet.png), -31px 67px, 20px, 25px);
+	}
+	.social__rss {
+		@include sprite( url(../../img/socnet.png), -65px 67px, 20px, 25px);
+	}
+	.social__li {
+		@include sprite( url(../../img/socnet.png), -98px 67px, 20px, 25px);
+	}
+	.social__skype {
+		@include sprite( url(../../img/socnet.png), -131px 67px, 20px, 25px);
+	}
+	.nav {
+		@include clearfix();
+		@extend .header;
+		background-color: $primary-bg;
+		height: 55px;
+		margin-bottom: 40px;
+	}
+	.nav__item {
+		display: inline-block;
+	}
+	.nav__link {
+		display: inline-block;
+		padding: 20px 40px;
+		color: $primary-color;
+		font-size: 14px;
+		border-right: 1px solid #000;
+	}
+	.nav__link:hover {
+		color: $color-hover;
+	}
+	.nav__search {
+		.search-button {
+			@extend .nav__link;
+			padding-left: 5px;
+		}
+		float: right;
+	}
+	.link_menu_active {
+		background-color: #248cec;
+	}
+	.input_search {
+		width: 240px;
+		height: 40px;
+		background-color: #35383c;
+		color:$colorlight;
+		border: 1px solid #000;
+		position: relative;
+		padding-left: 15px;
+		margin: 5px;
+	}
+	#search-button {
+		position: absolute;
+		top: 90px;
+		right: 110px;
+		border: none;
+		color: $primary-color;
+	}
+	.slider {
+		width: 100%;
+		position: relative;
+		@include clearfix();
+		.jcarousel {
+			height: 470px;
+			width: 1160px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			ul {
+				width: 200000em;
+				position: relative;
+				li {
+					float: left;
+				}
+			}
+		}
+	}
+	.jcarousel-pagination {
+		position: absolute;
+		bottom: 15px;
+		right: 500px;
+	}
+	.jcarousel-pagination a {
+		text-decoration: none;
+		display: inline-block;
+		color: $primary-color;
+		width: 12px;
+		height: 12px;
+		background: #fff;
+		padding: 3px;
+		margin-right: 2px;
+	}
+	.articles {
+		margin-top: 50px;
+		text-align: center;
+		margin-bottom: 50px;
+		@include clearfix();
+		@extend .header;
+		.article__advantage {
+			display: inline-block;
+			width: 30%;
+			.article__number {
+				float: left;
+				font-size: 90px;
+				color: $colorlight;
+				opacity: 0.2;
+			}
+			.article_inner {
+				text-align: left;
+				float: left;
+				width: 65%;
+				.article__title {
+					font-size: 20px;
+					margin-bottom: 15px;
+				}
+				.article__text {
+					font-family: 'Arial', sans-serif;
+					font-size: 13px;
+					color: #8a8a8a;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+	.icon__power {
+		@include sprite( url(../../img/sprite1.png), 0 75px, 37px, 34px);
+	}
+	.icon__tech {
+		@include sprite( url(../../img/sprite1.png), 72px 75px, 37px, 34px);
+	}
+	.icon__support {
+		@include sprite( url(../../img/sprite1.png), 38px 75px, 37px, 34px);
+	}
+	.article__link {
+		color: $black;
+		font-size: 16px;
+	}
+	.main {
+		width: 100%;
+		text-align: center;
+		background: $primary-bg;
+		.main__title {
+			text-align: left;
+			margin-left: 9%;
+			padding: 15px 0;
+			color: $primary-color;
+		}
+		.item__block {
+			display: inline-block;
+			margin-right: 20px;
+			margin-bottom: 40px;
+			.item__hover {
+				background: url(../../img/hover_img.png);
+				display: none;
+				width: 260px;
+				height: 260px;
+				position: absolute;
+				margin-top: -260px;
+			}
+			figcaption{
+				margin-top: 20px;
+			}
+			.item__link {
+				color: $primary-color;
+				    font-size: 16px;
+			}
+			.item__image:hover {
+				cursor: pointer;
+				.item__hover {
+					display: block;
+				}
+				.item__link {
+					color: $yellow;
+				}
+			}
+		}
+	}
+	.item__schedule {
+		@include sprite( url(../../img/content.png), -17px -4px, 260px, 260px);
+		;
+	}
+	.item__maintence {
+		@include sprite( url(../../img/content.png), -317px -4px, 260px, 260px);
+	}
+	.item__tires {
+		@include sprite( url(../../img/content.png), -616px -4px, 260px, 260px);
+	}
+	.item__repair {
+		@include sprite( url(../../img/content.png), 276px -4px, 260px, 260px);
+	}
+.news{
+	@include clearfix();
+	@extend .main;
+	height: 380px;
+	background:#f7f7f7;
+	width: 100%;
+	.news__block{
+		width: 45%;
+		float: left;
+		margin-top: 50px;
+		.news__title{
+			font-size: 24px;
+    		font-weight: 500;
+		}
+		.latest__news{
+			@include clearfix();
+		
+		.latest__item{
+			width: 40%;
+			display: inline-block;
+			text-align: left;
+		}
+			.news__img1{
+				@include sprite( url(../../img/news.png), 0 -10px, 163px, 173px);
+				float: left;
+			}
+			.news__img2{
+				@include sprite( url(../../img/news.png), 0 167px, 163px, 173px);
+				float: left;
+			}
+		
+	}
+	}}
+.ui-state-active{
+	background-color: 	$yellow;
+}
