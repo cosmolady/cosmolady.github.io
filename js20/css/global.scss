@@ -17,7 +17,7 @@
 		height: $height;
 	}
 	;
-	$font-stack: "Ubuntu Condensed",
+	$font-stack: "Ubuntu",
 	sans-serif;
 	$primary-color: #fff;
 	$primary-bg: #2a2d32;
@@ -56,7 +56,7 @@
 		@include sprite( url(../../img/socnet.png), 3px 67px, 20px, 25px);
 	}
 	.social__twitter {
-		@include sprite( url(../../img/socnet.png), -31px 67px, 20px, 25px);
+		@include sprite( url(../../img/socnet1.png), -31px 67px, 20px, 25px);
 	}
 	.social__rss {
 		@include sprite( url(../../img/socnet.png), -65px 67px, 20px, 25px);
@@ -66,6 +66,21 @@
 	}
 	.social__skype {
 		@include sprite( url(../../img/socnet.png), -131px 67px, 20px, 25px);
+	}
+.social__fb:hover {
+		@include sprite( url(../../img/socnet-hover.png), 3px 67px, 20px, 25px);
+	}
+	.social__twitter:hover {
+		@include sprite( url(../../img/socnet-hover.png), -31px 67px, 20px, 25px);
+	}
+	.social__rss:hover {
+		@include sprite( url(../../img/socnet-hover.png), -65px 67px, 20px, 25px);
+	}
+	.social__li:hover {
+		@include sprite( url(../../img/socnet-hover.png), -98px 67px, 20px, 25px);
+	}
+	.social__skype:hover {
+		@include sprite( url(../../img/socnet-hover.png), -131px 67px, 20px, 25px);
 	}
 	.nav {
 		@include clearfix();
@@ -101,7 +116,7 @@
 		width: 240px;
 		height: 40px;
 		background-color: #35383c;
-		color:$colorlight;
+		color: $colorlight;
 		border: 1px solid #000;
 		position: relative;
 		padding-left: 15px;
@@ -215,12 +230,12 @@
 				position: absolute;
 				margin-top: -260px;
 			}
-			figcaption{
+			figcaption {
 				margin-top: 20px;
 			}
 			.item__link {
 				color: $primary-color;
-				    font-size: 16px;
+				font-size: 16px;
 			}
 			.item__image:hover {
 				cursor: pointer;
@@ -246,39 +261,147 @@
 	.item__repair {
 		@include sprite( url(../../img/content.png), 276px -4px, 260px, 260px);
 	}
-.news{
-	@include clearfix();
-	@extend .main;
-	height: 380px;
-	background:#f7f7f7;
-	width: 100%;
-	.news__block{
-		width: 45%;
-		float: left;
-		margin-top: 50px;
-		.news__title{
-			font-size: 24px;
-    		font-weight: 500;
-		}
-		.latest__news{
-			@include clearfix();
-		
-		.latest__item{
-			width: 40%;
+	.news {
+		@include clearfix();
+		@extend .main;
+		background: #f7f7f7;
+		width: 100%;
+		height: 470px;
+		.news__block {
+			width: 45%;
 			display: inline-block;
-			text-align: left;
+			margin-top: 50px;
+			.news__title {
+				font-size: 24px;
+				font-weight: 500;
+				text-align: left;
+				margin-bottom: 30px;
+			}
+			.latest__news {
+				@include clearfix();
+				.latest__item {
+					width: 60%;
+					display: inline-block;
+					text-align: left;
+					color: $colorlight;
+				}
+				.news__img1 {
+					@include sprite( url(../../img/news.png), 0 -10px, 163px, 173px);
+					float: left;
+				}
+				.news__img2 {
+					@include sprite( url(../../img/news.png), 0 167px, 163px, 173px);
+					float: left;
+				}
+				.item__title {
+					font-weight: 500;
+					padding: 10px 0;
+				}
+				.item__author {
+					display: inline-block;
+				}
+				.item__note {
+					padding: 25px 0;
+				}
+			}
 		}
-			.news__img1{
-				@include sprite( url(../../img/news.png), 0 -10px, 163px, 173px);
-				float: left;
-			}
-			.news__img2{
-				@include sprite( url(../../img/news.png), 0 167px, 163px, 173px);
-				float: left;
-			}
-		
+	}
+	.ui-state-active {
+		background-color: $yellow;
+	}
+	#text__link {
+		color: #248cec;
+	}
+
+.companies{
+	@extend .articles;
+	.companies__item{
+		display: inline-block;
+		margin-right: 65px;
+		a{
+			display: block;
+		}
+	.item1{
+			@include sprite( url(../../img/companies.png), 0 -10px, 55px, 119px);
+	}
+	.item2{
+			@include sprite( url(../../img/companies.png), -191px -10px, 55px, 119px);
+	}
+	.item3{
+			@include sprite( url(../../img/companies.png), -411px -10px, 55px, 162px);
+	}
+	.item4{
+			@include sprite( url(../../img/companies.png), -643px -10px, 55px, 109px);
+	}
+	.item5{
+			@include sprite( url(../../img/companies.png), 284px -10px, 55px, 119px);
+	}
+	.item6{
+			@include sprite( url(../../img/companies.png), 91px -10px, 55px, 119px);
 	}
 	}}
-.ui-state-active{
-	background-color: 	$yellow;
+.footer{
+		@extend .main;
+	.footer__row{
+		width: 100%;
+		    padding-top: 25px;
+		.footer__block{
+			display: inline-block;
+			width: 20%;
+			.block__title{
+				text-align: left;
+				color: #fff;
+				padding: 35px 0;
+			}
+			ul li{
+				border-bottom: 1px solid #828385;
+				width: 90%;
+   				 height: 32px;
+				    text-align: left;
+			}
+				ul li:last-child{
+					border: none;
+				}
+				a{
+					color: $colorlight;
+					font-size: 14px;
+				}
+			a:hover{
+				@extend #text__link;
+			}
+				
+			}
+			
+	}
+adress{
+			background-color: #35383c;
+		height: 75px;
+    display: block;
+	.footer__item{
+		display: inline-block;
+		color: $colorlight;
+					font-size: 14px;
+		padding: 15px;
+		.location__icon{
+			@include sprite( url(../../img/footer_sprite.png), 0 0, 24px, 35px);
+		}
+		.phone__icon{
+			@include sprite( url(../../img/footer_sprite.png), 200px 0, 24px, 35px);
+		}
+		.mail__icon{
+			@include sprite( url(../../img/footer_sprite.png), 25px 0, 22px, 23px);
+		}
+		.item__img{
+			display: inline-block;
+			margin-left: 5px;
+		}
+		
+	}
+	.copy{
+			position: absolute;
+    right: 0;
+		}
 }
+}
+	
+

@@ -9,6 +9,12 @@ $('.jcarousel-pagination')
 		$(this).removeClass('active');
 	})
 	.jcarouselPagination();
-$( "#accordion" ).accordion();
+var icons = {
+      header: "ui-icon-plus",
+      activeHeader: "ui-icon-minus"
+    };
+    $( "#accordion" ).accordion({
+      icons: icons
+    });
 
 });
