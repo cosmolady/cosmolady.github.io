@@ -88,47 +88,56 @@
 		background-color: $primary-bg;
 		height: 55px;
 		margin-bottom: 40px;
-	}
+		.nav__menu{
+			width: 79%;
+		}
+		.nav__search{
+			width: 20%;
+		}
 	.nav__item {
 		display: inline-block;
-	}
+	
 	.nav__link {
 		display: inline-block;
 		padding: 20px 40px;
 		color: $primary-color;
 		font-size: 14px;
 		border-right: 1px solid #000;
-	}
+		}
 	.nav__link:hover {
 		color: $color-hover;
-	}
+		}
 	.nav__search {
 		.search-button {
 			@extend .nav__link;
 			padding-left: 5px;
 		}
 		float: right;
+		
 	}
+		.search__input{
+			width: 30%;
+		}
 	.link_menu_active {
 		background-color: #248cec;
 	}
 	.input_search {
-		width: 240px;
+//		width: 240px;
 		height: 40px;
 		background-color: #35383c;
 		color: $colorlight;
 		border: 1px solid #000;
 		position: relative;
-		padding-left: 15px;
-		margin: 5px;
+//		padding-left: 15px;
+//		margin: 5px;
 	}
 	#search-button {
 		position: absolute;
 		top: 90px;
-		right: 110px;
+		right: 11%;
 		border: none;
 		color: $primary-color;
-	}
+		}}}
 	.slider {
 		width: 100%;
 		position: relative;
@@ -151,7 +160,8 @@
 	.jcarousel-pagination {
 		position: absolute;
 		bottom: 15px;
-		right: 500px;
+		right: 50%;
+		
 	}
 	.jcarousel-pagination a {
 		text-decoration: none;
@@ -162,7 +172,12 @@
 		background: #fff;
 		padding: 3px;
 		margin-right: 2px;
+		
 	}
+ .jcarousel-pagination .active{
+	background-color: $primary-bg;
+	 color: $primary-bg;
+}
 	.articles {
 		margin-top: 50px;
 		text-align: center;
@@ -266,7 +281,7 @@
 		@extend .main;
 		background: #f7f7f7;
 		width: 100%;
-		height: 470px;
+		padding-bottom: 40px;
 		.news__block {
 			width: 45%;
 			display: inline-block;
@@ -337,7 +352,7 @@
 			@include sprite( url(../../img/companies.png), 284px -10px, 55px, 119px);
 	}
 	.item6{
-			@include sprite( url(../../img/companies.png), 91px -10px, 55px, 119px);
+			@include sprite( url(../../img/companies.png), 91px -1px, 61px, 86px);
 	}
 	}}
 .footer{
@@ -397,10 +412,6 @@ adress{
 		}
 		
 	}
-	.copy{
-			position: absolute;
-    right: 0;
-		}
 }
 }
 	
