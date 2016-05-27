@@ -34,7 +34,7 @@
 	}
 	.header {
 		@include clearfix();
-		width: 86%;
+		width: 1160px;
 		margin: 0 auto;
 	}
 	.header__social {
@@ -224,14 +224,18 @@
 		font-size: 16px;
 	}
 	.main {
-		width: 100%;
+		width: 1160px;
 		text-align: center;
 		background: $primary-bg;
+		margin: 0 auto;
 		.main__title {
 			text-align: left;
 			margin-left: 9%;
 			padding: 15px 0;
 			color: $primary-color;
+		}
+		.main__items{
+			padding: 14px;
 		}
 		.item__block {
 			display: inline-block;
@@ -280,7 +284,7 @@
 		@include clearfix();
 		@extend .main;
 		background: #f7f7f7;
-		width: 100%;
+		width: 1160px;
 		padding-bottom: 40px;
 		.news__block {
 			width: 45%;
