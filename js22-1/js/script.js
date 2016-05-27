@@ -1,5 +1,5 @@
 var app = {
-	function pow(x, n) {
+	pow : function(x, n) {
   var result = 1;
 
   if (n < 0) {
@@ -16,5 +16,5 @@ var app = {
 //  var x = prompt("Enter number", "");
 //  var n = prompt("Enter power", "");
 
-  console.log ('result =', pow(x,n));
- module.exports = pow;
+//  console.log ('result =', pow(x,n));
+ module.exports = app;
