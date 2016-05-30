@@ -1,14 +1,38 @@
 body{
-	font: 20px 'Open Sans';
+	font-family: 'Open Sans';
 }
+li{
+    list-style: none;
+}
+.wrapper{
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
+}
+.item-list{
+}
+
 .item-delete{
-	display: inline-block;
-	background: #ccc;
-	width: 20px;
-	height: 20px;
 	cursor: pointer;
 	text-align: center;
+ padding:5px 10px; 
+ border:solid 1px #e3091b; 
+ border-radius: 3px; 
+ color:#eb2121; 
+ background-color:#e89ca7; 
+}
+  .item-delete:hover{
+ padding:5px 10px; 
+ border:solid 1px #f5f536; 
+ border-radius: 3px; 
+ font-weight:bold; 
+ color:#eb2121; 
+ background:#f5f534; 
+  
 }
 .item-delete{
 	display: inline-block;
+}
+.item-save{
+    display: none;
 }

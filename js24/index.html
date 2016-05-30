@@ -12,19 +12,21 @@
 <body>
 	<script type="text/template" id="wrapper-template">
 		<div class="wrapper">
+        	<h1>ToDo List</h1>
+
 		<ul class="item-list"></ul>
-		<div class="controls">
+		<div class="controlls">
 			<input type="text" class="item-value">
             <button class="item-add">Add</button>
+            <button class="item-save">Save</button>
 		</div>
 	</div>
 	</script>
 	<script type="text/template" id="list-template">
 		<%for(var i=0;i<data.length;i++){%>
-		<li><%= data[i]%><span data-value="<%= data[i]%>" class="item-delete">x</span><button data-value="<%= data[i]% class="edit-add">Edit</button></li>
+		<li><%= data[i]%><span data-value="<%= data[i]%>" class="item-delete">x</span><button data-value="<%= data[i]%>" class="edit-add">Edit</button></li>
 
 		<%};%>
 	</script>
-	
 </body>
 </html>
