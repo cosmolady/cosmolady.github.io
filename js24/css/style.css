@@ -1,0 +1,14 @@
+body{
+	font: 20px 'Open Sans';
+}
+.item-delete{
+	display: inline-block;
+	background: #ccc;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	text-align: center;
+}
+.item-delete{
+	display: inline-block;
+}

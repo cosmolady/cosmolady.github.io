@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MVC</title>
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="js/tmpl.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+		<ul class="item-list"></ul>
+		<div class="controls">
+			<input type="text" class="item-value">
+            <button class="item-add">Add</button>
+		</div>
+	</div>
+	</script>
+	<script type="text/template" id="list-template">
+		<%for(var i=0;i<data.length;i++){%>
+		<li><%= data[i]%><span data-value="<%= data[i]%>" class="item-delete">x</span><button data-value="<%= data[i]% class="edit-add">Edit</button></li>
+
+		<%};%>
+	</script>
+	
+</body>
+</html>
