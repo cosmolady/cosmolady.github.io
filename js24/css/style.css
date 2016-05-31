@@ -1,38 +1,94 @@
-body{
-	font-family: 'Open Sans';
+body {
+	font-family: 'Open Sans', sans-serif;
 }
-li{
-    list-style: none;
+li {
+	list-style: none;
 }
-.wrapper{
-    width: 500px;
-    margin: 50px auto;
-    text-align: center;
+.wrapper {
+	width: 500px;
+	margin: 50px auto;
+	text-align: center;
+	background: #87CEEB;
+	padding: 15px;
 }
-.item-list{
+.item-list {
+	position: relative;
+	padding: 25px 20px;
+	width: 400px;
 }
-
-.item-delete{
+.item-list li {
+	display: block;
+	overflow: hidden;
+	margin-top: 10px;
+	text-align: left;
+	list-style: none;
+	font-size: 20px;
+}
+.item-list,
+.controlls {
+	display: block;
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+.item-delete {
+	position: absolute;
+	right: 95px;
 	cursor: pointer;
 	text-align: center;
- padding:5px 10px; 
- border:solid 1px #e3091b; 
- border-radius: 3px; 
- color:#eb2121; 
- background-color:#e89ca7; 
+	padding: 0px 10px;
+	border: solid 1px #e3091b;
+	border-radius: 3px;
+	color: #eb2121;
+	background-color: #e89ca7;
 }
-  .item-delete:hover{
- padding:5px 10px; 
- border:solid 1px #f5f536; 
- border-radius: 3px; 
- font-weight:bold; 
- color:#eb2121; 
- background:#f5f534; 
-  
+.edit-add {
+	position: absolute;
+	right: 25px;
+	padding: 4px 15px;
+	border: solid 1px #006400;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #32CD32;
 }
-.item-delete{
-	display: inline-block;
+.item-delete:hover {
+	padding: 0px 10px;
+	border: solid 1px #f5f536;
+	border-radius: 3px;
+	font-weight: bold;
+	color: #eb2121;
+	background: #f5f534;
 }
-.item-save{
-    display: none;
+.edit-add:hover {
+	padding: 4px 15px;
+	border: solid 1px #f5f536;
+	border-radius: 3px;
+	font-weight: bold;
+	color: #000;
+	background: #00FF00;
+}
+.item-save {
+	display: none;
+}
+.item-value {
+	padding: 4px 15px;
+	background: #B0E0E6;
+	color: #00008B;
+	border: solid 1px #191970;
+	border-radius: 3px;
+}
+.controlls button {
+	padding: 4px 15px;
+	border: solid 1px #006400;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #32CD32;
+}
+.controlls button:not([disabled]):hover {
+	padding: 4px 15px;
+	border: solid 1px #f5f536;
+	border-radius: 3px;
+	font-weight: bold;
+	color: #000;
+	background: #00FF00;
 }
