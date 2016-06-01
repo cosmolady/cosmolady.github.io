@@ -19,7 +19,7 @@ gulp.task('sass', function () {
 })
 
 gulp.task('image', function() {			
-	gulp.src(['img/*'])
+	gulp.src(['img/images/*'])
         .pipe(imagemin())
         .pipe(gulp.dest('img/release'));
 })		

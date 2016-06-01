@@ -15,17 +15,19 @@ body{
 	width: 100%;
 	height: 540px;
 	margin: 0 auto;
-	background: url(../../img/header.svg);
+	background: url(../../img/bg.jpg) top center no-repeat;
 	color:$colorwhite;
-	padding: 20px;
+    
 	&__wrapper {
 		max-width: 940px;
 		margin: 0 auto;
 		overflow: hidden;
+        text-align: center;
 	}
 	.login{
 		font:$fontMB14;
 		text-align: center;
+        margin-top: 25px;
 		&--signup{
 			@include whiteblock();
 		}
@@ -48,7 +50,8 @@ body{
 		@include redblock();
 		font:$fontMB14;
 		display: block;
-		margin-top: 15px;
+		margin: 15px auto;
+        width: 225px;
 	}
 }
 
