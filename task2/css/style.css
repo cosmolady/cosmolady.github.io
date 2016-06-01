@@ -27,30 +27,27 @@ body {
    }
 
 .header li {
-<<<<<<< HEAD
+
   display : inline;
 }
 
 .page {
 	height: 753px;
   width: 1050px;
-=======
+
 	display : inline;
 }
 
 .page {
 	height: 850px;
 	width: 1050px;
->>>>>>> 4297ae70ef858f95207acc07396a76a1f60bcbea
 	padding: 10px 10px 10px 15px;
 	margin: 0px auto 20px;
 	background-color: #ffffff;
 	line-height: 1.5;
-<<<<<<< HEAD
+
   border: 1px solid gainsboro;
-=======
 	border: 1px solid gainsboro;
->>>>>>> 4297ae70ef858f95207acc07396a76a1f60bcbea
 }
 
 .logo {
@@ -69,36 +66,11 @@ body {
     list-style: none;
 }
 
-<<<<<<< HEAD
+
 .menu_main{
   width: 100px;
   margin: 0px 30px 0px 10px;
-=======
-/*
-.menu_main{
-	width: 100px;
-	margin: 0px 30px 0px 10px;
->>>>>>> 4297ae70ef858f95207acc07396a76a1f60bcbea
 }
-
-.menu_item{
-  width: 80px;
-  margin: 0px 0px 0px 10px;
-}
-
-.menu_about{
-  width: 80px;
-  margin: 0px 0px 0px 10px;
-}
-
-.menu_contact{
-  width: 80px;
-  margin: 0px 10px ;
-}
-<<<<<<< HEAD
-=======
-*/
->>>>>>> 4297ae70ef858f95207acc07396a76a1f60bcbea
 
 .sidebar {
     width: 280px; /* Ширина меню */
@@ -127,7 +99,7 @@ body {
   }
 
 .content {
-<<<<<<< HEAD
+
   display: block;
 }
 
@@ -157,7 +129,7 @@ body {
   margin: 0px 30px 0px;
   background: #e1e1e1; /* Цвет фона */
   color: white; /* Цвет текста */
-=======
+
     float: right;
 	width: 650px;
 }
@@ -189,12 +161,10 @@ p {
   	margin: 0px 30px 0px;
   	position: absolute;
 	top: 800px;
->>>>>>> 4297ae70ef858f95207acc07396a76a1f60bcbea
 }
 
 .footer li a{
     float : left;
-<<<<<<< HEAD
     color : #C9EDDB;
     padding : 10px 10px;
     text-decoration : none;
@@ -202,7 +172,6 @@ p {
 
 .footer li a:hover {
     color: #ffe; /* Цвет текста активного пункта */
-=======
     color : black;
     padding : 2px 10px;
     text-decoration : none;
@@ -210,12 +179,10 @@ p {
 }
 
 .footer li a:hover {
->>>>>>> 4297ae70ef858f95207acc07396a76a1f60bcbea
     height: 20px;
     text-decoration: underline;
 }
 
-<<<<<<< HEAD
  .footer li a:hover, .footer li {
     color : #B5E6CD;
     background : grey repeat-x center center;
@@ -227,12 +194,11 @@ p {
 
 .copyright {
   margin-left: 500px;
-=======
+}
  .footer li {
 	 display : inline;
 }
 
 .copyright {
 	margin-left: 500px;
->>>>>>> 4297ae70ef858f95207acc07396a76a1f60bcbea
 }
