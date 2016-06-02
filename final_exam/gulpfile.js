@@ -4,7 +4,6 @@ var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat'); 
 var sass = require('gulp-sass');
-var gulpif = require('gulp-if');
 var glue = require("gulp-sprite-glue");
 
 gulp.task('script', function(){
