@@ -4,6 +4,8 @@ var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat'); 
 var sass = require('gulp-sass');
+var gulpif = require('gulp-if');
+var glue = require("gulp-sprite-glue");
 
 gulp.task('script', function(){
     gulp.src(['js/*.js'])
@@ -22,10 +24,18 @@ gulp.task('image', function() {
 	gulp.src(['img/images/*'])
         .pipe(imagemin())
         .pipe(gulp.dest('img/release'));
-})		
+})
+
+gulp.task('glue', function() {		
+gulp.src("img/sprites")
+	.pipe(glue({
+	    css: 'styles',
+	    img: 'img/release'
+	}));
+})
 
 gulp.task('default', function(){
-	gulp.run('script', 'sass', 'image')
+	gulp.run('script', 'sass', 'image','glue')
 	
  
 	gulp.watch('styles/*.scss', ['sass'], function () {
