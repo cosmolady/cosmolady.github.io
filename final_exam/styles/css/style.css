@@ -84,7 +84,7 @@ body {
   background: url(../../img/release/header.svg) top center no-repeat;
   color: #fff; }
   .header-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
     width: 100%; }
   .header__wrapper {
@@ -198,12 +198,32 @@ body {
   text-align: center; }
   .img-grid p {
     font: 300 18px "Roboto"; }
-  .img-grid .grid-item {
-    width: 200px; }
+  .img-grid .grid {
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto; }
+    .img-grid .grid-item {
+      position: relative;
+      width: 90%;
+      margin: 15px auto; }
+    .img-grid .grid .img__item {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      border-radius: 4px;
+      height: 120px; }
+    .img-grid .grid .img__tag {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      text-align: center;
+      font: bold 22px "Montserrat";
+      color: #fff;
+      text-transform: capitalize; }
   .img-grid .img__search {
     width: 280px;
     border: 1px solid #ccc;
-    color: #999;
+    color: #333;
     font: 300 14px "Roboto";
     margin: 10px;
     padding: 10px;
@@ -245,3 +265,41 @@ body {
     .footer__wrapper img {
       display: block;
       margin: 15px auto; }
+
+/*MEDIA QUERIES*/
+@media (min-device-width: 768px) and (max-device-width: 1024px) {
+  .header {
+    height: 700px; }
+    .header__wrapper .login {
+      float: right;
+      margin: 40px; }
+    .header__wrapper h2 {
+      float: left;
+      margin: 40px; }
+    .header__wrapper h1 {
+      font: bold 52px "Montserrat";
+      margin-top: 210px;
+      padding: 0 100px; }
+      .header__wrapper h1:before, .header__wrapper h1:after {
+        content: "";
+        display: table; }
+      .header__wrapper h1:after {
+        clear: both; }
+    .header__wrapper h3 {
+      font: 300 24px "Roboto";
+      padding-top: 15px; }
+    .header__wrapper .login--find {
+      padding-left: 0;
+      padding-right: 0; }
+  .steps__static {
+    display: none; }
+  .description:before, .description:after {
+    content: "";
+    display: table; }
+  .description:after {
+    clear: both; }
+  .partners:before, .partners:after {
+    content: "";
+    display: table; }
+  .partners:after {
+    clear: both; } }

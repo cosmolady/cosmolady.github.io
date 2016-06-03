@@ -6,9 +6,10 @@
 	<meta charset="UTF-8">
 	<title>Exam</title>
 	<link rel="stylesheet" href="styles/css/style.css">
+	<link rel="stylesheet" href="styles/css/flexslider.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
-    <script src="js/script.js"></script>
+	<script src="js/release/main.script.min.js"></script>
+
 </head>
 
 <body>
@@ -35,27 +36,74 @@
 		<section class="description">
 			<div class="description__wrapper">
 				<h2 class="section__title">How Urlaubsglück works?</h2>
-				<div class="step">
-					<div class="step__container step--1">
-						<span class="step__number">STEP 1</span>
-						<h2 class="step__title">Sed leo enim, condimentum</h2>
-						<p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+				<div class="steps__static">
+					<div class="step">
+						<div class="step__container step--1">
+							<span class="step__number">STEP 1</span>
+							<h2 class="step__title">Sed leo enim, condimentum</h2>
+							<p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+						</div>
+
+					</div>
+					<div class="step">
+						<div class="step__container step--2">
+							<span class="step__number">STEP 2</span>
+							<h2 class="step__title">Morbi velit risus</h2>
+							<p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+						</div>
+					</div>
+					<div class="step">
+						<div class="step__container step--3">
+							<span class="step__number">STEP 3</span>
+							<h2 class="step__title">Sed leo enim, condimentum</h2>
+							<p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="steps__slider">
+
+					<div class="slider__step1">
+						<div class="flexslider1">
+							<ul class="slides">
+								<li><img src="img/release/step1.png" /></li>
+								<li><img src="img/release/step2.png" /></li>
+								<li><img src="img/release/step3.png" /></li>
+							</ul>
+						</div>
+						<div class="custom-navigation--1">
+							<a href="#" class="flex-prev">Prev</a>
+							<a href="#" class="flex-next">Next</a>
+						</div>
+
+					</div>
+					<div class="slider__step2">
+						<div class="flexslider2">
+							<ul class="slides">
+								<li><img src="img/release/step2.png" /></li>
+								<li><img src="img/release/step1.png" /></li>
+								<li><img src="img/release/step3.png" /></li>
+							</ul>
+						</div>
+						<div class="custom-navigation--2">
+							<a href="#" class="flex-prev">Prev</a>
+							<a href="#" class="flex-next">Next</a>
+						</div>
+					</div>
+					<div class="slider__step3">
+						<div class="flexslider3">
+							<ul class="slides">
+								<li><img src="img/release/step3.png" /></li>
+								<li><img src="img/release/step2.png" /></li>
+								<li><img src="img/release/step1.png" /></li>
+							</ul>
+						</div>
+						<div class="custom-navigation--3">
+							<a href="#" class="flex-prev">Prev</a>
+							<a href="#" class="flex-next">Next</a>
+						</div>
 					</div>
 
-				</div>
-				<div class="step">
-					<div class="step__container step--2">
-						<span class="step__number">STEP 2</span>
-						<h2 class="step__title">Morbi velit risus</h2>
-						<p class="step__text">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
-					</div>
-				</div>
-				<div class="step">
-					<div class="step__container step--3">
-						<span class="step__number">STEP 3</span>
-						<h2 class="step__title">Sed leo enim, condimentum</h2>
-						<p class="step__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
-					</div>
+
 				</div>
 			</div>
 		</section>
@@ -79,7 +127,7 @@
 					<li class="partners__item partner--2">
 						<div class="partners__photo photo--partner2">
 							<img src="img/images/partner_photo2.png" alt="Partner">
-    						<div class="icon partners-icon2"></div>
+							<div class="icon partners-icon2"></div>
 						</div>
 						<h3 class="partners__name">Lucas Marsha</h3>
 						<p class="partners__info">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
@@ -87,7 +135,7 @@
 					<li class="partners__item partner--3">
 						<div class="partners__photo photo--partner3">
 							<img src="img/images/partner_photo3.png" alt="Partner">
-    						<div class="icon partners-icon3"></div>
+							<div class="icon partners-icon3"></div>
 						</div>
 						<h3 class="partners__name">Heather Walker</h3>
 						<p class="partners__info">I'm a happy person that loves cats and climbing on mountains.</p>
@@ -95,7 +143,7 @@
 					<li class="partners__item partner--4">
 						<div class="partners__photo photo--partner4">
 							<img src="img/images/partner_photo4.png" alt="Partner">
-    						<div class="icon partners-icon4"></div>
+							<div class="icon partners-icon4"></div>
 						</div>
 						<h3 class="partners__name">Bradley Hunter</h3>
 						<p class="partners__info">Based in Chicago. I love playing tennis and loud music.</p>
@@ -111,13 +159,7 @@
 			<div class="grid__wrapper">
 				<h1 class="section__title">Discover holiday activity ideas</h1>
 				<div class="grid">
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
-					<div class="grid-item"></div>
+
 				</div>
 				<h1 class="section__title">Discover holiday activity ideas</h1>
 				<p>Hi! What are your holiday interests?</p>

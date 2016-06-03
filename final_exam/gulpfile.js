@@ -34,7 +34,7 @@ gulp.src("img/sprites")
 })
 
 gulp.task('default', function(){
-	gulp.run('script', 'sass', 'image','glue')
+	gulp.run('script', 'sass')
 	
  
 	gulp.watch('styles/*.scss', ['sass'], function () {

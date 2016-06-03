@@ -18,7 +18,7 @@ body {
 	background: url(../../img/release/header.svg) top center no-repeat;
 	color: $colorwhite;
     &-overlay{
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba(0,0,0,0.2);
         height: 100%;
         width: 100%;
     }
@@ -151,13 +151,36 @@ body {
 	p {
 		font: $fontRL18;
 	}
-    .grid-item{
-        width: 200px;
-    }
+	.grid{
+		overflow: hidden;
+		max-width: 100%;
+		margin: 0 auto;
+		&-item{
+			position: relative;
+    		width: 90%;
+    		margin: 15px auto;
+		}
+		.img__item{
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+			border-radius: 4px;
+			height: 120px;
+		}
+		.img__tag{
+			position: absolute;
+   			top: 40%;
+			width: 100%;
+			text-align: center;
+			font: $fontMB22;
+			color:$colorwhite;
+			text-transform: capitalize;
+		}
+	}
 	.img__search {
 		width: 280px;
 		border:1px solid $colorgrey;
-		color: #999;
+		color: $colordark;
 		font: $fontRL14;
 		margin: 10px;
 		padding: 10px;
@@ -209,4 +232,50 @@ body {
             margin: 15px auto;
         }
 	}
+}
+
+/*MEDIA QUERIES*/
+@media (min-device-width : 768px) 
+and (max-device-width : 1024px){
+	.header{
+		height: 700px;
+	
+	&__wrapper{
+		.login{
+			float: right;
+			margin: 40px;
+		}
+		h2{
+			float: left;
+			margin: 40px; 
+		}
+		h1{
+			@include clearfix();
+			font: $fontMB52;
+			margin-top: 210px;
+			    padding: 0 100px;
+		}
+		h3{
+			font:$fontRL24;
+			padding-top: 15px;
+
+		}
+		.login--find{
+			padding-left: 0;
+			padding-right: 0;
+		}
+}}
+	.steps__static{
+		display: none;
+	}
+	.description{
+		@include clearfix();
+		
+	}
+	
+	.partners{
+		@include clearfix();
+	}
+
+
 }
