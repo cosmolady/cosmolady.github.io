@@ -127,6 +127,8 @@ body {
 
 .description__wrapper {
   margin-top: 15px; }
+  .description__wrapper .steps__slider {
+    display: none; }
   .description__wrapper .step {
     height: 250px;
     color: #fff;
@@ -293,13 +295,88 @@ body {
       padding-right: 0; }
   .steps__static {
     display: none; }
-  .description:before, .description:after {
-    content: "";
-    display: table; }
-  .description:after {
-    clear: both; }
-  .partners:before, .partners:after {
-    content: "";
-    display: table; }
-  .partners:after {
-    clear: both; } }
+  .description {
+    height: 535px; }
+    .description .jcarousel-wrapper-position {
+      margin: 37px auto;
+      text-align: center;
+      overflow: hidden; }
+    .description .steps__slider {
+      display: block; }
+    .description .jcarousel-wrapper {
+      display: inline-block;
+      width: 235px;
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+      margin: 8px; }
+    .description .jcarousel-1,
+    .description .jcarousel-2,
+    .description .jcarousel-3 {
+      display: block;
+      overflow: hidden;
+      width: 235px;
+      position: relative; }
+    .description .jcarousel-1 ul,
+    .description .jcarousel-2 ul,
+    .description .jcarousel-3 ul {
+      width: 20000em;
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .description .jcarousel-1 li,
+    .description .jcarousel-2 li,
+    .description .jcarousel-3 li {
+      float: left;
+      width: 298px;
+      margin-left: -30px; }
+    .description .jcarousel-1 li img,
+    .description .jcarousel-2 li img,
+    .description .jcarousel-3 li img {
+      width: 100%;
+      height: 400px; }
+    .description .jcarousel-prev-1,
+    .description .jcarousel-prev-2,
+    .description .jcarousel-prev-3 {
+      position: absolute;
+      top: 40px;
+      left: 23px;
+      background: url(../../img/release/arrows_sprite.png) 0 0 no-repeat;
+      width: 30px;
+      height: 55px;
+      display: inline-block;
+      cursor: pointer; }
+    .description .jcarousel-next-1,
+    .description .jcarousel-next-2,
+    .description .jcarousel-next-3 {
+      position: absolute;
+      top: 40px;
+      right: 9px;
+      background: url(../../img/release/arrows_sprite.png) -30px 0px no-repeat;
+      width: 40px;
+      height: 55px;
+      display: inline-block;
+      cursor: pointer; }
+    .description .inner__slider1,
+    .description .inner__slider2,
+    .description .inner__slider3 {
+      position: absolute;
+      margin-top: 130px;
+      text-align: left; }
+      .description .inner__slider1 .step__title,
+      .description .inner__slider2 .step__title,
+      .description .inner__slider3 .step__title {
+        color: #fff; }
+    .description .inner__slider2 {
+      margin-top: 160px; }
+  .partners__list {
+    margin-top: 30px; }
+  .partners__item {
+    display: inline-block;
+    float: left;
+    width: 50%; }
+  .partners__other {
+    clear: both;
+    width: 193px;
+    padding: 10px 0; } }

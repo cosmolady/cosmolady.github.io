@@ -42,17 +42,37 @@ $.getJSON(URL,{per_page:7},(function(data){
         console.log('No hits');
 }));	
 })
- $('.flexslider1').flexslider({
-    animation: "slide",
-    customDirectionNav: $(".custom-navigation--1 a")
-  });
-	$('.flexslider2').flexslider({
-    animation: "slide",
-    ustomDirectionNav: $(".custom-navigation--2 a")
-  });
-	$('.flexslider3').flexslider({
-    animation: "slide",
-    ustomDirectionNav: $(".custom-navigation--3 a")
-  });
-//	$('.flex-control-nav').css('display','none')
+
+    function sliderJcarousel1() {
+    $('.jcarousel-1').jcarousel();
+    $('.jcarousel-prev-1').click(function() {
+    $('.jcarousel-1').jcarousel('scroll', '-=1');
+    });
+    $('.jcarousel-next-1').click(function() {
+        $('.jcarousel-1').jcarousel('scroll', '+=1');
+    });
+}
+     function sliderJcarousel2() {
+    $('.jcarousel-2').jcarousel();
+    $('.jcarousel-prev-2').click(function() {
+    $('.jcarousel-2').jcarousel('scroll', '-=1');
+    });
+    $('.jcarousel-next-2').click(function() {
+        $('.jcarousel-2').jcarousel('scroll', '+=1');
+    });
+}
+     function sliderJcarousel3() {
+    $('.jcarousel-3').jcarousel();
+    $('.jcarousel-prev-3').click(function() {
+    $('.jcarousel-3').jcarousel('scroll', '-=1');
+    });
+    $('.jcarousel-next-3').click(function() {
+        $('.jcarousel-3').jcarousel('scroll', '+=1');
+    });
+}
+    sliderJcarousel1();
+        sliderJcarousel2();
+
+        sliderJcarousel3();
+
 })
