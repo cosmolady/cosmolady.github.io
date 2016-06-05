@@ -8,7 +8,7 @@ $.getJSON(URL,{per_page:7},(function(data){
         var grid=$('.grid');
         
         $.each(data.hits, function(i, hit){
-            grid.append('<div class="grid-item"><img class="img__item" src="'+hit.webformatURL+'"><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
+            grid.append('<div class="grid-item" id="item--'+i+'"><img class="img__item" src="'+hit.webformatURL+'"><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
 		grid.append();
 		});
         	
@@ -33,8 +33,9 @@ $.getJSON(URL,{per_page:7},(function(data){
         var grid=$('.grid');
        grid.html('');
         $.each(data.hits, function(i, hit){
-            grid.append('<div class="grid-item"><img class="img__item" src="'+hit.webformatURL+'"><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
-		grid.append();
+            console.log(i);
+            grid.append('<div class="grid-item" id="item--'+i+'"><img class="img__item" src="'+hit.webformatURL+'"><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
+            
 		});
         	
     }
@@ -71,8 +72,7 @@ $.getJSON(URL,{per_page:7},(function(data){
     });
 }
     sliderJcarousel1();
-        sliderJcarousel2();
-
-        sliderJcarousel3();
+    sliderJcarousel2();
+    sliderJcarousel3();
 
 })

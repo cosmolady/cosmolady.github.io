@@ -104,7 +104,7 @@ body {
     color: #fff; }
   .header h2 {
     margin-top: 130px;
-    font: bold 20px "Montserrat"; }
+    font: bold 21px "Montserrat"; }
   .header h1 {
     margin-top: 35px;
     font: bold 30px "Montserrat"; }
@@ -379,4 +379,206 @@ body {
   .partners__other {
     clear: both;
     width: 193px;
-    padding: 10px 0; } }
+    padding: 10px 0; }
+  .img-grid .grid-item {
+    width: 30%;
+    margin: 10px 10px;
+    display: inline-block; }
+  .img-grid .grid .img__item {
+    height: 311px; }
+  .img-grid .grid #item--4, .img-grid .grid #item--5 {
+    width: 63%; }
+  .img-grid .partners__search {
+    display: inline-block; }
+  .footer {
+    margin-top: 40px;
+    height: 200px; }
+    .footer:before, .footer:after {
+      content: "";
+      display: table; }
+    .footer:after {
+      clear: both; }
+    .footer .footer__wrapper {
+      padding: 25px;
+      width: 80%;
+      margin: 0 auto;
+      position: relative; }
+      .footer .footer__wrapper h2 {
+        float: left;
+        padding-right: 70px; }
+      .footer .footer__wrapper .nav {
+        float: left;
+        padding-right: 70px; }
+      .footer .footer__wrapper h4 {
+        padding: 0; }
+      .footer .footer__wrapper .footer__title {
+        padding: 0 70px 0 0;
+        float: left; }
+      .footer .footer__wrapper span {
+        float: left;
+        padding-top: 3px;
+        margin-left: 0;
+        position: absolute;
+        right: 0; }
+      .footer .footer__wrapper .nav__item {
+        display: block; } }
+
+@media (min-device-width: 1024px) {
+  .header {
+    height: 700px; }
+    .header__wrapper .login {
+      float: right;
+      margin: 47px 1px; }
+      .header__wrapper .login__link {
+        padding: 17px; }
+    .header__wrapper h2 {
+      float: left;
+      margin: 40px; }
+    .header__wrapper h1 {
+      font: bold 52px "Montserrat";
+      margin-top: 215px;
+      padding: 0 175px; }
+      .header__wrapper h1:before, .header__wrapper h1:after {
+        content: "";
+        display: table; }
+      .header__wrapper h1:after {
+        clear: both; }
+    .header__wrapper h3 {
+      font: 300 24px "Roboto";
+      padding-top: 23px; }
+    .header__wrapper .login--find {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 35px; }
+  .steps__static {
+    display: none; }
+  .description {
+    height: 535px; }
+    .description__wrapper {
+      margin-top: 90px; }
+      .description__wrapper .jcarousel-wrapper-position {
+        margin: 21px auto;
+        text-align: center;
+        overflow: hidden; }
+      .description__wrapper .steps__slider {
+        display: block; }
+      .description__wrapper .jcarousel-wrapper {
+        display: inline-block;
+        overflow: hidden;
+        text-align: center;
+        position: relative;
+        margin: 8px; }
+      .description__wrapper .jcarousel-1,
+      .description__wrapper .jcarousel-2,
+      .description__wrapper .jcarousel-3 {
+        display: block;
+        overflow: hidden;
+        width: 298px;
+        position: relative; }
+      .description__wrapper .jcarousel-1 ul,
+      .description__wrapper .jcarousel-2 ul,
+      .description__wrapper .jcarousel-3 ul {
+        width: 20000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0; }
+      .description__wrapper .jcarousel-1 li,
+      .description__wrapper .jcarousel-2 li,
+      .description__wrapper .jcarousel-3 li {
+        float: left;
+        width: 298px; }
+      .description__wrapper .jcarousel-1 li img,
+      .description__wrapper .jcarousel-2 li img,
+      .description__wrapper .jcarousel-3 li img {
+        width: 100%;
+        height: 400px; }
+      .description__wrapper .jcarousel-prev-1,
+      .description__wrapper .jcarousel-prev-2,
+      .description__wrapper .jcarousel-prev-3 {
+        position: absolute;
+        top: 153px;
+        left: 17px;
+        background: url(../../img/release/arrows_sprite.png) 0 0 no-repeat;
+        width: 30px;
+        height: 55px;
+        display: inline-block;
+        cursor: pointer; }
+      .description__wrapper .jcarousel-next-1,
+      .description__wrapper .jcarousel-next-2,
+      .description__wrapper .jcarousel-next-3 {
+        position: absolute;
+        top: 153px;
+        right: 15;
+        background: url(../../img/release/arrows_sprite.png) -30px 0px no-repeat;
+        width: 40px;
+        height: 55px;
+        display: inline-block;
+        cursor: pointer; }
+      .description__wrapper .inner__slider1,
+      .description__wrapper .inner__slider2,
+      .description__wrapper .inner__slider3 {
+        position: absolute;
+        margin-top: 130px;
+        text-align: left; }
+        .description__wrapper .inner__slider1 .step__title,
+        .description__wrapper .inner__slider2 .step__title,
+        .description__wrapper .inner__slider3 .step__title {
+          color: #fff; }
+      .description__wrapper .inner__slider2 {
+        margin-top: 160px; }
+  .partners__list {
+    margin-top: 30px; }
+  .partners__item {
+    display: inline-block;
+    float: left;
+    width: 25%; }
+  .partners__other {
+    clear: both;
+    width: 193px;
+    padding: 10px 0; }
+  .img-grid .grid__wrapper {
+    width: 60%;
+    margin: 0 auto; }
+    .img-grid .grid__wrapper .grid-item {
+      width: 30%;
+      margin: 10px 10px;
+      display: inline-block; }
+    .img-grid .grid__wrapper .grid .img__item {
+      height: 311px; }
+    .img-grid .grid__wrapper .grid #item--4, .img-grid .grid__wrapper .grid #item--5 {
+      width: 63%; }
+    .img-grid .grid__wrapper .partners__search {
+      display: inline-block; }
+  .footer {
+    margin-top: 40px;
+    height: 200px; }
+    .footer:before, .footer:after {
+      content: "";
+      display: table; }
+    .footer:after {
+      clear: both; }
+    .footer .footer__wrapper {
+      padding: 25px;
+      width: 80%;
+      margin: 0 auto;
+      position: relative; }
+      .footer .footer__wrapper h2 {
+        float: left;
+        padding-right: 70px; }
+      .footer .footer__wrapper .nav {
+        float: left;
+        padding-right: 70px; }
+      .footer .footer__wrapper h4 {
+        padding: 0; }
+      .footer .footer__wrapper .footer__title {
+        padding: 0 70px 0 0;
+        float: left; }
+      .footer .footer__wrapper span {
+        float: left;
+        padding-top: 3px;
+        margin-left: 0;
+        position: absolute;
+        right: 0; }
+      .footer .footer__wrapper .nav__item {
+        display: block; } }

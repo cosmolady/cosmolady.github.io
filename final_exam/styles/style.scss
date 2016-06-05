@@ -379,4 +379,259 @@
                 padding: 10px 0;
             }
         }
+        .img-grid{
+            .grid-item{
+                    width: 30%;
+                    margin: 10px 10px;
+                    display: inline-block;
+            }
+            .grid{
+            .img__item{
+                height: 311px;
+            }
+                #item--4, #item--5{
+                    width: 63%;
+                }
+            }
+            .partners__search{
+                display: inline-block;
+            }
+        }
+        .footer{
+                @include clearfix();
+                margin-top: 40px;
+                height: 200px;
+            .footer__wrapper{
+                padding: 25px;
+                width: 80%;
+                margin: 0 auto;
+                position: relative;
+            h2{
+                float: left;
+                padding-right: 70px;
+            }
+            .nav{
+                float: left;
+                padding-right: 70px;
+
+            }
+                h4{
+                    padding: 0;
+                }
+            .footer__title{
+                padding: 0 70px 0 0;
+                float: left;
+            }
+            span{
+                float: left;
+                padding-top: 3px;
+                margin-left: 0;
+                position: absolute;
+                right: 0;
+            }
+            .nav__item{
+                display: block;
+            }
+            }}
+        
     }
+@media (min-device-width: 1024px){
+ .header {
+            height: 700px;
+            &__wrapper {
+                .login {
+                    float: right;
+    margin: 47px 1px;
+                    &__link{
+    padding: 17px;
+                    }
+                }
+                h2 {
+                    float: left;
+                    margin: 40px;
+
+                }
+                h1 {
+                    @include clearfix();
+                    font: $fontMB52;
+                    margin-top: 215px;
+                    padding: 0 175px;
+                }
+                h3 {
+                    font: $fontRL24;
+                    padding-top: 23px;
+                }
+                .login--find {
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-top: 35px;
+                }
+            }
+        }
+    .steps__static {
+            display: none;
+        }
+        .description {
+            height: 535px;
+            &__wrapper{
+                margin-top: 90px;
+
+            .jcarousel-wrapper-position {
+                margin: 21px auto;
+                text-align: center;
+                overflow: hidden;
+            }
+            .steps__slider{
+                display: block;
+            }
+            .jcarousel-wrapper {
+                display: inline-block;
+                overflow: hidden;
+                text-align: center;
+                position: relative;
+                    margin: 8px;
+
+            }
+            
+            .jcarousel-1,
+            .jcarousel-2,
+            .jcarousel-3 {
+                display: block;
+                overflow: hidden;
+                width: 298px;
+                position: relative;
+            }
+            .jcarousel-1 ul,
+            .jcarousel-2 ul,
+            .jcarousel-3 ul {
+                width: 20000em;
+                position: relative;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .jcarousel-1 li,
+            .jcarousel-2 li,
+            .jcarousel-3 li {
+                float: left;
+                width: 298px;
+            }
+            .jcarousel-1 li img,
+            .jcarousel-2 li img,
+            .jcarousel-3 li img {
+                width: 100%;
+                height: 400px;
+            }
+            .jcarousel-prev-1,
+            .jcarousel-prev-2,
+            .jcarousel-prev-3 {
+                position: absolute;
+                    top: 153px;
+    left: 17px;
+                background: url(../../img/release/arrows_sprite.png) 0 0 no-repeat;
+                width: 30px;
+                height: 55px;
+                display: inline-block;
+                cursor: pointer;
+            }
+            .jcarousel-next-1,
+            .jcarousel-next-2,
+            .jcarousel-next-3 {
+                position: absolute;
+                top: 153px;
+                right: 15;
+                background: url(../../img/release/arrows_sprite.png) -30px 0px no-repeat;
+                width: 40px;
+                height: 55px;
+                display: inline-block;
+                cursor: pointer;
+            }
+            .inner__slider1,
+            .inner__slider2,
+            .inner__slider3 {
+                position: absolute;
+                margin-top: 130px;
+                text-align: left;
+                .step__title{
+                    color:$colorwhite;
+                }
+            }
+            .inner__slider2{
+                margin-top: 160px;
+            }
+            }
+        }
+     .partners {
+            &__list{
+                margin-top: 30px;
+            }
+            &__item{
+                display: inline-block;
+                float: left;
+                width: 25%;
+            }
+            &__other{
+                clear: both;
+                width: 193px;
+                padding: 10px 0;
+            }
+        }
+        .img-grid{
+            .grid__wrapper{
+                    width: 60%;
+    margin: 0 auto;
+            
+            .grid-item{
+                    width: 30%;
+                    margin: 10px 10px;
+                    display: inline-block;
+            }
+            .grid{
+            .img__item{
+                height: 311px;
+            }
+                #item--4, #item--5{
+                    width: 63%;
+                }
+            }
+            .partners__search{
+                display: inline-block;
+            }
+        }
+    }
+.footer{
+                @include clearfix();
+                margin-top: 40px;
+                height: 200px;
+            .footer__wrapper{
+                padding: 25px;
+                width: 80%;
+                margin: 0 auto;
+                position: relative;
+            h2{
+                float: left;
+                padding-right: 70px;
+            }
+            .nav{
+                float: left;
+                padding-right: 70px;
+
+            }
+                h4{
+                    padding: 0;
+                }
+            .footer__title{
+                padding: 0 70px 0 0;
+                float: left;
+            }
+            span{
+                float: left;
+                padding-top: 3px;
+                margin-left: 0;
+                position: absolute;
+                right: 0;
+            }
+            .nav__item{
+                display: block;
+            }
+            }}}
