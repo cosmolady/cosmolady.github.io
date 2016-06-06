@@ -34,19 +34,19 @@ gulp.src("img/sprites")
 })
 
 gulp.task('default', function(){
-	gulp.run('script', 'sass')
+	gulp.start('script', 'sass')
 	
  
 	gulp.watch('styles/*.scss', ['sass'], function () {
-	gulp.run('sass');
+	gulp.start('sass');
   })
   
 
 	gulp.watch("js/*.js", function(event){
-    gulp.run('script');
+    gulp.start('script');
   })
    
 	gulp.watch("img/*", function(event){
-    gulp.run('image');
+    gulp.start('image');
   })
 });

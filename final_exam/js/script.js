@@ -6,7 +6,7 @@ var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('');
 $.getJSON(URL,{per_page:7},(function(data){
     if (parseInt(data.totalHits) > 0){
         var grid=$('.grid');
-        
+        grid.html('');
         $.each(data.hits, function(i, hit){
             grid.append('<div class="grid-item" id="item--'+i+'"><img class="img__item" src="'+hit.webformatURL+'"><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
 		});
