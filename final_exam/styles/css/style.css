@@ -100,6 +100,9 @@ body {
       border: 2px solid #fff;
       border-radius: 20px;
       padding: 5px 15px; }
+    .header .login a:hover {
+      color: #ff4e50;
+      border-color: #ff4e50; }
   .header .login__link {
     color: #fff; }
   .header h2 {
@@ -118,6 +121,9 @@ body {
     display: block;
     margin: 15px auto;
     width: 225px; }
+    .header .login--find:hover {
+      background-color: #fff;
+      color: #ff4e50; }
 
 .section__title {
   font: bold 22px "Montserrat";
@@ -126,6 +132,8 @@ body {
   padding: 5px; }
 
 .description__wrapper {
+  max-width: 1024px;
+  margin: 15px auto;
   margin-top: 15px; }
   .description__wrapper .steps__slider {
     display: none; }
@@ -144,8 +152,9 @@ body {
       padding: 10px 40px;
       padding: 6px 14px;
       margin: 10px;
-      letter-spacing: 3px;
-      font: normal 10px "Montserrat"; }
+      letter-spacing: 2px;
+      font: normal 10px "Montserrat";
+      color: #fff; }
     .description__wrapper .step__title {
       padding: 100px 0 0 20px;
       font: bold 24px "Montserrat"; }
@@ -164,37 +173,42 @@ body {
   text-align: center;
   margin-bottom: 25px; }
   .partners__wrapper {
-    padding-top: 15px; }
-    .partners__wrapper .partners__list .partners__item {
-      padding-bottom: 10px; }
-      .partners__wrapper .partners__list .partners__item .partners__photo {
-        position: relative;
-        width: 121px;
-        height: 121px;
-        margin: 0 auto; }
-      .partners__wrapper .partners__list .partners__item .icon {
-        position: absolute;
-        bottom: 0px;
-        right: 0px; }
-      .partners__wrapper .partners__list .partners__item .partners__name {
-        font: bold 14px "Montserrat";
-        color: #333;
-        padding: 10px 0; }
-      .partners__wrapper .partners__list .partners__item .partners__info {
-        font: 300 14px "Roboto";
-        color: #666;
-        padding: 15px 50px; }
-    .partners__wrapper .partners__other {
-      font: bold 14px "Montserrat";
-      display: block;
-      border: 2px solid #fff;
-      border-radius: 20px;
-      padding: 5px 15px;
-      border-color: #ff4e50;
-      color: #ff4e50;
-      width: 225px;
-      margin: 15px auto;
-      padding: 10px 40px; }
+    padding-top: 15px;
+    max-width: 1024px;
+    margin: 0 auto; }
+  .partners__item {
+    padding-bottom: 10px; }
+  .partners__photo {
+    position: relative;
+    width: 121px;
+    height: 121px;
+    margin: 0 auto; }
+  .partners .icon {
+    position: absolute;
+    bottom: -5px;
+    right: -5px; }
+  .partners__name {
+    font: bold 14px "Montserrat";
+    color: #333;
+    padding: 10px 0; }
+  .partners__info {
+    font: 300 14px "Roboto";
+    color: #666;
+    padding: 15px 50px; }
+  .partners__other {
+    font: bold 14px "Montserrat";
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border-color: #ff4e50;
+    color: #ff4e50;
+    width: 225px;
+    margin: 15px auto;
+    padding: 10px 40px; }
+    .partners__other:hover {
+      color: #fff;
+      background-color: #ff4e50; }
 
 .img-grid {
   text-align: center; }
@@ -239,6 +253,10 @@ body {
     margin: 15px auto;
     width: 225px;
     color: #fff; }
+    .img-grid .partners__search:hover {
+      background-color: #fff;
+      color: #ff4e50;
+      border: 2px solid #ff4e50; }
 
 .footer {
   border-top: 4px solid #ff4e50;
@@ -258,6 +276,8 @@ body {
       .footer__wrapper .nav__item .nav__link {
         font: 300 14px "Roboto";
         color: #ccc; }
+        .footer__wrapper .nav__item .nav__link:hover {
+          color: #333; }
     .footer__wrapper span {
       font: bold 10px "Montserrat";
       display: block;
@@ -386,7 +406,8 @@ body {
     display: inline-block; }
   .img-grid .grid .img__item {
     height: 311px; }
-  .img-grid .grid #item--4, .img-grid .grid #item--5 {
+  .img-grid .grid #item--4,
+  .img-grid .grid #item--5 {
     width: 63%; }
   .img-grid .partners__search {
     display: inline-block; }
@@ -430,10 +451,13 @@ body {
       float: right;
       margin: 47px 1px; }
       .header__wrapper .login__link {
-        padding: 17px; }
+        padding: 16px; }
+      .header__wrapper .login--signup {
+        padding: 7px 15px; }
     .header__wrapper h2 {
       float: left;
-      margin: 40px; }
+      margin: 40px;
+      margin: 47px 0; }
     .header__wrapper h1 {
       font: bold 52px "Montserrat";
       margin-top: 215px;
@@ -447,8 +471,7 @@ body {
       font: 300 24px "Roboto";
       padding-top: 23px; }
     .header__wrapper .login--find {
-      padding-left: 0;
-      padding-right: 0;
+      padding: 10px 0;
       margin-top: 35px; }
   .steps__static {
     display: none; }
@@ -509,7 +532,7 @@ body {
       .description__wrapper .jcarousel-next-3 {
         position: absolute;
         top: 153px;
-        right: 15;
+        right: 15px;
         background: url(../../img/release/arrows_sprite.png) -30px 0px no-repeat;
         width: 40px;
         height: 55px;
@@ -519,39 +542,69 @@ body {
       .description__wrapper .inner__slider2,
       .description__wrapper .inner__slider3 {
         position: absolute;
-        margin-top: 130px;
+        margin-top: 157px;
         text-align: left; }
         .description__wrapper .inner__slider1 .step__title,
         .description__wrapper .inner__slider2 .step__title,
         .description__wrapper .inner__slider3 .step__title {
           color: #fff; }
       .description__wrapper .inner__slider2 {
-        margin-top: 160px; }
-  .partners__list {
-    margin-top: 30px; }
-  .partners__item {
-    display: inline-block;
-    float: left;
-    width: 25%; }
-  .partners__other {
-    clear: both;
-    width: 193px;
-    padding: 10px 0; }
+        margin-top: 187px; }
+      .description__wrapper .step__number {
+        padding: 3px 11px;
+        margin: 12px; }
+      .description__wrapper .step__title {
+        padding: 106px 0 0 18px; }
+      .description__wrapper .step__text {
+        padding: 13px 18px; }
+  .partners {
+    margin-bottom: 90px; }
+    .partners__wrapper {
+      padding-top: 21px; }
+    .partners__list {
+      width: 71%;
+      height: 244px;
+      margin: 27px auto; }
+    .partners__item {
+      display: inline-block;
+      float: left;
+      width: 25%; }
+    .partners__other {
+      clear: both;
+      width: 190px;
+      padding: 10px 0; }
+    .partners__name {
+      padding: 17px 0 13px; }
+    .partners__info {
+      padding: 0 20px; }
   .img-grid .grid__wrapper {
-    width: 60%;
-    margin: 0 auto; }
+    width: 74%;
+    margin: 0 auto;
+    height: auto; }
     .img-grid .grid__wrapper .grid-item {
       width: 30%;
-      margin: 10px 10px;
+      margin: 9px 10px;
       display: inline-block; }
-    .img-grid .grid__wrapper .grid .img__item {
-      height: 311px; }
-    .img-grid .grid__wrapper .grid #item--4, .img-grid .grid__wrapper .grid #item--5 {
-      width: 63%; }
+    .img-grid .grid__wrapper .grid {
+      margin: 19px auto 74px; }
+      .img-grid .grid__wrapper .grid .img__item {
+        height: 311px; }
+      .img-grid .grid__wrapper .grid #item--4,
+      .img-grid .grid__wrapper .grid #item--5 {
+        width: 63%; }
+      .img-grid .grid__wrapper .grid .img__tag {
+        top: 45%; }
     .img-grid .grid__wrapper .partners__search {
-      display: inline-block; }
+      display: inline-block;
+      width: 162px;
+      padding: 10px 0; }
+    .img-grid .grid__wrapper p {
+      padding-top: 27px; }
+    .img-grid .grid__wrapper .img__search {
+      margin: 38px 6px 0 0px;
+      width: 218px; }
   .footer {
-    margin-top: 40px;
+    margin-top: 86px;
     height: 200px; }
     .footer:before, .footer:after {
       content: "";
@@ -565,20 +618,26 @@ body {
       position: relative; }
       .footer .footer__wrapper h2 {
         float: left;
-        padding-right: 70px; }
+        padding-right: 175px;
+        padding: 11px 95px 0 70px;
+        letter-spacing: 1px; }
       .footer .footer__wrapper .nav {
         float: left;
-        padding-right: 70px; }
+        padding: 11px 92px 0 0; }
+        .footer .footer__wrapper .nav__menu {
+          text-align: left; }
+        .footer .footer__wrapper .nav__item {
+          display: block;
+          line-height: 1; }
       .footer .footer__wrapper h4 {
-        padding: 0; }
-      .footer .footer__wrapper .footer__title {
-        padding: 0 70px 0 0;
-        float: left; }
+        padding: 0 0 13px 0; }
       .footer .footer__wrapper span {
         float: left;
-        padding-top: 3px;
-        margin-left: 0;
         position: absolute;
-        right: 0; }
-      .footer .footer__wrapper .nav__item {
-        display: block; } }
+        top: 18px;
+        right: 95px; }
+      .footer .footer__wrapper .footer__title {
+        padding: 11px 70px 0 0;
+        float: left; }
+      .footer .footer__wrapper img {
+        margin: 6px auto; } }
