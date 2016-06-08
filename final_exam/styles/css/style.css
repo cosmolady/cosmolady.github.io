@@ -215,9 +215,9 @@ body {
   .img-grid p {
     font: 300 18px "Roboto"; }
   .img-grid .grid {
-    overflow: hidden;
     max-width: 100%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: 1000px; }
     .img-grid .grid-item {
       position: relative;
       width: 90%;
@@ -401,15 +401,15 @@ body {
     clear: both;
     width: 193px;
     padding: 10px 0; }
-  .img-grid .grid-item {
+  .img-grid .grid .img__item {
+    height: 311px; }
+  .img-grid .grid .grid-item {
     width: 30%;
     margin: 10px 10px;
     display: inline-block; }
-  .img-grid .grid .img__item {
-    height: 311px; }
   .img-grid .grid #item--4,
   .img-grid .grid #item--5 {
-    width: 63%; }
+    width: 62%; }
   .img-grid .partners__search {
     display: inline-block; }
   .footer {
@@ -580,19 +580,18 @@ body {
       padding: 0 20px; }
   .img-grid .grid__wrapper {
     width: 74%;
-    margin: 0 auto;
-    height: auto; }
-    .img-grid .grid__wrapper .grid-item {
-      width: 30%;
-      margin: 9px 10px;
-      display: inline-block; }
+    margin: 0 auto; }
     .img-grid .grid__wrapper .grid {
       margin: 19px auto 74px; }
+      .img-grid .grid__wrapper .grid-item {
+        width: 30%;
+        margin: 9px 10px;
+        display: inline-block; }
       .img-grid .grid__wrapper .grid .img__item {
         height: 311px; }
       .img-grid .grid__wrapper .grid #item--4,
       .img-grid .grid__wrapper .grid #item--5 {
-        width: 63%; }
+        width: 62%; }
       .img-grid .grid__wrapper .grid .img__tag {
         top: 45%; }
     .img-grid .grid__wrapper .partners__search {

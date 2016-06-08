@@ -170,9 +170,10 @@
     		font: $fontRL18;
     	}
     	.grid {
-    		overflow: hidden;
+//    		overflow: hidden;
     		max-width: 100%;
     		margin: 0 auto;
+			height: 1000px;
     		&-item {
     			position: relative;
     			width: 90%;
@@ -395,18 +396,19 @@
     		}
     	}
     	.img-grid {
+			.grid {
+    			.img__item {
+    				height: 311px;
+    			}
     		.grid-item {
     			width: 30%;
     			margin: 10px 10px;
     			display: inline-block;
     		}
-    		.grid {
-    			.img__item {
-    				height: 311px;
-    			}
+    		
     			#item--4,
     			#item--5 {
-    				width: 63%;
+    				width: 62%;
     			}
     		}
     		.partners__search {
@@ -616,20 +618,21 @@
     		.grid__wrapper {
     			width: 74%;
     			margin: 0 auto;
-				height: auto;
-    			.grid-item {
+//				height: auto;
+    			
+    			.grid {
+    				margin: 19px auto 74px;
+					&-item {
     				width: 30%;
     				margin: 9px 10px;
     				display: inline-block;
     			}
-    			.grid {
-    				margin: 19px auto 74px;
     				.img__item {
     					height: 311px;
     				}
     				#item--4,
     				#item--5 {
-    					width: 63%;
+    					width: 62%;
     				}
     				.img__tag {
     					top: 45%;

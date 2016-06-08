@@ -15,13 +15,14 @@ $.getJSON(URL,{per_page:7},(function(data){
     else
         console.log('No hits');
 }));
-	/*MASONRY*/
-    $('.grid').masonry({
-  itemSelector: '.grid-item',
-  isResizable: true,
-//  columnWidth: 200
-});
-    
+//	/*MASONRY*/
+//    $('.grid').masonry({
+//  itemSelector: '.grid-item',
+//columnWidth: '.grid-item',
+//  isResizable: true,
+////  columnWidth: 200
+//});
+//    
 var input=$('.img__search')	;
 var btnSearch = $('.partners__search');
 btnSearch.on('click', function(){
