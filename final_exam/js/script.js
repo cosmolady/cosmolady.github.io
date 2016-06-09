@@ -1,48 +1,35 @@
-
+'use strict';
 $(function(){
+	
+	$('.grid').masonry({
+			itemSelector: '.grid__item', 
+			columnWidth: '.grid__sizer',
+			gutter: 1
+		});
+	
 /*AJAX REQUEST PIXABAY*/    
 var API_KEY = '2681408-6ebe02c71ce1ec416ecfa7d96';
 var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('');
-$.getJSON(URL,{per_page:7},(function(data){
+request ();
+function request (){
+	$.getJSON(URL,{per_page:7},(function(data){
     if (parseInt(data.totalHits) > 0){
-        var grid=$('.grid');
-        grid.html('');
+        var gridDef=$('.grid-default');
+        gridDef.html('');
+		var grid=$('.grid');
         $.each(data.hits, function(i, hit){
-            grid.append('<div class="grid-item" id="item--'+i+'"><img class="img__item" src="'+hit.webformatURL+'"><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
+            grid.append('<div class="grid-item" id="item-'+i+'"style="background-image:url('+hit.webformatURL+')"><a href="'+hit.pageURL+'"></a><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
+  
 		});
-        	
+          
     }
-    else
+    else {
         console.log('No hits');
+	}
+		
 }));
-//	/*MASONRY*/
-//    $('.grid').masonry({
-//  itemSelector: '.grid-item',
-//columnWidth: '.grid-item',
-//  isResizable: true,
-////  columnWidth: 200
-//});
-//    
-var input=$('.img__search')	;
-var btnSearch = $('.partners__search');
-btnSearch.on('click', function(){
-var inputValue = input.val();
-URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+inputValue+encodeURIComponent('');
-$.getJSON(URL,{per_page:7},(function(data){
-    if (parseInt(data.totalHits) > 0){
-        var grid=$('.grid');
-       grid.html('');
-        $.each(data.hits, function(i, hit){
-            console.log(i);
-            grid.append('<div class="grid-item" id="item--'+i+'"><img class="img__item" src="'+hit.webformatURL+'"><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
-            
-		});
-        	
-    }
-    else
-        console.log('No hits');
-}));	
-})
+}
+
 
     function sliderJcarousel1() {
     $('.jcarousel-1').jcarousel();

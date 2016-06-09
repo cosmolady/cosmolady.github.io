@@ -21,12 +21,14 @@
     		background-color: rgba(0, 0, 0, 0.2);
     		height: 100%;
     		width: 100%;
+			margin: 0 auto;
+    		max-width: 1440px;
     	}
     	&__wrapper {
     		margin: 0 auto;
     		overflow: hidden;
     		text-align: center;
-			max-width: 940px;
+    		max-width: 940px;
     	}
     	.login {
     		font: $fontMB14;
@@ -35,10 +37,10 @@
     		&--signup {
     			@include whiteblock();
     		}
-			& a:hover{
-				color: $colorbright;
-				border-color: $colorbright;
-			}
+    		& a:hover {
+    			color: $colorbright;
+    			border-color: $colorbright;
+    		}
     	}
     	.login__link {
     		color: $colorwhite;
@@ -60,10 +62,10 @@
     		display: block;
     		margin: 15px auto;
     		width: 225px;
-			&:hover{
-				background-color: $colorwhite;
-				color:$colorbright;
-			}
+    		&:hover {
+    			background-color: $colorwhite;
+    			color: $colorbright;
+    		}
     	}
     }
     .section__title {
@@ -73,9 +75,8 @@
     	padding: 5px;
     }
     .description__wrapper {
-		    		max-width: 1024px;
-    margin: 15px auto;
-
+    	max-width: 1024px;
+    	margin: 15px auto;
     	margin-top: 15px;
     	.steps__slider {
     		display: none;
@@ -122,7 +123,7 @@
     	margin-bottom: 25px;
     	&__wrapper {
     		padding-top: 15px;
-			max-width: 1024px;
+    		max-width: 1024px;
     		margin: 0 auto;
     	}
     	&__item {
@@ -158,10 +159,10 @@
     		width: 225px;
     		margin: 15px auto;
     		padding: 10px 40px;
-			&:hover{
-				color:$colorwhite;
-				background-color: $colorbright;
-			}
+    		&:hover {
+    			color: $colorwhite;
+    			background-color: $colorbright;
+    		}
     	}
     }
     .img-grid {
@@ -170,21 +171,24 @@
     		font: $fontRL18;
     	}
     	.grid {
-//    		overflow: hidden;
-    		max-width: 100%;
     		margin: 0 auto;
-			height: 1000px;
+    		width: 300px;
     		&-item {
-    			position: relative;
-    			width: 90%;
-    			margin: 15px auto;
-    		}
-    		.img__item {
-    			width: 100%;
-    			overflow: hidden;
-    			position: relative;
-    			border-radius: 4px;
+    			background-position: center;
+    			background-size: cover;
+    			border-radius: 5px;
     			height: 120px;
+    			margin-bottom: 10px;
+    			width: 300px;
+    			position: relative;
+    			a {
+    				background-color: rgba(0, 0, 0, .4);
+    				border-radius: 5px;
+    				display: table;
+    				height: 100%;
+    				text-decoration: none;
+    				width: 100%;
+    			}
     		}
     		.img__tag {
     			position: absolute;
@@ -212,12 +216,11 @@
     		margin: 15px auto;
     		width: 225px;
     		color: $colorwhite;
-			&:hover{
-				background-color: $colorwhite;
-				color:$colorbright;
-				border:2px solid $colorbright;
-
-			}
+    		&:hover {
+    			background-color: $colorwhite;
+    			color: $colorbright;
+    			border: 2px solid $colorbright;
+    		}
     	}
     }
     .footer {
@@ -227,7 +230,7 @@
     		color: $colordark;
     		margin-top: 20px;
     		text-align: center;
-			    max-width: 940px;
+    		max-width: 940px;
     		h2 {
     			font: $fontMB16;
     			color: $colorbright;
@@ -242,9 +245,9 @@
     				.nav__link {
     					font: $fontRL14;
     					color: $colorgrey;
-						&:hover{
-							color:$colordark;
-						}
+    					&:hover {
+    						color: $colordark;
+    					}
     				}
     			}
     		}
@@ -396,59 +399,58 @@
     		}
     	}
     	.img-grid {
-			.grid {
-    			.img__item {
-    				height: 311px;
+    		.grid {
+    			@include clearfix();
+    			padding: 0 14px;
+    			width: 768px;
+    			&-item {
+    				float: left;
+    				height: 310px;
+    				margin-bottom: 20px;
+    				width: 235px;
     			}
-    		.grid-item {
-    			width: 30%;
-    			margin: 10px 10px;
-    			display: inline-block;
-    		}
-    		
-    			#item--4,
-    			#item--5 {
-    				width: 62%;
-    			}
+				#item-4,#item-5{
+					width: 490px;
+				}
     		}
     		.partners__search {
     			display: inline-block;
     		}
     	}
-    	.footer {
-    		@include clearfix();
-    		margin-top: 40px;
-    		height: 200px;
-    		.footer__wrapper {
-    			padding: 25px;
-    			width: 80%;
-    			margin: 0 auto;
-    			position: relative;
-    			h2 {
-    				float: left;
-    				padding-right: 70px;
-    			}
-    			.nav {
-    				float: left;
-    				padding-right: 70px;
-    			}
-    			h4 {
-    				padding: 0;
-    			}
-    			.footer__title {
-    				padding: 0 70px 0 0;
-    				float: left;
-    			}
-    			span {
-    				float: left;
-    				padding-top: 3px;
-    				margin-left: 0;
-    				position: absolute;
-    				right: 0;
-    			}
-    			.nav__item {
-    				display: block;
-    			}
+    }
+    .footer {
+    	@include clearfix();
+    	margin-top: 40px;
+    	height: 200px;
+    	.footer__wrapper {
+    		padding: 25px;
+    		width: 80%;
+    		margin: 0 auto;
+    		position: relative;
+    		h2 {
+    			float: left;
+    			padding-right: 70px;
+    		}
+    		.nav {
+    			float: left;
+    			padding-right: 70px;
+    		}
+    		h4 {
+    			padding: 0;
+    		}
+    		.footer__title {
+    			padding: 0 70px 0 0;
+    			float: left;
+    		}
+    		span {
+    			float: left;
+    			padding-top: 3px;
+    			margin-left: 0;
+    			position: absolute;
+    			right: 0;
+    		}
+    		.nav__item {
+    			display: block;
     		}
     	}
     }
@@ -508,6 +510,7 @@
     				text-align: center;
     				position: relative;
     				margin: 8px;
+					    width: 30%;
     			}
     			.jcarousel-1,
     			.jcarousel-2,
@@ -618,21 +621,19 @@
     		.grid__wrapper {
     			width: 74%;
     			margin: 0 auto;
-//				height: auto;
-    			
     			.grid {
-    				margin: 19px auto 74px;
-					&-item {
-    				width: 30%;
-    				margin: 9px 10px;
-    				display: inline-block;
-    			}
-    				.img__item {
-    					height: 311px;
+    				    padding: 0;
+   						 width: 940px;
+    				&-item {
+    					width: 300px;
+						    float: left;
+    				height: 310px;
+    			margin-bottom: 20px;
     				}
-    				#item--4,
-    				#item--5 {
-    					width: 62%;
+    				
+    				#item-4,
+    				#item-5 {
+    					    width: 620px;
     				}
     				.img__tag {
     					top: 45%;
@@ -640,18 +641,17 @@
     			}
     			.partners__search {
     				display: inline-block;
-					    width: 162px;
-    padding: 10px 0;
-
+    				width: 162px;
+    				padding: 10px 0;
     			}
-    		
-    		p {
-    			padding-top: 27px;
+    			p {
+    				padding-top: 27px;
+    			}
+    			.img__search {
+    				margin: 38px 6px 0 0px;
+    				width: 218px;
+    			}
     		}
-			.img__search{
-				   margin: 38px 6px 0 0px;
-    width: 218px;
-				}}
     	}
     	.footer {
     		@include clearfix();
@@ -665,40 +665,36 @@
     			h2 {
     				float: left;
     				padding-right: 175px;
-					padding: 11px 95px 0 70px;
-   	 				letter-spacing: 1px;
+    				padding: 11px 95px 0 70px;
+    				letter-spacing: 1px;
     			}
     			.nav {
     				float: left;
     				padding: 11px 92px 0 0;
-    			
-    			
-    			
-					&__menu{
-					text-align: left;
-				}
-    			&__item {
-    				display: block;
-					line-height: 1;
+    				&__menu {
+    					text-align: left;
+    				}
+    				&__item {
+    					display: block;
+    					line-height: 1;
+    				}
     			}
-					}
-				h4 {
+    			h4 {
     				padding: 0 0 13px 0;
     			}
     			span {
     				float: left;
     				position: absolute;
-					top:18px;
+    				top: 18px;
     				right: 95px;
     			}
-				.footer__title {
+    			.footer__title {
     				padding: 11px 70px 0 0;
-					float: left;
-					
-					}
-				img{
-					 margin: 6px auto;
-					}
+    				float: left;
+    			}
+    			img {
+    				margin: 6px auto;
+    			}
     		}
     	}
     }
