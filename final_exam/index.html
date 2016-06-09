@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, initial-scale=1">
 	<meta charset="UTF-8">
 	<title>Exam</title>
 	<link rel="stylesheet" media="all" href="styles/css/style.css">
@@ -178,8 +178,8 @@
 		<section class="img-grid">
 			<div class="grid__wrapper">
 				<h1 class="section__title">Discover holiday activity ideas</h1>
-				<div class="grid__sizer"></div>
-				<div class="grid">
+				<!--				<div class="grid">
+
 
 					<div class="grid-item" id="item--0">
 					
@@ -216,13 +216,32 @@
 						<img class="img__item" src="img/release/default_img-7.png">
 						<p class="img__tag">Travelling</p>
 					</div>
+
 				</div>
-						<h1 class="section__title">Discover holiday activity ideas</h1>
-						<p>Hi! What are your holiday interests?</p>
-						<form class="search__form">
-							<input type="text" class="img__search" placeholder="Enter your interests">
-							<a href="#" class="partners__search">Search partners</a>
-						</form>
+					<!-- TEMPLATE - Begin -->
+				<div class="grid">
+					<script type="text/template" id="ideas__template">
+						<% for (var i = 0; i < data.length; i++) { %>
+							<% if (i == 4 || i == 5) { %>
+								<div class="grid-item grid-item--width2" style="background-image: url(<%= data[i].webformatURL %>);">
+									<% } else { %>
+										<div class="grid-item" style="background-image: url(<%= data[i].webformatURL %>);">
+											<% } %>
+												<a href="<%= data[i].pageURL %>" target="_blank"></a>
+												<span class="img__tag"><%= data[i].tags.split(',')[0] %></span>
+												
+										</div>
+										<% } %>
+					</script>
+					</div>
+
+					<!-- TEMPLATE - End -->
+					<h1 class="section__title">Discover holiday activity ideas</h1>
+					<p>Hi! What are your holiday interests?</p>
+					<form class="search__form" action="" method="get">
+						<input type="text" class="img__search" placeholder="Enter your interests">
+						<a href="#" class="partners__search">Search partners</a>
+					</form>
 
 				</div>
 		</section>
