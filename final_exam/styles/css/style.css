@@ -132,6 +132,11 @@ body {
   color: #333;
   text-align: center;
   padding: 5px; }
+  .section__title:before, .section__title:after {
+    content: "";
+    display: table; }
+  .section__title:after {
+    clear: both; }
 
 .description__wrapper {
   max-width: 1024px;

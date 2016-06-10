@@ -3,15 +3,22 @@ $(function () {
 	var API_KEY = '2681408-6ebe02c71ce1ec416ecfa7d96';
 	var URL = "https://pixabay.com/api/?key=" + API_KEY + "&q=" + encodeURIComponent('');
 
+	var query = '';
+	request ();
+	
 
-
-	var $searchInput = $('.img__search');
-
-	//    $('.search__form').on('submit', function(e) {
-	//        e.preventDefault();
-	var query = $searchInput.val();
-
-	$.ajax({
+	$('.partners__search').on('click', function(e) {
+	e.preventDefault();
+	e.stopPropagation();
+	query = $('.img__search').val();
+	
+	request ();
+	    });
+	
+	
+	
+	function request (){
+		$.ajax({
 			url: URL,
 			type: 'GET',
 			dataType: 'jsonp',
@@ -22,38 +29,16 @@ $(function () {
 		})
 		.done(function (data) {
 			var imgBlock = $('#ideas__template').html();
-			var imgGrid = tmpl(imgBlock, {
-				data: data.hits
-			});
-			$('.grid').append(imgGrid).masonry({
+			var imgGrid = tmpl(imgBlock, {data: data.hits});
+			$('.grid').html('').html(imgGrid).masonry({
 				itemSelector: '.grid-item',
 				columnWidth: '.grid-item',
 				gutter: 20
 			});
-		});
-	//    });
-	//	
+		});	
+	}
 
 
-
-	/*AJAX REQUEST PIXABAY*/
-	//var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('');
-	//$.getJSON(URL,{per_page:7},(function(data){
-	//    if (parseInt(data.totalHits) > 0){
-	//        var gridDef=$('.grid-default');
-	//        gridDef.html('');
-	//		var grid=$('.grid');
-	//        $.each(data.hits, function(i, hit){
-	//            grid.append('<div class="grid-item" id="item-'+i+'"style="background-image:url('+hit.webformatURL+')"><a href="'+hit.pageURL+'"></a><p class="img__tag">' +hit.tags.split(',')[0]+'</p></div>');
-	//  
-	//		});
-	//          
-	//    }
-	//    else {
-	//        console.log('No hits');
-	//	}
-	//		
-	//}));
 
 
 

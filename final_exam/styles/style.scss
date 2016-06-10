@@ -73,6 +73,7 @@
     	color: $colordark;
     	text-align: center;
     	padding: 5px;
+		@include clearfix();
     }
     .description__wrapper {
     	max-width: 1024px;
@@ -171,6 +172,7 @@
     		font: $fontRL18;
     	}
     	.grid {
+			
     		margin: 0 auto;
     		width: 300px;
     		&-item {
