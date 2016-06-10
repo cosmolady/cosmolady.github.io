@@ -235,9 +235,8 @@ body {
         text-decoration: none;
         width: 100%; }
     .img-grid .grid .img__tag {
-      position: absolute;
-      top: 40%;
-      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
       text-align: center;
       font: bold 22px "Montserrat";
       color: #fff;
@@ -420,7 +419,7 @@ body {
       height: 310px;
       margin-bottom: 20px;
       width: 235px; }
-    .img-grid .grid #item-4, .img-grid .grid #item-5 {
+    .img-grid .grid .grid-item--width2 {
       width: 490px; }
   .img-grid .partners__search {
     display: inline-block; } }
@@ -603,8 +602,7 @@ body {
         float: left;
         height: 310px;
         margin-bottom: 20px; }
-      .img-grid .grid__wrapper .grid #item-4,
-      .img-grid .grid__wrapper .grid #item-5 {
+      .img-grid .grid__wrapper .grid .grid-item--width2 {
         width: 620px; }
       .img-grid .grid__wrapper .grid .img__tag {
         top: 45%; }

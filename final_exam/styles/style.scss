@@ -191,9 +191,8 @@
     			}
     		}
     		.img__tag {
-    			position: absolute;
-    			top: 40%;
-    			width: 100%;
+    			display: table-cell;
+    			vertical-align: middle;
     			text-align: center;
     			font: $fontMB22;
     			color: $colorwhite;
@@ -409,7 +408,7 @@
     				margin-bottom: 20px;
     				width: 235px;
     			}
-				#item-4,#item-5{
+				.grid-item--width2{
 					width: 490px;
 				}
     		}
@@ -631,8 +630,7 @@
     			margin-bottom: 20px;
     				}
     				
-    				#item-4,
-    				#item-5 {
+    				.grid-item--width2 {
     					    width: 620px;
     				}
     				.img__tag {
