@@ -265,5 +265,8 @@ table {
     .footer .footer__wrapper .footer__title {
       padding: 11px 70px 0 0;
       float: left; }
-    .footer .footer__wrapper img {
-      margin: 6px auto; }
+    .footer .footer__wrapper .logo {
+      display: none; }
+    .footer .footer__wrapper .logo-ie {
+      margin: 6px auto;
+      display: block; }

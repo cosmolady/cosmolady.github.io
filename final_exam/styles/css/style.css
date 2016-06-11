@@ -295,6 +295,8 @@ body {
       padding-top: 20px;
       color: #ccc;
       letter-spacing: 2px; }
+    .footer__wrapper .logo-ie {
+      display: none; }
     .footer__wrapper img {
       display: block;
       margin: 15px auto; }

@@ -240,8 +240,12 @@
 			padding: 11px 70px 0 0;
 			float: left;
 		}
-		img {
-			margin: 6px auto;
+		.logo {
+			display: none;
 		}
+        .logo-ie{
+            margin: 6px auto;
+            display: block;
+        }
 	}
 }

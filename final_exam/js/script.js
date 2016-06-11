@@ -18,6 +18,7 @@ $(function () {
 	
 	
 	function request (){
+        
 		$.ajax({
 			url: URL,
 			type: 'GET',
@@ -30,7 +31,8 @@ $(function () {
 		.done(function (data) {
 			var imgBlock = $('#ideas__template').html();
 			var imgGrid = tmpl(imgBlock, {data: data.hits});
-			$('.grid').html('').html(imgGrid).masonry({
+			$('.grid__position').html(imgGrid);
+                $('.grid').masonry({
 				itemSelector: '.grid-item',
 				columnWidth: '.grid-item',
 				gutter: 20
