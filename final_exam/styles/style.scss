@@ -421,12 +421,12 @@
     			display: inline-block;
     		}
     	}
-    }
+    
     .footer {
     	@include clearfix();
     	margin-top: 40px;
     	height: 200px;
-    	.footer__wrapper {
+    	&__wrapper {
     		padding: 25px;
     		width: 80%;
     		margin: 0 auto;
@@ -457,7 +457,7 @@
     			display: block;
     		}
     	}
-    }
+		}}
     @media (min-device-width: 1024px) {
     	.header {
     		height: 700px;
@@ -623,7 +623,6 @@
     	}
     	.img-grid {
     		.grid__wrapper {
-    			width: 74%;
     			margin: 0 auto;
     			.grid {
     				    padding: 0;

@@ -429,40 +429,39 @@ body {
     .img-grid .grid .grid-item--width2 {
       width: 490px; }
   .img-grid .partners__search {
-    display: inline-block; } }
-
-.footer {
-  margin-top: 40px;
-  height: 200px; }
-  .footer:before, .footer:after {
-    content: "";
-    display: table; }
-  .footer:after {
-    clear: both; }
-  .footer .footer__wrapper {
-    padding: 25px;
-    width: 80%;
-    margin: 0 auto;
-    position: relative; }
-    .footer .footer__wrapper h2 {
-      float: left;
-      padding-right: 70px; }
-    .footer .footer__wrapper .nav {
-      float: left;
-      padding-right: 70px; }
-    .footer .footer__wrapper h4 {
-      padding: 0; }
-    .footer .footer__wrapper .footer__title {
-      padding: 0 70px 0 0;
-      float: left; }
-    .footer .footer__wrapper span {
-      float: left;
-      padding-top: 3px;
-      margin-left: 0;
-      position: absolute;
-      right: 0; }
-    .footer .footer__wrapper .nav__item {
-      display: block; }
+    display: inline-block; }
+  .footer {
+    margin-top: 40px;
+    height: 200px; }
+    .footer:before, .footer:after {
+      content: "";
+      display: table; }
+    .footer:after {
+      clear: both; }
+    .footer__wrapper {
+      padding: 25px;
+      width: 80%;
+      margin: 0 auto;
+      position: relative; }
+      .footer__wrapper h2 {
+        float: left;
+        padding-right: 70px; }
+      .footer__wrapper .nav {
+        float: left;
+        padding-right: 70px; }
+      .footer__wrapper h4 {
+        padding: 0; }
+      .footer__wrapper .footer__title {
+        padding: 0 70px 0 0;
+        float: left; }
+      .footer__wrapper span {
+        float: left;
+        padding-top: 3px;
+        margin-left: 0;
+        position: absolute;
+        right: 0; }
+      .footer__wrapper .nav__item {
+        display: block; } }
 
 @media (min-device-width: 1024px) {
   .header {
@@ -599,7 +598,6 @@ body {
     .partners__info {
       padding: 0 20px; }
   .img-grid .grid__wrapper {
-    width: 74%;
     margin: 0 auto; }
     .img-grid .grid__wrapper .grid {
       padding: 0;
