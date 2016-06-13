@@ -1,0 +1,13 @@
+{
+  "name": "test_for_lun",
+  "version": "1.0.0",
+  "description": "test",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-watch": "^4.3.6"
+  }
+}
