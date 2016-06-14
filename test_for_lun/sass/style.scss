@@ -2,14 +2,14 @@
 @import '_variables';
 @import '_mixins';
 @import '_reset';
-.wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 940px;
-}
 body {
 	background-color: $bg;
 	font: $fontStack;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	//	max-width: 940px;
 }
 .final_wrapper {
 	display: none;
@@ -62,17 +62,21 @@ body {
 		font-size: 15px;
 	}
 }
+.buttons {
+	margin: 20px auto;
+	width: 310px;
+}
 .btn {
 	@include boxShadow();
 	color: #ff9800;
 	display: block;
 	width: 150px;
 	height: 25px;
-	margin-top: 20px;
 	display: inline-block;
 }
 .error {
 	color: red;
+	display: block;
 }
 .form-select {
 	p {
@@ -129,7 +133,7 @@ body {
 		box-sizing: border-box;
 	}
 }
-.final_wrapper{
+.final_wrapper {
 	position: relative;
 }
 .final {
@@ -153,14 +157,71 @@ body {
 		padding: 15px 10px 0px 30px;
 	}
 }
-.btn-again{
+.btn-again {
 	position: absolute;
 	bottom: -40px;
-    right: 45%;
+	right: 45%;
 }
-.ui-tabs-active{
-	    border: 1px solid #ff9800;
+.ui-tabs-active {
+	border: 1px solid #ff9800;
 }
-.error_cat{
+.error_cat {
 	@extend .error;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-device-width: 320px) and (max-device-width: 767px) {
+	.container {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.numbers {
+		display: block;
+		width: 185px;
+		margin: 50px auto;
+		margin-bottom: 16px;
+	}
+	.forms {
+		margin: 0 auto;
+		width: 95%;
+	}
+	.forms-signin {
+		text-align: center;
+	}
+	.form-control {
+		width: 250px;
+		margin: 16px auto;
+	}
+	.buttons {
+		width: 270px;
+	}
+	.btn {
+		width: 125px;
+	}
+	.form-social {
+		label {
+			display: block;
+			input[type=checkbox] {
+				margin: 10px 10px 0 50px;
+			}
+			label {
+				display: none;
+				input {
+					width: 175px;
+				}
+			}
+		}
+	}
+	.final {
+		width: 98%;
+		margin: 5px auto;
+		&-img {
+			width: 100px;
+			height: 100px;
+		}
+	}
+	.last {
+		padding: 0;
+	}
 }

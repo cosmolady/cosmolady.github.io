@@ -257,7 +257,8 @@ var dog = $('.item__dog'); dog.on('click', function () {
 	$('.error_cat').empty();
 	$('.error_cat').append('<p>Вы выбрали собачку. А надо котика.</p>');
 });
-var imgSelect; cat.on('click', function () {
+var imgSelect; 
+	cat.on('click', function () {
 	$('.error_cat').empty();
 	cat.css('border', 'none');
 	$(this).children().css({
@@ -271,7 +272,8 @@ var imgSelect; cat.on('click', function () {
 
 var finalBtn = $('.btnFinal');
 var finalWrap = $('.final_wrapper');
-var finalScreen = $('.final'); finalBtn.on('click', function () {
+var finalScreen = $('.final'); 
+	finalBtn.on('click', function () {
 	user.name = $('#name').val();
 	user.email = $('#email').val();
 	user.country = $('#countries option:selected').text();
@@ -302,7 +304,8 @@ var finalScreen = $('.final'); finalBtn.on('click', function () {
 	}
 });
 
-var btnAgain = $('.btn-again'); btnAgain.on('click', function () {
+var btnAgain = $('.btn-again');
+	btnAgain.on('click', function () {
 
 	finalScreen.empty();
 	finalWrap.css('display', 'none');

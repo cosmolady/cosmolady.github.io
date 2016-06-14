@@ -45,14 +45,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.wrapper {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 940px; }
-
 body {
   background-color: #f5f5f5;
   font: 15px "Open Sans"; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%; }
 
 .final_wrapper {
   display: none; }
@@ -102,6 +101,10 @@ body {
     padding: 5px;
     font-size: 15px; }
 
+.buttons {
+  margin: 20px auto;
+  width: 310px; }
+
 .btn {
   -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
   -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
@@ -110,11 +113,11 @@ body {
   display: block;
   width: 150px;
   height: 25px;
-  margin-top: 20px;
   display: inline-block; }
 
 .error, .error_cat {
-  color: red; }
+  color: red;
+  display: block; }
 
 .form-select p {
   text-align: center; }
@@ -201,3 +204,42 @@ body {
 
 .ui-tabs-active {
   border: 1px solid #ff9800; }
+
+/*MEDIA QUERIES*/
+@media (min-device-width: 320px) and (max-device-width: 767px) {
+  .container {
+    margin: 0 auto;
+    width: 100%; }
+  .numbers {
+    display: block;
+    width: 185px;
+    margin: 50px auto;
+    margin-bottom: 16px; }
+  .forms {
+    margin: 0 auto;
+    width: 95%; }
+  .forms-signin {
+    text-align: center; }
+  .form-control, .form-select select, .form-social label label input {
+    width: 250px;
+    margin: 16px auto; }
+  .buttons {
+    width: 270px; }
+  .btn {
+    width: 125px; }
+  .form-social label {
+    display: block; }
+    .form-social label input[type=checkbox] {
+      margin: 10px 10px 0 50px; }
+    .form-social label label {
+      display: none; }
+      .form-social label label input {
+        width: 175px; }
+  .final {
+    width: 98%;
+    margin: 5px auto; }
+    .final-img {
+      width: 100px;
+      height: 100px; }
+  .last {
+    padding: 0; } }
