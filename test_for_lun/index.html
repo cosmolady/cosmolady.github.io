@@ -2,97 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Questionnaire</title>
-    <link rel="stylesheet" href="dest/style.css">
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.script.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Questionnaire</title>
+	<link rel="stylesheet" href="dest/style.css">
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="dest/main.script.min.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="numbers">
-            <ul>
-                <li class="numbers__list"><a href="#signin" class="numbers__item">1</a></li>
-                <li class="numbers__list"><a href="#select" class="numbers__item">2</a></li>
-                <li class="numbers__list"><a href="#social" class="numbers__item">3</a></li>
-                <li class="numbers__list"><a href="#pictures" class="numbers__item">4</a></li>
-            </ul>
+	<div class="wrapper">
+		<div class="container" id="tabs">
+			<div class="numbers">
+				<ul>
+					<li class="numbers__list"><a href="#signin" class="numbers__item">1</a></li>
+					<li class="numbers__list"><a href="#select" class="numbers__item">2</a></li>
+					<li class="numbers__list"><a href="#social" class="numbers__item">3</a></li>
+					<li class="numbers__list"><a href="#pictures" class="numbers__item">4</a></li>
+				</ul>
+			</div>
+			<div class="forms">
+				<form class="forms-signin" id="signin">
+					<p class="form-signin-heading"> 1.Введите имя и e-mail</p>
+					<input type="text" name="name" id="name" class="form-control" placeholder="Имя" autofocus>
+					<input type="email" name="email" id="email" class="form-control" placeholder="example@example.com">
+					<button id="next" type="button" class="btn btnNext"> Следующий &gt;</button>
 
-        </div>
-        <div class="forms">
-            <form class="forms-signin" id="signin">
-                <p class="form-signin-heading"> 1.Введите имя и e-mail</p>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Имя" autofocus>
-                <input type="email" name="email" id="email" class="form-control" placeholder="example@example.com">
-                <button id="next" type="button" class="btnNext"> Следующий &gt;</button>
+				</form>
+				<form class="form-select" id="select">
+					<p class="form-signin-heading">2.Выберите страну и город</p>
+					<select name="select__country" id="countries">
+						<option value="" disabled selected>Страна</option>
+					</select>
+					<select name="select__city" id="cities">
+						<option value="" disabled selected>Город</option>
+					</select>
+					<button id="prev" type="button" class="btn btnPrev"> &lt; Предыдущий</button>
+					<button id="next" type="button" class="btn btnNext"> Следующий &gt;</button>
+				</form>
+				<form class="form-social" id="social">
+					<p class="form-signin-heading">3.Отметьте социальные сети</p>
+					<label>
+						<input id="form-check-fb" type="checkbox">Facebook
+						<label class="label-fb">
+							<input type="text" class="add-field" name="input__fb" id="fbLink" placeholder="fb.com/lun">
+						</label>
+					</label>
+					<label>
+						<input id="form-check-vk" type="checkbox">Вконтакте
+						<label class="label-vk">
+							<input type="text" class="add-field" name="input__vk" id="vkLink" placeholder="vk.com/lun">
+						</label>
+					</label>
+					<label>
+						<input id="form-check-tw" type="checkbox">Twitter
+						<label class="label-tw">
+							<input type="text" class="add-field" name="input__tw" id="twLink" placeholder="twitter.com/lun">
+						</label>
+					</label>
+					<label>
+						<input id="form-check-ok" type="checkbox">Одноклассники
+						<label class="label-ok">
+							<input type="text" class="add-field" name="input__ok" id="okLink" placeholder="ok.ru/lun">
+						</label>
 
-            </form>
-            <form class="form-select" id="select">
-                <p class="form-signin-heading">2.Выберите страну и город</p>
-                <select name="select__country" id="countries">
-                    <option value="" disabled selected>Страна</option>
-                </select>
-                <select name="select__city" id="cities">
-                    <option value="" disabled selected>Город</option>
-                </select>
-                <button id="prev" type="button" class="btnPrev"> &lt; Предыдущий</button>
-                <button id="next" type="button" class="btnNext"> Следующий &gt;</button>
-            </form>
-            <form class="form-social" id="social">
-                <p class="form-signin-heading">3.Отметьте социальные сети</p>
-                <label>
-                    <input id="form-check-fb" type="checkbox">Facebook
-                    <label class="label-fb">
-                        <input type="text" class="add-field" name="input__fb" id="fbLink" placeholder="fb.com/lun">
-                    </label>
-                </label>
-                <label>
-                    <input id="form-check-vk" type="checkbox">Вконтакте
-                    <label class="label-vk">
-                        <input type="text" class="add-field" name="input__vk" id="vkLink" placeholder="vk.com/lun">
-                    </label>
-                </label>
-                <label>
-                    <input id="form-check-tw" type="checkbox">Twitter
-                    <label class="label-tw">
-                        <input type="text" class="add-field" name="input__tw" id="twLink" placeholder="twitter.com/lun">
-                    </label>
-                </label>
-                <label>
-                    <input id="form-check-ok" type="checkbox">Одноклассники
-                    <label class="label-ok">
-                        <input type="text" class="add-field" name="input__ok" id="okLink" placeholder="ok.ru/lun">
-                    </label>
+					</label>
+					<button id="prev" type="button" class="btn btnPrev"> &lt; Предыдущий</button>
+					<button id="next" type="button" class="btn btnNext"> Следующий &gt;</button>
+				</form>
+				<form class="form-pictures ui-tabs-panel  ui-tabs-hide" id="pictures">
+					<p class="form-signin-heading">4.Выберите любимого котика</p>
+					<ul class="picture__list">
+						<li class="picture__block item__cat">
+							<div class="cat1"></div>
+						</li>
+						<li class="picture__block item__cat">
+							<div class="cat2"></div>
+						</li>
+						<li class="picture__block item__cat">
+							<div class="cat3"></div>
+						</li>
+						<li class="picture__block item__dog">
+							<div class="dog"></div>
+						</li>
+						<div class="error_cat">
+						</div>
+					</ul>
+					<button id="prev" type="button" class="btn btnPrev"> &lt; Предыдущий</button>
+					<button id="next" type="button" class="btn btnFinal"> Завершить</button>
+				</form>
+			</div>
 
-                </label>
-                <button id="prev" type="button" class="btnPrev"> &lt; Предыдущий</button>
-                <button id="next" type="button" class="btnNext"> Следующий &gt;</button>
-            </form>
-            <form class="form-pictures ui-tabs-panel  ui-tabs-hide" id="pictures">
-                <p class="form-signin-heading">4.Выберите любимого котика</p>
-                <ul class="picture__list">
-                    <li class="picture__block item__cat"><div class="cat1"></div></li>
-                    <li class="picture__block item__cat"><div class="cat2"></div></li>
-                    <li class="picture__block item__cat"><div class="cat3"></div></li>
-                    <li class="picture__block item__dog"><div class="cat4"></div></li>
-                    <div class="error_cat">
-                    </div>
-                </ul>
-                <button id="prev" type="button" class="btnPrev"> &lt; Предыдущий</button>
-                <button id="next" type="button" class="btnFinal"> Завершить</button>
-            </form>
-        </div>
-
-    </div>
-    <div class="final_wrapper">
-        <div class="final" id="">
-        </div>
-        <button type="reset" class="btn-again">Пройти заново</button>
-    </div>
+		</div>
+	</div>
+	<div class="final_wrapper">
+		<div class="final">
+		</div>
+		<button type="reset" class="btn btn-again">Пройти заново</button>
+	</div>
 
 </body>
 

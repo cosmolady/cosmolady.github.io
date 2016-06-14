@@ -10,7 +10,10 @@
 	};
 
 @mixin imgBg($link) {
-    background: url($link);
+    background: url($link) top center no-repeat;
+	width: 150px;
+	height: 150px;
+	background-size: cover;
 }
 @mixin boxShadow(){
     -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;

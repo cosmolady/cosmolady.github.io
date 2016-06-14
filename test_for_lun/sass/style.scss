@@ -2,9 +2,165 @@
 @import '_variables';
 @import '_mixins';
 @import '_reset';
-
-.wrapper{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 940px;
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 940px;
+}
+body {
+	background-color: $bg;
+	font: $fontStack;
+}
+.final_wrapper {
+	display: none;
+}
+.container {
+	margin: 0 auto;
+	width: 60%;
+}
+.numbers {
+	display: block;
+	width: 45%;
+	margin: 50px auto;
+	margin-bottom: 16px;
+	&__list {
+		background: #fff;
+		width: 40px;
+		display: inline-block;
+		@include boxShadow();
+	}
+	&__item {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		padding: 10px;
+		border: none;
+		font-weight: bold;
+		height: 20px;
+		color: #000;
+		&:hover,
+		&:active {
+			color: #000;
+			text-decoration: none;
+		}
+	}
+}
+.forms {
+	margin: 0 auto;
+	width: 55%;
+}
+.form-control {
+	display: block;
+	border-radius: 2px;
+	margin: 16px 0;
+	width: 300px;
+	height: 25px;
+	border: $border;
+	color: black;
+	&[placeholder] {
+		padding: 5px;
+		font-size: 15px;
+	}
+}
+.btn {
+	@include boxShadow();
+	color: #ff9800;
+	display: block;
+	width: 150px;
+	height: 25px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.error {
+	color: red;
+}
+.form-select {
+	p {
+		text-align: center;
+	}
+	select {
+		@extend .form-control;
+		height: 35px;
+		margin: 20px 0;
+	}
+	.btn {
+		display: inline-block;
+	}
+}
+.form-social {
+	p {
+		text-align: center;
+	}
+	label {
+		display: block;
+		margin: 10px 0;
+		label {
+			display: none;
+			input {
+				@extend .form-control;
+			}
+		}
+	}
+}
+.form-pictures {
+	p {
+		text-align: center;
+	}
+}
+.cat1 {
+	@include imgBg('../img/cat1.jpg');
+}
+.cat2 {
+	@include imgBg('../img/cat2.jpg');
+}
+.cat3 {
+	@include imgBg('../img/cat3.jpg');
+}
+.dog {
+	@include imgBg('../img/dog4.jpg');
+}
+.picture__list {
+	margin-top: 10px;
+}
+.picture__block {
+	display: inline-block;
+	&:hover {
+		cursor: pointer;
+		box-sizing: border-box;
+	}
+}
+.final_wrapper{
+	position: relative;
+}
+.final {
+	@include boxShadow();
+	width: 40%;
+	margin: 50px auto;
+	height: 300px;
+	background-color: #fff;
+	h2 {
+		font-size: 20px;
+		font-weight: bold;
+		padding: 10px 0;
+	}
+	&-img {
+		width: 150px;
+		height: 150px;
+		float: right;
+		margin: 20px;
+	}
+	.last {
+		padding: 15px 10px 0px 30px;
+	}
+}
+.btn-again{
+	position: absolute;
+	bottom: -40px;
+    right: 45%;
+}
+.ui-tabs-active{
+	    border: 1px solid #ff9800;
+}
+.error_cat{
+	@extend .error;
 }
