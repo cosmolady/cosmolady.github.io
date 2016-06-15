@@ -17,6 +17,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 a {
   text-decoration: none; }
+  a:active, a:focus {
+    outline: none;
+    border: none; }
 
 body {
   line-height: 1; }
@@ -80,7 +83,7 @@ body {
     border: none;
     font-weight: bold;
     height: 20px;
-    color: #000; }
+    color: #ccc; }
     .numbers__item:hover, .numbers__item:active {
       color: #000;
       text-decoration: none; }
@@ -89,7 +92,7 @@ body {
   margin: 0 auto;
   width: 55%; }
 
-.form-control, .form-select select, .form-social label label input {
+.form-control, .form-select select, .form-social .label input {
   display: block;
   border-radius: 2px;
   margin: 16px 0;
@@ -100,7 +103,7 @@ body {
   -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
   -moz-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
   box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff; }
-  .form-control[placeholder], .form-select select[placeholder], .form-social label label input[placeholder] {
+  .form-control[placeholder], .form-select select[placeholder], .form-social .label input[placeholder] {
     padding: 5px;
     font-size: 15px; }
 
@@ -118,6 +121,9 @@ body {
   height: 25px;
   display: inline-block;
   margin-top: 10px; }
+  .btn:hover {
+    cursor: pointer;
+    font-weight: bold; }
 
 .error, .error_cat {
   color: red;
@@ -140,8 +146,11 @@ body {
 .form-social label {
   display: block;
   margin: 10px 0; }
-  .form-social label label {
-    display: none; }
+  .form-social label:hover {
+    font-weight: bold; }
+
+.form-social .label {
+  display: none; }
 
 .form-pictures p {
   text-align: center; }
@@ -207,10 +216,13 @@ body {
   bottom: -40px;
   right: 45%;
   background-color: #337ab7;
-  border-color: #2e6da4; }
+  border-color: #2e6da4;
+  border-radius: 2px; }
 
 .ui-tabs-active {
   border: 1px solid #ff9800; }
+  .ui-tabs-active a {
+    color: black; }
 
 /*MEDIA QUERIES*/
 @media (min-device-width: 320px) and (max-device-width: 767px) {
@@ -227,7 +239,7 @@ body {
     width: 95%; }
   .forms-signin {
     text-align: center; }
-  .form-control, .form-select select, .form-social label label input {
+  .form-control, .form-select select, .form-social .label input {
     width: 200px;
     margin: 16px auto; }
   .buttons {

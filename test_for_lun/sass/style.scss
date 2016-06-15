@@ -37,7 +37,7 @@ body {
 		border: none;
 		font-weight: bold;
 		height: 20px;
-		color: #000;
+		color: #ccc;
 		&:hover,
 		&:active {
 			color: #000;
@@ -74,7 +74,11 @@ body {
 	width: 150px;
 	height: 25px;
 	display: inline-block;
-        margin-top: 10px;
+    margin-top: 10px;
+	&:hover{
+		cursor: pointer;
+		font-weight: bold;
+	}
 }
 .error {
 	color: red;
@@ -101,13 +105,16 @@ body {
 	label {
 		display: block;
 		margin: 10px 0;
-		label {
+		&:hover{
+			font-weight: bold;
+		}
+	}
+	.label {
 			display: none;
 			input {
 				@extend .form-control;
 			}
 		}
-	}
 }
 .form-pictures {
 	p {
@@ -166,9 +173,13 @@ body {
 	right: 45%;
     background-color: #337ab7;
     border-color: #2e6da4;
+	border-radius: 2px;
 }
 .ui-tabs-active {
 	border: 1px solid #ff9800;
+	a{
+		color:black;
+	}
 }
 .error_cat {
 	@extend .error;
