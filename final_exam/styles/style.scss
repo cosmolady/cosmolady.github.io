@@ -16,13 +16,14 @@
     	height: 540px;
     	margin: 0 auto;
     	background: url(../../img/release/header.svg) top center no-repeat;
+		background-size: cover;
     	color: $colorwhite;
     	&-overlay {
     		background-color: rgba(0, 0, 0, 0.2);
+			background-size: cover;
     		height: 100%;
     		width: 100%;
 			margin: 0 auto;
-    		max-width: 1440px;
     	}
     	&__wrapper {
     		margin: 0 auto;
