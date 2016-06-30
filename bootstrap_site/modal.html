@@ -1,0 +1,32 @@
+<!--modal-->
+	<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+
+		<div class="remodalBorder">
+
+			<img src="images/sendico.png">
+
+			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+
+			<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+				<h2 id="modal1Title">Оставьте ваши контактные данные и наш менеджер свяжется с вами</h2>
+				<div class="col-sm-12 ">
+					<div class="form-group">
+						<label>Имя *</label>
+						<input type="text" name="name" class="form-control" required="required">
+					</div>
+					<div class="form-group">
+						<label>Телефон *</label>
+						<input type="tel" name="phone" class="form-control" required="required">
+					</div>
+
+					<div class="form-group">
+						<label>Сообщение (марка и г.в.авто) *</label>
+						<textarea name="message" id="message" required="required" class="form-control" rows="4"></textarea>
+					</div>
+					<div class="form-group">
+						<button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Отправить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--modal-->

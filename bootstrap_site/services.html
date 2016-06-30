@@ -14,6 +14,8 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+	<link rel="stylesheet" href="css/remodal.css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -30,34 +32,36 @@
 <body class="homepage">
 
         <header id="header">
-              <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                   <div class="col-sm-12 col-xs-4">
-                        <div class="top-number"><p><i class="fa fa-phone-square"></i>   0674648478</p>
-                        <p><i class="fa fa-phone-square"></i>   0669377989</p></div>
-                    </div>
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-				
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Главная</a></li>
-                        <li><a href="about-us.html">О компании</a></li>
-                        <li><a href="services.html">Производители</a></li>
-                        <li><a href="clients.html">Клиенты</a></li> 
-                        <li><a href="contact-us.html">Контакты</a></li>                        
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-		
-    </header><!--/header-->
+		<nav class="navbar navbar-inverse" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="col-sm-12 col-xs-4">
+						<div class="top-number">
+							<p><i class="fa fa-phone-square"></i> 0674648478</p>
+							<p><i class="fa fa-phone-square"></i> 0669377989</p>
+						</div>
+						<a class="btn btn-primary mainButton" href="#modal">Оставить заявку</a>
+
+					</div>
+
+				</div>
+
+				<div class="collapse navbar-collapse navbar-right">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Главная</a></li>
+						<li><a href="about-us.html">О компании</a></li>
+						<li><a href="services.html">Производители</a></li>
+						<li><a href="clients.html">Клиенты</a></li>
+						<li><a href="contact-us.html">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--/.container-->
+		</nav>
+		<!--/nav-->
+
+	</header>
+	<!--/header-->
 
     <section id="partner">
         <div class="container">
@@ -98,12 +102,45 @@
 		</div>
 	</footer>
 	<!--/#footer-->
+<!--modal-->
+	<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
 
+		<div class="remodalBorder">
+
+			<img src="images/sendico.png">
+
+			<button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+
+			<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+				<h2 id="modal1Title">Оставьте ваши контактные данные и наш менеджер свяжется с вами</h2>
+				<div class="col-sm-12 ">
+					<div class="form-group">
+						<label>Имя *</label>
+						<input type="text" name="name" class="form-control" required="required">
+					</div>
+					<div class="form-group">
+						<label>Телефон *</label>
+						<input type="tel" name="phone" class="form-control" required="required">
+					</div>
+
+					<div class="form-group">
+						<label>Сообщение (марка и г.в.авто) *</label>
+						<textarea name="message" id="message" required="required" class="form-control" rows="4"></textarea>
+					</div>
+					<div class="form-group">
+						<button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Отправить</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--modal-->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/remodal.min.css"></script>
+
 </body>
 </html>
