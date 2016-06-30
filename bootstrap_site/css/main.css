@@ -115,7 +115,7 @@ a:focus {
 }
 
 body > section {
-  padding: 70px 0;
+  padding: 25px 0;
 }
 
 .center {
@@ -686,6 +686,7 @@ input.search-form:hover {
 
 #middle {
   background: #f2f2f2;
+	    text-align: center;
 }
 
 .skill h2{
@@ -817,7 +818,10 @@ input.search-form:hover {
 .panel-title>a{
   color: #4e4e4e;
 }
-
+#accordion1{
+	width: 50%;
+	float: left;
+}
 .accordion-inner img{
   border-radius: 4px;
 }
@@ -983,8 +987,10 @@ a.accordion-toggle  i{
 }
 
 #conatcat-info{
+/*
   background: #fff url(../images/call-center-1026462_640.jpg) no-repeat 90% 0;
 	background-size: 9%;
+*/
   padding: 30px 0;
 }
 
