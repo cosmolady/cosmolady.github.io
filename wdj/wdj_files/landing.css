@@ -334,6 +334,12 @@ a, a:hover, a:visited{
 	width:300px;
 	margin-top:40px;
 }
+#login-form{
+    display: none;
+}
+#remind-form{
+    display: none;
+}
 @media only screen
 and (min-device-width : 321px) 
 and (max-device-width : 480px){
