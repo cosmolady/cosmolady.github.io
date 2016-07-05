@@ -6,7 +6,7 @@ body {
    	font-family: 'Oswald', sans-serif;
 	letter-spacing:1px;
 }
-a, a:hover{
+a, a:hover, a:visited{
 	color:#fff;
 	text-decoration:none;
 }
@@ -123,6 +123,8 @@ a, a:hover{
 .button{
 	background-color:#fff;
 	border-radius:1em;
+	border: none;
+    outline: none;
 }
 .button a, .button a:hover{
 	color:#000;
