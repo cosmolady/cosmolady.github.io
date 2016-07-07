@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ciklum test</title>
+	<link rel="stylesheet" href="build/style.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item item--dropdown">
+						<a href="#">Магазин</a>
+						<ul class="sub-menu">
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Магазин Microsoft</a></li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Устройства</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Смартфоны</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Консоли и игры Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Аксессуары</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Планшеты</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Ноутбуки</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Моноблоки</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Спецпредложения</a> </li>
+
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Все версии Office</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office 365</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office для Mac</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office (коробочные версии)</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Выбрать свою версию Office</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Продление подписки на Office 365</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Приложения Office</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Языковые пакеты Office</a> </li>
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows 10 Домашняя</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows 10 Профессиональная</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows (коробочные версии)</a> </li>
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox Live</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Консоли Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Аксессуары Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для Xbox</a> </li>
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Дополнительное ПО</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Программное обеспечение</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Visio</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Project</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Visual Studio</a> </li>
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Приложения</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Все о приложениях</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Приложения для Windows</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Приложения для Windows Phone</a> </li>
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Все игры</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для Windows</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для Windows Phone</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для ПК</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item item--dropdown"><a href="#">Продукты</a>
+						<ul class="sub-menu">
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">ПО и услуги</a></li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Устройства и Xbox</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Смартфоны</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Консоли и игры Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Аксессуары</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Планшеты</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Ноутбуки</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Моноблоки</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Спецпредложения</a> </li>
+
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Для бизнеса</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Все версии Office</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office 365</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office для Mac</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office (коробочные версии)</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Выбрать свою версию Office</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Продление подписки на Office 365</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Приложения Office</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Языковые пакеты Office</a> </li>
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Государственный сектор</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows 10 Домашняя</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows 10 Профессиональная</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows (коробочные версии)</a> </li>
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Для разработчиков и ИТ-специалистов</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox Live</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Консоли Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Аксессуары Xbox</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для Xbox</a> </li>
+								</ul>
+							</li>
+							<li class="sub-menu__item"><a class="sub-menu__link" href="#">Для учащихся и преподавателей</a>
+								<ul class="sub-menu">
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Программное обеспечение</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Visio</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Project</a> </li>
+									<li class="sub-menu__item"><a class="sub-menu__link" href="#">Visual Studio</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<a href="#">Nav 3</a>
+
+					</li>
+					...
+				</ul>
+			</nav>
+		</header>
+	</div>
+</body>
+
+</html>
