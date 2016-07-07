@@ -2,295 +2,175 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ciklum test</title>
-	<link rel="stylesheet" href="build/style.css" />
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciklum test</title>
+    <link rel="stylesheet" href="build/style.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/82dfa2204f.js"></script>
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
-			<div class="shell-header shell-responsive  global-sticky">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a href="#"> <img src="build/img/microsoft.png" alt="Microsoft" class="logo-img">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item item--dropdown">
+                            <a href="#">Store</a><i class="fa fa-angle-down"></i>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Store home</a></li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Devices</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Surface</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">PCs &amp; tablets</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Band</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Lumia</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Accessories</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Software</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Office</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Additional software</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Apps</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All apps</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows apps</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows phone apps</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox apps</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox Live</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Консоли Xbox</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Аксессуары Xbox</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для Xbox</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Games</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All games</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox One games</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox 360 games</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows games </a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Games for Windows Phone </a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Entertainment</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All entertainment   </a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Films &amp; TV</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Music</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Business &amp; Education</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Business</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Student store</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Sales</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Sales</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Gift cards</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item item--dropdown"><a href="#">Products</a><i class="fa fa-angle-down"></i>
+                            <ul class="sub-menu">
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#"> Software &amp; services</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Office</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Free downloads &amp; security</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Internet Explorer</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Edge</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Skype</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">OneNote</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">OneDrive</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">MSN</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Bing</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Groove</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Films &amp; TV</a> </li>
 
 
-				<div class="shell-header-wrapper">
-					<div class="shell-header-top">
-						<div class="shell-header-brand">
-							<a id="srv_shellHeaderMicrosoftLogo" href="https://www.microsoft.com" tabindex="10"><img src="https://assets.onestore.ms/cdnfiles/onestorerolling-1606-01000/shell/v3/images/logo/microsoft.png" alt="Microsoft"></a>
-						</div>
-						<div class="shell-header-nav-wrapper">
-							<ul class="shell-header-nav" id="srv_shellHeaderNav">
-								<li class="shell-header-user-mobile-container"></li>
-								<li class="shell-header-dropdown active" data-navcontainer="shellmenu_31_NavContainer">
-									<div id="shellmenu_31" class="shell-header-dropdown-label"><a id="Магазин-navigation" href="javascript:void(0)" role="button" aria-labelledby="shellmenu_31" aria-expanded="false" ms.title="Магазин" data-bi-name="Store" data-bi-slot="1" tabindex="20">
-                                                Магазин
-                                            </a></div>
-									<div class="shell-header-dropdown-content" aria-hidden="true" role="menu" style="height: 439px; display: block;">
-										<dl class="shell-header-dropdown-tab" ms.cmpnm="Магазин; Магазин Microsoft"><dt id="shellmenu_32" class="shell-header-dropdown-tab-label shell-header-L2menu-direct-link"><a href="http://www.microsoftstore.com/store/msru/ru_RU/home" ms.title="Магазин Microsoft" tabindex="20" data-bi-name="StoreHome">Магазин Microsoft</a></dt></dl>
-										<dl class="shell-header-dropdown-tab" ms.cmpnm="Магазин; Устройства"><dt id="shellmenu_33" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)" role="button" ms.title="Устройства" ms.interactiontype="14" tabindex="20" data-bi-dnt="">
-                                    Устройства
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content" data-col="0" style="height: 440px;">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_34"><a href="https://microsoftstore.ru/catalog-smartfony/?utm_source=TopNav&amp;utm_medium=Devices_Phones&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Смартфоны" tabindex="20" data-bi-name="Devices_WindowsPhone">
-                            Смартфоны
-                        </a></li>
-													<li id="shellmenu_35"><a href="https://microsoftstore.ru/catalog-razvlecheniya/?utm_source=TopNav&amp;utm_medium=Devices_Xbox&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Консоли и игры Xbox" tabindex="20" data-bi-name="Devices_Xbox">
-                            Консоли и игры Xbox
-                        </a></li>
-													<li id="shellmenu_36"><a href="https://microsoftstore.ru/catalog-kompyuternye-komponenty/?utm_source=TopNav&amp;utm_medium=Devices_Accessories&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Аксессуары" tabindex="20" data-bi-name="Devices_Accessories">
-                            Аксессуары
-                        </a></li>
-													<li id="shellmenu_37"><a href="https://microsoftstore.ru/catalog-planshety/?utm_source=TopNav&amp;utm_medium=Devices_Tablets&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Планшеты" tabindex="20" data-bi-name="Devices_Tablets">
-                            Планшеты
-                        </a></li>
-													<li id="shellmenu_38"><a href="https://microsoftstore.ru/catalog-noutbuki/?utm_source=TopNav&amp;utm_medium=Devices_Notebooks&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Ноутбуки" tabindex="20" data-bi-name="Devices_Notebooks">
-                            Ноутбуки
-                        </a></li>
-													<li id="shellmenu_39"><a href="https://microsoftstore.ru/catalog-monobloki/?utm_source=TopNav&amp;utm_medium=Devices_Monoblocks&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Моноблоки" tabindex="20" data-bi-name="Devices_PCsandTablets">
-                            Моноблоки
-                        </a></li>
-													<li id="shellmenu_40"><a href="https://microsoftstore.ru/offers/?utm_source=TopNav&amp;utm_medium=Devices_Special&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Спецпредложения" tabindex="20" data-bi-name="Devices_Special_Offers">
-                            Спецпредложения
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab" ms.cmpnm="Магазин; Office"><dt id="shellmenu_41" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)" role="button" ms.title="Office" ms.interactiontype="14" tabindex="20" data-bi-dnt="">
-                                    Office
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content" data-col="0">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_42"><a href="http://www.microsoftstore.com/store/msru/ru_RU/cat/categoryID.67033100" class="shell-l3-list-item" ms.title="Все версии Office" tabindex="20" data-bi-name="Store_Office_AllOffice">
-                            Все версии Office
-                        </a></li>
-													<li id="shellmenu_43"><a href="http://www.microsoftstore.com/store/msru/ru_RU/cat/Office-365/categoryID.69951100" class="shell-l3-list-item" ms.title="Office 365" tabindex="20" data-bi-name="Store_Office_Office365">
-                            Office 365
-                        </a></li>
-													<li id="shellmenu_44"><a href="http://www.microsoftstore.com/store/msru/ru_RU/cat/categoryID.69951000" class="shell-l3-list-item" ms.title="Office для Mac" tabindex="20" data-bi-name="Store_Office_OfficeForMac">
-                            Office для Mac
-                        </a></li>
-													<li id="shellmenu_45"><a href="https://microsoftstore.ru/catalog-ofisnye-programmy/?utm_source=TopNav&amp;utm_medium=Office_FPP&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Office (коробочные версии)" tabindex="20" data-bi-name="Office_OfficeBoxedVersion">
-                            Office (коробочные версии)
-                        </a></li>
-													<li id="shellmenu_46"><a href="http://www.microsoftstore.com/store/msru/ru_RU/list/categoryID.70331000" class="shell-l3-list-item" ms.title="Выбрать свою версию Office" tabindex="20" data-bi-name="Office_OfficeCompare">
-                            Выбрать свою версию Office
-                        </a></li>
-													<li id="shellmenu_47"><a href="http://www.microsoftstore.com/store/msru/ru_RU/cat/categoryID.68243900" class="shell-l3-list-item" ms.title="Продление подписки на Office 365" tabindex="20" data-bi-name="Office_Office365Renewal">
-                            Продление подписки на Office 365
-                        </a></li>
-													<li id="shellmenu_48"><a href="http://www.microsoftstore.com/store/msru/ru_RU/list/categoryID.67033500" class="shell-l3-list-item" ms.title="Приложения Office" tabindex="20" data-bi-name="Store_Office_OfficeApps">
-                            Приложения Office
-                        </a></li>
-													<li id="shellmenu_49"><a href="http://www.microsoftstore.com/store/msru/ru_RU/list/categoryID.67063100" class="shell-l3-list-item" ms.title="Языковые пакеты Office" tabindex="20" data-bi-name="Office_OfficeLanguagePack">
-                            Языковые пакеты Office
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab active" ms.cmpnm="Магазин; Windows"><dt id="shellmenu_50" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)" role="button" ms.title="Windows" ms.interactiontype="14" tabindex="20" data-bi-dnt="">
-                                    Windows
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content" data-col="0" style="height: 440px;">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_51"><a href="http://www.microsoftstore.com/store/msru/ru_RU/cat/Windows/categoryID.70032500" class="shell-l3-list-item" ms.title="Windows" tabindex="20" data-bi-name="Windows_AllWindows">
-                            Windows
-                        </a></li>
-													<li id="shellmenu_52"><a href="http://www.microsoftstore.com/store/msru/ru_RU/list/categoryID.70032700" class="shell-l3-list-item" ms.title="Windows 10 Домашняя" tabindex="20" data-bi-name="Store_Windows_Windows10Home">
-                            Windows 10 Домашняя
-                        </a></li>
-													<li id="shellmenu_53"><a href="http://www.microsoftstore.com/store/msru/ru_RU/list/categoryID.70032600" class="shell-l3-list-item" ms.title="Windows 10 Профессиональная" tabindex="20" data-bi-name="Store_Windows_WindowsPro">
-                            Windows 10 Профессиональная
-                        </a></li>
-													<li id="shellmenu_54"><a href="https://microsoftstore.ru/catalog-operatsionnye-sistemy/?utm_source=TopNav&amp;utm_medium=Windows_FPP&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Windows (коробочные версии)" tabindex="20" data-bi-name="Windows_WindowsBoxedVersion">
-                            Windows (коробочные версии)
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab" ms.cmpnm="Магазин; Xbox"><dt id="shellmenu_55" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)" role="button" ms.title="Xbox" ms.interactiontype="14" tabindex="20" data-bi-dnt="">
-                                    Xbox
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content" data-col="0" style="height: 440px;">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_56"><a href="http://www.microsoftstore.com/store/msru/ru_RU/cat/Xbox/categoryID.67034200" class="shell-l3-list-item" ms.title="Xbox" tabindex="20" data-bi-name="XboxLive_Xbox">
-                            Xbox
-                        </a></li>
-													<li id="shellmenu_57"><a href="http://www.microsoftstore.com/store/msru/ru_RU/cat/Xbox-LIVE/categoryID.67038600" class="shell-l3-list-item" ms.title="Xbox Live" tabindex="20" data-bi-name="XboxLive_XboxLive">
-                            Xbox Live
-                        </a></li>
-													<li id="shellmenu_58"><a href="https://microsoftstore.ru/catalog-xbox/?utm_source=TopNav&amp;utm_medium=Xbox_Consoles&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Консоли Xbox" tabindex="20" data-bi-name="XboxLive_XboxConsole">
-                            Консоли Xbox
-                        </a></li>
-													<li id="shellmenu_59"><a href="https://microsoftstore.ru/catalog-xbox-aksesuary/?utm_source=TopNav&amp;utm_medium=Xbox_Accessories&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Аксессуары Xbox" tabindex="20" data-bi-name="XboxLive_XboxAccessories">
-                            Аксессуары Xbox
-                        </a></li>
-													<li id="shellmenu_60"><a href="https://microsoftstore.ru/catalog-igry-dlya-xbox/?utm_source=TopNav&amp;utm_medium=Xbox_Games&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Игры для Xbox" tabindex="20" data-bi-name="XboxLive_XboxGames">
-                            Игры для Xbox
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab" ms.cmpnm="Магазин; Дополнительное ПО"><dt id="shellmenu_61" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)" role="button" ms.title="Дополнительное ПО" ms.interactiontype="14" tabindex="20" data-bi-dnt="">
-                                    Дополнительное ПО
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content" data-col="0">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_62"><a href="http://www.microsoftstore.com/store/msru/ru_RU/cat/categoryID.67041900" class="shell-l3-list-item" ms.title="Программное обеспечение" tabindex="20" data-bi-name="Store_AdditionalSoftware_AllAdditionalSoftware">
-                            Программное обеспечение
-                        </a></li>
-													<li id="shellmenu_63"><a href="http://www.microsoftstore.com/store/msru/ru_RU/list/Visio/categoryID.67042100" class="shell-l3-list-item" ms.title="Visio" tabindex="20" data-bi-name="Store_AdditionalSoftware_Visio">
-                            Visio
-                        </a></li>
-													<li id="shellmenu_64"><a href="http://www.microsoftstore.com/store/msru/ru_RU/list/Project/categoryID.67042200" class="shell-l3-list-item" ms.title="Project" tabindex="20" data-bi-name="Store_AdditionalSoftware_Project">
-                            Project
-                        </a></li>
-													<li id="shellmenu_65"><a href="http://www.microsoftstore.com/store/msru/ru_RU/list/Visual-Studio/categoryID.67042000" class="shell-l3-list-item" ms.title="Visual Studio" tabindex="20" data-bi-name="Store_AdditionalSoftware_VisualStudio">
-                            Visual Studio
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab" ms.cmpnm="Магазин; Приложения"><dt id="shellmenu_66" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)" role="button" ms.title="Приложения" ms.interactiontype="14" tabindex="20" data-bi-dnt="">
-                                    Приложения
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content" data-col="0" style="height: 440px;">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_67"><a href="https://www.microsoft.com/ru-ru/store/top-free/apps/pc" class="shell-l3-list-item" ms.title="Все о приложениях" tabindex="20" data-bi-name="Store_AllApps">
-                            Все о приложениях
-                        </a></li>
-													<li id="shellmenu_68"><a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="shell-l3-list-item" ms.title="Приложения для Windows" tabindex="20" data-bi-name="Store_Apps_WindowsApps">
-                            Приложения для Windows
-                        </a></li>
-													<li id="shellmenu_69"><a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="shell-l3-list-item" ms.title="Приложения для Windows Phone " tabindex="20" data-bi-name="Store_Apps_WindowsPhoneapps">
-                            Приложения для Windows Phone 
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab" ms.cmpnm="Магазин; Игры"><dt id="shellmenu_70" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)" role="button" ms.title="Игры" ms.interactiontype="14" tabindex="20" data-bi-dnt="">
-                                    Игры
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content" data-col="0">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_71"><a href="https://www.microsoft.com/ru-ru/store/games" class="shell-l3-list-item" ms.title="Все игры" tabindex="20" data-bi-name="Store_AllGames">
-                            Все игры
-                        </a></li>
-													<li id="shellmenu_72"><a href="https://www.microsoft.com/ru-ru/store/games/windows" class="shell-l3-list-item" ms.title="Игры для Windows" tabindex="20" data-bi-name="Store_Games_Windowsgames">
-                            Игры для Windows
-                        </a></li>
-													<li id="shellmenu_73"><a href="https://www.microsoft.com/ru-ru/store/games/windows-phone" class="shell-l3-list-item" ms.title="Игры для Windows Phone" tabindex="20" data-bi-name="Store_Games_WindowsPhonegames">
-                            Игры для Windows Phone
-                        </a></li>
-													<li id="shellmenu_74"><a href="https://microsoftstore.ru/catalog-igry-dlya-xbox/?utm_source=TopNav&amp;utm_medium=Games_Xbox&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Игры для Xbox" tabindex="20" data-bi-name="Store_Xbox360Games">
-                            Игры для Xbox
-                        </a></li>
-													<li id="shellmenu_75"><a href="https://microsoftstore.ru/catalog-kompyuternye-igry/?utm_source=TopNav&amp;utm_medium=Games_PC&amp;utm_campaign=MSStore" class="shell-l3-list-item" ms.title="Игры для ПК" tabindex="20" data-bi-name="Store_PCGames">
-                            Игры для ПК
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-									</div>
-								</li>
-								<li class="shell-header-dropdown active">
-									<div id="shellmenu_22" class="shell-header-dropdown-label"><a id="Продукты-navigation" href="javascript:void(0)">Продукты</a></div>
-									<div class="shell-header-dropdown-content" aria-hidden="false">
-										<dl class="shell-header-dropdown-tab"><dt id="shellmenu_23" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)">ПО и услуги
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_24"><a href="http://www.skype.com/ru" class="shell-l3-list-item">Skype
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab"><dt id="shellmenu_25" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)">Устройства и Xbox
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_26"><a href="https://www.microsoft.com/hardware/ru-ru" class="shell-l3-list-item">Аксессуары для ПК
-                        </a></li>
-													<li id="shellmenu_27"><a href="http://www.xbox.com/ru-ru" class="shell-l3-list-item">
-                            Xbox и игры
-                        </a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab"><dt id="shellmenu_28" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)">
-                                    Для бизнеса
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_29"><a href="http://azure.microsoft.com/ru-kz/" class="shell-l3-list-item">Microsoft Azure</a></li>
-													<li id="shellmenu_30"><a href="http://www.microsoft.com/ru-kz/dynamics/default.aspx" class="shell-l3-list-item">Microsoft Dynamics</a></li>
-													<li id="shellmenu_31"><a href="https://products.office.com/kk-kz/business/office?WT.mc_id=oan_winnav_officebusn" class="shell-l3-list-item" tabindex="20">Office для бизнеса</a></li>
-													<li id="shellmenu_32"><a href="http://www.skype.com/ru/business/" class="shell-l3-list-item">Skype для бизнеса</a></li>
-													<li id="shellmenu_33"><a href="http://www.microsoft.com/ru-kz/business/" class="shell-l3-list-item" ms.title="Решения для малого бизнеса">Решения для малого бизнеса</a></li>
-													<li id="shellmenu_34"><a href="https://pinpoint.microsoft.com/ru-kz" class="shell-l3-list-item">Найти поставщика решений</a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab"><dt id="shellmenu_35" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)">Для разработчиков и ИТ-специалистов
-                                    <i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_36"><a href="http://azure.microsoft.com/ru-kz/" class="shell-l3-list-item">Microsoft Azure</a></li>
-													<li id="shellmenu_37"><a href="http://technet.microsoft.com/kk-kz/" class="shell-l3-list-item">TechNet</a></li>
-													<li id="shellmenu_38"><a href="http://www.visualstudio.com" class="shell-l3-list-item">Visual Studio</a></li>
-												</ul>
-											</dd>
-										</dl>
-										<dl class="shell-header-dropdown-tab active" ms.cmpnm="Продукты; Для учащихся и преподавателей"><dt id="shellmenu_39" class="shell-header-dropdown-tab-label"><a href="javascript:void(0)">Для учащихся и преподавателей<i class="shell-icon-dropdown facing-right"></i></a></dt>
-											<dd class="shell-header-dropdown-tab-content">
-												<ul class="shell-header-dropdown-tab-list">
-													<li id="shellmenu_40"><a href="http://www.microsoftstore.com/store/msru/ru_KZ/cat/%D0%9C%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD-%D0%B4%D0%BB%D1%8F-%D1%81%D1%82%D1%83%D0%B4%D0%B5%D0%BD%D1%82%D0%BE%D0%B2/categoryID.67042700" class="shell-l3-list-item">Купить компьютеры и планшеты: оптимально для студентов</a></li>
-												</ul>
-											</dd>
-										</dl>
-									</div>
-								</li>
-								<li id="l1_support" class="shell-header-dropdown-label"><a class="top-level-link-text ctl_headerNavLink" href="https://support.microsoft.com/ru-kz">Поддержка</a></li>
-							</ul>
-						</div>
-						<div class="shell-header-user-container">
-							<dl class="shell-header-user"><dt><span id="meControl"><div class="msame_Header msame_unauth" ><div class="msame_Header_name msame_TxtTrunc" >Войти</div><div class="msame_Header_chev"></div></div></span></dt></dl>
-						</div>
-						<div class="shell-header-nav-toggle " ms.cmpgrp="nav">
-							<button class="shell-header-toggle-menu" type="button"><i class="shell-icon-menu"></i></button>
-						</div>
-						<ul class="shell-header-toggle">
-							<li>
-								<button class="shell-header-toggle-search" type="button"><i class="shell-icon-search"></i></button>
-							</li>
-							<li><a id="shell-header-shopping-cart-mobile" href="https://www.microsoftstore.com/store?Action=DisplayPage&amp;Locale=ru-kz&amp;SiteID=msusa&amp;id=ThreePgCheckoutShoppingCartPage" class="shell-header-toggle-cart"><i id="toggle-shell-icon-cart" class="shell-icon-cart"></i><span class="sr-only">Cart</span><span class="shopping-cart-amount"></span></a></li>
-						</ul>
-						<div class="shell-header-actions">
-							<form id="srv_shellHeaderSearchForm" class="shell-search" role="search" action="https://www.microsoft.com/ru-ru/search/result.aspx" method="GET" autocomplete="off" onsubmit=" return window.msCommonShell.onSearch(this) " ms.cmpnm="search">
-								<div class="shell-search-wrapper">
-									<label for="cli_shellHeaderSearchInput" class="sr-only">Search Microsoft</label>
-									<input id="cli_shellHeaderSearchInput" type="search" title="Искать на Microsoft.com" name="q" data-bi-dnt="" placeholder="Искать на Microsoft.com" maxlength="200" tabindex="30">
-									<input type="hidden" name="form" data-bi-dnt="" value="MSHOME">
-									<button type="submit" title="Поиск" data-bi-dnt="" tabindex="40"><i class="shell-icon-search"></i><span class="sr-only">Search</span></button>
-									<div id="cli_searchSuggestionsContainer" class="shell-search-dropdown-container">
-										<div class="search-dropdown">
-											<div class="dropdown-item">
-												<ul id="cli_searchSuggestionsResults" data-bi-name="Search Suggestions" data-bi-source="UnifiedSearch"></ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</form>
-							<div class="shell-header-cart"><a id="shell-header-shopping-cart" href="https://www.microsoftstore.com/store?Action=DisplayPage&amp;Locale=ru-kz&amp;SiteID=msusa&amp;id=ThreePgCheckoutShoppingCartPage"><i class="shell-icon-cart"></i><span class="sr-only">Cart</span><span class="shopping-cart-amount"></span></a></div>
-						</div>
-					</div>
-				</div>
-			</div>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Devices &amp; Xbox</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All Microsoft devices</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Surface</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All Windows PCs &amp; tablets</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">PC Accessories</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox &amp; games</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Band</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Lumia</a> </li>
 
-		</header>
-	</div>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">For business</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Cloud platform</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Azure</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Dynamics</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows for business</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Office for business</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Skype for Business</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Surface for business</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Enterprise solutions</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Small business solutions</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Find a solutions provider</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Volume Licensing</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">For developers &amp; IT pros</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Develop Windows apps</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Azure</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">MSDN</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Technet</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Visual Studio</a> </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">For students &amp; educators</a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Shop PCs &amp; tablets perfect for students</a> </li>
+                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft in Education</a> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item item--dropdown">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__signin">
+                    <a href="#">Sign in</a>
+                </div>
+                <div class="header__cart">
+                    <a href="#" class="shopping-cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        <span class="shpping-cart-amount">0</span>
+                    </a>
+                </div>
+                
+            </div>
+        </header>
+    </div>
 </body>
 
 </html>
