@@ -71,6 +71,7 @@ a {
 	position: absolute;
 	width: 265px;
 	left: 0;
+	z-index: 100;
 	&__item {
 		padding: 15px 40px;
 		&:hover {

@@ -114,7 +114,8 @@ a {
   background-color: #f2f2f2;
   position: absolute;
   width: 265px;
-  left: 0; }
+  left: 0;
+  z-index: 100; }
   .sub-menu__item {
     padding: 15px 40px; }
     .sub-menu__item:hover {
