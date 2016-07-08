@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'segoe';
-  src: url("../styles/fonts/s.ttf");
+  src: url("../styles/fonts/Segoe UI.ttf");
   font-weight: normal;
   font-style: normal; }
 
@@ -72,6 +72,11 @@ a {
   transition: width .3s ease-out;
   z-index: 1000;
   height: 48px; }
+  .header:before, .header:after {
+    content: "";
+    display: table; }
+  .header:after {
+    clear: both; }
 
 .header__wrapper {
   width: 90%;
@@ -95,20 +100,82 @@ a {
 .nav__item, .header__cart, .header__signin {
   float: left;
   padding: 14px 30px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
   .nav__item a, .header__cart a, .header__signin a {
     padding-right: 7px; }
-  .nav__item:hover, .header__cart:hover, .header__signin:hover {
-    background-color: #f2f2f2; }
+
+.nav__item:hover, .header__cart:hover, .header__signin:hover {
+  background-color: #f2f2f2; }
 
 .sub-menu {
-  display: none; }
+  display: none;
+  margin-top: 14px;
+  background-color: #f2f2f2;
+  position: absolute;
+  width: 265px;
+  left: 0; }
+  .sub-menu__item {
+    padding: 15px 40px; }
+    .sub-menu__item:hover {
+      background: #e5e5e5;
+      cursor: pointer; }
 
-.header__signin {
+.submenu-right {
+  left: 265px;
+  top: -14px;
+  background-color: #e5e5e5; }
+  .submenu-right li a:hover {
+    text-decoration: underline; }
+
+.sub-menu__link i {
+  position: absolute;
+  right: 25px;
+  color: #A9A9A9; }
+
+.right-block {
   float: right; }
 
+.search {
+  float: left;
+  padding-top: 4px;
+  display: inline-block;
+  margin-right: 25px;
+  position: relative; }
+  .search:hover {
+    background: none; }
+
+.search__input {
+  width: 244px;
+  height: 36px;
+  border: 1px solid #A9A9A9;
+  border-right: 0;
+  padding: 0 10px;
+  box-sizing: border-box; }
+  .search__input:focus {
+    outline: none; }
+
+input[placeholder] {
+  font-family: 'segoe';
+  color: #2f2f2f; }
+
+.search__button {
+  background: transparent;
+  width: 33px;
+  padding: 0;
+  margin-left: -5px;
+  cursor: pointer;
+  position: absolute;
+  top: 4px;
+  right: -25px;
+  border: 1px solid #A9A9A9;
+  border-left: none;
+  height: 36px;
+  box-sizing: border-box; }
+  .search__button .fa {
+    color: #A9A9A9; }
+
 .header__cart, .header__signin {
-  float: right;
   padding: 16px 10px;
   font-size: 80%; }
   .header__cart i, .header__signin i {
@@ -116,3 +183,78 @@ a {
     vertical-align: middle;
     float: left;
     padding: 2px 4px; }
+
+.hero {
+  clear: both;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+.hero--female {
+  background: #f7f7f7; }
+
+.hero__background-container--female {
+  background-image: url("img/background--pc--female-vfl1oeEA8.jpg");
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0;
+  min-height: 550px;
+  height: 100%; }
+
+.top-section {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 990px;
+  box-sizing: content-box;
+  padding: 20px;
+  z-index: 2; }
+
+.top-section__container {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%; }
+
+.hero__header, .hero__sub-header, .try-business-cta__footer, .try-business-cta__footer a {
+  width: 450px;
+  font-size: 47.25px;
+  max-width: 520px;
+  color: #47525d; }
+
+.hero__sub-header {
+  display: block;
+  margin: 0 auto;
+  font-weight: 100;
+  font-size: 21px;
+  padding-bottom: 20px;
+  line-height: 1.5; }
+
+.try-business-cta {
+  width: 240px; }
+
+.try-business-cta__button {
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 19px 26px;
+  font-size: 21px;
+  line-height: 21px;
+  background: #0071e0;
+  color: #fff;
+  display: block;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  font-weight: normal; }
+
+.try-business-cta__footer, .try-business-cta__footer a {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px; }
+  .try-business-cta__footer a {
+    display: inline;
+    color: #0071e0;
+    border-bottom: 1px solid #0071e0; }
+    .try-business-cta__footer a:hover {
+      color: #3398ea; }

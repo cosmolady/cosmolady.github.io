@@ -2,175 +2,193 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciklum test</title>
-    <link rel="stylesheet" href="build/style.css" />
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/82dfa2204f.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ciklum test</title>
+	<link rel="stylesheet" href="build/style.css" />
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="https://use.fontawesome.com/82dfa2204f.js"></script>
+	<script src="build/main.script.min.js"></script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="header__wrapper">
-                <div class="logo">
-                    <a href="#"> <img src="build/img/microsoft.png" alt="Microsoft" class="logo-img">
-                    </a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item item--dropdown">
-                            <a href="#">Store</a><i class="fa fa-angle-down"></i>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Store home</a></li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Devices</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Surface</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">PCs &amp; tablets</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Band</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Lumia</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Accessories</a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Software</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Office</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Additional software</a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Apps</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All apps</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows apps</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows phone apps</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox apps</a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox Live</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Консоли Xbox</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Аксессуары Xbox</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для Xbox</a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Games</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All games</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox One games</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox 360 games</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows games </a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Games for Windows Phone </a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Entertainment</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All entertainment   </a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Films &amp; TV</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Music</a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Business &amp; Education</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Business</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Student store</a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Sales</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Sales</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Gift cards</a> </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item item--dropdown"><a href="#">Products</a><i class="fa fa-angle-down"></i>
-                            <ul class="sub-menu">
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#"> Software &amp; services</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Office</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Free downloads &amp; security</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Internet Explorer</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Edge</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Skype</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">OneNote</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">OneDrive</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">MSN</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Bing</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Groove</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Films &amp; TV</a> </li>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="logo">
+					<a href="#"> <img src="build/img/microsoft.png" alt="Microsoft" class="logo-img">
+					</a>
+				</div>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item item--dropdown">
+							<a href="#">Store</a><i class="fa fa-angle-down"></i>
+							<ul class="sub-menu sub-menu__main">
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Store home</a></li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Devices<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Surface</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">PCs &amp; tablets</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Band</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Lumia</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Accessories</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Software<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Additional software</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Apps<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">All apps</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows apps</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows phone apps</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox apps</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox Live</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Консоли Xbox</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Аксессуары Xbox</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Игры для Xbox</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Games<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">All games</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox One games</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox 360 games</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows games </a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Games for Windows Phone </a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Entertainment<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">All entertainment   </a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Films &amp; TV</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Music</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Business &amp; Education<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Business</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Student store</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Sale <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Sales</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Gift cards</a> </li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav__item item--dropdown dropdown-2"><a href="#">Products</a><i class="fa fa-angle-down"></i>
+							<ul class="sub-menu sub-menu__main">
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#"> Software &amp; services<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu  submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Free downloads &amp; security</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Internet Explorer</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Edge</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Skype</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">OneNote</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">OneDrive</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">MSN</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Bing</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Groove</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Films &amp; TV</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">Devices &amp; Xbox<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">All Microsoft devices</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Surface</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">All Windows PCs &amp; tablets</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">PC Accessories</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox &amp; games</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Band</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Lumia</a> </li>
 
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">For business<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Cloud platform</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Azure</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Dynamics</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows for business</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Office for business</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Skype for Business</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Surface for business</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Enterprise solutions</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Small business solutions</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Find a solutions provider</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Volume Licensing</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">For developers &amp; IT pros<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Develop Windows apps</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Azure</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">MSDN</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Technet</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Visual Studio</a> </li>
+									</ul>
+								</li>
+								<li class="sub-menu__item"><a class="sub-menu__link" href="#">For students &amp; educators<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+									<ul class="sub-menu submenu-right">
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Shop PCs &amp; tablets perfect for students</a> </li>
+										<li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft in Education</a> </li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="nav__item ">
+							<a href="#">Support</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="right-block">
 
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">Devices &amp; Xbox</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All Microsoft devices</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Surface</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">All Windows PCs &amp; tablets</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">PC Accessories</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Xbox &amp; games</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Band</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Lumia</a> </li>
+					<div class="search">
+						<input type="text" class="search__input" placeholder="Search Microsoft.com">
+						<button type="submit" class="search__button"><i class="fa fa-search" aria-hidden="true"></i></button>
+					</div>
 
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">For business</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Cloud platform</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Azure</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Dynamics</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Windows for business</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Office for business</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Skype for Business</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Surface for business</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Enterprise solutions</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Small business solutions</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Find a solutions provider</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Volume Licensing</a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">For developers &amp; IT pros</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Develop Windows apps</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft Azure</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">MSDN</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Technet</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Visual Studio</a> </li>
-                                    </ul>
-                                </li>
-                                <li class="sub-menu__item"><a class="sub-menu__link" href="#">For students &amp; educators</a>
-                                    <ul class="sub-menu">
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Shop PCs &amp; tablets perfect for students</a> </li>
-                                        <li class="sub-menu__item"><a class="sub-menu__link" href="#">Microsoft in Education</a> </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav__item item--dropdown">
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="header__signin">
-                    <a href="#">Sign in</a>
-                </div>
-                <div class="header__cart">
-                    <a href="#" class="shopping-cart">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					<div class="header__cart">
+						<a href="#" class="shopping-cart">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 
-                        <span class="shpping-cart-amount">0</span>
-                    </a>
-                </div>
-                
-            </div>
-        </header>
-    </div>
+							<span class="shpping-cart-amount">0</span>
+						</a>
+					</div>
+					<div class="header__signin">
+						<a href="#">Sign in</a>
+					</div>
+				</div>
+
+			</div>
+		</header>
+		<section class="hero hero--subline hero--female">
+			<div class="hero__background-container hero__background-container--female"></div>
+			<div class="top-section">
+				<div class="top-section__container">
+					<h1 class="hero__header">Collaborate faster and more securely</h1>
+					<h2 class="hero__sub-header">Boost business productivity with the ultimate file saving and sharing tool that employees love and IT admins trust.</h2>
+					<div class="try-business-cta"> <a href="/business/try" target="" class="try-business-cta__button button-big button-primary">Try free for 30 days</a><span class="try-business-cta__footer no-break">or  <a href="/business/buy">purchase now</a></span></div>
+				</div>
+			</div>
+
+		</section>
+	</div>
 </body>
 
 </html>
