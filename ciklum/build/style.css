@@ -110,7 +110,7 @@ a {
 
 .sub-menu {
   display: none;
-  margin-top: 14px;
+  margin-top: 13px;
   background-color: #f2f2f2;
   position: absolute;
   width: 265px;
@@ -259,3 +259,106 @@ input[placeholder] {
     border-bottom: 1px solid #0071e0; }
     .try-business-cta__footer a:hover {
       color: #3398ea; }
+
+.container.dark-blue {
+  background: #323a45; }
+
+.footer-signup {
+  text-align: center;
+  padding: 160px 0 145px; }
+
+.container {
+  position: relative; }
+  .container .inside {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    clear: both; }
+    .container .inside:before, .container .inside:after {
+      content: "";
+      display: table; }
+    .container .inside:after {
+      clear: both; }
+  .container h2 {
+    margin-bottom: 55px;
+    font-size: 30px;
+    color: white; }
+  .container strong {
+    font-weight: 700; }
+
+.signup_form {
+  display: inline-block;
+  margin-bottom: 31px; }
+  .signup_form input {
+    font: 400 18px/1em "Open Sans", "open-sans", sans-serif;
+    color: #8a959e; }
+  .signup_form p {
+    position: relative;
+    float: left;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.8em;
+    color: #747c83; }
+    .signup_form p i {
+      position: absolute;
+      top: 18px;
+      left: 15px; }
+  .signup_form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    color: #8a959e;
+    margin: 16px 0px 0px 16px;
+    font-weight: 400; }
+
+.footer-signup p input[type=text],
+.footer-signup p input[type=password] {
+  width: 280px;
+  height: 63px;
+  padding-left: 48px;
+  border-radius: 3px;
+  padding: 18px 15px;
+  margin-right: 10px;
+  border: 1px solid #d4d7da;
+  box-sizing: border-box; }
+
+.footer-signup p label {
+  margin-left: 50px; }
+
+.ico-user {
+  display: inline-block;
+  vertical-align: middle;
+  height: 24px;
+  width: 24px;
+  background-image: url("img/global-s116e8c6936.png");
+  background-position: 0 -474px;
+  background-repeat: no-repeat; }
+
+p.button a,
+p.button input,
+p.button button {
+  display: inline-block;
+  padding: 21px 40px 19px;
+  background: #ff3366;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  line-height: 1em;
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  height: 62px;
+  margin-top: 1px;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s; }
+
+.terms {
+  font-size: 12px;
+  line-height: 1.8em;
+  color: #747c83; }
