@@ -1,15 +1,20 @@
 $(function () {
-	$dropdown = $('.item--dropdown');
-	$itemSubmenu = $('.sub-menu__item');
+	$dropdown = $('.shell-header-dropdown');
+	$itemSubmenu = $('.shell-header-dropdown-tab');
 
 	$dropdown.on('click', function () {
-		$dropdown.css('background', 'transparent');
-		$(this).css('background-color', '#f2f2f2');
-		$('.sub-menu__main').css('display', 'none');
-		$(this).children('.sub-menu__main').slideToggle(400);
+		$('.shell-header-dropdown-content').hide();
+		$(this).children('.shell-header-dropdown-content').slideToggle(400);
 	})
 	$itemSubmenu.hover(function () {
-		$('sub-menu__item ul').css('display', 'none');
-		$(this).children('.sub-menu').slideToggle(400);
+		$('.shell-header-dropdown-tab-content').hide();
+		$(this).children('.shell-header-dropdown-tab-content').slideToggle(400);
+	})
+	$formInputs = $('.signup_form p');
+	$formLabels = $('.signup_form p label');
+	$formInputs.on('click', function () {
+		$('label').css('opacity', '1');
+		$(this).children('input').focus();
+		$(this).children('label').css('opacity', '0.5');
 	})
 })
