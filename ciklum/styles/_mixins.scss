@@ -23,3 +23,10 @@
 	background-position: $x $y;
 	background-repeat: no-repeat;
 }
+@mixin transition($time) {
+	-moz-transition: background $time ease-out;
+	-o-transition: background $time ease-out;
+	-webkit-transition: background $time ease-out;
+	transition: background $time ease-out;
+	transition: background $time ease-out;
+}
