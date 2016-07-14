@@ -1,37 +1,42 @@
 $(function () {
-	$(document).ready(function () {
-		$('a').on('click', function (e) {
-			e.preventDefault();
-		});
 
-		$('#ddmenu li').hover(function () {
-			clearTimeout($.data(this, 'timer'));
-			$('ul', this).stop(true, true).slideDown(200);
-		}, function () {
-			$.data(this, 'timer', setTimeout($.proxy(function () {
-				$('ul', this).stop(true, true).slideUp(200);
-			}, this), 100));
-		});
+	$('.shell-header-dropdown').click(function () {
+		$('.shell-header-dropdown-content').hide();
+		$(this).children('.shell-header-dropdown-content').slideDown(400, stop());
 
 	});
+	$('.shell-header-dropdown-tab').hover(
+		function () {
+			$(this).children('.shell-header-dropdown-tab-content').slideDown(400, stop());
 
+		});
 
-	$dropdown = $('.shell-header-dropdown');
-	$itemSubmenu = $('.shell-header-dropdown-tab');
+	function stop() {
+		$('.shell-header-dropdown-content').stop(true, true);
+	};
 
-	$dropdown.on('click', function () {
-		$('.shell-header-dropdown-content').hide();
-		$(this).children('.shell-header-dropdown-content').slideToggle(400);
+	$('#signup_form p').click(
+		function () {
+			that = $(this);
+			that.children('label').css('opacity', '0.5');
+			$('body').filter(that).click(function () {
+				$(this).find($('#signup_form p label')).css('opacity', '1');
+			});
+		})
+	$('#signup_form p input').keydown(
+		function () {
+			$(this).siblings('label').css('display', 'none');
+		});
+
+	$('.shell-header-nav-toggle i').click(function () {
+		$(this).addClass('opened');
+		$('.shell-header-nav-wrapper').addClass('opened').css({
+			'height': 'calc(100% - 48px)',
+			'display': 'block'
+		})
 	})
-	$itemSubmenu.hover(function () {
-		$('.shell-header-dropdown-tab-content').hide();
-		$(this).children('.shell-header-dropdown-tab-content').slideToggle(400);
+	$('.shell-header-toggle-search i').click(function () {
+		$('.shell-search').css('display', 'block');
 	})
-	$formInputs = $('.signup_form p');
-	$formLabels = $('.signup_form p label');
-	$formInputs.on('click', function () {
-		$('label').css('opacity', '1');
-		$(this).children('input').focus();
-		$(this).children('label').css('opacity', '0.5');
-	})
-})
+
+});
