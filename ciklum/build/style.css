@@ -722,6 +722,8 @@ i[class*="shell-icon-"]:before {
   transition: background 0s ease-out; }
 
 .shell-header-dropdown-tab-content {
+  background-color: #e5e5e5;
+  box-sizing: border-box;
   display: none;
   position: static;
   top: 0;
@@ -919,7 +921,6 @@ i[class*="shell-icon-"]:before {
   .shell-header-dropdown-content {
     position: absolute;
     width: auto;
-    padding: 0 0 8px;
     background: #f2f2f2; }
     .shell-header-dropdown-content .shell-header-dropdown-content-notab {
       width: 238px; }
