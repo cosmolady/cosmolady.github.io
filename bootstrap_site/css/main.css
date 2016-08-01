@@ -982,6 +982,9 @@ textarea#message {
 	.partners ul li {
 		width: 33%;
 	}
+	.container {
+    width: 768px !important
+		}
 }
 @media only screen and (min-device-width: 321px) and (max-device-width: 767px) {
 	#accordion1 {
@@ -994,6 +997,10 @@ textarea#message {
 	.partners ul li {
 		width: 33%;
 	}
+	.carousel-indicators{
+		display: none;
+	}
+	
 }
 @media only screen and (max-device-width: 320px) {
 	.carousel-inner {
@@ -1023,5 +1030,8 @@ textarea#message {
 	}
 	.partners ul li {
 		width: 33%;
+	}
+	.carousel-indicators{
+		display: none;
 	}
 }
