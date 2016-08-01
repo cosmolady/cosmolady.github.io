@@ -27,7 +27,7 @@ h6 {
 }
 h1 {
 	font-size: 36px;
-	color: #fff;
+	    color: #C94141;
 }
 h2 {
 	font-size: 20px;
@@ -265,7 +265,7 @@ body > section {
 	text-align: center;
 }
 #main-slider .carousel .slide-margin {
-	margin-top: 140px;
+	margin-top: -25px;
 }
 #main-slider .carousel h2 {
 	color: #fff;
@@ -402,7 +402,7 @@ body > section {
 	animation: fadeInUp 300ms linear 1200ms both;
 }
 .carousel-inner{
-	    height: 593px;
+	    height: 380px;
 }
 #feature {
 	background: #f2f2f2;
