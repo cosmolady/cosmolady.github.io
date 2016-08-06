@@ -294,6 +294,14 @@ h1, h2, h3, h4, h5, h6 {
 .fixed{
     position: fixed;
     bottom: 0;
+    z-index: 10;
+    background-color: #1E90FF;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
 }
 
 /*======================
