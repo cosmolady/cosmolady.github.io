@@ -48,7 +48,7 @@ body {
 }
 
 body  section{
-	padding: 75px 0;
+	padding: 25px 0;
 }
 
 a:hover {
@@ -262,6 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 #navigation .navbar-brand h1{
   padding: 0;
   margin: 0;
+        color: #43484E;
 }
 
 #navigation .navbar-nav.navbar-right li {
@@ -269,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navigation .navbar-nav.navbar-right {
-	margin-top:28px
+	margin-top:20px
 }
 
 #navigation .navbar-nav.navbar-right li a {
@@ -294,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 .fixed{
     position: fixed;
     bottom: 0;
-    z-index: 10;
+    z-index: 102;
     background-color: #1E90FF;
     color: #fff;
     font-size: 30px;
@@ -318,88 +319,60 @@ h1, h2, h3, h4, h5, h6 {
 	background-repeat:repeat;
 	opacity:0.2;
 }
+.carousel-inner{
+    background-image: url(../images/slider/viber%20image.jpg);
+    background-size: cover;
+        height: 530px;
 
-#home{
-  padding: 0;
-  overflow: hidden;
-  position:relative
 }
 
-#main-carousel .carousel-inner .item {
-	background-size:cover;
-	height: 100%;
-	background-position: 50% 50%;
-	background-repeat:no-repeat;
-}
-
-#main-carousel .carousel-indicators { 
-	bottom:15px
-}
-
-#main-carousel .carousel-indicators li{
-	background: rgba(0, 0, 0, 0);
-	border: 1px solid #fff;
-	width: 13px;
-	height: 13px;
-	margin-left: 5px;
-	text-indent: -9999px;
-	display: inline-block;
-}
-
-.carousel-indicators .active{
-	background-color: #fff !important;
-	
-}
 
 .slider-content {
 	height: 100%;
 }
-
-#main-carousel .carousel-caption {
+ .carousel-caption {
 	display: table;
 	height: 100%;
 	width: 100%;
 	min-height: 100%;
 	left: 0;
-	top: 0;
+	top: 10%;
 	z-index: 11;
 }
-
-#main-carousel .carousel-caption > div{
+.carousel-caption > div{
     vertical-align: middle;
     display: table-cell;
 }
 
-#main-carousel .carousel-inner h2 {
+.carousel-inner h2 {
 	color: #f6f6f6;
 	display: inline-block;
 	font-family: roboto;
 	font-size: 55px;
 	font-weight: 800;
 	margin-bottom: 40px;
-	text-shadow: none;
+    text-shadow: 1px 1px 2px #000;
 	text-transform: uppercase;
 }
-
-#main-carousel .carousel-inner h2 span{
+.carousel-inner h2 span{
   color:#7ab700;
 }
 
-#main-carousel .carousel-inner p {
+.carousel-inner p {
 	color: #f6f6f6;
 	font-family: roboto;
 	font-size: 24px;
-	font-weight: 300;
-	margin-bottom: 59px;
-	margin-top: 0;
-	text-shadow:none;
+    font-weight: 800;
+    margin-bottom: 59px;
+    margin-top: 0;
+    text-shadow: 1px 1px 2px #000;
 }
 
-#main-carousel .carousel-left{
+.carousel-left{
 	left:-50px;
 }
 
-#main-carousel .carousel-right{
+.carousel-right{
 	right:-50px;
 }
 
