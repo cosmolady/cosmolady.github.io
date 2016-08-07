@@ -47,10 +47,6 @@ body {
 	color:#43484E
 }
 
-body  section{
-	padding: 25px 0;
-}
-
 a:hover {
 	outline: none;
 	text-decoration:none;
@@ -325,7 +321,9 @@ h1, h2, h3, h4, h5, h6 {
         height: 530px;
 
 }
-
+#home{
+    position: relative;
+}
 
 .slider-content {
 	height: 100%;
@@ -429,9 +427,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 #about-us {
-	background:#F6F6F6;
 	overflow: hidden;
-	padding: 85px 0;
+	padding: 45px 0;
 }
 
 #about-us h2 {
@@ -607,6 +604,7 @@ h1, h2, h3, h4, h5, h6 {
 .single-service {
 	background-color: rgba(0, 0, 0, 0.39);
 	padding:25px;
+    text-align: center;
 	transition: all 0.9s ease 0s;
 	-moz-transition: all 0.9s ease 0s;
 	-webkit-transition: all 0.9s ease 0s;
