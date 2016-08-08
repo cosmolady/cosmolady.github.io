@@ -71,6 +71,9 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight:800;
     text-align: center;
 }
+li{
+    list-style-type: none;
+}
 
 .slider-btn {
 	background-color:#fc7700;
@@ -431,9 +434,6 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 45px 0;
 }
 
-#about-us h2 {
-	margin-bottom:35px
-}
 
 .title-one {
 	color: #666666;
@@ -472,9 +472,14 @@ h1, h2, h3, h4, h5, h6 {
 
 #about-us p {
 	font-weight:300;
-	font-size:15px
+	font-size:18px;
+    text-align: center;
+    
 }
-
+#about-us span{
+    font-weight: 400;
+    color:#fc7700;
+}
 .about-us .col-sm-6 {
 	margin-top:50px
 }
@@ -484,7 +489,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 18px;
 	text-transform: uppercase;
 }
-
 .about-us .tab-content {
 	background:#FFFFFF;
 	border-bottom: 1px solid #DDDDDD;
