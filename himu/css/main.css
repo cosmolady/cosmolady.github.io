@@ -1141,6 +1141,12 @@ li{
 	background-repeat:repeat;
 	opacity:0.2;
 }
+.viber:before{
+    content: '';
+    background-image: url('/images/viber.png');
+    width: 10px;
+    height: 10px;
+}
 
 .steps{
         font-weight: 900;
