@@ -21,6 +21,14 @@
 <!--/head-->
 
 <body>
+   <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
     <div class="preloader">
         <div class="preloder-wrap">
             <div class="preloder-inner">
@@ -192,6 +200,7 @@
                     <div class="col-sm-8 col-sm-offset-2">
                         <h2 class="title-one">Что клиенты говорят о нас</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                        <div class="fb-comments" data-href="http://cosmolady.github.io/himu/" data-width="200" data-numposts="5"></div>
                         <a class="btn btn-default slider-btn animated fadeIn" href="#" data-toggle="modal" data-target=".modal">Оставить отзыв</a>
                     </div>
                 </div>
