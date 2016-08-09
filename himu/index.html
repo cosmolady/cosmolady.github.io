@@ -21,14 +21,18 @@
 <!--/head-->
 
 <body>
-   <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
     <div class="preloader">
         <div class="preloder-wrap">
             <div class="preloder-inner">
@@ -93,7 +97,7 @@
             <div class="text-center">
                 <div class="col-sm-8 col-sm-offset-2">
                     <h2 class="title-one">Почему мы?</h2>
-                    <p> Мы занимаемся установкой автостекол более <span>15</span> лет. За это время было установлено более <span>5000</span> автостекол на все марки автомобилей, в том числе на автобусы, электрички и грузовые автомобили. Наш опыт позволяет давать <span>пожизненную гарантию</span> на установку
+                    <p> Мы занимаемся установкой автостекол больше <span>15</span> лет. За это время было установлено более <span>5000</span> автостекол на все марки автомобилей, в том числе на автобусы, электрички и грузовые автомобили. Наш опыт позволяет давать <span>пожизненную гарантию</span> на установку.
                     </p>
                 </div>
             </div>
@@ -128,6 +132,13 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="title-one">Что клиенты говорят о нас</h2>
+                    <p>Оставьте, пожалуйста, Ваш отзыв</p>
+                    <div class="fb-comments" data-href="http://cosmolady.github.io/himu/" data-width="600" data-numposts="5"></div>
+                </div>
+            </div>
         </div>
     </section>
     <!--/#about-us-->
@@ -135,41 +146,27 @@
     <section id="services" class="parallax-section">
         <div class="container">
             <div class="row text-center">
-                    <h2 class="title-one">Установка автостекла</h2>
-                    <p>
-                        Все что Вам надо сделать - это <span>позвонить нам</span> или <span>заказать звонок</span>. Мы быстро подберем подходящее стекло, затем наш мастер приедет к Вам и установит стекло всего за <span>1 час</span>.</p>
-                        
-                        <div class="col-lg-3 col-xs-6 col-sm-3 steps">
-					<span class="arrow picarrow">&gt;</span>
-					<div class="pic-title"><span class="number">1</span> мы подбираем Вам стекло нужной конфигурации;</div>
-
-				</div>
-				<div class="col-lg-3 col-xs-6 col-sm-3 steps">
-					<span class="arrow picarrow sm-dissapear">&gt;</span>
-					<div class="pic-title"><span class="number">2</span> согласовываем с Вами стоимость стекла и работы, а также время замены;</div>
-				</div>
-				<div class="col-lg-3 col-xs-6 col-sm-3 steps">
-					<span class="arrow picarrow">&gt;</span>
-					<div class="pic-title"><span class="number">3</span> принимаем у Вас адрес, где будет установка/ замена стекла;</div>
-				</div>
-				<div class="col-lg-3 col-xs-6 col-sm-3 steps">
-									<span class="arrow picarrow"><i class="fa fa-smile-o" aria-hidden="true"></i>
-</span>
-
-					<div class="pic-title"><span class="number">4</span>на указанный Вами адрес выезжает мастер и устанавливает стекло;</div>
-				</div>
-                
-				</div>
-                        
-<!--
-                        <div class="steps"><span class="number">1</span><p> мы подбираем Вам стекло нужной конфигурации; </p><i class="fa fa-arrow-circle-right fa-4" aria-hidden="true"></i></div>
-                        <div class="steps"><span class="number">2</span> <p>согласовываем с Вами стоимость стекла и работы, а также время замены; </p><i class="fa fa-arrow-circle-right fa-4" aria-hidden="true"></i></div>
-                        <div class="steps"><span class="number">3</span> <p>принимаем у Вас адрес, где будет установка/ замена стекла;</p><i class="fa fa-arrow-circle-right fa-4" aria-hidden="true"></i></div>
-                        <div class="steps"><span class="number">4</span><p>на указанный Вами адрес выезжает мобильная бригада и устанавливает за 30-60 мин боковое и за 60-80 мин лобовое или заднее стекло;</p><i class="fa fa-arrow-circle-right fa-4" aria-hidden="true"></i> </div>
-                        <div class="steps"><span class="number">5</span><p> если устанавливалось стекло на клей машина должна отстояться 1-2 часа.</p></div>
--->
-                    <a class="btn btn-default slider-btn animated fadeIn" href="#" data-toggle="modal" data-target=".modal">Заказать установку</a>
+                <h2 class="title-one">Установка автостекла</h2>
+                <p>Установка состоит из следующих 4 шагов</p>
+                <div class="col-lg-3 col-xs-6 col-sm-3 steps">
+                    <span class="arrow picarrow">&gt;</span>
+                    <div class="pic-title"><span class="number">1</span>позвоните нам или закажите установку</div>
+                </div>
+                <div class="col-lg-3 col-xs-6 col-sm-3 steps">
+                    <span class="arrow picarrow sm-dissapear">&gt;</span>
+                    <div class="pic-title"><span class="number">2</span> за 30 минут мы подберем подходящее Вам стекло</div>
+                </div>
+                <div class="col-lg-3 col-xs-6 col-sm-3 steps">
+                    <span class="arrow picarrow">&gt;</span>
+                    <div class="pic-title"><span class="number">3</span> мы согласуем с Вами его стоимость и уточним адрес, где будет происходить установка</div>
+                </div>
+                <div class="col-lg-3 col-xs-6 col-sm-3 steps">
+                    <span class="arrow picarrow"><i class="fa fa-smile-o" aria-hidden="true"></i></span>
+                    <div class="pic-title"><span class="number">4</span>на указанный Вами адрес приедет мастер и устанавит стекло всего за 60 минут</div>
+                </div>
             </div>
+            <a class="btn btn-default slider-btn animated fadeIn" href="#" data-toggle="modal" data-target=".modal">Заказать установку</a>
+        </div>
 
     </section>
     <!--/#service-->
@@ -179,13 +176,11 @@
             <div class="row text-center">
                 <div class="col-sm-8 col-sm-offset-2">
                     <h2 class="title-one">Продажа автостекла</h2>
-                    <p> <i class="fa fa-globe" aria-hidden="true"></i> широкий выбор производителей из Европы и Азии; </p>
-                    <p> <i class="fa fa-car" aria-hidden="true"></i>
- мы продаем лобовые, задние и боковые автостекла;</p>
-                    <p><i class="fa fa-archive" aria-hidden="true"></i> в заказ можем включить дополнительные комплектующие: молдинг, клей, датчик; </p> 
-                    <p><i class="fa fa-book" aria-hidden="true"></i> точный подбор автостекла по каталогу EUROCODE;</p> 
-                    <p> <i class="fa fa-envelope" aria-hidden="true"></i>
- отправка по Украине в течении 1 дня с момента заказа.</p>
+                    <p> Подберем стекло на любой автомобиль в течении 30 минут</p>
+                    <p> <i class="fa fa-car" aria-hidden="true"></i> Продаем лобовые, задние и боковые автостекла</p>
+                    <p><i class="fa fa-archive" aria-hidden="true"></i> Также есть в наличии молдинги, датчики и клей </p>
+                    <p><i class="fa fa-archive" aria-hidden="true"></i> Работаем только с лучшими поставщиками </p>
+                    <p> <i class="fa fa-envelope" aria-hidden="true"></i> Отправка Новой почтой в течении 1 дня с момента заказа</p>
                     <a class="btn btn-default slider-btn animated fadeIn" href="#" data-toggle="modal" data-target=".modal">Узнать сколько стоит</a>
                 </div>
             </div>
@@ -198,9 +193,27 @@
             <div class="clients-wrapper">
                 <div class="row text-center">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <h2 class="title-one">Что клиенты говорят о нас</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                        <div class="fb-comments" data-href="http://cosmolady.github.io/himu/" data-width="200" data-numposts="5"></div>
+                        <h2>Производители</h2>
+                        <p class="lead">Alfa Romeo, AUDI, BMW, Chrysler, Citroen, Daewoo, FIAT, Ford, Honda, Hyundai, Jaguar, Kia, Lancia, MAN, Mazda, Mercedes-Benz, Mitsubishi, NISSAN, Opel, Peugeot, Renault, SAAB, SEAT, Skoda, Subaru, Suzuki, Toyota, VOLVO, VW и др.</p>
+                    </div>
+                    <div class="partners">
+                        <ul>
+                            <li>
+                                <a href="http://www.saint-gobain-sekurit.com/" target="_blank"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="images/partners/logosekuritnew_3.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.guardian.com/" target="_blank"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/partners/guardian-logo-footer.png"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.buypgwautoglass.com/" target="_blank"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="images/partners/pgw.png"></a>
+                            </li>
+                            <li>
+                                <a href="http://www.pilkington.com/" target="_blank"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/partners/pin.png"></a>
+                            </li>
+                            <li>
+                                <a href="http://www.shatterprufe.co.za/" target="_blank"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="images/partners/shat.png"></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
