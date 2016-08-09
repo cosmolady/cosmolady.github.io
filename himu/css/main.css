@@ -555,6 +555,7 @@ li{
   color:#fff;
   text-align:center;
   background-color:	#0A0A13;
+    padding: 65px 0;
 }
 
 .services {
@@ -617,10 +618,13 @@ li{
 ======Our Team CSS=====
 =======================*/
 
-#team-carousel {
-	position:relative
+#sales{
+     padding: 65px 0;
+   
 }
-
+#services .btn,#sales .btn{
+    width: 250px;
+}
 #our-team {
 	background-color:#f6f6f6;
 	color:#43484E;
@@ -892,6 +896,7 @@ li{
 #clients{
 	background-image: url("../images/clients/client-bg.jpg");
 	background-color:#0A0A13;
+    padding: 65px 0;
 }
 
 #clients h2 {
@@ -1111,8 +1116,8 @@ li{
 	overflow:hidden;
 	background-color: #f6f6f6;
 	position:relative;
-	padding-bottom:85px;
-	border-top:2px solid #ddd
+	border-top:2px solid #ddd;
+    padding-top: 65px;
 }
 
 #contact .contact-heading {
@@ -1120,10 +1125,10 @@ li{
 	position: relative;
 	z-index: 10;
 }
-
-.contact-details {	
-	padding-top:75px;
+#contact p, #sales p, #services p, #clients p{
+    font-size: 18px;
 }
+
 
 .pattern {
 	height:100%;
@@ -1137,13 +1142,50 @@ li{
 	opacity:0.2;
 }
 
-
+.steps{
+        font-weight: 900;
+    text-shadow: 1px 2px 1px #000;
+    margin-top: -65px;
+}
 .contact-address {
 	background-color: #fff;
 	height:390px;
-	padding-top:85px
+	padding-top: 30px;
+    font-size: 18px;
 }
 
+.number{
+width: 45px;
+    height: 51px;
+    display: block;
+    margin: 0 auto;
+    color: #fc7700;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 44px;
+}
+.arrow{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size:5em;
+	margin:0 15px;
+}
+.picarrow{
+    position: relative;
+	    top: 124px;
+    left: 150px;
+    color: #fc7700;
+	
+}
+.copyright{
+	font-weight:300;
+	font-size:1.5em;
+	margin-top:3em;
+}
+
+.pic-title{
+	text-transform:uppercase;
+	font-size:1.2em;
+        padding: 0 22px 45px 22px;
+}
 .contact-address .social-icons a i {
 	border-radius:0;
 	height:30px;
