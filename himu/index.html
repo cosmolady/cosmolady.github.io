@@ -22,6 +22,7 @@
 
 <body>
    <div id="fb-root"></div>
+<!--
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -29,6 +30,7 @@
   js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.7";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+-->
     <div class="preloader">
         <div class="preloder-wrap">
             <div class="preloder-inner">
@@ -200,7 +202,7 @@
                     <div class="col-sm-8 col-sm-offset-2">
                         <h2 class="title-one">Что клиенты говорят о нас</h2>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                        <div class="fb-comments" data-href="http://cosmolady.github.io/himu/" data-width="200" data-numposts="5"></div>
+<!--                        <div class="fb-comments" data-href="http://cosmolady.github.io/himu/" data-width="200" data-numposts="5"></div>-->
                         <a class="btn btn-default slider-btn animated fadeIn" href="#" data-toggle="modal" data-target=".modal">Оставить отзыв</a>
                     </div>
                 </div>
@@ -226,13 +228,18 @@
                     <div class="col-sm-6">
                         <div class="contact-address">
                             <address>
-                            <p>Замена автостекла</p>
-                        <strong>г.Киев<br>улица Вербовая 20-А</strong><br><small>( 1км от м.Петровка )</small><br>
-                        Телефоны:<br>
-                        0674648478 <br>
-                        0669377989 <br>
-                        0445616307 <br>
-                        Email:<br>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+<strong>г.Киев, улица Вербовая 20-А</strong><br>( 1км от м.Петровка )<br>
+                        
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+0674648478 <br>
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+0669377989 <br>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+0445616307 <br>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+
+Email:<br>
                         skorik7777@mail.ru<br> 
                         </address>
                             <a class="btn btn-default slider-btn animated fadeIn" href="#" data-toggle="modal" data-target=".modal">Написать нам</a>
@@ -241,21 +248,29 @@
                     <div class="col-sm-6">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.6701569731654!2d30.507257315732584!3d50.48448397948008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce06986c1c4d%3A0xa7ef2f3349df8456!2zMjBBLCDQstGD0LvQuNGG0Y8g0JLQtdGA0LHQvtCy0LAsIDIw0JAsINCa0LjRl9Cy!5e0!3m2!1sru!2sua!4v1470733750147" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
-                    <div class="modal fade">
+                    <div class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog">
-                            <div class="modal-content">
+                           
+                         <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Напишите нам, мы ждем :)</h4>
                                 <div id="contact-form-section">
-                                    <div class="status alert alert-success" style="display: none"></div>
-                                    <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                                    
+                                    
+
                                     <form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
                                         <div class="form-group">
-                                            <input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name">
+                                           <input type="text" name="name" class="form-control name-field" required="required" placeholder="Ваше имя">
+                                            
                                         </div>
                                         <div class="form-group">
-                                            <input type="tel" name="phone" class="form-control mail-field" required="required" placeholder="Your Phone">
+                                         <input type="tel" name="phone" class="form-control mail-field" required="required" placeholder="Ваш номер телефона">
+                                            
                                         </div>
                                         <div class="form-group">
-                                            <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+                                          <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Марка автомобиля, год выпуска, комментарий"></textarea>
+
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-primary">Отправить</button>
