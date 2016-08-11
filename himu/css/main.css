@@ -272,7 +272,19 @@ li {
 	text-align: right;
 	padding: 10px;
 }
-
+.viber{
+	display: inline-block;
+}
+.viber:before{
+	content: '';
+	background-image: url('../images/viber.png');
+	width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-size: cover;
+    background-position: -1px 1px;
+    background-repeat: no-repeat;
+}
 /*======================
 ====Main Slider CSS=====
 =======================*/
