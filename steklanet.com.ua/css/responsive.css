@@ -167,6 +167,12 @@
 	.partners ul li {
 		width: 14%;
 	}
+	.fixed{
+		font-size: 18px;
+    font-weight: 400;
+		padding: 10px 0;
+	}
+
 }
 @media (max-width:479px) {
 	body section {
@@ -302,4 +308,7 @@
 	.picarrow {
     left: 45%;
 }
+	.navbar-brand {
+    	width: 250px;
+	}
 }

@@ -272,6 +272,15 @@ li {
 	text-align: right;
 	padding: 10px;
 }
+.fixed a{
+	color:#fff;
+}
+.fixed a,
+.fixed a:active, 
+.fixed a:visited{
+		text-decoration: none;
+
+}
 .viber{
 	display: inline-block;
 }
