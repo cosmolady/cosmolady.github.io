@@ -8,7 +8,6 @@ class TurboSMS
 
     public function send($destination, $text)
     {
-        echo $text."=>".$destination;
         $client = new SoapClient (self::URL);
         $sendResult = array('sent' => false, 'message' => '');
         $result = $client->Auth(array('login' => self::LOGIN, 'password' => self::PASS));
