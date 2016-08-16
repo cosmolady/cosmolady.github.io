@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Oxygen:300,400,700';
-@import url(https://fonts.googleapis.com/css?family=Playball);
+@import 'https://fonts.googleapis.com/css?family=Courgette:300,400,600,700';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 * {
 	margin: 0px;
@@ -11,7 +11,7 @@ body {
 }
 body {
 	background: #F7F7F7 url('../img/splashes.png');
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Courgette', sans-serif;
 	font-size: 18px;
 	color: #CFD5D7;
 	overflow-x: hidden;
