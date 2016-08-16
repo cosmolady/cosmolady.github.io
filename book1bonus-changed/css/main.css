@@ -37,6 +37,7 @@ h1 {
 .textp{
 	text-align: center;
 	text-transform: uppercase;
+        font-size: 50px;
 }
 span.red {
 	color: #F44336;
@@ -91,7 +92,7 @@ h1 {
 .thanks__p{
 	text-align: center;
     margin-top: 0;
-    font-size: 20px;
+    font-size: 30px;
     padding: 0;
     font-weight: 600;
 }
@@ -123,6 +124,7 @@ p.normalp {
     color: #333;
     font-size: 18px;
     text-align: center;
+        margin-bottom: 40px;
 }
 
 .arrow {
@@ -165,6 +167,8 @@ input.text {
 	color: #000;
 	border-radius: 5px;
 	margin-top: 20px;
+    	font-family: 'Open Sans', sans-serif;
+
 }
 button.submit {
 	font-family: 'Open Sans', sans-serif;
@@ -205,4 +209,18 @@ button.submit i {
 	.arrowmp {
 		bottom: -225px;
 	}
+}
+@media only screen and (max-width: 480px) {
+    .textp{
+        font-size: 25px;
+    }
+    .thanks__p{
+        font-size: 20px;
+    }
+    .check{
+        font-size: 20px;
+    }
+    .submit{
+        font-size: 10px;
+    }
 }
