@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html id="up">
+
+<head>
+	<title>Thank you for subscribing</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- FONT AWSOME -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/5aab3242b7.js"></script>
+	<script src="js/measurer.js"></script>
+	<script src="js/gradienttext.js"></script>
+</head>
+
+<body>
+<style>
+	p{
+		margin: 0 auto;
+	}
+	</style>
+	<div class="wrapper">
+		<header>
+			<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+			<div class="text">
+				<p class="textp"><span class="gradient">Thank you
+				<?php echo $user ?> for  subscribing!</span></p><p>You'll get an email shortly with your download link. Please check your email spam folder if you do not receive the email.</p>
+			</div>
+			
+		</header>
+	</div>
+	<script>
+			$(document).ready(function() { $('.gradient').gradientText({ colors: ['#fc7264', '#fe9952', '#fec64f'] }); })
+
+	</script>
+</body>
+
+</html>

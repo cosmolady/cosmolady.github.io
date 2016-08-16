@@ -1,0 +1,84 @@
+/* BUTTONS */
+.btn {
+	text-transform: uppercase;
+	background: #77C9D4;
+	border: none;
+	padding: 1em 2em;
+	border-radius: 99px;
+}
+.btn i {
+	margin-left: 1em;
+	font-size: 1.1em;
+}
+
+/* NAVBAR NAV */
+nav {
+	padding: 1.2em;
+	border-radius: none;
+}
+.navbar-nav {
+	margin-right: 2em;
+}
+.navbar-nav li a {
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fff;
+    text-align: center;
+    padding: 10px 25px;
+    letter-spacing: 1px;
+}
+.navbar-nav li a i {
+	margin-right: 10px;
+	transition: all ease 0.2s;
+}
+.navbar-nav li a:hover i {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+.navbar-nav li a i{
+	margin-left: 
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    background: none;
+}
+.jumbotron p {
+	color: #fff;
+	font-size: 1.5em;
+	margin: 2em 0em;
+	line-height: 1.5em;
+}
+.jumbotron h1 {
+	color: #fff !important;
+}
+
+.bottom-borderised {
+	padding-bottom: 0.5em;
+    position: relative;
+}
+.bottom-border {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    width: 1em;
+    height: 0.5em;
+    left: 1em;
+    border-bottom: 1px solid;	
+}
+
+/** ANIMATED SIGN **/
+@keyframes sign-animation {
+    0%   {padding-top: 7px;}
+    50%  {padding-top: 0px;}
+    100% {padding-top: 7px;}
+}
+.animated-sign {
+	display: inline-block;
+	position: absolute;
+    left: 50%;
+    color: #fff;
+    animation-name: sign-animation;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
