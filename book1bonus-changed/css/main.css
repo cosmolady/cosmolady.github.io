@@ -59,7 +59,7 @@ section {
 .container {
 	padding: 50px;
 	margin-top: 15px;
-	box-shadow: 17px 22px 30px #868686;
+	box-shadow: 17px 22px1 30px #868686;
 }
 .is {
 	box-shadow: 15px 14px 36px #868686;
@@ -114,6 +114,9 @@ p.normalp {
 	text-align: center;
 	margin-bottom: 40px;
 }
+.none{
+    display: none;
+}
 .arrow_bounce {
 	width: 74px;
 	height: 74px;
@@ -121,27 +124,6 @@ p.normalp {
 	border-top: 35px solid #ffa279;
 	margin: 0 auto;
 	cursor: pointer;
-}
-.arrow_stop{
-    width: 74px;
-	height: 74px;
-	border: 65px solid transparent;
-	border-bottom: 35px solid #ffa279;
-	margin: 0 auto;
-	cursor: pointer;
-    display: none;
-}
-.none{
-    display: none;
-}
-@keyframes shadow {
-	0%,
-	100% {
-		box-shadow: 2px 2px 30px #000;
-	}
-	50% {
-		box-shadow: 2px 2px 70px #000;
-	}
 }
 .arrop {
 	width: 100%;
@@ -215,6 +197,10 @@ button.submit i {
     .arrop{
 /*        padding-top: 50px;*/
     }
+    .arrow_bounce {
+	border: 40px solid transparent;
+	border-top: 25px solid #ffa279;
+}
 	.textp {
 		font-size: 25px;
 	}
