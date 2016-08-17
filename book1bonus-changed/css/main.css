@@ -52,16 +52,7 @@ header {
 	overflow: hidden;
 	position: relative;
 }
-header i {
-	display: block;
-	font-size: 6em !important;
-	margin: 0px auto;
-	width: 100px;
-	color: #CDDC39;
-	position: absolute;
-	left: calc(50% - 50px);
-	top: 5%;
-}
+
 section {
 	background: transparent;
 	overflow: hidden;
@@ -141,19 +132,20 @@ p.normalp {
 		box-shadow: 2px 2px 70px #000;
 	}
 }
+.arrow_wrap{
+    overflow: hidden;
+}
 .arrop {
-	margin: 0 auto;
+/*	margin: 0 auto;*/
 	width: 100%;
-	bottom: -0;
+	bottom: 0;
 	left: 0;
-	position: absolute;
+	position: relative;
 }
 .arrowup {
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	transform: rotate(180deg);
-	margin-bottom: 40px;
-	animation: none;
 }
 input.text {
 	width: 100%;
@@ -211,7 +203,7 @@ button.submit i {
         width: 70%;
     }
     .arrop{
-        bottom: -10px;
+/*        padding-top: 50px;*/
     }
 	.textp {
 		font-size: 25px;
