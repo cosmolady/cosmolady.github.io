@@ -210,6 +210,9 @@ button.submit i {
     .wrapper{
         width: 70%;
     }
+    .arrop{
+        bottom: -10px;
+    }
 	.textp {
 		font-size: 25px;
 	}
