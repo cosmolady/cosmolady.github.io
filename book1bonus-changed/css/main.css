@@ -124,13 +124,25 @@ p.normalp {
 	text-align: center;
 	margin-bottom: 40px;
 }
-.arrow {
+.arrow_bounce {
 	width: 74px;
 	height: 74px;
 	border: 65px solid transparent;
 	border-top: 35px solid #ffa279;
 	margin: 0 auto;
 	cursor: pointer;
+}
+.arrow_stop{
+    width: 74px;
+	height: 74px;
+	border: 65px solid transparent;
+	border-bottom: 35px solid #ffa279;
+	margin: 0 auto;
+	cursor: pointer;
+    display: none;
+}
+.none{
+    display: none;
 }
 @keyframes shadow {
 	0%,
@@ -144,7 +156,7 @@ p.normalp {
 .arrop {
 	margin: 0 auto;
 	width: 100%;
-	bottom: -0;
+	bottom: 0;
 	left: 0;
 	position: absolute;
 }
