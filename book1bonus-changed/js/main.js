@@ -26,7 +26,7 @@ $(document).ready(function () {
             $(this).attr('href', '#up');
             arrow.stop(true, true);
             arrow.addClass('arrowup');
-            clearInterval(intervalId);true
+            clearInterval(intervalId);
         } else if ($(this).attr('href') == "#up") {
             $(this).attr('href', '#subscribe');
             arrow.removeClass('arrowup');
@@ -35,7 +35,7 @@ $(document).ready(function () {
     });
 
     function startArrowJump(arrow) {
-        arrow.effect("bounce", 4000);
+        //arrow.effect("bounce", 4000);
         return setInterval(function () {
             arrow.effect("bounce", 4000);
         }, 4000);

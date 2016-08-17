@@ -26,7 +26,6 @@ body {
 	background-color: #fff;
 }
 h1 {
-	position: relative;
 	font-size: 45px;
 	color: #464646;
 }
@@ -133,11 +132,10 @@ p.normalp {
 	}
 }
 .arrop {
-/*	margin: 0 auto;*/
 	width: 100%;
 	bottom: 0;
 	left: 0;
-	position: relative;
+	position: absolute;
 }
 .arrowup {
 	-webkit-transform: rotate(180deg);
