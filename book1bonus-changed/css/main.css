@@ -199,6 +199,9 @@ button.submit i {
     .wrapper{
         width: 70%;
     }
+    .header{
+        padding-top: 20px;
+    }
     .arrop{
 /*        padding-top: 50px;*/
     }
