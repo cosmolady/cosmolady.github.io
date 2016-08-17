@@ -24,13 +24,13 @@ $(document).ready(function () {
         } // End if
         if ($(this).attr('href') == "#subscribe") {
             $(this).attr('href', '#up');
-            clearInterval(intervalId);
-            arrow.stop(true);
+            arrow.stop(true, true);
             arrow.addClass('arrowup');
+            clearInterval(intervalId);true
         } else if ($(this).attr('href') == "#up") {
             $(this).attr('href', '#subscribe');
-            intervalId = startArrowJump(arrow);
             arrow.removeClass('arrowup');
+            intervalId = startArrowJump(arrow);
         }
     });
 
