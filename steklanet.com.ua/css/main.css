@@ -1436,3 +1436,14 @@ address i {
 	content: "\00d7";
 	text-align: center;
 }
+.none{
+    display: none;
+}
+.block{
+    display: block;
+}
+
+.error_message{
+    color: #f00;
+}
+
