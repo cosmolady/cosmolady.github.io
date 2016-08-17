@@ -222,26 +222,24 @@ button.submit i {
 	input.text::-webkit-input-placeholder {
 		/* Chrome/Opera/Safari */
 		font-size: 13px;
-		color:#000;
+		color: #000;
 	}
 	input.text:-moz-placeholder {
 		/* Firefox 19+ */
 		font-size: 13px;
-				color:#000;
-
+		color: #000;
 	}
 	input.text:-ms-input-placeholder {
 		/* IE 10+ */
 		font-size: 13px;
-				color:#000;
-
+		color: #000;
 	}
 	input.text:-moz-placeholder {
 		/* Firefox 18- */
 		font-size: 12px;
-				color:#000;
-
+		color: #000;
 	}
 	input.text {
-		padding: 20px 5px;}
+		padding: 20px 5px;
+	}
 }
