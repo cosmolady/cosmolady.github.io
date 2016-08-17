@@ -233,3 +233,20 @@ button.submit i {
 		padding: 20px 5px;
 	}
 }
+@media only screen 
+  and (max-device-width: 763px)
+  and (orientation: landscape) {
+      .thanks__p{
+          font-size: 13px;
+      }
+      .arrow_bounce{
+          
+	border: 40px solid transparent;
+	border-top: 25px solid #ffa279;
+      }
+      section h2{
+          font-size: 20px;
+          margin: 0 auto;
+      }
+
+}
