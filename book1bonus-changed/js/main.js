@@ -2,10 +2,8 @@ $(document).ready(function () {
     $('.firstp h1').gradientText({
         colors: ['#fc7264', '#fe9952', '#fec64f']
     });
-var arrow = $(".arrow");
-    var intervalId = setInterval(function () {
-        arrow.effect("bounce", 4000);
-    }, 2000);
+    var arrow = $(".arrow");
+    var intervalId = startArrowJump(arrow);
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
@@ -29,13 +27,18 @@ var arrow = $(".arrow");
             clearInterval(intervalId);
         } else if ($(this).attr('href') == "#up") {
             $(this).attr('href', '#subscribe');
-            intervalId = setInterval(function () {
-                arrow.effect("bounce", 4000);
-            }, 2000);
+            intervalId = startArrowJump(arrow);
         }
         $(this).toggleClass('arrowup');
         $(this).parent().toggleClass('arrowmp');
 
     });
+
+    function startArrowJump(arrow) {
+        arrow.effect("bounce", 4000);
+        return setInterval(function () {
+            arrow.effect("bounce", 4000);
+        }, 4000);
+    }
 });
 //document.body.addEventListener('touchmove', function(e){ e.preventDefault(); });
