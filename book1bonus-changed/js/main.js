@@ -26,7 +26,7 @@ var arrow = $(".arrow");
         } // End if
         if ($(this).attr('href') == "#subscribe") {
             $(this).attr('href', '#up');
-            clearInterval(intervalId);
+			clearInterval(intervalId);
         } else if ($(this).attr('href') == "#up") {
             $(this).attr('href', '#subscribe');
             intervalId = setInterval(function () {

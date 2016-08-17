@@ -10,7 +10,7 @@ body {
 	height: 100%;
 }
 body {
-	background: #F7F7F7 url('../img/splashes.png');
+	background: #F7F7F7 url('../img/splashes_opt.png');
 	font-family: 'Courgette', sans-serif;
 	font-size: 18px;
 	color: #CFD5D7;
@@ -30,14 +30,13 @@ h1 {
 	font-size: 45px;
 	color: #464646;
 }
-
-.text{
+.text {
 	margin-top: 150px;
 }
-.textp{
+.textp {
 	text-align: center;
 	text-transform: uppercase;
-        font-size: 50px;
+	font-size: 50px;
 }
 span.red {
 	color: #F44336;
@@ -48,10 +47,10 @@ span.red {
 
 header {
 	background: transparent;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
 }
 header i {
 	display: block;
@@ -76,7 +75,6 @@ section {
 	box-shadow: 15px 14px 36px #868686;
 	padding: 20px;
 }
-
 h1 {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -86,15 +84,15 @@ h1 {
 	text-align: center;
 	font-size: 3em;
 }
-.thanks__title{
-	    margin-top: 15px;
+.thanks__title {
+	margin-top: 15px;
 }
-.thanks__p{
+.thanks__p {
 	text-align: center;
-    margin-top: 0;
-    font-size: 30px;
-    padding: 0;
-    font-weight: 600;
+	margin-top: 0;
+	font-size: 30px;
+	padding: 0;
+	font-weight: 600;
 }
 h2 {
 	text-transform: uppercase;
@@ -117,22 +115,21 @@ p {
 	/*box-shadow: 0px 1px 2px #C5A269;*/
 }
 p.normalp {
-    width: 60%;
-    font-weight: 600;
-    padding: 10px 0 0;
-    margin: 0 auto;
-    color: #333;
-    font-size: 18px;
-    text-align: center;
-        margin-bottom: 40px;
+	width: 60%;
+	font-weight: 600;
+	padding: 10px 0 0;
+	margin: 0 auto;
+	color: #333;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 40px;
 }
-
 .arrow {
-    width: 74px;
-    height: 74px;
-    border: 65px solid transparent;
-    border-top: 35px solid #ffa279;
-    margin: 0 auto;
+	width: 74px;
+	height: 74px;
+	border: 65px solid transparent;
+	border-top: 35px solid #ffa279;
+	margin: 0 auto;
 	cursor: pointer;
 }
 @keyframes shadow {
@@ -145,11 +142,11 @@ p.normalp {
 	}
 }
 .arrop {
-    margin: 0 auto;
-    width: 100%;
-    bottom: -35px;
-    left: 0;
-    position: absolute;
+	margin: 0 auto;
+	width: 100%;
+	bottom: -35px;
+	left: 0;
+	position: absolute;
 }
 .arrowup {
 	-webkit-transform: rotate(180deg);
@@ -167,8 +164,7 @@ input.text {
 	color: #000;
 	border-radius: 5px;
 	margin-top: 20px;
-    	font-family: 'Open Sans', sans-serif;
-
+	font-family: 'Open Sans', sans-serif;
 }
 button.submit {
 	font-family: 'Open Sans', sans-serif;
@@ -187,7 +183,7 @@ button.submit i {
 	margin-left: 0.5em;
 	font-size: 1.7em;
 }
-.form{
+.form {
 	padding: 15px;
 	vertical-align: middle;
 }
@@ -211,16 +207,34 @@ button.submit i {
 	}
 }
 @media only screen and (max-width: 480px) {
-    .textp{
-        font-size: 25px;
-    }
-    .thanks__p{
-        font-size: 20px;
-    }
-    .check{
-        font-size: 20px;
-    }
-    .submit{
-        font-size: 10px;
-    }
+	.textp {
+		font-size: 25px;
+	}
+	.thanks__p {
+		font-size: 20px;
+	}
+	.check {
+		font-size: 20px;
+	}
+	.submit {
+		font-size: 10px;
+	}
+	input.text::-webkit-input-placeholder {
+		/* Chrome/Opera/Safari */
+		font-size: 13px;
+	}
+	input.text:-moz-placeholder {
+		/* Firefox 19+ */
+		font-size: 13px;
+	}
+	input.text:-ms-input-placeholder {
+		/* IE 10+ */
+		font-size: 13px;
+	}
+	input.text:-moz-placeholder {
+		/* Firefox 18- */
+		font-size: 12px;
+	}
+	input.text {
+		padding: 20px 5px;}
 }
