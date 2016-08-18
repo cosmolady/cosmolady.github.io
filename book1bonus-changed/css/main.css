@@ -125,6 +125,14 @@ p.normalp {
 	margin: 0 auto;
 	cursor: pointer;
 }
+.arrow_stop {
+	width: 74px;
+	height: 74px;
+	border: 65px solid transparent;
+	border-bottom: 35px solid #ffa279;
+	margin: 0 auto;
+	cursor: pointer;
+}
 .arrop {
 	width: 100%;
 	bottom: 0;

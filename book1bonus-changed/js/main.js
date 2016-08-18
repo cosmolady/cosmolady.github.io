@@ -8,6 +8,13 @@ $(document).ready(function () {
     setInterval(function () {
         arrowBounce.effect("bounce", 4000);
     }, 800);
+
+    var arrowUp = $('.static_arrow');
+    var arrowDown = $('.bounce_arrow');
+    arrowUp.css({
+        'visibility': 'hidden'
+    });
+    arrowUp.removeClass('none');
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {
         // Make sure this.hash has a value before overriding default behavior
@@ -23,13 +30,27 @@ $(document).ready(function () {
             }, 800, function () {});
         } // End if
         if ($(this).attr('href') == "#subscribe") {
-            $(this).attr('href', '#up');
             arrowBounce.addClass('arrowup');
-            normalP.css({'visibility':'hidden'});
+            normalP.css({
+                'visibility': 'hidden'
+            });
+            arrowDown.css({
+                'visibility': 'hidden'
+            });
+            arrowUp.css({
+                'visibility': 'visible'
+            });
         } else if ($(this).attr('href') == "#up") {
-            $(this).attr('href', '#subscribe');
             arrowBounce.removeClass('arrowup');
-            normalP.css({'visibility':'visible'});
+            normalP.css({
+                'visibility': 'visible'
+            });
+            arrowUp.css({
+                'visibility': 'hidden'
+            });
+            arrowDown.css({
+                'visibility': 'visible'
+            });
         }
     });
 });
