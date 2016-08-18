@@ -139,11 +139,6 @@ p.normalp {
 	left: 0;
 	position: absolute;
 }
-.arrowup {
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	transform: rotate(180deg);
-}
 input.text {
 	width: 100%;
 	padding: 20px 15px;

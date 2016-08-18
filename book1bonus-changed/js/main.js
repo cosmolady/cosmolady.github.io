@@ -30,7 +30,6 @@ $(document).ready(function () {
             }, 800, function () {});
         } // End if
         if ($(this).attr('href') == "#subscribe") {
-            arrowBounce.addClass('arrowup');
             normalP.css({
                 'visibility': 'hidden'
             });
@@ -41,7 +40,6 @@ $(document).ready(function () {
                 'visibility': 'visible'
             });
         } else if ($(this).attr('href') == "#up") {
-            arrowBounce.removeClass('arrowup');
             normalP.css({
                 'visibility': 'visible'
             });
