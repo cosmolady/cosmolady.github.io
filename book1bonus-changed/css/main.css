@@ -186,8 +186,8 @@ button.submit i {
 }
 @media only screen and (max-width: 480px) {
 	.thanks__p {
-    font-size: 17px;
-}
+		font-size: 17px;
+	}
 	.wrapper {
 		width: 70%;
 	}
@@ -195,7 +195,6 @@ button.submit i {
 		padding-top: 0;
 	}
 	p.normalp {
-	
 		font-size: 17px;
 	}
 	.arrop {
@@ -212,7 +211,6 @@ button.submit i {
 	.textp {
 		font-size: 25px;
 	}
-
 	.check {
 		font-size: 20px;
 	}
@@ -238,7 +236,7 @@ button.submit i {
 	input.text {
 		padding: 20px 5px;
 	}
-	#subscribe h2{
+	#subscribe h2 {
 		font-size: 1.5em;
 	}
 }
@@ -246,7 +244,7 @@ button.submit i {
 	.thanks__p {
 		font-size: 13px;
 	}
-	.thanks__title{
+	.thanks__title {
 		margin-bottom: 7px;
 	}
 	.arrow_bounce {
@@ -260,5 +258,14 @@ button.submit i {
 	section h2 {
 		font-size: 20px;
 		margin: 0 auto;
+	}
+	.is {
+		padding: 5px;
+	}
+	input.text {
+		padding: 5px 5px;
+	}
+	button.submit {
+		padding: 5px;
 	}
 }
