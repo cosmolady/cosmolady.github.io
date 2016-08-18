@@ -246,6 +246,9 @@ button.submit i {
 	.thanks__p {
 		font-size: 13px;
 	}
+	.thanks__title{
+		margin-bottom: 7px;
+	}
 	.arrow_bounce {
 		border: 40px solid transparent;
 		border-top: 25px solid #ffa279;
