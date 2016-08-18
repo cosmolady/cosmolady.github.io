@@ -2,254 +2,285 @@
 @import 'https://fonts.googleapis.com/css?family=Courgette:300,400,600,700';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
 * {
-	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
+
 html,
 body {
-	height: 100%;
+    height: 100%;
 }
+
 body {
-	background: #F7F7F7 url('../img/splashes_opt.png');
-	font-family: 'Courgette', sans-serif;
-	font-size: 18px;
-	color: #CFD5D7;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	position: relative;
-	background-size: 350px;
-	background-repeat: repeat;
+    background: #F7F7F7 url('../img/splashes_opt.png');
+    font-family: 'Courgette', sans-serif;
+    font-size: 18px;
+    color: #CFD5D7;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    background-size: 350px;
+    background-repeat: repeat;
 }
+
 .wrapper {
-	margin: 0 auto;
-	width: 65%;
-	background-color: #fff;
+    margin: 0 auto;
+    width: 65%;
+    background-color: #fff;
 }
+
 h1 {
-	font-size: 45px;
-	color: #464646;
+    font-size: 45px;
+    color: #464646;
 }
+
 .text {
-	margin-top: 150px;
+    margin-top: 150px;
 }
+
 .textp {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
 }
+
 span.red {
-	color: #F44336;
-	text-shadow: 1px 1px 8px;
+    color: #F44336;
+    text-shadow: 1px 1px 8px;
 }
+
 
 /** BEGIN **/
 
 header {
-	background: transparent;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+    background: transparent;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
     padding-top: 35px;
 }
 
 section {
-	background: transparent;
-	overflow: hidden;
+    background: transparent;
+    overflow: hidden;
 }
+
 .container {
-	padding: 50px;
-	margin-top: 15px;
-	box-shadow: 17px 22px1 30px #868686;
+    padding: 50px;
+    margin-top: 15px;
+    box-shadow: 17px 22px1 30px #868686;
 }
+
 .is {
-	box-shadow: 15px 14px 36px #868686;
-	padding: 20px;
+    box-shadow: 15px 14px 36px #868686;
+    padding: 20px;
 }
+
 h1 {
-	text-transform: uppercase;
-	font-weight: 700;
-	margin: 2em 0px;
-	margin-bottom: 0.5em;
-	color: #000;
-	text-align: center;
-	font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 2em 0px;
+    margin-bottom: 0.5em;
+    color: #000;
+    text-align: center;
+    font-size: 3em;
 }
+
 .thanks__title {
-	margin-top: 15px;
+    margin-top: 15px;
 }
+
 .thanks__p {
-	text-align: center;
-	margin-top: 0;
-	font-size: 30px;
-	padding: 0;
-	font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+    padding: 0;
+    font-weight: 600;
 }
+
 h2 {
-	text-transform: uppercase;
-	font-weight: 700;
-	margin: 1em 0px;
-	margin-bottom: 0.5em;
-	color: #000;
-	text-align: center;
-	font-size: 2em;
-	font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1em 0px;
+    margin-bottom: 0.5em;
+    color: #000;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Oxygen', sans-serif;
 }
+
 p {
-	width: 60%;
-	text-align: justify;
-	padding: 10px 15px;
-	margin: 5em auto;
-	color: #333;
-	font-size: 1.8em;
-	/*background: #fff;*/
-	/*box-shadow: 0px 1px 2px #C5A269;*/
+    width: 60%;
+    text-align: justify;
+    padding: 10px 15px;
+    margin: 5em auto;
+    color: #333;
+    font-size: 1.8em;
+    /*background: #fff;*/
+    /*box-shadow: 0px 1px 2px #C5A269;*/
 }
+
 p.normalp {
-	width: 60%;
-	font-weight: 600;
-	padding: 10px 0 0;
-	margin: 0 auto;
-	color: #333;
-	font-size: 18px;
-	text-align: center;
-	margin-bottom: 40px;
+    width: 60%;
+    font-weight: 600;
+    padding: 10px 0 0;
+    margin: 0 auto;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
 }
-.none{
+
+.none {
     display: none;
 }
+
 .arrow_bounce {
-	width: 74px;
-	height: 74px;
-	border: 65px solid transparent;
-	border-top: 35px solid #ffa279;
-	margin: 0 auto;
-	cursor: pointer;
+    width: 74px;
+    height: 74px;
+    border: 65px solid transparent;
+    border-top: 35px solid #ffa279;
+    margin: 0 auto;
+    cursor: pointer;
 }
+
 .arrow_stop {
-	width: 74px;
-	height: 74px;
-	border: 65px solid transparent;
-	border-bottom: 35px solid #ffa279;
-	margin: 0 auto;
-	cursor: pointer;
+    width: 74px;
+    height: 74px;
+    border: 65px solid transparent;
+    border-bottom: 35px solid #ffa279;
+    margin: 0 auto;
+    cursor: pointer;
 }
+
 .arrop {
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
 }
+
 input.text {
-	width: 100%;
-	padding: 20px 15px;
-	border: none;
-	background: #FDE757;
-	outline: none;
-	color: #000;
-	border-radius: 5px;
-	margin-top: 20px;
-	font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 20px 15px;
+    border: none;
+    background: #FDE757;
+    outline: none;
+    color: #000;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
+
 button.submit {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	width: 100%;
-	text-align: center;
-	padding: 20px 15px;
-	border: none;
-	outline: none;
-	background: #FDE757;
-	color: #000;
-	margin-top: 20px;
-	border-bottom: 10px solid #EAD64D;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 20px 15px;
+    border: none;
+    outline: none;
+    background: #FDE757;
+    color: #000;
+    margin-top: 20px;
+    border-bottom: 10px solid #EAD64D;
 }
+
 button.submit i {
-	margin-left: 0.5em;
-	font-size: 1.7em;
+    margin-left: 0.5em;
+    font-size: 1.7em;
 }
+
 .form {
-	padding: 15px;
-	vertical-align: middle;
+    padding: 15px;
+    vertical-align: middle;
 }
+
 @media only screen and (max-width: 720px) {
-	body {
-		font-size: 14px;
-	}
-	.arrow {
-		background-size: cover;
-		width: 54px;
-		height: 54px;
-	}
-	p {
-		width: 90%;
-	}
-	.arrowmp p {
-		display: none;
-	}
-	.arrowmp {
-		bottom: -225px;
-	}
+    body {
+        font-size: 14px;
+    }
+    .arrow {
+        background-size: cover;
+        width: 54px;
+        height: 54px;
+    }
+    p {
+        width: 90%;
+    }
+    .arrowmp p {
+        display: none;
+    }
+    .arrowmp {
+        bottom: -225px;
+    }
 }
+
 @media only screen and (max-width: 480px) {
-    .wrapper{
+    .wrapper {
         width: 70%;
     }
-    .header{
+    .header {
         padding-top: 20px;
     }
-    .arrop{
-/*        padding-top: 50px;*/
+    .arrop {
+        /*        padding-top: 50px;*/
     }
     .arrow_bounce {
-	border: 40px solid transparent;
-	border-top: 25px solid #ffa279;
+        border: 40px solid transparent;
+        border-top: 25px solid #ffa279;
+    }
+    .arrow_stop {
+        border: 40px solid transparent;
+        border-bottom: 25px solid #ffa279;
+    }
+    .textp {
+        font-size: 25px;
+    }
+    .thanks__p {
+        font-size: 20px;
+    }
+    .check {
+        font-size: 20px;
+    }
+    .submit {
+        font-size: 10px;
+    }
+    input.text::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        font-size: 13px;
+    }
+    input.text:-moz-placeholder {
+        /* Firefox 19+ */
+        font-size: 13px;
+    }
+    input.text:-ms-input-placeholder {
+        /* IE 10+ */
+        font-size: 13px;
+    }
+    input.text:-moz-placeholder {
+        /* Firefox 18- */
+        font-size: 12px;
+    }
+    input.text {
+        padding: 20px 5px;
+    }
 }
-	.textp {
-		font-size: 25px;
-	}
-	.thanks__p {
-		font-size: 20px;
-	}
-	.check {
-		font-size: 20px;
-	}
-	.submit {
-		font-size: 10px;
-	}
-	input.text::-webkit-input-placeholder {
-		/* Chrome/Opera/Safari */
-		font-size: 13px;
-	}
-	input.text:-moz-placeholder {
-		/* Firefox 19+ */
-		font-size: 13px;
-	}
-	input.text:-ms-input-placeholder {
-		/* IE 10+ */
-		font-size: 13px;
-	}
-	input.text:-moz-placeholder {
-		/* Firefox 18- */
-		font-size: 12px;
-	}
-	input.text {
-		padding: 20px 5px;
-	}
-}
-@media only screen 
-  and (max-device-width: 763px)
-  and (orientation: landscape) {
-      .thanks__p{
-          font-size: 13px;
-      }
-      .arrow_bounce{
-          
-	border: 40px solid transparent;
-	border-top: 25px solid #ffa279;
-      }
-      section h2{
-          font-size: 20px;
-          margin: 0 auto;
-      }
 
+@media only screen and (max-device-width: 763px) and (orientation: landscape) {
+    .thanks__p {
+        font-size: 13px;
+    }
+    .arrow_bounce {
+        border: 40px solid transparent;
+        border-top: 25px solid #ffa279;
+    }
+    .arrow_stop {
+        border: 40px solid transparent;
+        border-bottom: 25px solid #ffa279;
+    }
+    section h2 {
+        font-size: 20px;
+        margin: 0 auto;
+    }
 }

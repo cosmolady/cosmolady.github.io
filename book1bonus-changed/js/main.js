@@ -3,11 +3,10 @@ $(document).ready(function () {
         colors: ['#fc7264', '#fe9952', '#fec64f']
     });
     var arrowBounce = $(".arrow_bounce");
-    var normalP = $('.normalp');
     arrowBounce.effect("bounce", 4000);
     setInterval(function () {
         arrowBounce.effect("bounce", 4000);
-    }, 800);
+    }, 4000);
 
     var arrowUp = $('.static_arrow');
     var arrowDown = $('.bounce_arrow');
@@ -30,9 +29,6 @@ $(document).ready(function () {
             }, 800, function () {});
         } // End if
         if ($(this).attr('href') == "#subscribe") {
-            normalP.css({
-                'visibility': 'hidden'
-            });
             arrowDown.css({
                 'visibility': 'hidden'
             });
@@ -40,9 +36,6 @@ $(document).ready(function () {
                 'visibility': 'visible'
             });
         } else if ($(this).attr('href') == "#up") {
-            normalP.css({
-                'visibility': 'visible'
-            });
             arrowUp.css({
                 'visibility': 'hidden'
             });
