@@ -14,15 +14,22 @@ jQuery(function ($) {
     var errorMessage = $('.error_message');
     $('.btn-send').on('click', function (e) {
         'use strict';
+        var name = $('.name-field').val();
+        var phone = $('.mail-field').val();
+        var message = $('.message-field').val();
+        //if (!checkIsEmptyFields(name, phone, message)) {
+            //errorMessage.removeClass('none');
+            //return;
+        //}
         var spinner = new Spinner().spin();
         $.ajax({
             url: '/steklanet.com.ua/send-mail.php',
             type: 'POST',
             dataType: 'json',
             data: {
-                name: $('.name-field').val(),
-                phone: $('.mail-field').val(),
-                message: $('.message-field').val()
+                name: name,
+                phone: phone,
+                message: message
             },
             success: function (data) {
                 contactForm.addClass('none');
@@ -30,12 +37,10 @@ jQuery(function ($) {
                 spinner.stop();
             },
             error: function (data) {
-                errorMessage.removeClass('none');
                 console.log(data);
                 spinner.stop();
             }
         });
-        return false;
     });
 
     $('.btn-default').on('click', function (e) {
@@ -58,6 +63,17 @@ jQuery(function ($) {
         return false;
     });
 });
+
+function checkIsEmptyFields() {
+    var pattern = /^[\s]+$/;
+    for (var i = 0; i < arguments.length; i++) {
+        console.log(arguments[i]);
+        if (!arguments[i]) return false;
+        console.log("regex " + pattern.test(arguments[i]));
+        if (pattern.test(arguments[i])) return false;
+    }
+    return true;
+}
 
 // Preloder script
 jQuery(window).load(function () {
