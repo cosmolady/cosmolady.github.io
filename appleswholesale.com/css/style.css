@@ -897,7 +897,7 @@ textarea.text {
 	}
 	@media (max-width: 480px) {
 		.logo {
-			width: 31%;
+			    width: 55%;
 			margin-top: 20px;
 		}
 		.navigation {
@@ -912,10 +912,13 @@ textarea.text {
 			min-height: 445px;
 		}
 		.banner-info {
-			top: 46%;
+			top: 35%;
 		}
 		.banner-info h1 {
-			font-size: 19px;
+			font-size: 24px;
+		}
+		.banner-info h2 {
+			font-size: 24px;
 		}
 		.download a {
 			padding: 12px 14px;
