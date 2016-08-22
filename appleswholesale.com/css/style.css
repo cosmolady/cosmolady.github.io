@@ -68,7 +68,7 @@ body{
 .banner-info{
 	position:absolute;
 	top:35%;
-	left:25%;
+/*	left:25%;*/
 	}
 .banner-info h1{
 	margin: 0 auto;
