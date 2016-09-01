@@ -13,7 +13,7 @@ jQuery(function ($) {
         Scroll();
     });
 
-    $('.navbar-collapse ul li a').click(function () {
+    $('.navbar-collapse ul li a, .arrow_wrapper a').click(function () {
         $('html, body').animate({
             scrollTop: $(this.hash).offset().top - 79
         }, 1000);

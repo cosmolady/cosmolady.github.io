@@ -318,7 +318,7 @@ li {
 .arrow{
         background-image: url(../images/arrow.png);
     position: absolute;
-    bottom: 19%;
+    bottom: 5%;
     left: 50%;
     height: 50px;
     width: 50px;
@@ -446,11 +446,9 @@ li {
 	top: 0;
 }
 #bio img{
-    margin-top: -20px;
         width: 20%;
     float: left;
     border-radius: 10%;
-    margin-right: 50px;
     display: inline-block;
 }
 #bio h4 {
@@ -461,10 +459,10 @@ li {
 }
 #bio p {
 	font-weight: 300;
-    font-size: 18px;
+    font-size: 21px;
     text-align: justify;
     display: inline-block;
-    width: 64%;
+    width: 70%;
 }
 #bio span {
 	font-weight: 400;
@@ -1450,7 +1448,7 @@ address i {
 }
 
 .signature{
-    width: 170px;
-    height: 70px;
+    width: 145px;
+    height: 80px;
     padding-bottom: 10px;
 }
