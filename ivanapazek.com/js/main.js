@@ -19,6 +19,18 @@ jQuery(function ($) {
         }, 1000);
         return false;
     });
+    var arrow = $('.arrow');
+    var down = $('.down');
+    var immut = $('.immut');
+    immut.hover(function(){
+       // down.removeClass('none');
+       // arrow.addClass('none');
+        immut.removeClass('arrow');
+        down.removeClass('none');
+    },function(){        
+        immut.addClass('arrow');
+        down.addClass('none');
+    });
 });
 
 function checkIsEmptyFields() {
