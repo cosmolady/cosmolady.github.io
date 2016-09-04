@@ -17,10 +17,10 @@ jQuery(function ($) {
         var name = $('.name-field').val();
         var phone = $('.mail-field').val();
         var message = $('.message-field').val();
-        //if (!checkIsEmptyFields(name, phone, message)) {
-            //errorMessage.removeClass('none');
-            //return;
-        //}
+        if (!checkIsEmptyFields(name, phone, message)) {
+            errorMessage.removeClass('none');
+            return false;
+        }
         var spinner = new Spinner().spin();
         $.ajax({
             url: '/steklanet.com.ua/send-mail.php',
@@ -49,7 +49,11 @@ jQuery(function ($) {
         errorMessage.addClass('none');
         contactForm.removeClass('none');
         $('#contact-form').trigger('reset');
-    })
+    });
+    
+    $('.form-control').on('focus', function(e){
+        errorMessage.addClass('none');
+    });
 
     // Navigation Scroll
     $(window).scroll(function (event) {
@@ -67,9 +71,7 @@ jQuery(function ($) {
 function checkIsEmptyFields() {
     var pattern = /^[\s]+$/;
     for (var i = 0; i < arguments.length; i++) {
-        console.log(arguments[i]);
         if (!arguments[i]) return false;
-        console.log("regex " + pattern.test(arguments[i]));
         if (pattern.test(arguments[i])) return false;
     }
     return true;
