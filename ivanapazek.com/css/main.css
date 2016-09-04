@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Quicksand';
 @font-face {
 	font-family: 'FuturaPT';
 	src: url('../fonts/FuturaPT-Demi.eot');
@@ -496,6 +497,7 @@
 	}
 	
 	#bio {
+        font-family: 'Quicksand';
 	    overflow: hidden;
 	    padding: 45px 0;
 	    background-color: #fff;
@@ -531,7 +533,7 @@
 	    text-align: justify;
 	    display: inline-block;
 	    width: 70%;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
 	}
 	
 	#bio span {
@@ -715,7 +717,10 @@
         color:#000;
         text-align: justify;
 	}
-
+ .work__text{
+  font-family: 'Quicksand';
+     letter-spacing: 1px;
+}
 	#services .btn {
 	    width: 250px;
 	}
