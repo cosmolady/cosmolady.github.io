@@ -1,4 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
+@import 'https://fonts.googleapis.com/css?family=Varela+Round';
+
 @font-face {
 	font-family: 'FuturaPT';
 	src: url('../fonts/FuturaPT-Demi.eot');
@@ -19,7 +21,6 @@
 	    position: relative;
 	    font-weight: 400;
 	    background-color: #0f0f11;
-	    color: #43484E
 	}
 	
 	a:hover {
@@ -390,6 +391,10 @@
 	.down {
 	    text-align: center;
         color:#fff;
+        font-family: 'Quicksand';
+        width: 109px;
+        height: 105px;
+        margin: 10px -25px;
 	}
 	
 	.slider-content {
@@ -499,7 +504,7 @@
 	#bio {
         font-family: 'Quicksand';
 	    overflow: hidden;
-	    padding: 45px 0;
+	    padding: 70px 0;
 	    background-color: #fff;
 	}
 	
@@ -641,7 +646,40 @@
 	/*====================
 ======Service CSS=====
 ======================*/
-	
+#citation{
+    color:#fff;
+    padding: 30px 17px;
+}
+.citation__quote{
+    font-family: 'Varela Round', sans-serif;
+       font-size: 84px;
+    line-height: 1.25em;
+    font-weight: 700;
+}
+.citation__text{
+    font-size: 50px;
+        line-height: 1.25em;
+    margin: 1em 0 .5em;
+        padding-bottom: 50px;
+        text-align: left;
+}
+.btns-book{
+    margin-top: 50px;
+}
+.book-box{
+    margin-bottom: 100px;
+}
+.book-box a{
+    color:#d2322d;
+    text-decoration: underline;
+}
+.btn:focus{
+    outline: none;
+}
+.img-book{
+    width: 260px;
+    height: 300px;
+}
 	#services {
 	    background-image: url("../images/services/service-bg.jpg");
 	    color: #fff;
@@ -1642,7 +1680,7 @@
 	}
 	
 	.signature {
-	    width: 125px;
-	    height: 80px;
+	        width: 140px;
+    height: 90px;
 	    padding-bottom: 10px;
 	}
