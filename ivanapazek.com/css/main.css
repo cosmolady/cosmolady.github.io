@@ -725,10 +725,6 @@
 	    width: 250px;
 	}
 	
-	#sales .btn {
-	    width: 350px;
-	}
-	
 	#our-team {
 	    background-color: #f6f6f6;
 	    color: #43484E;
@@ -1210,7 +1206,7 @@
 	}
 	
 	#contact p,
-	#sales p,
+	#journal p,
 	#services p,
 	#clients p {
 	    font-size: 18px;
