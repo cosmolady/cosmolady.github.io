@@ -381,7 +381,7 @@
 	
 	.immut {
 	    position: absolute;
-	    bottom: 2%;
+	    bottom: 6%;
 	    left: 50%;
 	    height: 50px;
 	    width: 50px;
@@ -534,11 +534,12 @@
 	
 	#bio p {
 	    font-weight: 300;
-	    font-size: 21px;
+	    font-size: 16px;
 	    text-align: justify;
 	    display: inline-block;
 	    width: 70%;
         letter-spacing: 1px;
+        margin-left: 100px;
 	}
 	
 	#bio span {
