@@ -561,6 +561,10 @@ li {
     color: #d2322d;
 }
 
+.contacts__link:visited, .contacts__link:focus{
+    text-decoration: none;
+}
+
 /*====================
 ======Contact CSS=====
 ======================*/
@@ -692,12 +696,15 @@ li {
 }
 
 #footer p {
-    margin: 0
+    margin: 0;
 }
-.ivana{
+.ivana, .ivana:visited, .ivana:focus{
     color: #d2322d;
+    text-decoration: none;
 }
-
+.ivana:hover{
+    color: #fff;
+}
 .signature {
     width: 140px;
     height: 90px;
