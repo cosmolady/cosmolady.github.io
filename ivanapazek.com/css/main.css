@@ -1292,7 +1292,7 @@ li {
 
 #contact {
     overflow: hidden;
-    background-color: #000;
+    background-color: #0f0f11;
     position: relative;
     border-top: 2px solid #ddd;
     padding-top: 65px;
@@ -1309,6 +1309,13 @@ li {
 #services p,
 #clients p {
     font-size: 18px;
+}
+
+.mail {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    line-height: 53px;
 }
 
 .pattern {
@@ -1337,7 +1344,7 @@ li {
     font-size: 18px;
 }
 
-address i {
+.address i {
     color: #fc7700;
 }
 
