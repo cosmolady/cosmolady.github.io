@@ -89,6 +89,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-image: url(../images/picture3.png);
 }
 
 .parallax-section p {
@@ -363,13 +364,14 @@ li {
     z-index: 1;
     left: 0;
     bottom: 0;
-    background-image: url(../images/home-pattern.png);
+/*    background-image: url(../images/home-pattern.png);*/
     background-repeat: repeat;
     opacity: 0.2;
 }
 
 .carousel-inner {
-    background-image: url(../images/slider/viber%20image.jpg);
+/*    background-image: url(../images/slider/viber%20image.jpg);*/
+        background-image: url(../images/picture1.png);
     background-size: cover;
     height: 530px;
 }
@@ -377,6 +379,7 @@ li {
 #home {
     position: relative;
     height: 100vh;
+
 }
 
 .arrow {
