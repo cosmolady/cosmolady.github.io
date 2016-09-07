@@ -373,7 +373,7 @@ li {
 /*    background-image: url(../images/slider/viber%20image.jpg);*/
         background-image: url(../images/home1.jpg);
     background-size: cover;
-    height: 530px;
+    height: 100vh;
 }
 
 #home {
