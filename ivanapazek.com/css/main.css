@@ -89,6 +89,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+     background-color: #0f0f11;
 }
 
 .parallax-section p {
