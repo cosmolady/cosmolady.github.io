@@ -413,9 +413,7 @@ li {
 .carousel-caption {
     position: relative;
     display: table;
-    height: 100%;
     width: 100%;
-    min-height: 100%;
     left: 0;
     top: 10%;
     z-index: 11;
