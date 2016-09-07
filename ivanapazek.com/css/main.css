@@ -702,9 +702,11 @@ li {
     width: 250px;
     height: 320px;
 }
-.btn-danger{
+
+.btn-danger {
     margin-right: 20px;
 }
+
 #services {
     background-image: url("../images/services/service-bg.jpg");
     color: #fff;
@@ -1111,13 +1113,16 @@ li {
 .img-responsive {
     height: 90px;
 }
-#contact .title-one{
+
+#contact .title-one {
     color: #fff;
 }
-.contacts{
-        text-align: center;
-        margin-top: 100px;
+
+.contacts {
+    text-align: center;
+    margin-top: 100px;
 }
+
 .contact-info i {
     width: 60px;
     height: 60px;
@@ -1137,17 +1142,20 @@ li {
 .contact-info {
     color: #000;
 }
-.contacts__link{
+
+.contacts__link {
     text-transform: uppercase;
     width: 200px;
     display: inline-block;
     text-align: center;
     letter-spacing: 2px;
+    margin-bottom: 2%;
 }
-.contacts__link:hover{
-    color:#d2322d;
-    
+
+.contacts__link:hover {
+    color: #d2322d;
 }
+
 
 /*=====================
 ======Our Blog CSS=====
