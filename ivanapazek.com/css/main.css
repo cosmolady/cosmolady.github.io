@@ -373,7 +373,7 @@ li {
     /*    background-image: url(../images/slider/viber%20image.jpg);*/
     background-image: url(../images/home1.jpg);
     background-size: cover;
-    height: 530px;
+    height: 100vh;
 }
 
 #home {
@@ -412,9 +412,7 @@ li {
 .carousel-caption {
     position: relative;
     display: table;
-    height: 100%;
     width: 100%;
-    min-height: 100%;
     left: 0;
     top: 10%;
     z-index: 11;
@@ -1306,11 +1304,9 @@ li {
     z-index: 10;
 }
 
-#contact p,
-#journal p,
-#services p,
-#clients p {
-    font-size: 18px;
+#contact p {
+    font-size: 20px;
+	    letter-spacing: 5px;
 }
 
 .mail {
@@ -1318,8 +1314,18 @@ li {
     font-size: 20px;
     color: #fff;
     line-height: 53px;
+	text-transform: uppercase;
 }
-
+.email__link{
+	color:#d2322d;
+}
+.email__link:hover{
+	text-decoration: underline;
+	color:inherit;
+}
+.mail .btn{
+	margin: 0 auto;
+}
 .pattern {
     height: 100%;
     position: absolute;
@@ -1425,7 +1431,6 @@ li {
 #contact-form-section {
     padding: 35px;
     background-color: #FFF;
-    height: 390px;
 }
 
 #contact-form-section .btn-primary {
@@ -1444,7 +1449,9 @@ li {
 #contact-form-section .btn-primary:hover {
     background-color: #43484E
 }
-
+#contact-form{
+	margin-top: 20px;
+}
 #contact-form input,
 #contact-form textarea,
 #contact-form .btn-primary {
@@ -1454,22 +1461,29 @@ li {
 
 #contact-form .name-field,
 #contact-form .mail-field {
-    width: 49%;
+    width: 85%;
 }
-
-#contact-form .name-field {
-    margin-right: 2%;
-    float: left
+.btn-send{
+	margin: auto;
+	    width: 20%;
+	    margin-top: 5%;
 }
-
-#contact-form .mail-field {}
-
-#contact-form-section .form-control {
-    border-radius: 0;
+.form-group{
+	text-align: center;
+}
+.form-control {
+    border-radius: 5px;
+	border-color: #000;
     -webkit-box-shadow: none;
     box-shadow: none;
+	margin: 0 auto;
+    width: 85%;
+    height: 50px;
+	    font-size: 20px;
 }
-
+.modal-title{
+	font-size: 25px;
+}
 #contact-form-section textarea {
     resize: none
 }
@@ -1481,15 +1495,17 @@ li {
     box-shadow: none;
 }
 
-
+#message{
+	height: auto;
+}
 /*====================
 ======Footer CSS=====
 ======================*/
 
 #footer {
-    background-color: #f6f6f6;
+        background-color: #101010;
     padding: 25px 0;
-    color: #43484E;
+    color: #fff;
     font-size: 16px;
     position: relative;
     margin-top: 1px;
@@ -1500,7 +1516,7 @@ li {
 }
 
 #footer a {
-    color: #fc7700
+    color: #d2322d
 }
 
 
