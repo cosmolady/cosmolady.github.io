@@ -89,7 +89,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../images/picture3.png);
+    background-image: url(../images/paralax-background1.jpg);
 }
 
 .parallax-section p {
@@ -371,7 +371,7 @@ li {
 
 .carousel-inner {
 /*    background-image: url(../images/slider/viber%20image.jpg);*/
-        background-image: url(../images/picture1.png);
+        background-image: url(../images/home1.jpg);
     background-size: cover;
     height: 530px;
 }
