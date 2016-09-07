@@ -22,14 +22,24 @@ jQuery(function ($) {
     var arrow = $('.arrow');
     var down = $('.down');
     var immut = $('.immut');
-    immut.hover(function(){
-       // down.removeClass('none');
-       // arrow.addClass('none');
+    immut.hover(function () {
         immut.removeClass('arrow');
         down.removeClass('none');
-    },function(){        
+    }, function () {
         immut.addClass('arrow');
         down.addClass('none');
+    });
+
+    var sendForm = $('#contact-form-section');
+    var lastMessage = $('.last_message');
+    $('.btn-send').on('click', function () {
+        sendForm.addClass('none');
+        lastMessage.removeClass('none');
+    });
+
+    $('.btn-modal').on('click', function () {
+        lastMessage.addClass('none');
+        sendForm.removeClass('none');
     });
 });
 
@@ -73,8 +83,8 @@ function Scroll() {
     var rangeTop = 200;
     var rangeBottom = 500;
     $('.navbar-collapse').find('.scroll a').each(function () {
-        contentTop.push($($(this).attr('href')).offset().top);
-        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
+        //        contentTop.push($($(this).attr('href')).offset().top);
+        //        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
     })
     $.each(contentTop, function (i) {
         if (winTop > contentTop[i] - rangeTop) {

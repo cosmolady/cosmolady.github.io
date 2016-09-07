@@ -1130,7 +1130,6 @@ li {
 
 .contacts {
     text-align: center;
-    margin-top: 100px;
 }
 
 .contact-info i {
@@ -1335,6 +1334,7 @@ li {
 }
 .mail .btn{
 	margin: 0 auto;
+    margin-bottom: 5%;
 }
 .pattern {
     height: 100%;

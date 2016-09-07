@@ -23,13 +23,23 @@ jQuery(function ($) {
     var down = $('.down');
     var immut = $('.immut');
     immut.hover(function(){
-       // down.removeClass('none');
-       // arrow.addClass('none');
         immut.removeClass('arrow');
         down.removeClass('none');
     },function(){        
         immut.addClass('arrow');
         down.addClass('none');
+    });
+	
+	var sendForm = $('#contact-form-section');
+    var lastMessage = $('.last_message');
+    $('.btn-send').on('click', function () {
+        sendForm.addClass('none');
+        lastMessage.removeClass('none');
+    });
+
+    $('.btn-modal').on('click', function () {
+        lastMessage.addClass('none');
+        sendForm.removeClass('none');
     });
 });
 
