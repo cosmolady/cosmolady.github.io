@@ -85,19 +85,19 @@
 
     <section id="bio">
         <div class="container">
-            <div class="text-center">
-                <div class="col-sm-12">
-                    <div id="citation">
-                        <div class="container">
-                            <p class="citation__quote">“</p>
-                            <h2 class="citation__text">Every life is like a fairytale–all good and bad parts come together to make a happy ending.</h2>
-                            <p class="citation__quote">”</p>
-                        </div>
+            <div class="col-sm-12">
+                <div id="citation">
+                    <div class="container">
+                        <p class="citation__quote">“</p>
+                        <h2 class="citation__text">Every life is like a fairytale–all good and bad parts come together to make a happy ending.</h2>
+                        <p class="citation__quote">”</p>
                     </div>
-                    <img src="images/big_author.jpg">
-                    <p class="bio__content"> After graduating from a challenging program at the University of Mathematics and beginning a career in software development in Croatia, Ivana found herself having what many wanted, but not feeling fulfilled. Things started to change when she began to explore not only the aspects of her mind, but also the infinite aspects of her higher being. This led her on a journey of spiritual depths, inner discovery and principles about how to live the life of her dreams, as well as teaching this knowledge to others. She became a Law of Attraction life coach and with her profound yet simple teachings, has helped people from Japan to Nigeria, and Germany to the US, to make their dream lives a reality. She currently lives with her husband in a peaceful part of Zagreb, Croatia, joyfully anticipating life's next adventure.
-                    </p>
                 </div>
+                <img src="images/big_author.jpg">
+                <p class="bio__content"> After graduating from a challenging program at the University of Mathematics and beginning a career in software development in Croatia, Ivana found herself having what many wanted, but not feeling fulfilled.</p>
+                <p class="bio__content"> Things started to change when she began to explore not only the aspects of her mind, but also the infinite aspects of her higher being. This led her on a journey of spiritual depths, inner discovery and principles about how to live the life of her dreams, as well as teaching this knowledge to others. She became a Law of Attraction life coach and with her profound yet simple teachings, has helped people from Japan to Nigeria, and Germany to the US, to make their dream lives a reality. </p>
+                <p class="bio__content">She currently lives with her husband in a peaceful part of Zagreb, Croatia, joyfully anticipating life's next adventure.
+                </p>
             </div>
         </div>
     </section>
@@ -144,12 +144,21 @@
     <!--/#Our-Team-->
 
     <section id="contact" class="parallax-section">
-        <p>The place for photo</p>
+        <div class="container">
+            <h2 class="title-one">CONTACTS</h2>
+            <div class="row">
+                You can contact me on contact@beyondthefairytale.com
+                <br/> or
+                <br/><a class="btn btn-danger btn-lg" href="#" data-toggle="modal" data-target=".modal">WRITE ME NOW</a></div>
+            <div class="col-sm-12">
                 <div class="contacts">
-            <a href="https://www.facebook.com/ivana.pazek" arget="_blank">Facebook</a>
-            <a href="https://www.instagram.com/ivanapazek" arget="_blank">Instagram</a>
-            <a href="youtube.com/c/IvanaPazek" arget="_blank">Twitter</a>
-            <a href="google.com/+IvanaPazek" arget="_blank">Google+ </a>
+                    <a class="contacts__link" href="https://www.facebook.com/ivana.pazek" target="_blank">Facebook</a>
+                    <a class="contacts__link" href="https://www.instagram.com/ivanapazek" target="_blank">Instagram</a>
+                    <a class="contacts__link" href="https://www.youtube.com/c/IvanaPazek" target="_blank">Youtube</a>
+                    <a class="contacts__link" href="youtube.com/c/IvanaPazek" target="_blank">Twitter</a>
+                    <a class="contacts__link" href="google.com/+IvanaPazek" target="_blank">Google+ </a>
+                </div>
+            </div>
         </div>
     </section>
     <!--/#contact-->
@@ -162,7 +171,36 @@
         </div>
     </footer>
     <!--/#footer-->
-
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div id="contact-form-section">
+                        <div class="error_message"></div>
+                        <h4 class="modal-title">I want to know your opinion</h4>
+                        <form id="contact-form" class="contact" name="contact-form">
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control name-field" required="required" placeholder="How can I contact you? (e-mail)">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control name-field" placeholder="What is your name? (optional)">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" required="required" class="form-control message-field" rows="8" placeholder="Марка и модель автомобиля, год выпуска, какое стекло, комментарий"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-danger btn-send">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="last_message none">
+                        <h4>Сообщение отправлено успешно.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/smoothscroll.js"></script>

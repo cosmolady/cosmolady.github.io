@@ -96,12 +96,6 @@ li {
     text-align: center;
 }
 
-.parallax-section a {
-    font-size: 20px;
-    margin: 0;
-     color: #fff;
-}
-
 .none {
     display: none;
 }
@@ -549,12 +543,13 @@ li {
 
 .bio__content {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
     text-align: justify;
     display: inline-block;
     width: 70%;
-    letter-spacing: 1px;
     margin-left: 100px;
+    line-height: 30px;
+    text-indent: 20px;
 }
 
 #bio span {
@@ -696,6 +691,7 @@ li {
 .book-box a {
     color: #d2322d;
     text-decoration: underline;
+    display: inline-block;
 }
 
 .btn:focus {
@@ -706,7 +702,9 @@ li {
     width: 250px;
     height: 320px;
 }
-
+.btn-danger{
+    margin-right: 20px;
+}
 #services {
     background-image: url("../images/services/service-bg.jpg");
     color: #fff;
@@ -1113,7 +1111,13 @@ li {
 .img-responsive {
     height: 90px;
 }
-
+#contact .title-one{
+    color: #fff;
+}
+.contacts{
+        text-align: center;
+        margin-top: 100px;
+}
 .contact-info i {
     width: 60px;
     height: 60px;
@@ -1133,7 +1137,17 @@ li {
 .contact-info {
     color: #000;
 }
-
+.contacts__link{
+    text-transform: uppercase;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.contacts__link:hover{
+    color:#d2322d;
+    
+}
 
 /*=====================
 ======Our Blog CSS=====
