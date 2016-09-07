@@ -1504,9 +1504,9 @@ li {
 ======================*/
 
 #footer {
-    background-color: #f6f6f6;
+        background-color: #101010;
     padding: 25px 0;
-    color: #43484E;
+    color: #fff;
     font-size: 16px;
     position: relative;
     margin-top: 1px;
@@ -1517,7 +1517,7 @@ li {
 }
 
 #footer a {
-    color: #fc7700
+    color: #d2322d
 }
 
 
