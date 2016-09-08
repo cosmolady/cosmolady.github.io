@@ -62,7 +62,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../images/picture3_bw.png);
+    background-image: url(../images/picture3_bw.jpg);
 }
 
 .parallax-section1 {
@@ -72,7 +72,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../images/picture2_bw.png);
+    background-image: url(../images/picture2_bw.jpg);
 }
 
 .parallax-section p {
@@ -304,7 +304,7 @@ li {
 
 .carousel-inner {
     /*    background-image: url(../images/slider/viber%20image.jpg);*/
-    background-image: url(../images/picture1_bw.png);
+    background: url(../images/picture1_bw.jpg) center;
     background-size: cover;
     height: 100vh;
 }
@@ -317,7 +317,7 @@ li {
     left: 0;
     z-index: 1;
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 #home {
@@ -367,6 +367,7 @@ li {
 .carousel-caption span{
     font-style: italic;
     letter-spacing: 1px;
+    font-family: initial;
 }
 
 .carousel-inner h2 {
@@ -598,9 +599,11 @@ li {
 }
 
 #contact p {
-    font-size: 15px;
-    letter-spacing: 3px;
+        font-size: 20px;
+    letter-spacing: 2px;
     margin-bottom: 5%;
+    font-weight: 100;
+    text-transform: initial;
 }
 
 .mail {
