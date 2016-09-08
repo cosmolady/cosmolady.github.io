@@ -8,70 +8,47 @@ jQuery(function ($) {
         $("#clients").parallax("50%", 0.3);
     });
 
-    // Contact form validation
-    var contactForm = $('#contact-form-section');
-    var lastMessage = $('.last_message');
-    var errorMessage = $('.error_message');
-    $('.btn-send').on('click', function (e) {
-        'use strict';
-        var name = $('.name-field').val();
-        var phone = $('.mail-field').val();
-        var message = $('.message-field').val();
-        if (!checkIsEmptyFields(name, phone, message)) {
-            errorMessage.removeClass('none');
-            return false;
-        }
-        var spinner = new Spinner().spin();
-        $.ajax({
-            url: '/steklanet.com.ua/send-mail.php',
-            type: 'POST',
-            dataType: 'json',
-            data: {
-                name: name,
-                phone: phone,
-                message: message
-            },
-            success: function (data) {
-                contactForm.addClass('none');
-                lastMessage.removeClass('none');
-                spinner.stop();
-            },
-            error: function (data) {
-                console.log(data);
-                spinner.stop();
-            }
-        });
-    });
-
-    $('.btn-default').on('click', function (e) {
-        'use strict';
-        lastMessage.addClass('none');
-        errorMessage.addClass('none');
-        contactForm.removeClass('none');
-        $('#contact-form').trigger('reset');
-    });
-    
-    $('.form-control').on('focus', function(e){
-        errorMessage.addClass('none');
-    });
-
     // Navigation Scroll
     $(window).scroll(function (event) {
         Scroll();
     });
 
-    $('.navbar-collapse ul li a').click(function () {
+    $('.navbar-collapse ul li a, .arrow_wrapper a').click(function () {
         $('html, body').animate({
             scrollTop: $(this.hash).offset().top - 79
         }, 1000);
         return false;
+    });
+    var arrow = $('.arrow');
+    var down = $('.down');
+    var immut = $('.immut');
+    immut.hover(function(){
+        immut.removeClass('arrow');
+        down.removeClass('none');
+    },function(){        
+        immut.addClass('arrow');
+        down.addClass('none');
+    });
+	
+	var sendForm = $('#contact-form-section');
+    var lastMessage = $('.last_message');
+    $('.btn-send').on('click', function () {
+        sendForm.addClass('none');
+        lastMessage.removeClass('none');
+    });
+
+    $('.btn-modal').on('click', function () {
+        lastMessage.addClass('none');
+        sendForm.removeClass('none');
     });
 });
 
 function checkIsEmptyFields() {
     var pattern = /^[\s]+$/;
     for (var i = 0; i < arguments.length; i++) {
+        console.log(arguments[i]);
         if (!arguments[i]) return false;
+        console.log("regex " + pattern.test(arguments[i]));
         if (pattern.test(arguments[i])) return false;
     }
     return true;
@@ -106,8 +83,8 @@ function Scroll() {
     var rangeTop = 200;
     var rangeBottom = 500;
     $('.navbar-collapse').find('.scroll a').each(function () {
-        contentTop.push($($(this).attr('href')).offset().top);
-        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
+//        contentTop.push($($(this).attr('href')).offset().top);
+//        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
     })
     $.each(contentTop, function (i) {
         if (winTop > contentTop[i] - rangeTop) {
