@@ -115,7 +115,7 @@ p.normalp {
 	text-align: center;
 	margin-bottom: 40px;
 }
-.arrow_bounce {
+.arrow {
 	width: 74px;
 	height: 74px;
 	border: 65px solid transparent;
@@ -149,7 +149,7 @@ p.normalp {
 	width: 100%;
 	bottom: 0;
 	left: 0;
-	position: relative;
+	position: absolute;
 }
 .arrowup {
 	-webkit-transform: rotate(180deg);
