@@ -691,6 +691,11 @@ li {
     font-size: 25px;
 }
 
+.error_message{
+    text-align: center;
+    color: #f00;
+}
+
 #contact-form-section textarea {
     resize: none
 }
