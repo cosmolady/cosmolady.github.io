@@ -45,18 +45,13 @@
 	#services .btn {
 		margin-top: 25px;
 	}
-	#sales p {
-		padding: 8px;
-	}
-	.partners ul li {
-		width: 15%
-	}
-	.img-responsive {
-		height: 65px;
-	}
-	.picarrow {
-		left: 45%;
-	}
+	.img-book {
+    width: 230px;
+    height: 300px;
+}
+    .book-box{
+        margin-bottom: 15px;
+    }
 }
 @media (max-width:767px) {
 	#navigation .navbar-nav.navbar-right {
@@ -95,6 +90,43 @@
 	.title-one {
 		font-size: 24px
 	}
+    #citation{
+        padding: 10px;
+    }
+    .citation__quote{
+        font-size:  40px;
+        line-height: 0.5em;
+    }
+    .citation__text{
+            font-size: 30px;
+    text-align: center;
+    }
+    #bio img {
+    width: 65%;
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+    .bio__content {
+    font-size: 16px;
+    text-align: justify;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+    .img-book {
+    margin: 0 auto;
+    display: block;
+}
+    .btn-danger {
+    margin-right: 5px;
+}
+    .btn-lg{
+        padding: 10px;
+    }
+    .book-box {
+    margin-bottom: 20px;
+}
 	#about-us p {
 		font-size: 14px
 	}
@@ -214,6 +246,7 @@
 	#sales .btn {
 		width: 320px;
 	}
+    
 	.title-one {
 		font-size: 24px
 	}
@@ -311,4 +344,22 @@
 	.navbar-brand {
     	width: 250px;
 	}
+    .citation__text {
+    font-size: 25px;
+        padding-bottom: 15px;
+    }
+    .citation__quote{
+        font-size: 35px;
+    }
+    .btns-book .btn-buy{
+           margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    }
+    .btn-danger{
+        width: 75%;
+    }
+    .email__link {
+    font-size: 16px;
+}
 }
