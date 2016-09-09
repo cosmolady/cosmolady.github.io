@@ -558,6 +558,7 @@ li {
 
 .contacts {
     text-align: center;
+        padding: 50px 0;
 }
 
 .contacts__link {
@@ -579,7 +580,10 @@ li {
     text-decoration: none;
 }
 
-
+.testim_img{
+        width: 50%;
+    border-radius: 5%;
+}
 /*====================
 ======Contact CSS=====
 ======================*/
