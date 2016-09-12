@@ -62,7 +62,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../images/picture3_bw.jpg);
+    background-image: url(../images/picture3_bw.png);
 }
 
 .parallax-section1 {
@@ -72,7 +72,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../images/picture2_bw.jpg);
+    background-image: url(../images/picture2_bw.png);
 }
 
 .parallax-section-home{
@@ -82,7 +82,7 @@ li {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(../images/picture1_bw.jpg);
+    background-image: url(../images/picture1_bw.png);
 }
 
 .parallax-section p {
