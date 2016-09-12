@@ -4,6 +4,7 @@ jQuery(function ($) {
     // all Parallax Section
     $(window).load(function () {
         'use strict',
+		$("#home").parallax("50%", 0.3);	
         $("#services").parallax("50%", 0.3);
         $("#clients").parallax("50%", 0.3);
     });
@@ -143,14 +144,3 @@ function Scroll() {
     })
 
 };
-
-
-// Skill bar Function
-
-jQuery(document).ready(function () {
-    jQuery('.skillbar').each(function () {
-        jQuery(this).find('.skillbar-bar').animate({
-            width: jQuery(this).attr('data-percent')
-        }, 6000);
-    });
-});

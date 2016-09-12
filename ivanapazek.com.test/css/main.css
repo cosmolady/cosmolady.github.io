@@ -368,10 +368,9 @@ li {
     display: table-cell;
 }
 
-.carousel-caption span{
+.italic{
     font-style: italic;
     letter-spacing: 1px;
-    font-family: initial;
 }
 
 .carousel-inner h2 {
@@ -518,7 +517,7 @@ li {
 }
 
 .book-box {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .book-box a {
@@ -554,8 +553,11 @@ li {
     font-family: 'Quicksand';
     letter-spacing: 1px;
     font-size: 16px;
+	padding-top: 5px;
 }
-
+.programs_title{
+	margin: 0;
+}
 #contact .title-one {
     color: #fff;
 }
@@ -587,6 +589,7 @@ li {
 .testim_img{
         width: 50%;
     border-radius: 5%;
+	margin-top: 15px;
 }
 /*====================
 ======Contact CSS=====
@@ -613,7 +616,10 @@ li {
     font-weight: 100;
     text-transform: initial;
 }
-
+#contact .contact-right{
+	line-height: 26px;
+    text-align: left;
+}
 .mail {
     text-align: center;
     font-size: 20px;
