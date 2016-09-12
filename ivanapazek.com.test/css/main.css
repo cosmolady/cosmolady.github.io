@@ -75,6 +75,16 @@ li {
     background-image: url(../images/picture2_bw.jpg);
 }
 
+.parallax-section-home{
+    min-height: 300px;
+    width: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../images/picture1_bw.jpg);
+}
+
 .parallax-section p {
     font-size: 36px;
     text-align: center;
@@ -307,8 +317,6 @@ li {
 =======================*/
 
 .carousel-inner {
-    /*    background-image: url(../images/slider/viber%20image.jpg);*/
-    background: url(../images/picture1_bw.jpg) top center;
     background-size: cover;
     height: 100vh;
 }
