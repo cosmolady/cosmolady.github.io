@@ -4,8 +4,7 @@ jQuery(function ($) {
     // all Parallax Section
     $(window).load(function () {
         'use strict',
-        $("#services").parallax("50%", 0.3);
-        $("#clients").parallax("50%", 0.3);
+		$("#home").parallax("50%", 0.3);	
     });
 
     // Navigation Scroll
@@ -22,35 +21,83 @@ jQuery(function ($) {
     var arrow = $('.arrow');
     var down = $('.down');
     var immut = $('.immut');
-    immut.hover(function(){
+    immut.hover(function () {
         immut.removeClass('arrow');
         down.removeClass('none');
-    },function(){        
+    }, function () {
         immut.addClass('arrow');
         down.addClass('none');
     });
-	
-	var sendForm = $('#contact-form-section');
+
+    var sendForm = $('#contact-form-section');
     var lastMessage = $('.last_message');
-    $('.btn-send').on('click', function () {
-        sendForm.addClass('none');
-        lastMessage.removeClass('none');
+    var errorMessage = $('.error_message');
+    $('.btn-send').on('click', function (e) {
+        var name = $('.name-field').val();
+        var email = $('.mail-field').val();
+        var message = $('.message-field').val();
+
+        if (checkIsEmptyFields(email)) {
+            errorMessage.removeClass('none');
+            errorMessage.html("The email field can't be empty");
+            $('.mail-field').focus();
+            return false;
+        }
+        if (validateEmail(email)) {
+            errorMessage.removeClass('none');
+            errorMessage.html("Input the correct email");
+            $('.mail-field').focus();
+            return false;
+        }
+        if (checkIsEmptyFields(message)) {
+            errorMessage.removeClass('none');
+            errorMessage.html("The message can't be empty");
+            $('.message-field').focus();
+            return false;
+        }
+
+        $.ajax({
+            url: '/ivanapazek.com.test/send-mail.php',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+                name: name,
+                email: email,
+                message: message
+            },
+            success: function (data) {
+                sendForm.addClass('none');
+                lastMessage.removeClass('none');
+            },
+            error: function (data) {
+                console.log(data);
+                sendForm.addClass('none');
+                lastMessage.removeClass('none');
+            }
+        });
     });
 
     $('.btn-modal').on('click', function () {
         lastMessage.addClass('none');
         sendForm.removeClass('none');
+        errorMessage.addClass('none');
+        $('#contact-form').trigger('reset');
+    });
+
+    $('.form-control').on('change', function () {
+           errorMessage.addClass('none'); 
     });
 });
 
-function checkIsEmptyFields() {
+function checkIsEmptyFields(el) {
     var pattern = /^[\s]+$/;
-    for (var i = 0; i < arguments.length; i++) {
-        console.log(arguments[i]);
-        if (!arguments[i]) return false;
-        console.log("regex " + pattern.test(arguments[i]));
-        if (pattern.test(arguments[i])) return false;
-    }
+    if (el) return false;
+    //if (pattern.test(el)) return false;
+    return true;
+}
+
+function validateEmail(el) {
+    if (~el.indexOf('@')) return false;
     return true;
 }
 
@@ -83,9 +130,9 @@ function Scroll() {
     var rangeTop = 200;
     var rangeBottom = 500;
     $('.navbar-collapse').find('.scroll a').each(function () {
-//        contentTop.push($($(this).attr('href')).offset().top);
-//        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
-    })
+        contentTop.push($($(this).attr('href')).offset().top);
+        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
+    });
     $.each(contentTop, function (i) {
         if (winTop > contentTop[i] - rangeTop) {
             $('.navbar-collapse li.scroll')
@@ -95,14 +142,3 @@ function Scroll() {
     })
 
 };
-
-
-// Skill bar Function
-
-jQuery(document).ready(function () {
-    jQuery('.skillbar').each(function () {
-        jQuery(this).find('.skillbar-bar').animate({
-            width: jQuery(this).attr('data-percent')
-        }, 6000);
-    });
-});
