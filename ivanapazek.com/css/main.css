@@ -750,8 +750,21 @@ li {
     position: relative;
     text-shadow: 1px 1px 1px #000;
 }
-
-
+/*====================
+======Journal CSS=====
+======================*/
+#journal {
+    padding: 65px 0;
+    background-color: #fff;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #000;
+    text-align: justify;
+}
+.alignnone{
+    display: block;
+}
 /*====================
 ======Footer CSS=====
 ======================*/
