@@ -1,5 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
 @import 'https://fonts.googleapis.com/css?family=Varela+Round';
+@import 'https://fonts.googleapis.com/css?family=Merriweather';
+
 @font-face {
     font-family: 'FuturaPT';
     src: url('../fonts/FuturaPT-Demi.eot');
@@ -761,9 +763,29 @@ li {
     letter-spacing: 2px;
     color: #000;
     text-align: justify;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.journal_title{
+    text-align: center;
+    font-size: 25px;
 }
 .alignnone{
     display: block;
+    margin: 5px auto;
+    width: 100%;
+}
+.post{
+    max-width: 63%;
+    margin: 0 auto;
+
+}
+#journal a{
+    color: #000;
+}
+.journal_post{
+    
 }
 /*====================
 ======Footer CSS=====
