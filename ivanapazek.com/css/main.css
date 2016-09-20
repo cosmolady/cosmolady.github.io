@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
 @import 'https://fonts.googleapis.com/css?family=Varela+Round';
 @import 'https://fonts.googleapis.com/css?family=Merriweather';
-
 @font-face {
     font-family: 'FuturaPT';
     src: url('../fonts/FuturaPT-Demi.eot');
@@ -77,7 +76,7 @@ li {
     background-image: url(../images/picture2_bw.png);
 }
 
-.parallax-section-home{
+.parallax-section-home {
     min-height: 300px;
     width: 100%;
     background-position: 50% 0;
@@ -96,7 +95,7 @@ li {
     display: none;
 }
 
-.hidden{
+.hidden {
     visibility: hidden;
 }
 
@@ -378,7 +377,7 @@ li {
     display: table-cell;
 }
 
-.italic{
+.italic {
     font-style: italic;
     letter-spacing: 1px;
 }
@@ -563,21 +562,24 @@ li {
     font-family: 'Quicksand';
     letter-spacing: 1px;
     font-size: 16px;
-	padding-top: 5px;
+    padding-top: 5px;
 }
 
 .work__text__hoda {
     padding-top: 10px;
 }
-.bold{
-	font-weight: bold;
+
+.bold {
+    font-weight: bold;
 }
-.programs_title{
-	margin: 0;
+
+.programs_title {
+    margin: 0;
 }
+
 #contact .title-one {
     color: #fff;
-	margin: 0;
+    margin: 0;
 }
 
 .contacts {
@@ -604,11 +606,13 @@ li {
     text-decoration: none;
 }
 
-.testim_img{
-        width: 50%;
+.testim_img {
+    width: 50%;
     border-radius: 5%;
-	margin-top: 15px;
+    margin-top: 15px;
 }
+
+
 /*====================
 ======Contact CSS=====
 ======================*/
@@ -633,11 +637,13 @@ li {
     font-weight: 100;
     text-transform: initial;
 }
-#contact .contact-right{
-	line-height: 26px;
+
+#contact .contact-right {
+    line-height: 26px;
     text-align: left;
     padding-top: 5px;
 }
+
 .mail {
     text-align: center;
     font-size: 20px;
@@ -654,16 +660,19 @@ li {
     text-decoration: underline;
     color: #d2322d;
 }
+
 .mail .btn {
     margin: 0 auto;
     margin-bottom: 1%;
     margin-top: 20%;
 }
-.pink{
-	color: rgb(210, 50, 45);
-	text-shadow: 2px 1px 1px #fff;
+
+.pink {
+    color: rgb(210, 50, 45);
+    text-shadow: 2px 1px 1px #fff;
     font-size: 31px;
 }
+
 #contact-form-section {
     padding: 35px;
     background-color: #FFF;
@@ -727,7 +736,7 @@ li {
     font-size: 25px;
 }
 
-.error_message{
+.error_message {
     text-align: center;
     color: #f00;
 }
@@ -752,9 +761,12 @@ li {
     position: relative;
     text-shadow: 1px 1px 1px #000;
 }
+
+
 /*====================
 ======Journal CSS=====
 ======================*/
+
 #journal {
     padding: 65px 0;
     background-color: #fff;
@@ -766,35 +778,41 @@ li {
     font-weight: 400;
 }
 
-#journal p{
+#journal p {
     font-family: 'Merriweather Sans', sans-serif;
     font-weight: 100;
 }
-.alignnone{
+
+.alignnone {
     display: block;
     margin: 5px auto;
     width: 100%;
 }
-.post{
+
+.post {
     max-width: 63%;
     margin: 0 auto;
-
 }
-.post-content a{
+
+.post-content a {
     color: #d2322d;
     text-decoration: underline;
     font-weight: 600;
-    
 }
-.post-title{
-    margin: 0 auto;
+
+.post-title {
+    text-align: center;
 }
-.post-title a{
+
+.post-title a {
     font-size: 25px;
     color: #000;
     text-decoration: none;
     text-align: center;
+    font-weight: 600;
 }
+
+
 /*====================
 ======Footer CSS=====
 ======================*/
