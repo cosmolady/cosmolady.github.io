@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
 @import 'https://fonts.googleapis.com/css?family=Varela+Round';
+@import 'https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i';
 @font-face {
     font-family: 'FuturaPT';
     src: url('../fonts/FuturaPT-Demi.eot');
@@ -761,6 +762,11 @@ li {
     letter-spacing: 2px;
     color: #000;
     text-align: justify;
+}
+
+#journal p{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 100;
 }
 .alignnone{
     display: block;
