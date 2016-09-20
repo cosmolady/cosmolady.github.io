@@ -1,5 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
-@import 'https://fonts.googleapis.com/css?family=Varela+Round';
 @import 'https://fonts.googleapis.com/css?family=Merriweather';
 @font-face {
     font-family: 'FuturaPT';
@@ -507,7 +506,7 @@ li {
 }
 
 .citation__quote {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     font-size: 84px;
     line-height: 1.25em;
     font-weight: 700;
