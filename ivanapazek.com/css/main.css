@@ -775,14 +775,10 @@ li {
     color: #000;
     font-family: 'Merriweather', serif;
     font-size: 18px;
-    font-weight: 400;
 }
-
-#journal p {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 100;
+#journal p{
+        font-weight: 200;
 }
-
 .alignnone {
     display: block;
     margin: 5px auto;
