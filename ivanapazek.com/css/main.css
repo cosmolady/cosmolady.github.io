@@ -759,17 +759,11 @@ li {
     padding: 65px 0;
     background-color: #fff;
     text-align: left;
-    font-size: 20px;
     letter-spacing: 2px;
     color: #000;
-    text-align: justify;
     font-family: 'Merriweather', serif;
     font-size: 18px;
     font-weight: 400;
-}
-.journal_title{
-    text-align: center;
-    font-size: 25px;
 }
 
 #journal p{
@@ -786,11 +780,20 @@ li {
     margin: 0 auto;
 
 }
-#journal a{
-    color: #000;
-}
-.journal_post{
+.post-content a{
+    color: #d2322d;
+    text-decoration: underline;
+    font-weight: 600;
     
+}
+.post-title{
+    margin: 0 auto;
+}
+.post-title a{
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
 }
 /*====================
 ======Footer CSS=====
