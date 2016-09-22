@@ -778,6 +778,7 @@ li {
 .alignnone {
     display: block;
     margin: 5px auto;
+    width: 100%;
 }
 
 .post {
@@ -796,6 +797,7 @@ li {
 .post-content p {
     margin-bottom: 6%;
     line-height: 1.75;
+    text-align: justify;
 }
 
 .post-title {
