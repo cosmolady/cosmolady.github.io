@@ -4,7 +4,7 @@ jQuery(function ($) {
     // all Parallax Section
     $(window).load(function () {
         'use strict',
-		$("#home").parallax("50%", 0.3);	
+        $("#home").parallax("50%", 0.3);
     });
 
     // Navigation Scroll
@@ -85,7 +85,7 @@ jQuery(function ($) {
     });
 
     $('.form-control').on('change', function () {
-           errorMessage.addClass('none'); 
+        errorMessage.addClass('none');
     });
 });
 
@@ -138,6 +138,12 @@ function Scroll() {
             $('.navbar-collapse li.scroll')
                 .removeClass('active')
                 .eq(i).addClass('active');
+            if ($('.navbar-collapse li.scroll')
+                .eq(i).hasClass('contact-href')) {
+                $('.contact-href').addClass('active');
+            }else{
+                $('.contact-href').removeClass('active');
+            }
         }
     })
 
