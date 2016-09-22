@@ -378,7 +378,6 @@ li {
 
 .italic {
     font-style: italic;
-    letter-spacing: 1px;
 }
 
 .carousel-inner h2 {
@@ -773,8 +772,9 @@ li {
     color: #000;
     font-family: 'Merriweather', serif;
     font-size: 18px;
-    font-weight: 200;
+    font-weight: 300;
 }
+
 .alignnone {
     display: block;
     margin: 5px auto;
@@ -793,6 +793,12 @@ li {
     font-weight: 600;
 }
 
+.post-content img,
+.post-content p {
+    margin-bottom: 6%;
+    line-height: 1.75;
+}
+
 .post-title {
     margin-bottom: 25px;
 }
@@ -808,6 +814,7 @@ li {
 .post-title a:hover {
     color: #000;
 }
+
 
 /*====================
 ======Footer CSS=====
