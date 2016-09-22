@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Quicksand';
-@import 'https://fonts.googleapis.com/css?family=Merriweather';
+@import 'https://fonts.googleapis.com/css?family=Merriweather:300,400,700';
 @font-face {
     font-family: 'FuturaPT';
     src: url('../fonts/FuturaPT-Demi.eot');
@@ -773,8 +773,6 @@ li {
     color: #000;
     font-family: 'Merriweather', serif;
     font-size: 18px;
-}
-#journal p{
     font-weight: 200;
 }
 .alignnone {
@@ -786,6 +784,7 @@ li {
     max-width: 63%;
     margin: 0 auto;
     width: 702px;
+    color: #3a4145;
 }
 
 .post-content a {
