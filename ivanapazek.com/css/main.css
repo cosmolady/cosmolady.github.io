@@ -770,23 +770,22 @@ li {
     padding: 65px 0;
     background-color: #fff;
     text-align: left;
-    letter-spacing: 2px;
     color: #000;
     font-family: 'Merriweather', serif;
     font-size: 18px;
 }
 #journal p{
-        font-weight: 200;
+    font-weight: 200;
 }
 .alignnone {
     display: block;
     margin: 5px auto;
-    width: 100%;
 }
 
 .post {
     max-width: 63%;
     margin: 0 auto;
+    width: 702px;
 }
 
 .post-content a {
@@ -796,17 +795,20 @@ li {
 }
 
 .post-title {
-    text-align: center;
+    margin-bottom: 25px;
 }
 
 .post-title a {
-    font-size: 25px;
-    color: #000;
+    font-size: 35px;
+    color: #4a4a4a;
     text-decoration: none;
     text-align: center;
     font-weight: 600;
 }
 
+.post-title a:hover {
+    color: #000;
+}
 
 /*====================
 ======Footer CSS=====
