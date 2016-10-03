@@ -1,4 +1,7 @@
 jQuery(function ($) {
-    //=================================== scroll  ===================================//
+    $(window).load(function () {
+        'use strict',
+        $(".divider").parallax("50%", 0.3);
+    });
     
 });

@@ -1,14 +1,4 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
- *
- * Project Name: SHIELD - Free Bootstrap 3 Theme
- * Version: 1.0
- * Date: 02-11-2013
- * URL: http://blacktie.co/
- */
-
-
+@import 'https://fonts.googleapis.com/css?family=Neucha';
 /* ==========================================================================
    Base Styles and Bootstrap Modifications
    ========================================================================== */
@@ -264,9 +254,17 @@ a:after {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-.divider1 {
-    height: 100%;
+.divider {
+	min-height: 250px;
+	width: 100%;
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
+
+
+
 
 /* ==========================================================================
    Wrap Sections
@@ -569,7 +567,65 @@ a:after {
 	right: 30px;
 }
 
+.contact_info{
+    text-align: center;
+}
+.link_map{
+    display: block;
+}
+.btn_map{
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+}
+.btn_map:focus{
+    outline: none;
+}
+iframe{
+    border-radius: 20px;
+}
+.images{
+    position: relative;
+}
+.before{
+    width:330px;
+    height: 480px;
+    display: block;
+    background-image: url(../images/do.jpg);
+    display: block;
+}
 
+.before:hover{
+  background-image: url(../images/after.jpg);
+}
+.arrow{
+    background-image: url(../images/ar01.png);
+    width: 40px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: -18px;
+    transform: rotate(30deg);
+}
+.after{
+  font-family: 'Neucha', cursive;
+    width: 40px;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: -80px;
+        transform: rotate(15deg);
+    letter-spacing: 2px;
+    font-size: 25px;
+}
 /* ==========================================================================
    Blog Section
    ========================================================================== */
