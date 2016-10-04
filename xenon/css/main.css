@@ -16,7 +16,9 @@ body {
     font-size: 1em;
     line-height: 1.4;
 }
-
+a:active, a:focus, a:visited{
+    outline: none !important;
+}
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -289,8 +291,29 @@ a:after {
 
 .picture_wrapper {
     float: left;
+    width: 33%;
+    position: relative;
 }
-
+.check{
+        position: absolute;
+    background-image: url(../images/check-mark.png);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    left: 25%;
+}
+.cost_title{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 15%;
+}
+.cost_text {
+        padding: 0 15px;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 25px;
+    font-size: 23px;
+}
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
@@ -334,7 +357,9 @@ a:after {
     text-shadow: 1px 1px 1px #000;
     padding: 0px 125px;
 }
-
+#slogan:hover{
+    color:#fff;
+}
 #greywrap {
     background: #f5f5f5;
     margin-top: 0px;
@@ -386,7 +411,22 @@ a:after {
     font-family: Calibri;
 }
 
-
+.btn-warning{
+    background-color: goldenrod;
+    text-shadow: 1px 1px 1px #000;
+    padding: 10px 20px;
+    font-size: 25px;
+    outline: none;
+}
+.btn-warning:focus{
+    outline: none;
+}
+.btn-warning:hover{
+    color: #000;
+}
+.cost_block{
+    text-align: center;
+}
 /* ==========================================================================
    Box Sections
    ========================================================================== */
