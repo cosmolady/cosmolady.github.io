@@ -43,6 +43,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#home" class="smoothScroll">Главная</a></li>
                         <li> <a href="#cost" class="smoothScroll"> Стоимость</a></li>
+                        <li> <a href="#stock" class="smoothScroll stock-shadow"> Акция</a></li>
                         <li> <a href="#contact" class="smoothScroll"> Контакты</a></li>
                         <li> <a href="#feedback" class="smoothScroll"> Отзывы</a></li>
                     </ul>
@@ -53,12 +54,12 @@
     </div>
 
     <!-- ==== HEADERWRAP ==== -->
-    <div id="headerwrap" id="home" name="home" style="background:url('images/header_bg.jpg') no-repeat center top; background-size: cover;">
+    <div id="headerwrap" id="home" name="home">
         <header class="clearfix">
-            <h1>Увеличить яркость фар в 3 раза</h1>
+            <h1>Увеличить яркость света фар в 3 раза</h1>
             <p> за 2 часа и 1220 грн<a href="#cost" class="smoothScroll">*</a></p>
             <!--            <p> с помощью ксеноновых лампочек повышенной мощности</p>-->
-            <button class="btn btn-warning btn-lg">Оставить заявку</button>
+            <button class="btn btn-warning btn-lg" data-toggle="modal" data-target=".modal">Оставить заявку</button>
             <div class="rotate">
                 <p style="padding:0;">Комната отдыха. Wi-Fi.</p>
             </div>
@@ -81,34 +82,36 @@
                     <p class="cost_title">Цена</p>
                     <p class="cost_text">Единая цена на установку и оборудование<span>*</span></p>
                     <p class="cost_text">Мы устанавливаем только качественный ксенон ведущих марок.</p>
-                    <p class="cost_text">* цена может изменится на некоторые модели автомобилей (зависит от формы фары).</p>
+                    <p class="cost_text">* цена может изменится на некоторые модели автомобилей (зависит от типа фары и особеностей электропроводки).</p>
                 </div>
                 <div class="picture_wrapper"><img src="images/hour.jpg" alt="" class="pictures">
                     <div class="check"></div>
                     <p class="cost_title">Время</p>
-                    <p class="cost_text">Колоссальный опыт в установке - 12 лет работы в отрасли - позволяет нам делать установку очень быстро.</p>
+                    <p class="cost_text">Колоссальный опыт в установке - 12 лет работы в отрасли - позволяет нам делать установку очень быстро и качественно.</p>
                     <p class="cost_text">Вы можете наблюдать за установкой или расположиться в теплой комнате отдыха с wi-fi, где мы можем предложить Вам чашку чая или кофе.</p>
                 </div>
                 <div class="picture_wrapper"><img src="images/year.jpg" alt="" class="pictures">
                     <div class="check"></div>
                     <p class="cost_title">Гарантия</p>
-                    <p class="cost_text">Гарантия распостраняется на все комплектующие.</p>
-                    <p class="cost_text">Замена вышедших из строя (ламп, блоков розжига, игниторов).</p>
+                    <p class="cost_text">Гарантия распространяется на все комплектующие.</p>
+                    <p class="cost_text">Замена вышедших из строя (ламп, блоков розжига).</p>
                     <p class="cost_text">Постгарантийное обслуживание по сниженым ценам.</p>
                 </div>
             </div>
+            <button class="btn btn-warning btn-lg" data-toggle="modal" data-target=".modal">Заказать установку</button>
             <div class="col-lg-12">
+                <hr>
+                <p class="phrase_auto">Работаем с любыми Авто: ALFA ROMEO, AUDI, BMW, CHRYSLER, CHEVROLET, CITROEN, DAEWOO, FIAT, FORD, GEELY, HONDA, HYUNDAI, JAGUAR, KIA, LANCIA, LEXUS, MAN, MAZDA, MERCEDES-BENZ, MITSUBISHI, NISSAN, OPEL, PEUGEOT, RENAULT, SAAB, SEAT, SKODA, SUBARU, SUZUKI, TOYOTA, VOLKSWAGEN, VOLVO, VW И ДР.</p>
+            </div>
+            <div class="col-lg-12" id="stock" name="stock">
                 <div class="row centered">
                     <hr>
                     <br>
-                    <p class="uppercase">Закажи установку прямо сейчас и получи <span>Диодные габаритные модули</span> в подарок!</p>
-                    <button class="btn btn-warning btn-lg">Хочу подарок!</button>
+                    <p class="uppercase">Закажи установку прямо сейчас и получи в подарок <br/><span>Диоды в габариты!</span></p>
+                    <button class="btn btn-warning btn-lg" data-toggle="modal" data-target=".modal">Хочу подарок!</button>
                     <br/>
                 </div>
-                <p> Для того чтобы узнать цену именно на ваш автомобиль звоните или заполните форму и наш менеджер ответит на все Ваши вопросы
-                </p>
-                <p>Работаем с любыми Авто: ALFA ROMEO, AUDI, BMW, CHRYSLER, CHEVROLET, CITROEN, DAEWOO, FIAT, FORD, GEELY, HONDA, HYUNDAI, JAGUAR, KIA, LANCIA, LEXUS, MAN, MAZDA, MERCEDES-BENZ, MITSUBISHI, NISSAN, OPEL, PEUGEOT, RENAULT, SAAB, SEAT, SKODA, SUBARU, SUZUKI, TOYOTA, VOLKSWAGEN, VOLVO, VW И ДР.</p>
-                <p>Мы несем полную ответственность за работоспособность установленного оборудования.
+                <p class="phrase"> Для того чтобы узнать цену именно на ваш автомобиль звоните или заполните форму и наш менеджер ответит на все Ваши вопросы
                 </p>
             </div>
             <!-- col-lg -->
@@ -118,8 +121,9 @@
     <!-- container -->
 
     <!-- ==== SECTION DIVIDER1 -->
-    <section class="section-divider textdivider divider" style="background:url('images/bg/divider1.jpg');">
-        <div class="container"></div>
+    <section class="section-divider textdivider divider">
+        <div class="divider-overlay"></div>
+        <div class="container divider-block"> </div>
         <!-- container -->
     </section>
     <!-- section -->
@@ -163,7 +167,8 @@
     <!-- container -->
 
     <!-- ==== SECTION DIVIDER2 -->
-    <section class="section-divider textdivider divider" style="background:url('images/bg/divider2.jpg');">
+    <section class="section-divider textdivider divider2">
+        <div class="divider-overlay"></div>
     </section>
     <!-- section -->
 
@@ -180,19 +185,26 @@
                 <span class="after">Почувствуй разницу<br/>(наведи на картинку)</span>
             </div>
             <!-- col -->
-            <p> Ксенон дает в 3 раза больше света по сравнению с "обычными" лампочками, в 2 раза - если сравнивать с галогеновыми.</p>
-            <p>Срок службы ксеноновых ламп – около 3000 часов.</p>
-            <p>Цвет ксеноновой лампы наиболее близок к солнечному свету. За счет этого глаза водителя устают намного меньше.</p>
-            <p>При правильной установке, ксенон не будет "слепить" других водителей.</p>
-            <p>Быстрый пуск в холодном и горячем состоянии.( - 52 +110)</p>
-            <p>Значительно меньшее потребление тока.</p>
+            <span class="img-plus"></span>
+            <p class="plus"> Ксенон дает в <mark>3 раза</mark> больше света по сравнению с "обычными" лампочками, в <mark>2 раза </mark>- если сравнивать с галогеновыми.</p>
+            <span class="img-plus"></span>
+            <p class="plus">Срок службы ксеноновых ламп – около <mark>3000 часов</mark>.</p>
+            <span class="img-plus"></span>
+            <p class="plus">Цвет ксеноновой лампы наиболее близок к <mark>солнечному</mark> свету. За счет этого глаза водителя устают намного меньше.</p>
+            <span class="img-plus"></span>
+            <p class="plus">При правильной установке, ксенон <mark>не будет "слепить"</mark> других водителей.</p>
+            <span class="img-plus"></span>
+            <p class="plus"><mark>Быстрый пуск</mark> в холодном и горячем состоянии.( - 52 +110)</p>
+            <span class="img-plus"></span>
+            <p class="plus">Потребление тока меньше более чем в <mark>2 раза</mark> .</p>
             <br>
             <br>
-            <button class="btn btn-warning btn-lg">Заказать установку</button>
+            <button class="btn btn-warning btn-lg" data-toggle="modal" data-target=".modal">Заказать установку</button>
         </div>
         <div class="row">
             <br>
-            <h1 class="centered">Отзывы</h1>
+            <hr>
+            <h1 class="centered">ОТЗЫВЫ</h1>
             <hr>
             <br>
             <br>
@@ -206,12 +218,11 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Project Title</h4>
+                    <h4 class="modal-title">Напишите нам и наш менеджер перезвонит Вам в течении 5 минут</h4>
                 </div>
                 <div class="modal-body">
-                    <p><img class="img-responsive" src="images/bg/divider6.jpg" alt=""></p>
-                    <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your schedule did to solve it.</p>
-                    <p><b><a href="#">Visit Site</a></b></p>
+                    <input type="text" name="name" placeholder="Ваше имя" value="">
+                    <input type="text" name="phone" placeholder="Ваш телефон" value="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -238,6 +249,7 @@
     <script type="text/javascript" src="js/retina.js"></script>
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="js/smoothscroll.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-func.js"></script>
 
 </body>

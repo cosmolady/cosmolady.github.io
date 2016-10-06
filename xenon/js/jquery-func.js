@@ -1,7 +1,6 @@
-jQuery(function ($) {
+'use strict';
+$(function ($) {
     $(window).load(function () {
-        'use strict',
-        $(".divider").parallax("100%", 0.3);
+        $(".divider,.divider2").parallax("30%", 0.5);
     });
-    
 });
