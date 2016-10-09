@@ -796,8 +796,27 @@ iframe {
     padding-top: 10px;
     background: #f2f2f2;
 }
-
-
+.modal-title{
+  text-align: center;
+font-size: 25px;
+}
+.modal-body{
+  text-align: center;
+}
+.modal-body button{
+  background-color: gold;
+    padding: 5px 20px;
+    font-size: 25px;
+}
+.modal-body input{
+  display: block;
+    margin: 25px auto;
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px groove;
+    padding: 5px;
+}
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
@@ -820,10 +839,13 @@ screen and (max-device-width:1050px) {
 
 @media screen and (max-width:769px) {
     #headerwrap h1 {
-        font-size: 80px;
+        font-size: 30px;
     }
     #headerwrap p {
         font-size: 30px;
         line-height: 38px;
+    }
+    .arrow,.after{
+      display: none;
     }
 }
