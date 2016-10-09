@@ -44,7 +44,7 @@ li {
 	-webkit-box-shadow: inset 0 0 0 2px gold;
 	box-shadow: inset 0 0 0 2px gold;
 	text-transform: uppercase;
-	width: 20%;
+	width: 22%;
 	text-align: center;
 	line-height: 55px;
 	padding: 0;
@@ -239,7 +239,7 @@ li {
 	padding: 0 1px;
 }
 #navigation .navbar-nav.navbar-right {
-	margin-top: 20px
+	margin-top: 10px
 }
 #navigation .navbar-nav.navbar-right li a {
 	color: #fff;
@@ -270,8 +270,8 @@ li {
 	position: fixed;
 	bottom: 0;
 	z-index: 102;
-	background-color: #1E90FF;
-	color: #fff;
+	background-color: gold;
+	color: #000;
 	font-size: 30px;
 	font-weight: 600;
 	width: 100%;
@@ -279,7 +279,7 @@ li {
 	padding: 10px;
 }
 .fixed a{
-	color:#fff;
+	color:#000;
 }
 .fixed a,
 .fixed a:active, 
@@ -306,7 +306,7 @@ li {
 .carousel-inner {
 	background-image: url(../images/header_bg.jpg);
 	background-size: cover;
-	height: 530px;
+	height: 700px;
 }
 #home {
 	position: relative;
@@ -320,7 +320,7 @@ li {
 	width: 100%;
 	min-height: 100%;
 	left: 0;
-	top: 10%;
+	top: 4%;
 	z-index: 11;
 }
 .carousel-caption > div {
@@ -330,22 +330,21 @@ li {
 .carousel-inner h2 {
 	color: gold;
 	display: inline-block;
-	font-family: roboto;
 	font-size: 55px;
 	font-weight: 800;
 	margin-bottom: 40px;
 	text-shadow: 1px 1px 2px #000;
 	text-transform: uppercase;
+    padding: 0 250px;
 }
 .carousel-inner h2 span {
 	color: #7ab700;
 }
 .carousel-inner p {
 	color: goldenrod;
-	font-family: roboto;
 	font-size: 24px;
 	font-weight: 800;
-	margin-bottom: 59px;
+	margin-bottom: 110px;
 	margin-top: 0;
 	text-shadow: 1px 1px 2px #000;
 }
@@ -404,7 +403,10 @@ li {
 }
 #cost {
 	overflow: hidden;
-	padding: 45px 0;
+	padding-top: 30px;
+}
+hr{
+    border-top: 1px solid darkgrey;
 }
 .title-one {
 	color: #666666;
@@ -535,7 +537,6 @@ li {
 #stock {
 	color: #fff;
 	text-align: center;
-	padding: 65px 0;
 }
 .stock {
 	display: block;
@@ -1042,29 +1043,18 @@ li {
 	padding-bottom: 30px;
 	font-size: 18px;
 }
+.contact-address{
+    text-align: center;
+    font-size: 20px;
+}
+.contact-address a{
+    color:#000;
+}
+
 address i {
 	color: gold;
 }
-.number {
-	width: 45px;
-	height: 51px;
-	display: block;
-	margin: 0 auto;
-	color: gold;
-	text-shadow: 1px 1px 1px #000;
-	font-size: 44px;
-}
-.arrow {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 5em;
-	margin: 0 15px;
-}
-.picarrow {
-	position: relative;
-	top: 124px;
-	left: 150px;
-	color: gold;
-}
+
 .copyright {
 	font-weight: 300;
 	font-size: 1.5em;
@@ -1484,7 +1474,7 @@ iframe {
     background-repeat: no-repeat;
     position: absolute;
     top: 0px;
-    right: -18px;
+    right: 30%;
     transform: rotate(30deg);
 }
 
@@ -1496,12 +1486,14 @@ iframe {
     background-repeat: no-repeat;
     position: absolute;
     top: 0px;
-    right: -80px;
+    right: 20%;
     transform: rotate(15deg);
     letter-spacing: 2px;
     font-size: 25px;
 }
-
+.feedback-heading{
+    margin: 50px;
+}
 .no-touch .mask figure:hover figcaption,
 .mask figure.cs-hover figcaption {
     opacity: 1;
@@ -1537,7 +1529,7 @@ iframe {
     font-size: 25px;
     outline: none;
     display: block;
-margin: auto;
+margin:30px auto;
 }
 
 .btn-warning:focus {
@@ -1553,12 +1545,20 @@ margin: auto;
     overflow: hidden;
         margin-bottom: 50px;
 }
-
+.auto_img {
+    background: url(../images/auto.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    margin: auto;
+    border-radius: 100%;
+}
 .rotate {
     transform: rotate(330deg);
     position: absolute;
     height: 50px;
-    bottom: 120px;
+    bottom: 95px;
     padding: 0;
     right: -2px;
     border: 5px solid gold;
@@ -1633,11 +1633,14 @@ margin: auto;
     font-family: 'Jura', sans-serif;
     font-size: 20px;
     font-weight: bold;
+    line-height: 50px;
+    padding-top: 60px;
 }
 
 .plus {
   font-family: Jura, sans-serif;
   font-size: 20px;
+    text-align: left;
 }
 
 .img-plus {
@@ -1652,9 +1655,12 @@ margin: auto;
 }
 
 .bg-image1 {
-    background: url('../images/bg/divider1.jpg');
+    background: url('../images/bg/divider1.jpg') no-repeat;
+    background-size: cover;
 }
 
 .bg-image2 {
-    background: url('../images/bg/divider2.jpg');
+    background: url('../images/bg/divider2.jpg')  no-repeat;
+        background-size: cover;
+
 }

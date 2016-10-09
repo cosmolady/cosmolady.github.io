@@ -71,6 +71,9 @@
 	#navigation .navbar-nav.navbar-right li a:hover {
 		border: none
 	}
+    .carousel-inner h2{
+        padding: 0 5px;
+    }
 	.call-to-action p,
 	.header-bottom #subscribe-form p {
 		font-size: 14px
@@ -268,6 +271,34 @@
 	#footer p {
 		font-size: 14px
 	}
+    .rotate{
+        height: 30px;
+    bottom: 70px;
+    }
+    .rotate p{
+        font-size: 15px;
+    }
+    .picture_wrapper{
+        width: 100%;
+    }
+    .auto_img{
+display: none;
+    }
+    .phrase_auto{
+        padding: 0;
+    line-height: 25px;
+    }
+    .uppercase{
+        padding: 0;
+        font-size: 30px;
+    }
+    .btn_map{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .arrow,.after{
+        display: none;
+    }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 479px) {
 	#navigation .navbar-brand h1 {
