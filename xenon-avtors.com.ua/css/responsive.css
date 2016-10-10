@@ -5,6 +5,9 @@
 	}
 }
 @media (min-width:768px) and (max-width:991px) {
+    .auto_img{
+        display: none;
+    }
 	#navigation .navbar-nav.navbar-right li {
 		padding: 0 0;
 	}
@@ -298,6 +301,9 @@ display: none;
     }
     .arrow,.after{
         display: none;
+    }
+    .phrase{
+        padding: 0;
     }
 }
 @media screen and (min-device-width: 320px) and (max-device-width: 479px) {

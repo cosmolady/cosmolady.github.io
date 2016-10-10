@@ -73,13 +73,6 @@ function checkIsEmptyFields() {
     return true;
 }
 
-// Preloder script
-jQuery(window).load(function () {
-    'use strict';
-    $(".preloader").delay(1600).fadeOut("slow").remove();
-});
-
-//Preloder script
 jQuery(window).load(function () {
     'use strict';
     // Slider Height
