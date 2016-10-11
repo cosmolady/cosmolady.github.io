@@ -83,17 +83,6 @@ li {
 	display: table-cell;
 	vertical-align: middle;
 }
-.home-pattern {
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    left: 0;
-    bottom: 0;
-    background-image: url(../images/home-pattern.png);
-    background-repeat: repeat;
-    opacity: 0.2;
-}
 /*====================
 ======Header CSS=====
 ======================*/
@@ -161,7 +150,7 @@ li {
 	color:#000;
 }
 .fixed a,
-.fixed a:active, 
+.fixed a:active,
 .fixed a:visited{
 		text-decoration: none;
 
@@ -1327,12 +1316,15 @@ address i {
 
 iframe {
     border-radius: 20px;
+		width: 100%;
 }
 
 .images {
     position: relative;
 }
-
+.images2{
+	display: none;
+}
 .before {
     width: 330px;
     height: 480px;
@@ -1437,7 +1429,7 @@ margin:30px auto;
     transform: rotate(330deg);
     position: absolute;
     height: 50px;
-    bottom: 95px;
+    bottom: 180px;
     padding: 0;
     right: -2px;
     border: 5px solid gold;

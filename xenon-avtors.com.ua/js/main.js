@@ -1,12 +1,10 @@
 jQuery(function ($) {
-    'use strict',
-
-    // all Parallax Section
-    $(window).load(function () {
-        'use strict',
-        $(".parallax-section").parallax("50%", 0.3);
-    });
-
+    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+      $(window).load(function () {
+          'use strict',
+          $(".parallax-section").parallax("50%", 0.3);
+      });
+    };
     // feedback form validation
     var feedbackForm = $('#feedback-form-section');
     var lastMessage = $('.last_message');
@@ -46,7 +44,7 @@ jQuery(function ($) {
         feedbackForm.removeClass('none');
         $('#feedback-form').trigger('reset');
     });
-    
+
     $('.form-control').on('focus', function(e){
         errorMessage.addClass('none');
     });
