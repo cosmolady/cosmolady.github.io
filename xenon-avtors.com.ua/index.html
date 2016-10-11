@@ -24,9 +24,16 @@
 <!--/head-->
 
 <body>
-    <div id="fb-root"></div>
-
-    <!--/.preloader-->
+  <!--.facebook-->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version..";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+<!--.facebook-->
     <!--Fixed-->
     <div class="fixed">
         <div class="container">
@@ -226,7 +233,7 @@
     <section id="feedback">
         <div class="row text-center">
             <h2 class="title-one">ОТЗЫВЫ</h2>
-            <div class="fb-comments" data-href="https://xenon-avtors.com.ua" data-numposts="10" data-order-by="time"></div>
+            <div class="fb-comments" data-href="https://xenon-avtors.com.ua" data-numposts="10" data-order-by="reverse_time"></div>
         </div>
     </section>
 
@@ -285,12 +292,4 @@
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-var js, fjs = d.getElementsByTagName(s)[0];
-if (d.getElementById(id)) return;
-js = d.createElement(s); js.id = id;
-js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version..";
-fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 </html>

@@ -1,10 +1,10 @@
 jQuery(function ($) {
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       $(window).load(function () {
-          'use strict',
+          'use strict';
           $(".parallax-section").parallax("50%", 0.3);
       });
-    };
+    }
     // feedback form validation
     var feedbackForm = $('#feedback-form-section');
     var lastMessage = $('.last_message');
@@ -63,6 +63,7 @@ jQuery(function ($) {
 });
 
 function checkIsEmptyFields() {
+  'use strict';
     var pattern = /^[\s]+$/;
     for (var i = 0; i < arguments.length; i++) {
         if (!arguments[i]) return false;
