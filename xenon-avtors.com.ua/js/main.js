@@ -6,26 +6,24 @@ jQuery(function ($) {
       });
     }
     // feedback form validation
-    var feedbackForm = $('#feedback-form-section');
+    var feedbackForm = $('#contact-form-section');
     var lastMessage = $('.last_message');
     var errorMessage = $('.error_message');
     $('.btn-send').on('click', function (e) {
         'use strict';
         var name = $('.name-field').val();
         var phone = $('.mail-field').val();
-        var message = $('.message-field').val();
-        if (!checkIsEmptyFields(name, phone, message)) {
+        if (!checkIsEmptyFields(name, phone)) {
             errorMessage.removeClass('none');
             return false;
         }
         $.ajax({
-            url: '/steklanet.com.ua/send-mail.php',
+            url: '/xenon-avtors.com.ua/send-mail.php',
             type: 'POST',
             dataType: 'json',
             data: {
                 name: name,
                 phone: phone,
-                message: message
             },
             success: function (data) {
                 feedbackForm.addClass('none');

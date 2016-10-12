@@ -7,7 +7,7 @@ $phone=$_POST['phone'];
 $body = "Name: " . $name . "\n"; 
 $body .= "Phone: " . $phone . "\n"; 
  
-$mailSMTP = new SendMailSmtpClass('chebakov_v@inbox.ru', 'vova8824', 'ssl://smtp.mail.ru', 'steklanet.com.ua', 465);
+$mailSMTP = new SendMailSmtpClass('chebakov_v@inbox.ru', '8824vova', 'ssl://smtp.mail.ru', 'xenon-avtors.com.ua', 465);
   
 // заголовок письма
 $headers= "MIME-Version: 1.0\r\n";
