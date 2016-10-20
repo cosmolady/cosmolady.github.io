@@ -2,7 +2,8 @@ jQuery(function ($) {
     if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
       $(window).load(function () {
           'use strict';
-          $(".parallax-section").parallax("50%", 0.3);
+            $('.parallax-window').parallax({imageSrc: 'images/bg/divider1.jpg'});
+            $('.parallax-window-2').parallax({imageSrc: 'images/bg/divider2.jpg'});
       });
     }
     // feedback form validation

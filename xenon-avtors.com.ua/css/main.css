@@ -400,7 +400,10 @@ hr{
 /*====================
 ======Service CSS=====
 ======================*/
-
+.parallax-window, .parallax-window-2 {
+    min-height: 400px;
+    background: transparent;
+}
 #stock {
 	color: #fff;
 	text-align: center;
@@ -411,7 +414,6 @@ hr{
 	margin-top: 50px
 }
 #stock h2 {
-	color: #fff;
 	border-color: #fff;
 	margin-bottom: 35px
 }
@@ -1316,6 +1318,7 @@ address i {
 iframe {
     border-radius: 20px;
 		width: 100%;
+    height: 300px;
 }
 
 .images {
@@ -1437,19 +1440,28 @@ margin:30px auto;
 }
 
 .uppercase {
-    clear: both;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 1.1;
-    padding: 0 85px 0;
     font-weight: 600;
     color: #000;
     margin-bottom: 50px;
-    -moz-text-shadow: 5px 5px 20px gold;
-    -webkit-text-shadow: 5px 5px 20px gold;
-    text-shadow: 5px 5px 20px gold;
+    
 }
-
+.gift{
+    background-image: url(../images/giftbox.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.happy{
+     background-image: url(../images/jumping-man.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;   
+    margin: 0 auto;
+}
 .stock-shadow{
     -moz-text-shadow: 0 0 10px #0ff;
     -webkit-text-shadow: 0 0 10px #0ff;
