@@ -59,8 +59,8 @@
             },
             render: function() {
                 if(this.state.isOpened){
-                    return (
-                        <li className="contact" onClick={this.handleClick}>
+                    var contactModal =                         
+                        <div className="contact" onClick={this.handleClick}>
                             <img className="contact-image" src={this.props.image} width="60px" height="60px" />
                             <div className="contact-info">
                                 <div className="contact-name"> {this.props.name} </div>
@@ -68,7 +68,9 @@
                                 <div className="contact-adress"> {this.props.adress} </div>
                                 <div className="contact-email"> {this.props.email} </div>
                             </div>
-                        </li>
+                        </div>
+                    return (
+                        <ContactModal contact={contactModal}/>
                     );
                 }else{
                     return (
@@ -104,7 +106,7 @@
                             <Modal.Title>Modal heading</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-
+                            {this.props.contact}
                         </Modal.Body>
                         <Modal.Footer>
                             <Button onClick={this.close}>Close</Button>
@@ -151,7 +153,6 @@
                                })
                             }
                         </ul>
-                        <ContactModal/>
                     </div>
                 );
             }
