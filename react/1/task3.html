@@ -33,7 +33,7 @@
                 id: 3,
                 name: 'Luke Skywalker',
                 phoneNumber: '+250976654433',
-                image: 'http://www.youshouldshare.me/wp-content/uploads/2015/03/14264215682890-anigif_enhanced-buzz-13518-1367608452-4.gif',
+                image: 'https://images.hellogiggles.com/uploads/2016/08/30215917/aRSgebS.gif',
                 adress: 'Earth',
                 email: 'luke@luke.luke'
             }, {
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                     return (
-                        <ContactModal contact={contactModal}/>
+                        <ContactModal contact={contactModal} contactsClick={this.handleClick}/>
                     );
                 }else{
                     return (
@@ -96,6 +96,7 @@
                 this.setState({
                     showModal : false
                 });
+                this.props.contactsClick();
             },
             render : function() {
                 var Modal = ReactBootstrap.Modal;
