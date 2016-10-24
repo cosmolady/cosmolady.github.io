@@ -220,6 +220,11 @@
 	}
 }
 @media (max-width:479px) {
+	.navbar-brand{
+		width: 81% !important;
+		text-align: center;
+		padding-top: 20px;
+	}
 	.check{
 		left: 35%;
 		width: 30px;
