@@ -1,11 +1,6 @@
 jQuery(function ($) {
-    if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
-      $(window).load(function () {
-          'use strict';
-            $('.parallax-window').parallax({imageSrc: 'images/bg/divider1.jpg'});
-            $('.parallax-window-2').parallax({imageSrc: 'images/bg/divider2.jpg'});
-      });
-    }
+    $('.parallax-window').parallax({imageSrc: 'images/bg/divider1.jpg'});
+    $('.parallax-window-2').parallax({imageSrc: 'images/bg/divider2.jpg'});
     // feedback form validation
     var feedbackForm = $('#contact-form-section');
     var lastMessage = $('.last_message');
@@ -19,7 +14,7 @@ jQuery(function ($) {
             return false;
         }
         $.ajax({
-            url: '/xenon-avtors.com.ua/send-mail.php',
+            url: '/send-mail.php',
             type: 'POST',
             dataType: 'json',
             data: {
@@ -36,7 +31,7 @@ jQuery(function ($) {
         });
     });
 
-    $('.btn-default').on('click', function (e) {
+    $('.btn-warning').on('click', function (e) {
         'use strict';
         lastMessage.addClass('none');
         errorMessage.addClass('none');
