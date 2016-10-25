@@ -55,16 +55,6 @@ li {
     list-style-type: none;
 }
 
-.parallax-section {
-    min-height: 300px;
-    width: 100%;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-image: url(../images/picture3_bw.png);
-}
-
 .parallax-section1 {
     min-height: 300px;
     width: 100%;
@@ -404,7 +394,18 @@ li {
     text-shadow: 1px 1px 2px #000;
 }
 
-
+#services{
+  background-color: #fff;
+}
+#services a{
+  color: #d2322d;
+}
+.service__content{
+  font-size: 20px;
+  text-align: justify;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
 /*=======================
 ====== About Us CSS =====
 =========================*/
@@ -446,10 +447,11 @@ li {
     font-size: 20px;
     text-align: justify;
     display: inline-block;
-    width: 70%;
-    margin-left: 100px;
     line-height: 30px;
     text-indent: 20px;
+    width: 70%;
+    margin-left: 100px;
+
 }
 
 #bio span {
@@ -558,15 +560,18 @@ li {
 
 .work__text {
     font-family: 'Quicksand';
-    letter-spacing: 1px;
+    letter-spacing: -1px;
     font-size: 16px;
     padding-top: 5px;
+    text-align: left;
 }
 
 .work__text__hoda {
     padding-top: 10px;
 }
-
+.work__text .bold{
+  font-size: 20px
+}
 .bold {
     font-weight: bold;
 }

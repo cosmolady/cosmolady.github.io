@@ -138,12 +138,6 @@ function Scroll() {
             $('.navbar-collapse li.scroll')
                 .removeClass('active')
                 .eq(i).addClass('active');
-            if ($('.navbar-collapse li.scroll')
-                .eq(i).hasClass('contact-href')) {
-                $('.contact-href').addClass('active');
-            }else{
-                $('.contact-href').removeClass('active');
-            }
         }
     })
 
