@@ -5,6 +5,12 @@
 	}
 }
 @media (min-width:768px) and (max-width:991px) {
+		.factory{
+			width: 30%;
+		}
+		.factory img{
+			width: 60%;
+		}
     .auto_img{
         display: none;
     }
@@ -80,6 +86,10 @@
 	}
 }
 @media (max-width:767px) {
+	.factory{
+		width: 100%;
+		margin-bottom: 30px;
+	}
 	#navigation .navbar-nav.navbar-right {
 		margin-top: 0
 	}
@@ -220,6 +230,11 @@
 	}
 }
 @media (max-width:479px) {
+	.navbar-brand{
+		width: 81% !important;
+		text-align: center;
+		padding-top: 20px;
+	}
 	.check{
 		left: 35%;
 		width: 30px;

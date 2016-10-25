@@ -1446,7 +1446,7 @@ margin:30px auto;
     font-weight: 600;
     color: #000;
     margin-bottom: 50px;
-    
+
 }
 .gift{
     background-image: url(../images/giftbox.png);
@@ -1459,7 +1459,7 @@ margin:30px auto;
      background-image: url(../images/jumping-man.png);
     background-size: cover;
     width: 100px;
-    height: 100px;   
+    height: 100px;
     margin: 0 auto;
 }
 
@@ -1547,4 +1547,16 @@ margin:30px auto;
     background: url('../images/bg/divider2.jpg')  no-repeat;
         background-size: cover;
 
+}
+.factories{
+	clear: both;
+	margin: auto;
+	width: 90%;
+}
+.factories h2{
+	font-style: italic;
+}
+.factory{
+	width: 30%;
+	display: inline-block;
 }
