@@ -412,7 +412,6 @@ li {
 }
 .service__content{
   font-size: 20px;
-  text-align: justify;
   line-height: 30px;
   padding: 20px;
 }
@@ -423,7 +422,6 @@ li {
 #bio {
     font-family: 'Quicksand';
     overflow: hidden;
-    padding: 70px 0;
     background-color: #fff;
 }
 
@@ -559,6 +557,7 @@ li {
 }
 #work .row{
     margin-bottom: 20px;
+    padding: 5px;
 }
 
 .work__text {
@@ -580,8 +579,7 @@ li {
 }
 
 .book-title .bold{
-    font-size: 25px;
-    letter-spacing: 5px; 
+    font-size: 22px;
 }
 
 .bold {

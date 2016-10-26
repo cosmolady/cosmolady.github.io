@@ -207,6 +207,17 @@
 
 }
 @media (max-width:479px) {
+    .testim_img{
+        display: block;
+    margin: 0 auto;
+
+    }
+    .contacts{
+        padding: 0;
+    }
+    .bio__content{
+        padding: 0 15px;
+    }
 	body section {
 		overflow: hidden
 	}
