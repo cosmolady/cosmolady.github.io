@@ -65,6 +65,16 @@ li {
     background-image: url(../images/picture2_bw.png);
 }
 
+.parallax-section2 {
+    min-height: 300px;
+    width: 100%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../images/picture3_bw.png);
+}
+
 .parallax-section-home {
     min-height: 300px;
     width: 100%;
@@ -423,6 +433,7 @@ li {
     font-size: 32px;
     font-weight: 600;
     padding-bottom: 10px;
+    padding-left: 4%;
     text-align: center;
     text-transform: uppercase;
     position: relative
@@ -564,14 +575,23 @@ li {
     font-size: 16px;
     padding-top: 5px;
     text-align: left;
+    padding-right: 10%;
+    text-align: justify;
 }
 
 .work__text__hoda {
     padding-top: 10px;
 }
+
 .work__text .bold{
-  font-size: 20px
+  font-size: 20px;
 }
+
+.book-title .bold{
+    font-size: 25px;
+    letter-spacing: 5px; 
+}
+
 .bold {
     font-weight: bold;
 }
