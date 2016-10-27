@@ -68,7 +68,7 @@ li {
 .parallax-section2 {
     min-height: 300px;
     width: 100%;
-    background-position: 50% 0;
+    background-position: 0 -30%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -406,6 +406,8 @@ li {
 
 #services{
   background-color: #fff;
+    font-family: Quicksand,sans-serif;
+    padding-bottom: 30px;
 }
 #services a{
   color: #d2322d;
@@ -413,6 +415,12 @@ li {
 .service__content{
   font-size: 20px;
   line-height: 30px;
+}
+.service__title{
+    font-size: 25px;
+}
+.programs_title{
+    font-weight: bold;
 }
 /*=======================
 ====== About Us CSS =====
@@ -459,7 +467,7 @@ li {
     line-height: 30px;
     text-indent: 20px;
     width: 70%;
-    margin-left: 100px;
+    margin-left: 10%;
 
 }
 
@@ -583,7 +591,10 @@ li {
 .book-title .bold{
     font-size: 22px;
 }
-
+.book-title{
+    font-weight: bold;
+    font-size: 16px;
+}
 .bold {
     font-weight: bold;
 }
@@ -610,6 +621,7 @@ li {
     letter-spacing: 3px;
     margin-bottom: 2%;
     font-size: 12px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .contacts__link:hover {
@@ -845,6 +857,7 @@ li {
     font-size: 16px;
     position: relative;
     margin-top: 1px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 #footer p {
