@@ -413,7 +413,6 @@ li {
 .service__content{
   font-size: 20px;
   line-height: 30px;
-  padding: 20px;
 }
 /*=======================
 ====== About Us CSS =====
@@ -462,11 +461,6 @@ li {
 
 }
 
-#bio span {
-    font-weight: 400;
-    color: #fc7700;
-}
-
 .bio .col-sm-6 {
     margin-top: 50px
 }
@@ -504,6 +498,9 @@ li {
     padding: 5px;
 }
 
+.quote {
+    font-size: 40px;
+}
 
 /*====================
 ======Service CSS=====
@@ -515,7 +512,7 @@ li {
 }
 
 .citation__text {
-    font-size: 40px;
+    font-size: 34px;
     padding-bottom: 30px;
     text-align: left;
 }
