@@ -408,6 +408,7 @@ li {
   background-color: #fff;
     font-family: Quicksand,sans-serif;
     padding-bottom: 30px;
+    padding-top: 30px;
 }
 #services a{
   color: #d2322d;
@@ -510,6 +511,8 @@ li {
 
 .quote {
     font-size: 40px;
+    font-family: 'Merriweather', sans-serif;
+    display: block;
 }
 
 /*====================
@@ -526,7 +529,8 @@ li {
 
 .citation__text {
     font-size: 34px;
-    padding-bottom: 30px;
+    padding: 0;
+    margin: 0; 
     text-align: left;
 }
 
@@ -564,9 +568,9 @@ li {
     color: #000;
     text-align: justify;
     font-family: 'Quicksand';
+    padding-top: 25px;
 }
 #work .row{
-    margin-bottom: 20px;
     padding: 5px;
 }
 
@@ -851,12 +855,12 @@ li {
 
 #footer {
     background-color: #101010;
-    padding: 25px 0;
     color: #fff;
     font-size: 16px;
     position: relative;
     margin-top: 1px;
     text-shadow: 1px 1px 1px #000;
+    padding-bottom: 25px;
 }
 
 #footer p {
