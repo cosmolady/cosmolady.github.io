@@ -404,25 +404,35 @@ li {
     text-shadow: 1px 1px 2px #000;
 }
 
-#services{
-  background-color: #fff;
-    font-family: Quicksand,sans-serif;
+#services {
+    background-color: #fff;
+    font-family: Quicksand, sans-serif;
     padding-bottom: 30px;
     padding-top: 30px;
 }
-#services a{
-  color: #d2322d;
+
+#services a {
+    color: #d2322d;
 }
-.service__content{
-  font-size: 20px;
-  line-height: 30px;
+
+.service__content {
+    font-size: 17px;
+    line-height: 30px;
 }
-.service__title{
+
+.service__title {
     font-size: 25px;
 }
-.programs_title{
+
+.red {
+    color: #d2322d;
+}
+
+.programs_title {
     font-weight: bold;
 }
+
+
 /*=======================
 ====== About Us CSS =====
 =========================*/
@@ -450,9 +460,11 @@ li {
     border-radius: 10%;
     display: inline-block;
 }
-#bio .row{
-	margin-bottom: 40px;
+
+#bio .row {
+    margin-bottom: 40px;
 }
+
 #bio h4 {
     color: #909090;
     margin-bottom: 50px;
@@ -462,14 +474,13 @@ li {
 
 .bio__content {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
     display: inline-block;
     line-height: 30px;
     text-indent: 20px;
     width: 70%;
     margin-left: 10%;
-
 }
 
 .bio .col-sm-6 {
@@ -515,13 +526,16 @@ li {
     display: block;
 }
 
+
 /*====================
 ======Service CSS=====
 ======================*/
-.cite{
-	background-color: #fff;
-	width: 100%;
+
+.cite {
+    background-color: #fff;
+    width: 100%;
 }
+
 #citation {
     color: #000;
     padding: 30px 17px;
@@ -530,7 +544,7 @@ li {
 .citation__text {
     font-size: 34px;
     padding: 0;
-    margin: 0; 
+    margin: 0;
     text-align: left;
 }
 
@@ -569,15 +583,16 @@ li {
     text-align: justify;
     font-family: 'Quicksand';
     padding-top: 25px;
+    padding-bottom: 25px;
 }
-#work .row{
+
+#work .row {
     padding: 5px;
 }
 
 .work__text {
     font-family: 'Quicksand';
-    letter-spacing: -1px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: left;
     padding-right: 10%;
     text-align: justify;
@@ -587,18 +602,20 @@ li {
     padding-top: 10px;
 }
 
-.work__text .bold{
-  font-size: 20px;
-    padding-top:25px;
+.work__text .bold {
+    font-size: 25px;
+    padding-top: 25px;
 }
 
-.book-title .bold{
+.book-title .bold {
     font-size: 22px;
 }
-.book-title{
+
+.book-title {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
 }
+
 .bold {
     font-weight: bold;
 }
@@ -803,7 +820,7 @@ li {
     text-align: left;
     color: #000;
     font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
 }
 
