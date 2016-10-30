@@ -47,8 +47,7 @@
                                         onClick = {this.handleClick}>
                                     <img className = "product-image"
                                         src = {this.props.image}
-                                        width = "60px"
-                                        height = "60px" />
+                                    />
                                     <div className = "product-info" >
                                         <div className = "product-name"> 
                                             {this.props.name} 
@@ -72,8 +71,7 @@
                         onClick = {this.handleClick}>
                         <img className = "product-image"
                                 src = {this.props.image}
-                                width = "60px"
-                                height = "60px" />
+                        />
                         <div className = "product-info">
                             <div className = "product-name"> 
                                 {this.props.name}
@@ -141,8 +139,13 @@
      render: function () {
          return ( <div className = "products">
                     <input type = "text"
+                        placeholder="Поиск"
+                        name="search"
                         className = "search-field"
                         onChange = {this.handleSearch}/> 
+                    <label for="search"
+                        className = "search-label">
+                    </label>
                     <ul className = "products-list"> 
                         {this.state.displayedProducts.map(function (el) {
                             return <Product
