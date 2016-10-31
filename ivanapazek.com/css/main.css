@@ -17,7 +17,6 @@ body {
     font-family: 'FuturaPT', sans-serif;
     position: relative;
     font-weight: 400;
-    background-color: #0f0f11;
 }
 
 a:hover {
@@ -816,7 +815,7 @@ li {
 ======================*/
 
 #journal {
-    padding: 65px 0;
+    padding-bottom: 65px;
     background-color: #fff;
     text-align: left;
     color: #000;
@@ -867,7 +866,6 @@ li {
 .post-title a:hover {
     color: #000;
 }
-
 
 /*====================
 ======Footer CSS=====
