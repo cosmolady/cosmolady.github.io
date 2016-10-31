@@ -412,7 +412,9 @@ li {
 }
 
 #services a {
-    color: #d2322d;
+    color: #000;
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 .service__content {
@@ -428,11 +430,6 @@ li {
 .red {
     color: #d2322d;
 }
-
-.programs_title {
-    font-weight: bold;
-}
-
 
 /*=======================
 ====== About Us CSS =====
@@ -476,7 +473,6 @@ li {
 .bio__content {
     font-weight: 300;
     font-size: 17px;
-    text-align: justify;
     display: inline-block;
     line-height: 30px;
     text-indent: 20px;
@@ -558,9 +554,13 @@ li {
 }
 
 .book-box a {
-    color: #d2322d;
+    color: #000;
+	font-weight: bold;
     text-decoration: underline;
     display: inline-block;
+}
+.book-box a:hover, #services a:hover{
+	color: #0645AD;
 }
 
 .btn:focus {
@@ -611,14 +611,16 @@ li {
 }
 
 .book-title {
-    font-weight: bold;
     font-size: 17px;
 }
 
 .bold {
     font-weight: bold;
 }
-
+.question{
+    font-weight: bold;
+	
+}
 .programs_title {
     margin: 0;
 }
@@ -836,11 +838,13 @@ li {
 }
 
 .post-content a {
-    color: #d2322d;
+    color: #000;
     text-decoration: underline;
     font-weight: 600;
 }
-
+.post-content a:hover{
+	color:#0645AD;
+}
 .post-content img,
 .post-content p {
     margin-bottom: 6%;
