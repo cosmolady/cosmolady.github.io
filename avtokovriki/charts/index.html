@@ -68,7 +68,9 @@
                 hours[hour]++;
                 hoursAndDaysOfWeek[day][hour]++;
             }
+            console.log(daysOfWeek);
             daysOfWeek.push(daysOfWeek.shift());
+            console.log(daysOfWeek);
             hoursAndDaysOfWeek.push(hoursAndDaysOfWeek.shift());
             return {
                 daysOfWeek: daysOfWeek,
@@ -174,9 +176,9 @@
                 color = new just.RandomColor(),
                 indexX,
                 indexY;
-            for (indexX = 0; indexX < hoursAndDaysOfWeek.length; indexX++) {
+            for (indexX in hoursAndDaysOfWeek) {
                 color.refresh();
-                for (indexY = 0; indexY < hoursAndDaysOfWeek[indexX].length; indexY++) {
+                for (indexY in hoursAndDaysOfWeek[indexX]) {
                     if (hoursAndDaysOfWeek[indexX][indexY]) {
                         calc.push(['', 
                                    parseInt(indexY, 10), 
