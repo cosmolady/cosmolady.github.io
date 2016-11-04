@@ -12,7 +12,10 @@ jQuery(function ($) {
         Scroll();
     });
 	setTimeout(function(){
-		$('._form_1').fadeIn()},20000);
+		$('._form_1, .form_overlay').fadeIn()},20000);
+	$('.form_overlay').on('click', function () {
+		$('._form_1, .form_overlay').fadeOut()
+	})
     $('.navbar-collapse ul li a, .arrow_wrapper a').click(function () {
         $('html, body').animate({
             scrollTop: $(this.hash).offset().top - 79
