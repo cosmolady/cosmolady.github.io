@@ -53,7 +53,15 @@ h6 {
 li {
     list-style-type: none;
 }
-
+#_form_581C7030A48A5_{
+	position: fixed;
+    top: 31%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -200px;
+    z-index: 1046;
+	
+}
 .parallax-section1 {
     min-height: 300px;
     width: 100%;
