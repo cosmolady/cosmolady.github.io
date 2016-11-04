@@ -64,7 +64,7 @@ li {
     opacity: .8;
     background: #000;
 }
-._form_1 form{
+._form_1 {
 	z-index: 1050;
     position: fixed;
     top: 45%;
