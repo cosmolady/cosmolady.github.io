@@ -67,9 +67,14 @@ li {
 ._form_1 {
 	z-index: 1050;
     position: fixed;
-    top: 45%;
+    top: 0;
     left: 50%;
     margin-left: -250px;
+}
+._form_1 form{
+	position: absolute;
+	top:0;
+	left: 0;
 }
 .parallax-section1 {
     min-height: 300px;
