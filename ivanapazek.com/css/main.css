@@ -76,6 +76,8 @@ li {
 	position: absolute;
 	top:0;
 	left: 0;
+  overflow: auto;
+height: 580px;
 }
 .parallax-section1 {
     min-height: 300px;
@@ -641,7 +643,7 @@ li {
 }
 .question{
     font-weight: bold;
-	
+
 }
 .programs_title {
     margin: 0;
@@ -899,7 +901,6 @@ li {
     color: #fff;
     font-size: 16px;
     position: relative;
-    margin-top: 1px;
     text-shadow: 1px 1px 1px #000;
     padding-bottom: 25px;
 }
