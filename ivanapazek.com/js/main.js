@@ -1,6 +1,5 @@
 jQuery(function ($) {
     'use strict',
-	
     // all Parallax Section
     $(window).load(function () {
         'use strict',
@@ -12,9 +11,14 @@ jQuery(function ($) {
         Scroll();
     });
 	setTimeout(function(){
-		$('._form_1, .form_overlay').fadeIn()},20000);
+		$('._form_1, .form_overlay').fadeIn();
+        $('body').addClass('modal-lock');
+        $('html').addClass('modal-html-lock');
+    },300);
 	$('.form_overlay').on('click', function () {
-		$('._form_1, .form_overlay').fadeOut()
+		$('._form_1, .form_overlay').fadeOut();
+        $('body').removeClass('modal-lock');
+        $('html').removeClass('modal-html-lock');
 	})
     $('.navbar-collapse ul li a, .arrow_wrapper a').click(function () {
         $('html, body').animate({

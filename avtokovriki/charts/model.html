@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!--    <script type="text/javascript" src="just.RandomColor.js"></script>-->
+</head>
+
+<body>
+    <script>
+//        google.charts.load('current', {
+//            'packages': ['corechart']
+//        });
+        $.ajax({
+            url: "data-model.txt",
+            dataType: "text",
+            async: true,
+            success: function (msg) {
+                var data = msg.split('\n');
+                dataHandler(data);
+            }
+        });
+
+        function dataHandler(data) {
+            $('body').append(data);
+            var splitData = getSplitData(data);
+        }
+        
+        function getSplitData(data) {
+//            var type = {
+//                    rubber: 0,
+//                    polyurethane: 0
+//                },
+//                manufacturer = {
+//                    stingray: 0,
+//                    auto-gumm:0
+//                };
+            var index,
+                items = [];
+            for(index in data){
+                items.push(getItem(data[index]));
+            }
+            return items;
+        }
+        function getItem(line){
+            
+        }
+    </script>
+</body>
+
+</html>
