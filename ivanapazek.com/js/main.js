@@ -14,7 +14,7 @@ jQuery(function ($) {
 		$('._form_1, .form_overlay').fadeIn();
         $('body').addClass('modal-lock');
         $('html').addClass('modal-html-lock');
-    },300);
+    },30000);
 	$('.form_overlay').on('click', function () {
 		$('._form_1, .form_overlay').fadeOut();
         $('body').removeClass('modal-lock');
