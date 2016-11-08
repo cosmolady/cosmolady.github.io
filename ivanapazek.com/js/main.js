@@ -39,16 +39,19 @@ jQuery(function ($) {
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
+    // if(!isMobile.any()){
+    //   $("#home").parallax("50%", 0.3);
+    // }
     var delay = isMobile.any() ? 0 : 30000;
     setTimeout(function () {
         $('._form_1, .form_overlay').fadeIn();
-        $('body').addClass('modal-lock');
-        $('html').addClass('modal-html-lock');
+        $('.modalForm').append('<span class="closeModal">X</span>');
+        $('.closeModal').on('click', function () {
+          $('._form_1, .form_overlay').fadeOut();
+        });
     }, delay);
     $('.form_overlay').on('click', function () {
         $('._form_1, .form_overlay').fadeOut();
-        $('body').removeClass('modal-lock');
-        $('html').removeClass('modal-html-lock');
     })
     $('.navbar-collapse ul li a, .arrow_wrapper a').click(function () {
         $('html, body').animate({
@@ -80,6 +83,4 @@ jQuery(window).load(function () {
         $('#home .carousel-inner .item, #home .video-container').css('height', slideHeight);
     });
     $(".preloader").delay(1600).fadeOut("slow").remove();
-    $("#home").parallax("50%", 0.3);
-
 });

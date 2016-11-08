@@ -204,7 +204,22 @@
     font-weight: 400;
 		padding: 10px 0;
 	}
-
+	._form_1{
+		display: block;
+    width: 100%;
+    margin: 0;
+    top: 9%;
+    left: 0;
+	}
+	._form_1 form{
+		height: auto;
+	}
+	._form-title{
+		font-size: 22px !important;
+	}
+	._submit{
+		    padding: 5px !important;
+	}
 }
 @media (max-width:479px) {
     .testim_img{
@@ -257,7 +272,7 @@
 	#sales .btn {
 		width: 320px;
 	}
-    
+
 	.title-one {
 		font-size: 24px
 	}
