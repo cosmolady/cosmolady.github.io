@@ -39,10 +39,13 @@ jQuery(function ($) {
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
+    if(!isMobile.any()){
+      $("#home").parallax("50%", 0.3);
+    } 
     var delay = isMobile.any() ? 0 : 30000;
     setTimeout(function () {
         $('._form_1, .form_overlay').fadeIn();
-        $('._form_1').append('<span class="closeModal">X</span>');
+        $('.modal').append('<span class="closeModal">X</span>');
     }, delay);
     $('.form_overlay').on('click', function () {
         $('._form_1, .form_overlay').fadeOut();
@@ -77,6 +80,4 @@ jQuery(window).load(function () {
         $('#home .carousel-inner .item, #home .video-container').css('height', slideHeight);
     });
     $(".preloader").delay(1600).fadeOut("slow").remove();
-    $("#home").parallax("50%", 0.3);
-
 });
