@@ -42,13 +42,9 @@ jQuery(function ($) {
     var delay = isMobile.any() ? 0 : 30000;
     setTimeout(function () {
         $('._form_1, .form_overlay').fadeIn();
-        $('body').addClass('modal-lock');
-        $('html').addClass('modal-html-lock');
     }, delay);
     $('.form_overlay').on('click', function () {
         $('._form_1, .form_overlay').fadeOut();
-        $('body').removeClass('modal-lock');
-        $('html').removeClass('modal-html-lock');
     })
     $('.navbar-collapse ul li a, .arrow_wrapper a').click(function () {
         $('html, body').animate({
