@@ -45,7 +45,7 @@ jQuery(function ($) {
     var delay = isMobile.any() ? 0 : 30000;
     setTimeout(function () {
         $('._form_1, .form_overlay').fadeIn();
-        $('.modal').append('<span class="closeModal">X</span>');
+        $('.modalForm').append('<span class="closeModal">X</span>');
         $('.closeModal').on('click', function () {
           $('._form_1, .form_overlay').fadeOut();
         });
