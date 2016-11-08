@@ -9,29 +9,228 @@
 </head>
 
 <body>
+    <div id="chart_order"></div>
+    <div id="chart_marks" style="width: 900px; height: 300px;"></div>
     <script>
-        (function (){
-            var url = "report.xlsx";
-            var oReq = new XMLHttpRequest();
-            oReq.open("GET", url, true);
-            oReq.responseType = "arraybuffer";
+        (function () {
+            init();
+            google.charts.load('current', {
+                'packages': ['corechart', 'bar']
+            });
 
-            oReq.onload = function (e) {
-                var arraybuffer = oReq.response;
-                var data = new Uint8Array(arraybuffer);
-                var arr = new Array();
-                for (var i = 0; i != data.length; ++i) {
-                    arr[i] = String.fromCharCode(data[i]);
+            function init() {
+                var url = "report.xlsx",
+                    oReq = new XMLHttpRequest();
+                oReq.open("GET", url, true);
+                oReq.responseType = "arraybuffer";
+                oReq.onload = function (e) {
+                    var arraybuffer = oReq.response,
+                        data = new Uint8Array(arraybuffer),
+                        arr = new Array(),
+                        i,
+                        bstr;
+                    for (i = 0; i != data.length; ++i) {
+                        arr[i] = String.fromCharCode(data[i]);
+                    }
+                    bstr = arr.join("");
+                    dataHandler(XLSX.read(bstr, {
+                        type: "binary"
+                    }));
                 }
-                var bstr = arr.join("");
-                var workbook = XLSX.read(bstr, {
-                    type: "binary"
-                });
-                var sheet = workbook.sheets['Лист1'];
-                console.log(sheet);
+                oReq.send();
             }
 
-            oReq.send();
+            function dataHandler(workbook) {
+                var items = excelToArray(workbook),
+                    result = calc(items);
+                drawChartByOrders(result.general);
+                drawChartByMarks(result.marks);
+                drawChartByMark(result.marks.toyota.model, 'Toyota');
+                drawChartByMark(result.marks.hyundai.model, 'Hyundai');
+            }
+
+            function excelToArray(workbook) {
+                var sheetNames = workbook.SheetNames[0],
+                    sheet = workbook.Sheets[sheetNames],
+                    maxRow = sheet['!ref'].split(':H')[1],
+                    markColumn = 'D',
+                    modelColumn = 'E',
+                    timeColumn = 'F',
+                    isOrderColumn = 'G',
+                    isMadeColumn = 'H',
+                    items = [],
+                    item,
+                    index;
+                for (index = 2; index <= maxRow; index++) {
+                    if (sheet[markColumn + index]) {
+                        item = {};
+                        item.mark = sheet[markColumn + index].v.toLowerCase();
+                        item.model = sheet[modelColumn + index] ? sheet[modelColumn + index].w.toLowerCase() : '';
+                        item.time = sheet[timeColumn + index] ? sheet[timeColumn + index].v : 0;
+                        item.isOrder = sheet[isOrderColumn + index] ? true : false;
+                        item.isMade = item.isOrder ? (sheet[isMadeColumn + index].v === 'нет' ? false : true) : false;
+                        items.push(item);
+                    }
+                }
+                return items;
+            }
+
+            function calc(items) {
+                var index,
+                    item,
+                    result = {
+                        general: {
+                            visitors: items.length,
+                            orders: 0,
+                            madeOrders: 0
+                        },
+                        marks: {}
+                    },
+                    models = {};
+                for (index in items) {
+                    item = items[index];
+                    if (result.marks[item.mark]) {
+                        result.marks[item.mark].visitors++;
+                        checkOrder(item, result);
+                        addNewModel(item, result);
+                    } else {
+                        result.marks[item.mark] = {
+                            visitors: 1,
+                            orders: 0,
+                            madeOrders: 0,
+                            model: {}
+                        }
+                        checkOrder(item, result);
+                        addNewModel(item, result);
+                    }
+                }
+                return result;
+            }
+
+            function checkOrder(item, result) {
+                if (item.isOrder) {
+                    result.marks[item.mark].orders++;
+                    result.general.orders++;
+                    if (item.isMade) {
+                        result.marks[item.mark].madeOrders++;
+                        result.general.madeOrders++;
+                    }
+                }
+            }
+
+            function addNewModel(item, result) {
+                if (!result.marks[item.mark].model[item.model]) {
+                    result.marks[item.mark].model[item.model] = {
+                        visitors: 1,
+                        orders: 0,
+                        madeOrders: 0
+                    }
+                    addModel(item, result);
+                } else {
+                    addModel(item, result);
+                }
+            }
+
+            function addModel(item, result) {
+                if (item.isOrder) {
+                    result.marks[item.mark].model[item.model].orders++;
+                    if (item.isMade) {
+                        result.marks[item.mark].model[item.model].madeOrders++;
+                    }
+                }
+                result.marks[item.mark].model[item.model].visitors++;
+            }
+
+            function drawChartByOrders(general) {
+                var calcData = [['', '', {
+                        role: 'style'
+                }]],
+                    color = new just.RandomColor(),
+                    index;
+                for (index in general) {
+                    calcData.push([index, general[index], color.refresh().toHex().toCSS()]);
+                }
+                google.charts.setOnLoadCallback(function () {
+                    var data = google.visualization.arrayToDataTable(calcData);
+                    var view = new google.visualization.DataView(data);
+                    view.setColumns([
+                                0,
+                                1,
+                        {
+                            calc: "stringify",
+                            sourceColumn: 1,
+                            type: "string",
+                            role: "annotation"
+                                },
+                                2
+                    ]);
+
+                    var options = {
+                        title: "Общее",
+                        width: 1200,
+                        height: 400,
+                        bar: {
+                            groupWidth: "95%"
+                        },
+                        legend: {
+                            position: "none"
+                        },
+                    };
+                    var chart = new google.visualization.ColumnChart(document.getElementById('chart_order'));
+                    chart.draw(data, options);
+                });
+            }
+
+            function drawChartByMarks(marks) {
+                var calcMarks = [['Mark', 'Visitors', 'Orders', 'Made Orders']],
+                    index,
+                    mark;
+                for (index in marks) {
+                    mark = marks[index];
+                    if (mark.orders && !(index === 'toyota' || index === 'hyundai')) {
+                        calcMarks.push([index, mark.visitors, mark.orders, mark.madeOrders]);
+                    }
+                }
+                google.charts.setOnLoadCallback(function () {
+                    var data = google.visualization.arrayToDataTable(calcMarks);
+
+                    var options = {
+                        chart: {
+                            title: 'По маркам'
+                        }
+                    };
+
+                    var chart = new google.charts.Bar(document.getElementById('chart_marks'));
+
+                    chart.draw(data, options);
+                });
+            }
+
+            function drawChartByMark(models, name) {
+                var calcModels = [[name, 'Visitors', 'Orders', 'Made Orders']],
+                    index,
+                    model;
+                for (index in models) {
+                    model = models[index];
+                    console.log(index);
+                    if(index){
+                        calcModels.push([index, model.visitors, model.orders, model.madeOrders]);
+                    }
+                }
+                google.charts.setOnLoadCallback(function () {
+                    var data = google.visualization.arrayToDataTable(calcModels);
+
+                    var options = {
+                        chart: {
+                            title: 'По ' + name
+                        }
+                    };
+                    $('body').append('<div id="chart_' + name + '" ></div>');
+                    var chart = new google.charts.Bar(document.getElementById('chart_' + name));
+
+                    chart.draw(data, options);
+                });
+            }
         })();
     </script>
 </body>
