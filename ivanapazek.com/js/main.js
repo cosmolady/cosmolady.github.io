@@ -1,25 +1,55 @@
 jQuery(function ($) {
     'use strict',
-    // all Parallax Section
-    $(window).load(function () {
-        'use strict',
-        $("#home").parallax("50%", 0.3);
-    });
-
     // Navigation Scroll
     $(window).scroll(function (event) {
-        Scroll();
+        var contentTop = [];
+        var contentBottom = [];
+        var winTop = $(window).scrollTop();
+        var rangeTop = 200;
+        var rangeBottom = 500;
+        $('.navbar-collapse').find('.scroll a').each(function () {
+            contentTop.push($($(this).attr('href')).offset().top);
+            contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
+        });
+        $.each(contentTop, function (i) {
+            if (winTop > contentTop[i] - rangeTop) {
+                $('.navbar-collapse li.scroll')
+                    .removeClass('active')
+                    .eq(i).addClass('active');
+            }
+        });
     });
-	setTimeout(function(){
-		$('._form_1, .form_overlay').fadeIn();
+    var isMobile = {
+        Android: function () {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function () {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function () {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function () {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function () {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function () {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+    var delay = isMobile.any() ? 0 : 30000;
+    setTimeout(function () {
+        $('._form_1, .form_overlay').fadeIn();
         $('body').addClass('modal-lock');
         $('html').addClass('modal-html-lock');
-    },30000);
-	$('.form_overlay').on('click', function () {
-		$('._form_1, .form_overlay').fadeOut();
+    }, delay);
+    $('.form_overlay').on('click', function () {
+        $('._form_1, .form_overlay').fadeOut();
         $('body').removeClass('modal-lock');
         $('html').removeClass('modal-html-lock');
-	})
+    })
     $('.navbar-collapse ul li a, .arrow_wrapper a').click(function () {
         $('html, body').animate({
             scrollTop: $(this.hash).offset().top - 79
@@ -36,83 +66,6 @@ jQuery(function ($) {
         immut.addClass('arrow');
         down.addClass('none');
     });
-
-    var sendForm = $('#contact-form-section');
-    var lastMessage = $('.last_message');
-    var errorMessage = $('.error_message');
-    $('.btn-send').on('click', function (e) {
-        var name = $('.name-field').val();
-        var email = $('.mail-field').val();
-        var message = $('.message-field').val();
-
-        if (checkIsEmptyFields(email)) {
-            errorMessage.removeClass('none');
-            errorMessage.html("The email field can't be empty");
-            $('.mail-field').focus();
-            return false;
-        }
-        if (validateEmail(email)) {
-            errorMessage.removeClass('none');
-            errorMessage.html("Input the correct email");
-            $('.mail-field').focus();
-            return false;
-        }
-        if (checkIsEmptyFields(message)) {
-            errorMessage.removeClass('none');
-            errorMessage.html("The message can't be empty");
-            $('.message-field').focus();
-            return false;
-        }
-
-        $.ajax({
-            url: '/ivanapazek.com.test/send-mail.php',
-            type: 'POST',
-            dataType: 'json',
-            data: {
-                name: name,
-                email: email,
-                message: message
-            },
-            success: function (data) {
-                sendForm.addClass('none');
-                lastMessage.removeClass('none');
-            },
-            error: function (data) {
-                console.log(data);
-                sendForm.addClass('none');
-                lastMessage.removeClass('none');
-            }
-        });
-    });
-
-    $('.btn-modal').on('click', function () {
-        lastMessage.addClass('none');
-        sendForm.removeClass('none');
-        errorMessage.addClass('none');
-        $('#contact-form').trigger('reset');
-    });
-
-    $('.form-control').on('change', function () {
-        errorMessage.addClass('none');
-    });
-});
-
-function checkIsEmptyFields(el) {
-    var pattern = /^[\s]+$/;
-    if (el) return false;
-    //if (pattern.test(el)) return false;
-    return true;
-}
-
-function validateEmail(el) {
-    if (~el.indexOf('@')) return false;
-    return true;
-}
-
-// Preloder script
-jQuery(window).load(function () {
-    'use strict';
-    $(".preloader").delay(1600).fadeOut("slow").remove();
 });
 
 //Preloder script
@@ -126,27 +79,7 @@ jQuery(window).load(function () {
         'use strict',
         $('#home .carousel-inner .item, #home .video-container').css('height', slideHeight);
     });
+    $(".preloader").delay(1600).fadeOut("slow").remove();
+    $("#home").parallax("50%", 0.3);
 
 });
-
-
-// User define function
-function Scroll() {
-    var contentTop = [];
-    var contentBottom = [];
-    var winTop = $(window).scrollTop();
-    var rangeTop = 200;
-    var rangeBottom = 500;
-    $('.navbar-collapse').find('.scroll a').each(function () {
-        contentTop.push($($(this).attr('href')).offset().top);
-        contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
-    });
-    $.each(contentTop, function (i) {
-        if (winTop > contentTop[i] - rangeTop) {
-            $('.navbar-collapse li.scroll')
-                .removeClass('active')
-                .eq(i).addClass('active');
-        }
-    })
-
-};

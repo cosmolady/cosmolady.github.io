@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="just.RandomColor.js"></script>
+</head>
+
+<body>
+    <script>
+        (function (){
+            var url = "report.xlsx";
+            var oReq = new XMLHttpRequest();
+            oReq.open("GET", url, true);
+            oReq.responseType = "arraybuffer";
+
+            oReq.onload = function (e) {
+                var arraybuffer = oReq.response;
+                var data = new Uint8Array(arraybuffer);
+                var arr = new Array();
+                for (var i = 0; i != data.length; ++i) {
+                    arr[i] = String.fromCharCode(data[i]);
+                }
+                var bstr = arr.join("");
+                var workbook = XLSX.read(bstr, {
+                    type: "binary"
+                });
+                var sheet = workbook.sheets['Лист1'];
+                console.log(sheet);
+            }
+
+            oReq.send();
+        })();
+    </script>
+</body>
+
+</html>
