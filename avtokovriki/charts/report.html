@@ -10,7 +10,7 @@
 
 <body>
     <div id="chart_order"></div>
-    <div id="chart_marks" style="width: 900px; height: 300px;"></div>
+    <div id="chart_marks"></div>
     <script>
         (function () {
             init();
@@ -45,6 +45,7 @@
                     result = calc(items);
                 drawChartByOrders(result.general);
                 drawChartByMarks(result.marks);
+                drawChartByToyotaAndHyundai(result.marks);
                 drawChartByMark(result.marks.toyota.model, 'Toyota');
                 drawChartByMark(result.marks.hyundai.model, 'Hyundai');
             }
@@ -175,6 +176,7 @@
                         legend: {
                             position: "none"
                         },
+                        width: 600
                     };
                     var chart = new google.visualization.ColumnChart(document.getElementById('chart_order'));
                     chart.draw(data, options);
@@ -213,7 +215,7 @@
                 for (index in models) {
                     model = models[index];
                     console.log(index);
-                    if(index){
+                    if (index) {
                         calcModels.push([index, model.visitors, model.orders, model.madeOrders]);
                     }
                 }
@@ -223,10 +225,38 @@
                     var options = {
                         chart: {
                             title: 'По ' + name
-                        }
+                        },
+                        width: 1200
                     };
                     $('body').append('<div id="chart_' + name + '" ></div>');
                     var chart = new google.charts.Bar(document.getElementById('chart_' + name));
+
+                    chart.draw(data, options);
+                });
+            }
+
+            function drawChartByToyotaAndHyundai(marks) {
+                var calcMarks = [['Mark', 'Visitors', 'Orders', 'Made Orders']],
+                    index,
+                    mark;
+                for (index in marks) {
+                    mark = marks[index];
+                    if (index === 'toyota' || index === 'hyundai') {
+                        calcMarks.push([index, mark.visitors, mark.orders, mark.madeOrders]);
+                    }
+                }
+                google.charts.setOnLoadCallback(function () {
+                    var data = google.visualization.arrayToDataTable(calcMarks);
+
+                    var options = {
+                        chart: {
+                            title: 'По маркам'
+                        },
+                        width: 600
+                    };
+
+                    $('body').append('<div id="chart_toyota_hyundai" ></div>');
+                    var chart = new google.charts.Bar(document.getElementById('chart_toyota_hyundai'));
 
                     chart.draw(data, options);
                 });
