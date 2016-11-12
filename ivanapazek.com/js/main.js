@@ -39,9 +39,6 @@ jQuery(function ($) {
             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
         }
     };
-    // if(!isMobile.any()){
-    //   $("#home").parallax("50%", 0.3);
-    // }
     var delay = isMobile.any() ? 0 : 30000;
     setTimeout(function () {
         $('._form_1, .form_overlay').fadeIn();
