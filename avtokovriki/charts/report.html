@@ -9,14 +9,12 @@
 </head>
 
 <body>
-    <div id="chart_order"></div>
-    <div id="chart_marks"></div>
     <script>
         (function () {
-            init();
             google.charts.load('current', {
                 'packages': ['corechart', 'bar']
             });
+            init();
 
             function init() {
                 var url = "report.xlsx",
@@ -43,17 +41,19 @@
             function dataHandler(workbook) {
                 var items = excelToArray(workbook),
                     result = calc(items);
-                drawChartByOrders(result.general);
-                drawChartByMarks(result.marks);
+                drawChartByOrders(result.general, 'general');
+                drawChartByMarks(result.marks, 'general');
                 drawChartByToyotaAndHyundai(result.marks);
                 drawChartByMark(result.marks.toyota.model, 'Toyota');
                 drawChartByMark(result.marks.hyundai.model, 'Hyundai');
+                drawChartByOrders(result.time, 'time');
+                drawChartByMarksAndTime(result.marks, 'time');
             }
 
             function excelToArray(workbook) {
                 var sheetNames = workbook.SheetNames[0],
                     sheet = workbook.Sheets[sheetNames],
-                    maxRow = sheet['!ref'].split(':H')[1],
+                    maxRow = sheet['!ref'].split(':I')[1],
                     markColumn = 'D',
                     modelColumn = 'E',
                     timeColumn = 'F',
@@ -88,6 +88,7 @@
                         marks: {}
                     },
                     models = {};
+                addTimeObj(result);
                 for (index in items) {
                     item = items[index];
                     if (result.marks[item.mark]) {
@@ -100,12 +101,33 @@
                             orders: 0,
                             madeOrders: 0,
                             model: {}
-                        }
+                        };
+                        addTimeObj(result.marks[item.mark]);
                         checkOrder(item, result);
                         addNewModel(item, result);
                     }
+                    addTime(item.time, result.time);
+                    addTime(item.time, result.marks[item.mark].time);
                 }
                 return result;
+            }
+            function addTimeObj(obj) {
+                obj.time = {
+                            low: 0,
+                            middle: 0,
+                            high: 0
+                        };
+            }
+            function addTime(sec, time) {
+                if(sec < 10){
+                    time.low++;
+                } else {
+                    if(sec < 30){
+                        time.middle++;
+                    } else {
+                        time.high++;
+                    }
+                }
             }
 
             function checkOrder(item, result) {
@@ -142,7 +164,7 @@
                 result.marks[item.mark].model[item.model].visitors++;
             }
 
-            function drawChartByOrders(general) {
+            function drawChartByOrders(general, title) {
                 var calcData = [['', '', {
                         role: 'style'
                 }]],
@@ -167,7 +189,7 @@
                     ]);
 
                     var options = {
-                        title: "Общее",
+                        title: title,
                         width: 1200,
                         height: 400,
                         bar: {
@@ -178,12 +200,13 @@
                         },
                         width: 600
                     };
-                    var chart = new google.visualization.ColumnChart(document.getElementById('chart_order'));
+                    $('body').append('<div id="chart_order_' + title + '"></div>');
+                    var chart = new google.visualization.ColumnChart(document.getElementById('chart_order_' + title));
                     chart.draw(data, options);
                 });
             }
 
-            function drawChartByMarks(marks) {
+            function drawChartByMarks(marks, title) {
                 var calcMarks = [['Mark', 'Visitors', 'Orders', 'Made Orders']],
                     index,
                     mark;
@@ -201,8 +224,8 @@
                             title: 'По маркам'
                         }
                     };
-
-                    var chart = new google.charts.Bar(document.getElementById('chart_marks'));
+                    $('body').append('<div id="chart_marks_' + title + '"></div>');
+                    var chart = new google.charts.Bar(document.getElementById('chart_marks_' + title));
 
                     chart.draw(data, options);
                 });
@@ -214,7 +237,6 @@
                     model;
                 for (index in models) {
                     model = models[index];
-                    console.log(index);
                     if (index) {
                         calcModels.push([index, model.visitors, model.orders, model.madeOrders]);
                     }
@@ -225,6 +247,32 @@
                     var options = {
                         chart: {
                             title: 'По ' + name
+                        },
+                        width: 1200
+                    };
+                    $('body').append('<div id="chart_' + name + '" ></div>');
+                    var chart = new google.charts.Bar(document.getElementById('chart_' + name));
+
+                    chart.draw(data, options);
+                });
+            }
+            
+            function drawChartByMarksAndTime(marks, title){
+                    var calcModels = [[title, 'low', 'middle', 'high']],
+                    index,
+                    mark;
+                for (index in marks) {
+                    mark = marks[index];
+                    if (index && mark.orders) {
+                        calcModels.push([index, mark.time.low, mark.time.middle, mark.time.high]);
+                    }
+                }
+                google.charts.setOnLoadCallback(function () {
+                    var data = google.visualization.arrayToDataTable(calcModels);
+
+                    var options = {
+                        chart: {
+                            title: title
                         },
                         width: 1200
                     };
