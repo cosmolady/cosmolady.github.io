@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <iframe class="inshtml"></iframe>
+    <script>
+        var url = 'http://avtokovrik.kiev.ua/';
+        var http = new XMLHttpRequest();
+        http.open('GET', url); 
+        http.onreadystatechange = function () { 
+                if (this.readyState == 4 && this.status == 200) { 
+                    alert(this.responseText); 
+                }
+        };
+         http.send(null);
+    </script>
+</body>
+
+</html>
