@@ -41,7 +41,8 @@ jQuery(function ($) {
     };
     var delay = isMobile.any() ? 0 : 30000;
     setTimeout(function () {
-        $('#mc_embed_signup, .form_overlay').fadeIn();
+        $('._form_1, .form_overlay').fadeIn();
+        $('._form_1').append('<span class="closeModal">X</span>');
         $('.closeModal').on('click', function () {
           $('._form_1, .form_overlay').fadeOut();
         });
