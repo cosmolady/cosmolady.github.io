@@ -68,9 +68,7 @@
                 hours[hour]++;
                 hoursAndDaysOfWeek[day][hour]++;
             }
-            console.log(daysOfWeek);
             daysOfWeek.push(daysOfWeek.shift());
-            console.log(daysOfWeek);
             hoursAndDaysOfWeek.push(hoursAndDaysOfWeek.shift());
             return {
                 daysOfWeek: daysOfWeek,

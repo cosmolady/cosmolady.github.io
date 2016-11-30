@@ -68,17 +68,11 @@ li {
 ._form_1 {
 	z-index: 1050;
     position: fixed;
-    top: 0;
+    top: 20%;
     left: 50%;
     margin-left: -250px;
 }
-._form_1 form{
-	position: absolute;
-	top:0;
-	left: 0;
-  overflow: auto;
-  height: 615px;
-}
+
 .parallax-section1 {
     min-height: 300px;
     width: 100%;
@@ -936,3 +930,4 @@ li {
     height: 90px;
     padding-bottom: 10px;
 }
+#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
