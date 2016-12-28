@@ -4,243 +4,42 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="just.RandomColor.js"></script>
+    <script type="text/javascript" src="js/pligins/just.RandomColor.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.full.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
-    <div id="chart_day_of_week"></div>
-    <div id="chart_hours"></div>
-    <div id="chart_hours_and_days_of_week" style="width: 1200px; height: 800px;"></div>
-
-    <script>
-        google.charts.load('current', {
-            'packages': ['corechart']
-        });
-        $.ajax({
-            url: "data.txt",
-            dataType: "text",
-            async: true,
-            success: function (msg) {
-                var data = msg.split('\n');
-                dataHandler(data);
-            }
-        });
-
-        function dataHandler(data) {
-            var dates = getDates(data),
-                result = calc(dates),
-                hours = result.hours,
-                daysOfWeek = result.daysOfWeek,
-                hoursAndDaysOfWeek = result.hoursAndDaysOfWeek;
-            drawChartDaysOfWeek(daysOfWeek);
-            drawChartForHours(hours);
-            drawChartForHoursAndDaysOfWeek(hoursAndDaysOfWeek);
-        }
-
-        function getDates(data) {
-            var dates = [],
-                inter,
-                number,
-                hour;
-            for (var index in data) {
-                inter = data[index].split(' ');
-                if (inter[0] && inter[1]) {
-                    number = inter[0].split('.');
-                    hour = inter[1].split(':');
-                    dates.push(new Date('20' + number[2], number[1] - 1, number[0], hour[0], hour[1]));
-                }
-            }
-            return dates;
-        }
-
-        function calc(dates) {
-            var index, i, hour, day,
-                daysOfWeek = fillArray(0, 7),
-                hours = fillArray(0, 24),
-                hoursAndDaysOfWeek = [];
-            for (i = 0; i < 7; i++) {
-                hoursAndDaysOfWeek.push(fillArray(0, 24));
-            }
-            for (index in dates) {
-                day = dates[index].getDay();
-                hour = getHour(dates[index]);
-                daysOfWeek[day]++;
-                hours[hour]++;
-                hoursAndDaysOfWeek[day][hour]++;
-            }
-            daysOfWeek.push(daysOfWeek.shift());
-            hoursAndDaysOfWeek.push(hoursAndDaysOfWeek.shift());
-            return {
-                daysOfWeek: daysOfWeek,
-                hours: hours,
-                hoursAndDaysOfWeek: hoursAndDaysOfWeek
-            };
-        }
-
-        function getHour(date) {
-            var hour = date.getHours();
-            hour += date.getMinutes() > 30 ? 1 : 0;
-            hour = hour === 24 ? 0 : hour;
-            return hour;
-        }
-
-        function drawChartDaysOfWeek(daysOfWeek) {
-            google.charts.setOnLoadCallback(function () {
-                var data = google.visualization.arrayToDataTable([
-                                        ['День', 'Кол-во покупок', {
-                        role: 'style'
-                    }],
-                                        ['Понедельник', daysOfWeek[0], 'color: #76A'],
-                                        ['Вторник', daysOfWeek[1], 'color: #7FA'],
-                                        ['Среда', daysOfWeek[2], 'color: #6A7'],
-                                        ['Четверг', daysOfWeek[3], 'color: #A7F'],
-                                        ['Пятница', daysOfWeek[4], 'color: #0AA'],
-                                        ['Суббота', daysOfWeek[5], 'color: #A0F'],
-                                        ['Воскресенье', daysOfWeek[6], 'color: №76A7FA']
-                            ]);
-                // Set chart options
-                var view = new google.visualization.DataView(data);
-                view.setColumns([0,
-                                     1,
-                    {
-                        calc: "stringify",
-                        sourceColumn: 1,
-                        type: "string",
-                        role: "annotation"
-                                    },
-                                     2
-                    ]);
-
-                var options = {
-                    title: "По дням недели",
-                    width: 1200,
-                    height: 400,
-                    bar: {
-                        groupWidth: "95%"
-                    },
-                    legend: {
-                        position: "none"
-                    },
-                };
-                // Instantiate and draw our chart, passing in some options.
-                var chart = new google.visualization.ColumnChart(document.getElementById('chart_day_of_week'));
-                chart.draw(data, options);
-            });
-        }
-
-        function drawChartForHours(hours) {
-            var calcHours = [['Часы', 'Кол-во покупок', {
-                    role: 'style'
-                }]],
-                color = new just.RandomColor(),
-                index;
-            for (index in hours) {
-                calcHours.push([index, hours[index], color.refresh().toHex().toCSS()]);
-            }
-            google.charts.setOnLoadCallback(function () {
-                var data = google.visualization.arrayToDataTable(calcHours);
-                // Set chart options
-                var view = new google.visualization.DataView(data);
-                view.setColumns([0,
-                                     1,
-                    {
-                        calc: "stringify",
-                        sourceColumn: 1,
-                        type: "string",
-                        role: "annotation"
-                                    },
-                                     2
-                    ]);
-
-                var options = {
-                    title: "По времени",
-                    width: 1200,
-                    height: 400,
-                    bar: {
-                        groupWidth: "95%"
-                    },
-                    legend: {
-                        position: "none"
-                    },
-                };
-                // Instantiate and draw our chart, passing in some options.
-                var chart = new google.visualization.ColumnChart(document.getElementById('chart_hours'));
-                chart.draw(data, options);
-            });
-        }
-
-        function drawChartForHoursAndDaysOfWeek(hoursAndDaysOfWeek) {
-            var calc = [['ID', 'Время', 'Дни недели', '', 'Количество заказов']],
-                color = new just.RandomColor(),
-                indexX,
-                indexY;
-            for (indexX in hoursAndDaysOfWeek) {
-                color.refresh();
-                for (indexY in hoursAndDaysOfWeek[indexX]) {
-                    if (hoursAndDaysOfWeek[indexX][indexY]) {
-                        calc.push(['', 
-                                   parseInt(indexY, 10), 
-                                   parseInt(indexX, 10) + 1, 
-                                   color.toHex().toCSS(), 
-                                   hoursAndDaysOfWeek[indexX][indexY]]);
-                    }
-                }
-            }
-            google.charts.setOnLoadCallback(function () {
-                var data = google.visualization.arrayToDataTable(calc);
-
-                var options = {
-                    title: 'По дням недели и по времени',
-                    hAxis: {
-                        title: 'Время'
-                    },
-                    vAxis: {
-                        title: 'Дни недели',
-                        ticks: [{
-                            v: 0,
-                            f: ''
-                        },{
-                            v: 1,
-                            f: 'Понедельник'
-                        }, {
-                            v: 2,
-                            f: 'Вторник'
-                        }, {
-                            v: 3,
-                            f: 'Среда'
-                        }, {
-                            v: 4,
-                            f: 'Четверг'
-                        }, {
-                            v: 5,
-                            f: 'Пятница'
-                        }, {
-                            v: 6,
-                            f: 'Суббота'
-                        }, {
-                            v: 7,
-                            f: 'Воскресенье'
-                        }, {
-                            v: 8,
-                            f: '0'
-                        }]
-                    }
-                };
-
-                var chart = new google.visualization.BubbleChart(document.getElementById('chart_hours_and_days_of_week'));
-                chart.draw(data, options);
-            });
-        }
-
-        function fillArray(el, count) {
-            var i,
-                result = [];
-            for (i = 0; i < count; i++) {
-                result[i] = el;
-            }
-            return result;
-        }
-    </script>
+    <div class="settings">
+        <div class="dates">
+            <input class="start-date" type="date" />
+            <input class="finish-date" type="date" />
+        </div>
+        <div class="statuses">
+            <h2>Статусы</h2>
+        </div>
+        <div class="manufactures">
+            <h2>Производители</h2>
+        </div>
+        <div class="types">
+            <h2>Типы</h2>
+        </div>
+        <button class="refres-settings">Обновить</button>
+    </div>
+    <div id="tabs">
+        <ul>
+            <li><a href="#time">По времени</a></li>
+            <li><a href="#city">По городам</a></li>
+            <li><a href="#marks">По маркам и моделям</a></li>
+        </ul>
+        <div id="time">
+        </div>
+        <div id="city">
+        </div>
+        <div id="marks">
+        </div>
+    </div>
 </body>
 
 </html>
