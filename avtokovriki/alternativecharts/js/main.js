@@ -38,16 +38,17 @@ $(function () {
         }
     })();
     init();
-    
+
     function init() {
         $("#tabs").tabs();
         google.charts.load('current', {
             'packages': ['corechart', 'bar']
         });
-        loadXLS("data/products.xlsx", productsDataHandler);
+        //loadXLS("data/products.xlsx", productsDataHandler);
+        loadXLS("data/orders.xlsx", ordersDataHandler);
     }
 
-    function loadXLS(url, handler, lineItems) {
+    function loadXLS(url, handler) {
         var oReq = new XMLHttpRequest();
         oReq.open("GET", url, true);
         oReq.responseType = "arraybuffer";
@@ -62,18 +63,12 @@ $(function () {
             bstr = arr.join("");
             handler(XLSX.read(bstr, {
                 type: "binary"
-            }), lineItems);
+            }));
         }
         oReq.send();
     }
 
-    function productsDataHandler(data) {
-        var lineItems = lineItemsToObj(data);
-        loadXLS("data/orders.xlsx", ordersDataHandler, lineItems);
-        addDropListeners(lineItems);
-    }
-
-    function addDropListeners(lineItems) {
+    function addDropListeners() {
         var drop = document.getElementById('drop');
 
         function handleDrop(e) {
@@ -88,8 +83,7 @@ $(function () {
                 var arraybuffer = e.target.result
                     , data = new Uint8Array(arraybuffer)
                     , arr = new Array()
-                    , i
-                    , bstr;
+                    , i, bstr;
                 for (i = 0; i != data.length; ++i) {
                     arr[i] = String.fromCharCode(data[i]);
                 }
@@ -97,7 +91,7 @@ $(function () {
                 var wb = XLSX.read(bstr, {
                     type: 'binary'
                 });
-                ordersDataHandler(wb, lineItems);
+                ordersDataHandler(wb);
             };
             reader.readAsArrayBuffer(f);
         }
@@ -112,74 +106,10 @@ $(function () {
             drop.addEventListener('dragover', handleDragover, false);
             drop.addEventListener('drop', handleDrop, false);
         }
-        var xlf = document.getElementById('xlf');
-
-        function handleFile(e) {
-            var files = e.target.files;
-            var f = files[0];
-            var reader = new FileReader();
-            var name = f.name;
-            reader.onload = function (e) {
-                console.log("onload", new Date());
-                var arraybuffer = e.target.result
-                    , data = new Uint8Array(arraybuffer)
-                    , arr = new Array()
-                    , i
-                    , bstr;
-                for (i = 0; i != data.length; ++i) {
-                    arr[i] = String.fromCharCode(data[i]);
-                }
-                bstr = arr.join("");
-                var wb = XLSX.read(bstr, {
-                    type: 'binary'
-                });
-                console.log(wb);
-                ordersDataHandler(wb, lineItems);
-            }
-        }
-        //if (xlf.addEventListener) xlf.addEventListener('change', handleFile, false);
     }
 
-    function lineItemsToObj(workbook) {
-        var sheetNames = workbook.SheetNames[0]
-            , sheet = workbook.Sheets[sheetNames]
-            , maxRow = /\d+/.exec(sheet['!ref'].split(':')[1])[0]
-            , codeColumn = 'A'
-            , manufacturerColumn = 'X'
-            , modelColumn = 'AT'
-            , markColumn = 'AW'
-            , items = {}
-            , item, index, code;
-        for (index = 2; index <= maxRow; index++) {
-            if (sheet[markColumn + index]) {
-                item = {};
-                code = sheet[codeColumn + index].v;
-                item.manufacturer = sheet[manufacturerColumn + index].v;
-                item.model = sheet[modelColumn + index].v;
-                item.mark = sheet[markColumn + index].v;
-                item.type = getType(code);
-                items[code] = item;
-            }
-        }
-        return items;
-    }
-
-    function getType(code) {
-        var typeCode = code.split('-')[2];
-        switch (typeCode) {
-        case 'FL':
-            return 'Водительский';
-        case '2F':
-            return 'Передние';
-        case 'TR':
-            return 'Багажник';
-        default:
-            return 'Комплект';
-        }
-    }
-
-    function ordersDataHandler(data, lineItems) {
-        var orders = ordersToArray(data, lineItems)
+    function ordersDataHandler(data) {
+        var orders = ordersToArray(data)
             , calcOrders = calc(orders, true);
         addElementsToPage(calcOrders);
         drawCharts(calcOrders);
@@ -371,6 +301,7 @@ $(function () {
                              }
 
 
+
                 
                 , 2
             ]);
@@ -405,6 +336,7 @@ $(function () {
                              }
 
 
+
                 
                 , 2
             ]);
@@ -428,7 +360,7 @@ $(function () {
     function addElementsToPage(data) {
         $('.statuses').empty();
         $('.manufactures').empty();
-         $('.types').empty();
+        $('.types').empty();
         addStatusesCheckBoxes(data.statuses);
         addStartAndFinishLimit(data.dates);
         addManufacturesCheckBoxes(data.manufactures);
@@ -488,7 +420,7 @@ $(function () {
         }
     }
 
-    function ordersToArray(workbook, lineItems) {
+    function ordersToArray(workbook) {
         var sheetNames = workbook.SheetNames[0]
             , sheet = workbook.Sheets[sheetNames]
             , maxRow = /\d+/.exec(sheet['!ref'].split(':')[1])[0]
@@ -505,11 +437,81 @@ $(function () {
             item.address = sheet[adressColumn + index].v.split(',')[0];
             item.status = sheet[statusColumn + index].v;
             item.article = sheet[articleColumn + index].v;
-            item.info = lineItems[item.article];
             item.name = sheet[nameColumn + index].v;
+            item.info = getInfo(item.article, item.name);
             items.push(item);
         }
         return items;
+    }
+
+    function getInfo(article, name) {
+        var articleInfo = getArticleInfo(article.replace(/\s+/g, ''));
+        var nameInfo = getNameInfo(name);
+        return {
+            manufacturer: articleInfo.manufacturer
+            , type: articleInfo.type
+            , mark: nameInfo.mark
+            , model: nameInfo.model
+        };
+    }
+    
+    function getNameInfo(name) {
+        var reg = /\w+/g;
+        var words =name.toLowerCase().match(reg);
+        var mark = "";
+        var model = "";
+        if(words) {
+            if(words[0] === 'range' || words[0] === 'ssang' ) {
+                mark = words[0] + words[1];
+                model = words[2];
+            } else {
+                mark = words[0];
+                model = words[1];
+                if(model === 'ix' || model === 'santa' || model === 'cr' || model === 'land') {
+                    model += words[2];
+                }
+            }
+        }
+        return {
+            mark: mark,
+            model: model
+        };
+    }
+
+    function getArticleInfo(article) {
+        var splitArticle = article.split('-');
+        return {
+            type: getType(splitArticle[2]||splitArticle[1])
+            , manufacturer: getManufacturer(splitArticle[0])
+        };
+    }
+
+    function getManufacturer(str) {
+        switch (str[0]+str[1]) {
+        case 'SG':
+            return 'Stingray';
+        case 'AG':
+            return 'Avto-gumm';
+        case 'RP':
+            return 'Rezaw-plast';
+        case 'FG':
+            return 'Frogum';        
+        default:
+            return 'Неизвестно';
+        }
+    }
+
+    function getType(str) {
+        switch (str) {
+        case 'FL':
+            return 'Водительский';
+        case '2F':
+            return 'Передние';
+        case 'TR':
+            return 'Багажник';
+        default:
+            return 'Комплект';
+        }
     }
 
     function getDate(str) {
