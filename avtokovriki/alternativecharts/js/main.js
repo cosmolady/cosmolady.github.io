@@ -44,8 +44,8 @@ $(function () {
         google.charts.load('current', {
             'packages': ['corechart', 'bar']
         });
-        //loadXLS("data/products.xlsx", productsDataHandler);
         loadXLS("data/orders.xlsx", ordersDataHandler);
+        addDropListeners();
     }
 
     function loadXLS(url, handler) {
