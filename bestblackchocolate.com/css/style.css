@@ -6,7 +6,7 @@ body {
     position: relative;
     font-family: Arial, sans-serif;
 }
-intro_logo {
+#intro_logo {
     position: absolute;
     width: 280px;
     height: 280px;
