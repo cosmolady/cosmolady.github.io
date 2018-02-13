@@ -1220,7 +1220,7 @@ figcaption:before, figcaption:after {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   .left_side {
-    padding-left: 0;
+    padding: 50px 5px 30px;
   } 
   .header {
     flex-direction: column;
@@ -1326,18 +1326,70 @@ figcaption:before, figcaption:after {
  .brands_bottom a {
     margin: 10px 15px;
  }
+ .days  {
+    white-space: nowrap;
+  }
 }
  
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 375px) {
  a.button_small.delivery_cost, a.button_small.check_package {
     display: block;
   }
  .button_small {
-    padding: 10px 0;
+    padding: 10px 20px;
+    margin: 5px 45px;
  }
  .copyright-min {
     flex-direction: column;
     justify-content: flex-start;
  }
+ .block_title {
+    font-size: 24px;
+  }
+  .advantages__list {
+    margin-left: 5px;
+  }
+  .order .block_title:before, .order .block_title:after {
+    top: -2px;
+  }
+  .recall button {
+    margin-left: 0px;
+  }
+  .ratings a, .ratings-more {
+    text-align: center;
+  }
+  a.main_link {
+    font-size: 42px;
+  }
+  .button_black {
+    padding: 20px;
+  }
+  .brands_bottom {
+    margin: 20px 10px;
+  }
+  .logo {
+    margin: auto;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .footer_contacts__item {
+    margin-right: 10px;
+  }
+  .phone__item {
+    margin: 0 auto;
+  }
+  .customer__item {
+    font-size: 16px;
+  }
+  .copyright__item, .footer {
+    padding-bottom: 10px;
+  }  
+  .days  {
+    white-space: pre;
+  } 
+ /* .days, .time, .schedule_title {
+    margin: 5px 0;
+  }*/
 }
