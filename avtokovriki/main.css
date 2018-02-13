@@ -142,7 +142,7 @@ button {
 }
 
 .first_screen {
-    background: url(/image/car.jpg);
+    background: url(image/car.jpg);
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
@@ -191,19 +191,19 @@ button {
 }
 
 .icon__viber {
-    background-image: url(/image/callback_viber.png);
+    background-image: url(image/callback_viber.png);
 }
 
 .icon__skype {
-    background-image: url(/image/callback_skype.png);
+    background-image: url(image/callback_skype.png);
 }
 
 .icon__viber-big {
-    background-image: url(/image/callback_viber_big.png);
+    background-image: url(image/callback_viber_big.png);
 }
 
 .icon__skype-big {
-    background-image: url(/image/callback_skype_big.png);
+    background-image: url(image/callback_skype_big.png);
 }
 
 .button_red,
@@ -312,15 +312,15 @@ button {
 }
 
 .figure1 {
-    background-image: url(/image/figure_1.png);
+    background-image: url(image/figure_1.png);
 }
 
 .figure2 {
-    background-image: url(/image/figure_2.png);
+    background-image: url(image/figure_2.png);
 }
 
 .figure3 {
-    background-image: url(/image/figure_3.png);
+    background-image: url(image/figure_3.png);
 }
 
 .brand_block {
@@ -370,7 +370,7 @@ select:focus {
 
 select.brand_select,
 select.prop_item {
-    background-image: url(/image/arrow.png);
+    background-image: url(image/arrow.png);
     background-position: 90% 18px;
     background-repeat: no-repeat;
     -webkit-appearance: none;
@@ -432,7 +432,7 @@ select.prop_item {
 }
 
 .delivery_cost i {
-    background: url(/image/delivery.png);
+    background: url(image/delivery.png);
     background-repeat: no-repeat;
     display: inline-block;
     width: 21px;
@@ -444,7 +444,7 @@ select.prop_item {
 }
 
 .check_package i {
-    background: url(/image/check.png);
+    background: url(image/check.png);
     background-repeat: no-repeat;
     display: inline-block;
     width: 21px;
@@ -464,7 +464,7 @@ select.prop_item {
 }
 
 .advantages_left {
-    background-image: url(/image/bgg.jpg);
+    background-image: url(image/bgg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 54.68%;
@@ -497,7 +497,7 @@ select.prop_item {
 }
 
 .advantages_right {
-    background-image: url(/image/man.jpg);
+    background-image: url(image/man.jpg);
     width: 45.32%;
     height: 854px;
     text-transform: uppercase;
@@ -525,7 +525,7 @@ select.prop_item {
 }
 
 .advantages__list--item:before {
-    content: url(/image/checked.png);
+    content: url(image/checked.png);
     position: relative;
     display: inline-block;
     width: 65px;
@@ -708,7 +708,7 @@ select.prop_item {
 }
 
 .video {
-    background-image: url(/image/red_background.png);
+    background-image: url(image/red_background.png);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -726,7 +726,7 @@ select.prop_item {
 }
 
 .customer {
-    background-image: url(/image/smile_man_background.jpg);
+    background-image: url(image/smile_man_background.jpg);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -819,7 +819,7 @@ select.prop_item {
     font-size: 20px;
 }
 .footer {
-    background-image: url(/image/footer-img.png);
+    background-image: url(image/footer-img.png);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -969,7 +969,7 @@ figcaption {
     display: inline-block;
 }
 figcaption:before {
-    content: url(/image/arrow-left.png);
+    content: url(image/arrow-left.png);
     width: 15px;
     height: 15px;
     position: absolute;
@@ -977,7 +977,7 @@ figcaption:before {
     top: 0;
 }
 figcaption:after {
-    content: url(/image/arrow-right.png);
+    content: url(image/arrow-right.png);
     width: 15px;
     height: 15px;
     position: absolute;
@@ -1004,7 +1004,7 @@ figcaption:after {
     margin: 5px 0;
 }
 .img_prop {
-    background-image: url(/image/sample.png);
+    background-image: url(image/sample.png);
     background-repeat: no-repeat;
     width: 96px;
     display: inline-block;
@@ -1014,15 +1014,15 @@ figcaption:after {
     margin-top: 30px;
 }
 .item--ks:before {
-    background-image: url(/image/kyivstar_phone.png);
+    background-image: url(image/kyivstar_phone.png);
     background-position: 0 4px;
 }
 .item--vf:before {
-    background-image: url(/image/vodafone.png);
+    background-image: url(image/vodafone.png);
     background-position: 0 4px;
 }
 .item--lc:before {
-    background-image: url(/image/life_phone.png);
+    background-image: url(image/life_phone.png);
     background-position: 0 4px;
 }
 .bold {
@@ -1032,7 +1032,7 @@ figcaption:after {
     color: #960b14;
 }
 .rigth_side:before {
-    background: url(/image/left_bg.png);
+    background: url(image/left_bg.png);
     background-size: cover;
     content: "";
     position: absolute;
@@ -1049,7 +1049,7 @@ figcaption:after {
     width: 25%;
 }
 .common_section {
-    background: url(/image/dark.png);
+    background: url(image/dark.png);
     background-size: cover;
 }
 .img-term_block, .copyright-min {
@@ -1070,11 +1070,11 @@ figcaption:after {
     width: 100%;
 } 
 .rigth_side {
-    background: url(/image/left_bg.png);
+    background: url(image/left_bg.png);
     background-size: cover;
 }
 .left_side {
-    background: url(/image/car.jpg);
+    background: url(image/car.jpg);
     background-size: auto 100% ;
     margin: 0;
     padding: 50px 30px 30px;
@@ -1219,12 +1219,125 @@ figcaption:before, figcaption:after {
  
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-    
- 
-     
+  .left_side {
+    padding-left: 0;
+  } 
+  .header {
+    flex-direction: column;
+    padding-left: 20px;
+  }  
+  .header_contacts {
+    margin: 10px auto 0;
+  }
+  .block_title {
+    font-size: 30px;
+  }
+  .title_block, .price{
+    font-size: 24px;
+  }
+ .button_small {
+    padding: 5px 18px;
+ }
+ .brand_block {
+    left: 0;
+    padding: 25px 0;
+    width: 99%;
+ } 
+ .title_block:before {
+    top: 7px;
+ }  
+ select.brand_select {
+    margin-top: 5px;
+ }
+ .rigth_side .phones {
+    margin: 35px 0;
+ }
+ .photo_set {
+    padding: 20px 0 ;
+ }
+ .advantages_title {
+    font-size: 46px;
+ }
+ .advantages__list {
+    margin-left: 25px;
+ }
+ .main_photo {
+    width: 95%; 
+    margin: 35px 0 0;
+ }
+ .hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
+    display: none;
+ }
+ .description_item {
+    position: static;
+    text-align: center;
+    left: 10px;
+    top: 10px;
+    width: 90%;
+    margin: 15px auto;
+ }
+ .description {
+    margin-bottom: 30px;
+ }
+ .order .block_title:before {
+    width: 30px;
+    height: 30px;
+    left: -35px;
+ }
+ .order .block_title:after {
+    width: 30px;
+    height: 30px;
+    right: -35px;
+ }
+ .block_title-term {
+    font-size: 32px;
+ }
+ .ratings {
+    padding: 0 10px;
+ }
+ .video {
+    padding: 100px 10px 30px;
+    margin-top: 5px;
+ }
+ .value_item {
+    padding: 10px;
+    text-align: center;
+ }
+ .customer {
+    background-size: auto 100%;
+    padding: 50px 10px;
+ }
+ .customer__item {
+    margin: 10px auto;
+ }
+ .footer {
+    padding: 45px 10px;
+ }
+ .footer_left, .footer_right {
+    padding: 0;
+ }
+ .schedule_title {
+    margin: 0;
+ }
+ .schedule {
+    font-size: 16px;
+    margin: 20px 0 40px;
+ }
+ .brands_bottom a {
+    margin: 10px 15px;
+ }
 }
  
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
- 
+ a.button_small.delivery_cost, a.button_small.check_package {
+    display: block;
+  }
+ .button_small {
+    padding: 10px 0;
+ }
+ .copyright-min {
+    flex-direction: column;
+    justify-content: flex-start;
+ }
 }
