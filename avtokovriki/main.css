@@ -815,11 +815,9 @@ select.prop_item {
 .brands_bottom a {
     margin: 0 15px;
 }
-
 .ratings-more {
     font-size: 20px;
 }
-
 .footer {
     background-image: url(/image/footer-img.png);
     background-repeat: no-repeat;
@@ -828,17 +826,14 @@ select.prop_item {
     padding: 180px 0 45px;
     color: #fff;
 }
-
 .footer_left,
 .footer_right {
     margin: 0 135px;
 }
-
 .footer_right {
     display: flex;
     flex-direction: column
 }
-
 .footer_right__item {
     margin: 0 auto 35px;
 }
@@ -846,36 +841,29 @@ select.prop_item {
 .label {
     margin-bottom: 40px;
 }
-
 .footer_contacts {
     display: flex;
     margin-bottom: 85px;
 }
-
 .footer_contacts__item {
     margin-right: 35px;
 }
-
 .footer_contacts__item ul {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
-.copyright {
+.copyright, .copyright__item {
     font-size: 17px;
     font-weight: 300;
 }
-
-.copyright a {
+.copyright a, .copyright__item a {
     color: #fff;
 }
-
 .main_link {
     margin-top: 20px;
     font-size: 50px;
 }
-
 .button_black {
     font-size: 18px;
     text-transform: uppercase;
@@ -886,7 +874,6 @@ select.prop_item {
     border: none;
     margin: 70px 0;
 }
-
 .phones,
 .photo_set,
 .carousel_brands,
@@ -895,30 +882,24 @@ select.prop_item {
     flex-direction: column;
     text-align: center;
 }
-
 .photo_set {
     max-height: 45%;
     padding: 70px 0;
 }
-
 .carousel img {
     max-width: 70%;
 }
-
 .rigth_side .phones {
     margin-top: 30px;
 }
-
 .phone__item {
     color: #fff;
     text-decoration: none;
     margin: 5px auto;
 }
-
 .phone__item span {
     font-size: 20px;
 }
-
 .phone__item:before {
     content: '';
     display: inline-block;
@@ -930,35 +911,27 @@ select.prop_item {
     background-size: 19px;
     background-position-y: 0px;
 }
-
-.phones .phone__item,
-.work-with {
+.gray, .work-with {
     color: #1c1a27;
     font-size: 21px;
 }
-
 .photo__item {
     margin: auto;
     text-align: center;
 }
-
 .schedule {
     font-size: 20px;
     margin: 20px 0 90px;
 }
-
 .schedule_title {
     margin-right: 70px;
 }
-
 .time {
     margin-right: 15px;
 }
-
 .right {
     text-align: right;
 }
-
 .step_descr {
     padding: 0 35px;
     text-align: center;
@@ -967,34 +940,27 @@ select.prop_item {
     color: #1c1a27;
     height: 60%;
 }
-
 .step_descr .header_contacts {
     display: flex;
     justify-content: center;
     margin: 40px 0;
 }
-
 .image-np {
     margin-top: 60px;
 }
-
 .img-pay_method {
     margin: 25px 0;
 }
-
 .pay_method {
     font-size: 16px;
     line-height: 1.2;
 }
-
 .step_button {
     margin: 0 auto;
 }
-
 .carousel_brand__item {
     margin: auto;
 }
-
 figcaption {
     text-transform: uppercase;
     font-size: 17px;
@@ -1002,7 +968,6 @@ figcaption {
     position: relative;
     display: inline-block;
 }
-
 figcaption:before {
     content: url(/image/arrow-left.png);
     width: 15px;
@@ -1011,7 +976,6 @@ figcaption:before {
     left: -20px;
     top: 0;
 }
-
 figcaption:after {
     content: url(/image/arrow-right.png);
     width: 15px;
@@ -1020,31 +984,25 @@ figcaption:after {
     right: -20px;
     top: 0;
 }
-
 .carousel_brands {
     padding: 10px 0 50px;
 }
-
 .carousel_brands figcaption {
     color: #fff;
 }
-
 .properties {
     display: flex;
     justify-content: center;
     padding: 30px 0;
 }
-
 .props_list {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .prop_item {
     margin: 5px 0;
 }
-
 .img_prop {
     background-image: url(/image/sample.png);
     background-repeat: no-repeat;
@@ -1052,34 +1010,27 @@ figcaption:after {
     display: inline-block;
     margin-top: 20px;
 }
-
 .carousel {
     margin-top: 30px;
 }
-
 .item--ks:before {
     background-image: url(/image/kyivstar_phone.png);
     background-position: 0 4px;
 }
-
 .item--vf:before {
     background-image: url(/image/vodafone.png);
     background-position: 0 4px;
 }
-
 .item--lc:before {
     background-image: url(/image/life_phone.png);
     background-position: 0 4px;
 }
-
 .bold {
     font-weight: bold;
 }
-
 .red {
     color: #960b14;
 }
-
 .rigth_side:before {
     background: url(/image/left_bg.png);
     background-size: cover;
@@ -1092,7 +1043,6 @@ figcaption:after {
     opacity: .8;
     z-index: -1;
 }
-
 .rigth_side {
     position: relative;
     z-index: 1;
@@ -1101,4 +1051,180 @@ figcaption:after {
 .common_section {
     background: url(/image/dark.png);
     background-size: cover;
+}
+.img-term_block, .copyright-min {
+    display: none;
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.first_screen {
+    background: none;
+}    
+.advantages, .first_screen, .steps3 {
+    flex-direction: column;
+ }
+.left_side, .rigth_side {
+    width: 100%;
+} 
+.rigth_side {
+    background: url(/image/left_bg.png);
+    background-size: cover;
+}
+.left_side {
+    background: url(/image/car.jpg);
+    background-size: auto 100% ;
+    margin: 0;
+    padding: 50px 30px 30px;
+    border: none;
+}
+.rigth_side:before, .copyright {
+    display: none;
+}
+.phone__item:before {
+   height: 35px !important;
+}
+.item--ks:before, .item--vf:before, .item--lc:before {
+     background-position: 0 8px ;
+}
+.rigth_side .phones
+{
+    margin: 90px 0;
+ }
+.photo_set {
+    padding: 120px 0;
+}
+.phone__item {
+    font-size: 25px;
+}
+figcaption {
+    font-size: 22px;
+ }
+figcaption:before, figcaption:after {
+    top: -2px;
+}
+.photo__item {
+    margin: auto 0;
+}
+.carousel {
+    margin: 30px 0;
+}
+.carousel img {
+    max-width: 75%;
+    width: 75%;
+}
+.brand_block {
+    width: 95%;
+    top: 22px;
+}
+.advantages_left, .advantages_right {
+    width: 100%;
+    height: 100%;
+}
+ .advantages_right, .block_title-term {
+    padding-top: 50px;
+ }  
+ .main_photo {
+    width: 70%;
+    margin: 280px 0 200px;
+ } 
+ .common_section, .footer {
+    background: #221e2e;
+ }
+ .description_item {
+    width: 30%;
+ }
+ .block_1 {
+    top: 5%;
+ }
+ .block_2 {
+    right: 2%;
+    top: 12%;
+ }
+ .block_3 {
+    right: 2%;
+    bottom: 13%;
+ }
+ .block_4 {
+   left: 2%;
+   bottom: 13%;
+ }
+ .block_5 {
+   left: 2%;
+   top: 12%;
+ }
+ .hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
+    width: 50%;
+  }
+ .hr-block_2 {
+    right: 60%;
+    top: -5px;
+ }
+ .hr-block_5 {
+    left: 8%;
+    top: 40px;
+ }
+ .step {
+    margin: 0 auto 30px;
+ }
+ .term_block__item {
+    margin-left: 0;
+ }
+ .term_block, .block_title-term {
+    margin: 0;
+    background: #e6e4f1;
+ }
+ .order {
+    padding-bottom: 0;
+ }
+ .img-term_block {
+    display: block;
+    margin-top: 40px;
+ }
+ .img-term_block img {
+    max-width: 100%;
+ }
+.video {
+    padding: 135px 0 80px;
+ }
+ .ratings {
+    width: 100%;
+ }
+ .ratings-text, .ratings {
+    padding: 0;
+ }
+ .brands_bottom {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 80px 30px;
+ }
+ .footer {
+    flex-direction: column;
+    padding: 45px;
+    text-align: center;
+ }
+ .footer_left, .footer_right {
+    margin: 0 auto;
+    padding: 0 50px;
+ }
+ .copyright-min {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+ }
+  
+}
+ 
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    
+ 
+     
+}
+ 
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+ 
 }
