@@ -1017,6 +1017,13 @@ figcaption:after {
         padding: 50px 30px 30px;
         border: none;
     }
+    .img_prop {
+        margin: 0;
+    }
+    .advantages_left img {
+        width: 150px;
+        margin: auto;
+    }
     .rigth_side:before, .copyright {
         display: none;
     }
@@ -1305,6 +1312,35 @@ figcaption:after {
     }
     .advantages__list {
         margin-left: 5px;
+        margin: auto;
+    }
+    .advantages__list--item {
+        font-size: 16px;
+        position: relative;
+    }
+    .advantages__list--item:before {
+        background-image: url(/image/checked.png);
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        content: '';
+        top: 0;
+        left: 0;
+    }
+    .advantages__list--item span {
+        margin-left: 20px;
+    }
+    .icon_contacts-big {
+        width: 50px;
+        height: 50px;
+    }
+    .step_descr .header_contacts {
+        margin: 20px 0;
+    }
+    .step_button {
+        margin: 20px auto;
     }
     .order .block_title:before, .order .block_title:after {
         top: -2px;
