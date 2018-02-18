@@ -1,84 +1,4 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -89,17 +9,7 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
@@ -109,20 +19,15 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
     quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
 }
@@ -177,8 +82,7 @@ button {
     height: 40px;
 }
 
-.icon_contacts,
-.icon_contacts-big {
+.icon_contacts, .icon_contacts-big {
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
@@ -206,8 +110,7 @@ button {
     background-image: url(/image/callback_skype_big.png);
 }
 
-.button_red,
-.red_oval {
+.button_red, .red_oval {
     background: #960b14;
     border-radius: 24px;
     white-space: nowrap;
@@ -337,8 +240,7 @@ button {
     text-transform: uppercase;
 }
 
-.title_block,
-.title_block-opt {
+.title_block, .title_block-opt {
     color: #fff;
     font-size: 30px;
     position: relative;
@@ -368,8 +270,7 @@ select:focus {
     outline: none;
 }
 
-select.brand_select,
-select.prop_item {
+select.brand_select, select.prop_item {
     background-image: url(/image/arrow.png);
     background-position: 90% 18px;
     background-repeat: no-repeat;
@@ -380,8 +281,7 @@ select.prop_item {
     font-size: 17px;
 }
 
-.brand_select,
-.prop_item {
+.brand_select, .prop_item {
     background: rgba(255, 255, 255, 0.1);
     width: 170px;
     height: 50px;
@@ -391,8 +291,7 @@ select.prop_item {
     margin: 0 8px;
 }
 
-.button_wrp,
-.color_ovals {
+.button_wrp, .color_ovals {
     display: flex;
     justify-content: center;
     margin-top: 25px;
@@ -478,8 +377,7 @@ select.prop_item {
     margin: 40px 0;
 }
 
-.advantages_title,
-.advantages_title_small {
+.advantages_title, .advantages_title_small {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
@@ -537,7 +435,7 @@ select.prop_item {
 .description {
     text-align: center;
     position: relative;
- }
+}
 
 .main_photo {
     margin: 340px 0;
@@ -587,10 +485,7 @@ select.prop_item {
     text-align: left;
 }
 
-.hr-block_2,
-.hr-block_3,
-.hr-block_4,
-.hr-block_5 {
+.hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
     height: 1px;
     background: #fff;
     position: relative;
@@ -647,8 +542,7 @@ select.prop_item {
     padding-top: 20px;
 }
 
-.size_box,
-.ratings {
+.size_box, .ratings {
     background: #e6e4f1;
     padding: 50px 0;
 }
@@ -744,8 +638,7 @@ select.prop_item {
     margin-top: 12px;
 }
 
-.value,
-.recall {
+.value, .recall {
     display: flex;
     flex-direction: row;
 }
@@ -764,14 +657,12 @@ select.prop_item {
     border-right: none;
 }
 
-.value_item img,
-.value_item span {
+.value_item img, .value_item span {
     display: block;
     margin: auto;
 }
 
-.recall span,
-.recall button {
+.recall span, .recall button {
     margin: auto;
     text-transform: uppercase;
 }
@@ -815,9 +706,11 @@ select.prop_item {
 .brands_bottom a {
     margin: 0 15px;
 }
+
 .ratings-more {
     font-size: 20px;
 }
+
 .footer {
     background-image: url(/image/footer-img.png);
     background-repeat: no-repeat;
@@ -826,14 +719,16 @@ select.prop_item {
     padding: 180px 0 45px;
     color: #fff;
 }
-.footer_left,
-.footer_right {
+
+.footer_left, .footer_right {
     margin: 0 135px;
 }
+
 .footer_right {
     display: flex;
     flex-direction: column
 }
+
 .footer_right__item {
     margin: 0 auto 35px;
 }
@@ -841,29 +736,36 @@ select.prop_item {
 .label {
     margin-bottom: 40px;
 }
+
 .footer_contacts {
     display: flex;
     margin-bottom: 85px;
 }
+
 .footer_contacts__item {
     margin-right: 35px;
 }
+
 .footer_contacts__item ul {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .copyright, .copyright__item {
     font-size: 17px;
     font-weight: 300;
 }
+
 .copyright a, .copyright__item a {
     color: #fff;
 }
+
 .main_link {
     margin-top: 20px;
     font-size: 50px;
 }
+
 .button_black {
     font-size: 18px;
     text-transform: uppercase;
@@ -874,32 +776,36 @@ select.prop_item {
     border: none;
     margin: 70px 0;
 }
-.phones,
-.photo_set,
-.carousel_brands,
-.footer_phones {
+
+.phones, .photo_set, .carousel_brands, .footer_phones {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+
 .photo_set {
     max-height: 45%;
     padding: 70px 0;
 }
+
 .carousel img {
     max-width: 70%;
 }
+
 .rigth_side .phones {
     margin-top: 30px;
 }
+
 .phone__item {
     color: #fff;
     text-decoration: none;
     margin: 5px auto;
 }
+
 .phone__item span {
     font-size: 20px;
 }
+
 .phone__item:before {
     content: '';
     display: inline-block;
@@ -911,27 +817,34 @@ select.prop_item {
     background-size: 19px;
     background-position-y: 0px;
 }
+
 .gray, .work-with {
     color: #1c1a27;
     font-size: 21px;
 }
+
 .photo__item {
     margin: auto;
     text-align: center;
 }
+
 .schedule {
     font-size: 20px;
     margin: 20px 0 90px;
 }
+
 .schedule_title {
     margin-right: 70px;
 }
+
 .time {
     margin-right: 15px;
 }
+
 .right {
     text-align: right;
 }
+
 .step_descr {
     padding: 0 35px;
     text-align: center;
@@ -940,27 +853,34 @@ select.prop_item {
     color: #1c1a27;
     height: 60%;
 }
+
 .step_descr .header_contacts {
     display: flex;
     justify-content: center;
     margin: 40px 0;
 }
+
 .image-np {
     margin-top: 60px;
 }
+
 .img-pay_method {
     margin: 25px 0;
 }
+
 .pay_method {
     font-size: 16px;
     line-height: 1.2;
 }
+
 .step_button {
     margin: 0 auto;
 }
+
 .carousel_brand__item {
     margin: auto;
 }
+
 figcaption {
     text-transform: uppercase;
     font-size: 17px;
@@ -968,6 +888,7 @@ figcaption {
     position: relative;
     display: inline-block;
 }
+
 figcaption:before {
     content: url(/image/arrow-left.png);
     width: 15px;
@@ -976,6 +897,7 @@ figcaption:before {
     left: -20px;
     top: 0;
 }
+
 figcaption:after {
     content: url(/image/arrow-right.png);
     width: 15px;
@@ -984,25 +906,31 @@ figcaption:after {
     right: -20px;
     top: 0;
 }
+
 .carousel_brands {
     padding: 10px 0 50px;
 }
+
 .carousel_brands figcaption {
     color: #fff;
 }
+
 .properties {
     display: flex;
     justify-content: center;
     padding: 30px 0;
 }
+
 .props_list {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .prop_item {
     margin: 5px 0;
 }
+
 .img_prop {
     background-image: url(/image/sample.png);
     background-repeat: no-repeat;
@@ -1010,27 +938,34 @@ figcaption:after {
     display: inline-block;
     margin-top: 20px;
 }
+
 .carousel {
     margin-top: 30px;
 }
+
 .item--ks:before {
     background-image: url(/image/kyivstar_phone.png);
     background-position: 0 4px;
 }
+
 .item--vf:before {
     background-image: url(/image/vodafone.png);
     background-position: 0 4px;
 }
+
 .item--lc:before {
     background-image: url(/image/life_phone.png);
     background-position: 0 4px;
 }
+
 .bold {
     font-weight: bold;
 }
+
 .red {
     color: #960b14;
 }
+
 .rigth_side:before {
     background: url(/image/left_bg.png);
     background-size: cover;
@@ -1043,353 +978,375 @@ figcaption:after {
     opacity: .8;
     z-index: -1;
 }
+
 .rigth_side {
     position: relative;
     z-index: 1;
     width: 25%;
 }
+
 .common_section {
     background: url(/image/dark.png);
     background-size: cover;
 }
+
 .img-term_block, .copyright-min {
     display: none;
 }
 
-
-
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-.first_screen {
-    background: none;
-}    
-.advantages, .first_screen, .steps3 {
-    flex-direction: column;
- }
-.left_side, .rigth_side {
-    width: 100%;
-} 
-.rigth_side {
-    background: url(/image/left_bg.png);
-    background-size: cover;
+
+@media only screen and (max-width: 768px) {
+    .first_screen {
+        background: none;
+    }
+    .advantages, .first_screen, .steps3 {
+        flex-direction: column;
+    }
+    .left_side, .rigth_side {
+        width: 100%;
+    }
+    .rigth_side {
+        background: url(/image/left_bg.png);
+        background-size: cover;
+    }
+    .left_side {
+        background: url(/image/car.jpg);
+        background-size: auto 100%;
+        margin: 0;
+        padding: 50px 30px 30px;
+        border: none;
+    }
+    .rigth_side:before, .copyright {
+        display: none;
+    }
+    .phone__item:before {
+        height: 35px !important;
+    }
+    .item--ks:before, .item--vf:before, .item--lc:before {
+        background-position: 0 8px;
+    }
+    .rigth_side .phones {
+        margin: 90px 0;
+    }
+    .photo_set {
+        padding: 120px 0;
+    }
+    .phone__item {
+        font-size: 25px;
+    }
+    figcaption {
+        font-size: 22px;
+    }
+    figcaption:before, figcaption:after {
+        top: -2px;
+    }
+    .photo__item {
+        margin: auto 0;
+    }
+    .carousel {
+        margin: 30px 0;
+    }
+    .carousel img {
+        max-width: 75%;
+        width: 75%;
+    }
+    .brand_block {
+        width: 95%;
+        top: 22px;
+    }
+    .advantages_left, .advantages_right {
+        width: 100%;
+        height: 100%;
+    }
+    .advantages_right, .block_title-term {
+        padding-top: 50px;
+    }
+    .main_photo {
+        width: 70%;
+        margin: 280px 0 200px;
+    }
+    .common_section, .footer {
+        background: #221e2e;
+    }
+    .description_item {
+        width: 30%;
+    }
+    .block_1 {
+        top: 5%;
+    }
+    .block_2 {
+        right: 2%;
+        top: 12%;
+    }
+    .block_3 {
+        right: 2%;
+        bottom: 13%;
+    }
+    .block_4 {
+        left: 2%;
+        bottom: 13%;
+    }
+    .block_5 {
+        left: 2%;
+        top: 12%;
+    }
+    .hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
+        width: 50%;
+    }
+    .hr-block_2 {
+        right: 60%;
+        top: -5px;
+    }
+    .hr-block_5 {
+        left: 8%;
+        top: 40px;
+    }
+    .step {
+        margin: 0 auto 30px;
+    }
+    .term_block__item {
+        margin-left: 0;
+    }
+    .term_block, .block_title-term {
+        margin: 0;
+        background: #e6e4f1;
+    }
+    .order {
+        padding-bottom: 0;
+    }
+    .img-term_block {
+        display: block;
+        margin-top: 40px;
+    }
+    .img-term_block img {
+        max-width: 100%;
+    }
+    .video {
+        padding: 135px 0 80px;
+    }
+    .ratings {
+        width: 100%;
+    }
+    .ratings-text, .ratings {
+        padding: 0;
+    }
+    .brands_bottom {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 80px 30px;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 45px;
+        text-align: center;
+    }
+    .footer_left, .footer_right {
+        margin: 0 auto;
+        padding: 0 50px;
+    }
+    .copyright-min {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
 }
-.left_side {
-    background: url(/image/car.jpg);
-    background-size: auto 100% ;
-    margin: 0;
-    padding: 50px 30px 30px;
-    border: none;
-}
-.rigth_side:before, .copyright {
-    display: none;
-}
-.phone__item:before {
-   height: 35px !important;
-}
-.item--ks:before, .item--vf:before, .item--lc:before {
-     background-position: 0 8px ;
-}
-.rigth_side .phones
-{
-    margin: 90px 0;
- }
-.photo_set {
-    padding: 120px 0;
-}
-.phone__item {
-    font-size: 25px;
-}
-figcaption {
-    font-size: 22px;
- }
-figcaption:before, figcaption:after {
-    top: -2px;
-}
-.photo__item {
-    margin: auto 0;
-}
-.carousel {
-    margin: 30px 0;
-}
-.carousel img {
-    max-width: 75%;
-    width: 75%;
-}
-.brand_block {
-    width: 95%;
-    top: 22px;
-}
-.advantages_left, .advantages_right {
-    width: 100%;
-    height: 100%;
-}
- .advantages_right, .block_title-term {
-    padding-top: 50px;
- }  
- .main_photo {
-    width: 70%;
-    margin: 280px 0 200px;
- } 
- .common_section, .footer {
-    background: #221e2e;
- }
- .description_item {
-    width: 30%;
- }
- .block_1 {
-    top: 5%;
- }
- .block_2 {
-    right: 2%;
-    top: 12%;
- }
- .block_3 {
-    right: 2%;
-    bottom: 13%;
- }
- .block_4 {
-   left: 2%;
-   bottom: 13%;
- }
- .block_5 {
-   left: 2%;
-   top: 12%;
- }
- .hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
-    width: 50%;
-  }
- .hr-block_2 {
-    right: 60%;
-    top: -5px;
- }
- .hr-block_5 {
-    left: 8%;
-    top: 40px;
- }
- .step {
-    margin: 0 auto 30px;
- }
- .term_block__item {
-    margin-left: 0;
- }
- .term_block, .block_title-term {
-    margin: 0;
-    background: #e6e4f1;
- }
- .order {
-    padding-bottom: 0;
- }
- .img-term_block {
-    display: block;
-    margin-top: 40px;
- }
- .img-term_block img {
-    max-width: 100%;
- }
-.video {
-    padding: 135px 0 80px;
- }
- .ratings {
-    width: 100%;
- }
- .ratings-text, .ratings {
-    padding: 0;
- }
- .brands_bottom {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 80px 30px;
- }
- .footer {
-    flex-direction: column;
-    padding: 45px;
-    text-align: center;
- }
- .footer_left, .footer_right {
-    margin: 0 auto;
-    padding: 0 50px;
- }
- .copyright-min {
-    display: block;
-    display: flex;
-    justify-content: space-between;
- }
-  
-}
- 
+
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-  .left_side {
-    padding: 50px 5px 30px;
-  } 
-  .header {
-    flex-direction: column;
-    padding-left: 20px;
-  }  
-  .header_contacts {
-    margin: 10px auto 0;
-  }
-  .block_title {
-    font-size: 30px;
-  }
-  .title_block, .price{
-    font-size: 24px;
-  }
- .button_small {
-    padding: 5px 18px;
- }
- .brand_block {
-    left: 0;
-    padding: 25px 0;
-    width: 99%;
- } 
- .title_block:before {
-    top: 7px;
- }  
- select.brand_select {
-    margin-top: 5px;
- }
- .rigth_side .phones {
-    margin: 35px 0;
- }
- .photo_set {
-    padding: 20px 0 ;
- }
- .advantages_title {
-    font-size: 46px;
- }
- .advantages__list {
-    margin-left: 25px;
- }
- .main_photo {
-    width: 95%; 
-    margin: 35px 0 0;
- }
- .hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
-    display: none;
- }
- .description_item {
-    position: static;
-    text-align: center;
-    left: 10px;
-    top: 10px;
-    width: 90%;
-    margin: 15px auto;
- }
- .description {
-    margin-bottom: 30px;
- }
- .order .block_title:before {
-    width: 30px;
-    height: 30px;
-    left: -35px;
- }
- .order .block_title:after {
-    width: 30px;
-    height: 30px;
-    right: -35px;
- }
- .block_title-term {
-    font-size: 32px;
- }
- .ratings {
-    padding: 0 10px;
- }
- .video {
-    padding: 100px 10px 30px;
-    margin-top: 5px;
- }
- .value_item {
-    padding: 10px;
-    text-align: center;
- }
- .customer {
-    background-size: auto 100%;
-    padding: 50px 10px;
- }
- .customer__item {
-    margin: 10px auto;
- }
- .footer {
-    padding: 45px 10px;
- }
- .footer_left, .footer_right {
-    padding: 0;
- }
- .schedule_title {
-    margin: 0;
- }
- .schedule {
-    font-size: 16px;
-    margin: 20px 0 40px;
- }
- .brands_bottom a {
-    margin: 10px 15px;
- }
- .days  {
-    white-space: nowrap;
-  }
+
+@media only screen and (max-width: 480px) {
+    .left_side {
+        padding: 50px 5px 30px;
+    }
+    .header {
+        flex-direction: column;
+        padding: 0;
+    }
+    .header_contacts {
+        margin: 10px auto 0;
+    }
+    .block_title {
+        font-size: 30px;
+    }
+    .title_block, .price {
+        font-size: 24px;
+    }
+    .button_small {
+        padding: 5px 18px;
+    }
+    .brand_block {
+        left: 0;
+        padding: 25px 0;
+        width: 99%;
+    }
+    .title_block:before {
+        top: 7px;
+    }
+    select.brand_select {
+        margin-top: 5px;
+    }
+    .rigth_side .phones {
+        margin: 35px 0;
+    }
+    .photo_set {
+        padding: 20px 0;
+    }
+    .advantages_title {
+        font-size: 46px;
+    }
+    .advantages__list {
+        margin-left: 25px;
+    }
+    .main_photo {
+        width: 95%;
+        margin: 35px 0 0;
+    }
+    .hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
+        display: none;
+    }
+    .description_item {
+        position: static;
+        text-align: center;
+        left: 10px;
+        top: 10px;
+        width: 90%;
+        margin: 15px auto;
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+    .order .block_title:before {
+        width: 30px;
+        height: 30px;
+        left: -35px;
+    }
+    .order .block_title:after {
+        width: 30px;
+        height: 30px;
+        right: -35px;
+    }
+    .block_title-term {
+        font-size: 32px;
+    }
+    .ratings {
+        padding: 0 10px;
+    }
+    .video {
+        padding: 100px 10px 30px;
+        margin-top: 5px;
+    }
+    .value_item {
+        padding: 10px;
+        text-align: center;
+    }
+    .customer {
+        background-size: auto 100%;
+        padding: 50px 10px;
+    }
+    .customer__item {
+        margin: 10px auto;
+    }
+    .footer {
+        padding: 45px 10px;
+    }
+    .footer_left, .footer_right {
+        padding: 0;
+    }
+    .schedule_title {
+        margin: 0;
+    }
+    .schedule {
+        font-size: 16px;
+        margin: 20px 0 40px;
+    }
+    .brands_bottom a {
+        margin: 10px 15px;
+    }
+    .days {
+        white-space: nowrap;
+    }
 }
- 
+
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 375px) {
- a.button_small.delivery_cost, a.button_small.check_package {
-    display: block;
-  }
- .button_small {
-    padding: 10px 20px;
-    margin: 5px 45px;
- }
- .copyright-min {
-    flex-direction: column;
-    justify-content: flex-start;
- }
- .block_title {
-    font-size: 24px;
-  }
-  .advantages__list {
-    margin-left: 5px;
-  }
-  .order .block_title:before, .order .block_title:after {
-    top: -2px;
-  }
-  .recall button {
-    margin-left: 0px;
-  }
-  .ratings a, .ratings-more {
-    text-align: center;
-  }
-  a.main_link {
-    font-size: 42px;
-  }
-  .button_black {
-    padding: 20px;
-  }
-  .brands_bottom {
-    margin: 20px 10px;
-  }
-  .logo {
-    margin: auto;
-  }
-  .logo img {
-    width: 300px;
-  }
-  .footer_contacts__item {
-    margin-right: 10px;
-  }
-  .phone__item {
-    margin: 0 auto;
-  }
-  .customer__item {
-    font-size: 16px;
-  }
-  .copyright__item, .footer {
-    padding-bottom: 10px;
-  }  
-  .days  {
-    white-space: pre;
-  } 
- /* .days, .time, .schedule_title {
+
+@media only screen and (max-width: 375px) {
+    a.button_small.delivery_cost, a.button_small.check_package {
+        display: block;
+    }
+    .left_side {
+        padding-top: 30px;
+    }
+    .button_wrp .button_red {
+        padding: 0 15px;
+        margin-left: -30px;
+    }
+    .price {
+        font-size: 16px;
+        padding: 10px;
+        padding-right: 35px;
+    }
+    .icon_contacts {
+        width: 30px;
+        height: 30px;
+    }
+    .block_title_small {
+        font-size: 16px;
+    }
+    .button_small {
+        padding: 10px 20px;
+        margin: 5px 45px;
+    }
+    .copyright-min {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .block_title {
+        font-size: 24px;
+    }
+    .advantages__list {
+        margin-left: 5px;
+    }
+    .order .block_title:before, .order .block_title:after {
+        top: -2px;
+    }
+    .recall button {
+        margin-left: 0px;
+    }
+    .ratings a, .ratings-more {
+        text-align: center;
+    }
+    a.main_link {
+        font-size: 42px;
+    }
+    .button_black {
+        padding: 20px;
+    }
+    .brands_bottom {
+        margin: 20px 10px;
+    }
+    .logo {
+        margin: auto;
+        width: auto;
+    }
+    .logo img {
+        width: 200px;
+    }
+    .footer_contacts__item {
+        margin-right: 10px;
+    }
+    .phone__item {
+        margin: 0 auto;
+    }
+    .customer__item {
+        font-size: 16px;
+    }
+    .copyright__item, .footer {
+        padding-bottom: 10px;
+    }
+    .days {
+        white-space: pre;
+    }
+    /* .days, .time, .schedule_title {
     margin: 5px 0;
   }*/
 }
