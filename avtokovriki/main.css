@@ -391,7 +391,7 @@ select.brand_select, select.prop_item {
 }
 
 .advantages_title_small {
-    font-size: 32px;
+    font-size: 22px;
 }
 
 .advantages_right {
@@ -1192,7 +1192,7 @@ figcaption:after {
         padding: 20px 0;
     }
     .advantages_title {
-        font-size: 46px;
+        font-size: 30px;
     }
     .advantages__list {
         margin-left: 25px;
