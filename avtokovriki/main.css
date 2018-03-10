@@ -1236,11 +1236,8 @@ figcaption:before, figcaption:after {
     .block_title-term {
         font-size: 32px;
     }
-    .ratings {
-        padding: 0 10px;
-    }
     .video {
-        padding: 100px 5px 30px;
+        padding: 100px 0 30px;
         margin-top: 5px;
     }
     .value_item {
@@ -1249,10 +1246,12 @@ figcaption:before, figcaption:after {
     }
     .customer {
         background-size: auto 100%;
-        padding: 50px 5px;
+        padding: 50px 0;
     }
     .customer__item {
         margin: 10px auto;
+        text-align: center;
+        font-size: 14px;
     }
     .footer {
         padding: 45px 10px;
@@ -1270,7 +1269,7 @@ figcaption:before, figcaption:after {
     .brands_bottom a {
         margin: 10px 15px;
     }
-  
+
 }
 
 /* Custom, iPhone Retina */
@@ -1297,6 +1296,10 @@ figcaption:before, figcaption:after {
   }
   .recall button {
     margin-left: 0px;
+    padding: 20px 30px;
+  }
+  .recall {
+    margin: 0 8px;
   }
   .ratings a, .ratings-more {
     text-align: center;
@@ -1322,10 +1325,7 @@ figcaption:before, figcaption:after {
   .phone__item {
     margin: 0 auto;
   }
-  .customer__item {
-    font-size: 16px;
-  }
-  .copyright__item, .footer {
+   .copyright__item, .footer {
     padding-bottom: 10px;
   }  
   .days {
