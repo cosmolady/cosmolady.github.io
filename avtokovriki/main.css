@@ -6,6 +6,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
+span, p , a {
+    word-wrap: break-word;
+}
 
 /* HTML5 display-role reset for older browsers */
 
@@ -271,7 +274,6 @@ select:focus {
 }
 
 select.brand_select, select.prop_item {
-    background-image: url(/image/arrow.png);
     background-position: 90% 18px;
     background-repeat: no-repeat;
     -webkit-appearance: none;
@@ -604,6 +606,7 @@ select.brand_select, select.prop_item {
 .video {
     background-image: url(/image/red_background.png);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     padding: 200px 0;
@@ -622,6 +625,7 @@ select.brand_select, select.prop_item {
 .customer {
     background-image: url(/image/smile_man_background.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     padding: 175px 0;
@@ -995,191 +999,188 @@ figcaption:after {
 }
 
 /* Small Devices, Tablets */
-
-@media only screen and (max-width: 768px) {
-    .first_screen {
-        background: none;
-    }
-    .advantages, .first_screen, .steps3 {
+@media only screen and (max-width : 768px) {
+.first_screen {
+    background: none;
+} 
+.header {
         flex-direction: column;
-    }
-    .left_side, .rigth_side {
-        width: 100%;
-    }
-    .rigth_side {
-        background: url(/image/left_bg.png);
-        background-size: cover;
-    }
-    .left_side {
-        background: url(/image/car.jpg);
-        background-size: auto 100%;
-        margin: 0;
-        padding: 50px 30px 30px;
-        border: none;
-    }
-    .img_prop {
-        margin: 0;
-    }
-    .advantages_left img {
-        width: 150px;
+        padding: 0;
         margin: auto;
-    }
-    .rigth_side:before, .copyright {
-        display: none;
-    }
-    .phone__item:before {
-        height: 35px !important;
-    }
-    .item--ks:before, .item--vf:before, .item--lc:before {
-        background-position: 0 8px;
-    }
-    .rigth_side .phones {
-        margin: 90px 0;
-    }
-    .photo_set {
-        padding: 120px 0;
-    }
-    .phone__item {
-        font-size: 25px;
-    }
-    figcaption {
-        font-size: 22px;
-    }
-    figcaption:before, figcaption:after {
-        top: -2px;
-    }
-    .photo__item {
-        margin: auto 0;
-    }
-    .carousel {
-        margin: 30px 0;
-    }
-    .carousel img {
-        max-width: 75%;
-        width: 75%;
-    }
-    .brand_block {
-        width: 95%;
-        top: 22px;
-    }
-    .advantages_left, .advantages_right {
-        width: 100%;
-        height: 100%;
-    }
-    .advantages_right, .block_title-term {
-        padding-top: 50px;
-    }
-    .main_photo {
-        width: 70%;
-        margin: 280px 0 200px;
-    }
-    .common_section, .footer {
-        background: #221e2e;
-    }
-    .description_item {
-        width: 30%;
-    }
-    .block_1 {
-        top: 5%;
-    }
-    .block_2 {
-        right: 2%;
-        top: 12%;
-    }
-    .block_3 {
-        right: 2%;
-        bottom: 13%;
-    }
-    .block_4 {
-        left: 2%;
-        bottom: 13%;
-    }
-    .block_5 {
-        left: 2%;
-        top: 12%;
-    }
-    .hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
-        width: 50%;
-    }
-    .hr-block_2 {
-        right: 60%;
-        top: -5px;
-    }
-    .hr-block_5 {
-        left: 8%;
-        top: 40px;
-    }
-    .step {
-        margin: 0 auto 30px;
-    }
-    .term_block__item {
-        margin-left: 0;
-    }
-    .term_block, .block_title-term {
-        margin: 0;
-        background: #e6e4f1;
-    }
-    .order {
-        padding-bottom: 0;
-    }
-    .img-term_block {
-        display: block;
-        margin-top: 40px;
-    }
-    .img-term_block img {
-        max-width: 100%;
-    }
-    .video {
-        padding: 135px 0 80px;
-    }
-    .ratings {
-        width: 100%;
-    }
-    .ratings-text, .ratings {
-        padding: 0;
-    }
-    .brands_bottom {
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: 80px 30px;
-    }
-    .footer {
-        flex-direction: column;
-        padding: 45px;
-        text-align: center;
-    }
-    .footer_left, .footer_right {
-        margin: 0 auto;
-        padding: 0 50px;
-    }
-    .copyright-min {
-        display: block;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 480px) {
-    .left_side {
-        padding: 50px 5px 30px;
-    }
-    .header {
-        flex-direction: column;
-        padding: 0;
     }
     .header_contacts {
         margin: 10px auto 0;
+    } 
+.advantages, .first_screen, .steps3 {
+    flex-direction: column;
+ }
+.left_side, .rigth_side {
+    width: 100%;
+} 
+.rigth_side {
+    background: url(/image/left_bg.png);
+    background-size: cover;
+}
+.left_side {
+    background: url(/image/car.jpg);
+    background-size: auto 100% ;
+    margin: 0;
+    padding: 50px 0 30px;
+    border: none;
+}
+.rigth_side:before, .copyright {
+    display: none;
+}
+.phone__item:before {
+   height: 35px !important;
+}
+.item--ks:before, .item--vf:before, .item--lc:before {
+     background-position: 0 8px ;
+}
+.rigth_side .phones
+{
+    margin: 90px 0;
+ }
+.photo_set {
+    padding: 120px 0;
+}
+.phone__item {
+    font-size: 25px;
+}
+figcaption {
+    font-size: 22px;
+ }
+figcaption:before, figcaption:after {
+    top: -2px;
+}
+.photo__item {
+    margin: auto 0;
+}
+.carousel {
+    margin: 30px 0;
+}
+.carousel img {
+    max-width: 75%;
+    width: 75%;
+}
+.brand_block {
+    width: 95%;
+    top: 22px;
+}
+.advantages_left, .advantages_right {
+    width: 100%;
+    height: 100%;
+}
+ .advantages_right, .block_title-term {
+    padding-top: 50px;
+ }  
+ .main_photo {
+    width: 70%;
+    margin: 280px 0 200px;
+ } 
+ .common_section, .footer {
+    background: #221e2e;
+ }
+ .description_item {
+    width: 30%;
+ }
+ .block_1 {
+    top: 5%;
+ }
+ .block_2 {
+    right: 2%;
+    top: 12%;
+ }
+ .block_3 {
+    right: 2%;
+    bottom: 13%;
+ }
+ .block_4 {
+   left: 2%;
+   bottom: 13%;
+ }
+ .block_5 {
+   left: 2%;
+   top: 12%;
+ }
+ .hr-block_2, .hr-block_3, .hr-block_4, .hr-block_5 {
+    width: 50%;
+  }
+ .hr-block_2 {
+    right: 60%;
+    top: -5px;
+ }
+ .hr-block_5 {
+    left: 8%;
+    top: 40px;
+ }
+ .step {
+    margin: 0 auto 30px;
+ }
+ .term_block__item {
+    margin-left: 0;
+ }
+ .term_block, .block_title-term {
+    margin: 0;
+    background: #e6e4f1;
+ }
+ .order {
+    padding-bottom: 0;
+ }
+ .img-term_block {
+    display: block;
+    margin-top: 40px;
+ }
+ .img-term_block img {
+    max-width: 100%;
+ }
+.video {
+    padding: 135px 0 80px;
+ }
+ .ratings {
+    width: 100%;
+ }
+ .ratings-text, .ratings {
+    padding: 0;
+ }
+ .brands_bottom {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 80px 30px;
+ }
+ .footer {
+    flex-direction: column;
+    padding: 45px;
+    text-align: center;
+ }
+ .footer_left, .footer_right {
+    margin: 0 auto;
+    padding: 0 50px;
+ }
+ .copyright-min {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+ }
+   
+}
+ 
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+
+    .button_small {
+        margin: 0 2px;
+        padding: 5px 12px;
+    }
+    .delivery_cost i, .check_package i {
+        margin: 0 5px;
     }
     .block_title {
         font-size: 30px;
     }
     .title_block, .price {
         font-size: 24px;
-    }
-    .button_small {
-        padding: 5px 18px;
     }
     .brand_block {
         left: 0;
@@ -1235,11 +1236,8 @@ figcaption:after {
     .block_title-term {
         font-size: 32px;
     }
-    .ratings {
-        padding: 0 10px;
-    }
     .video {
-        padding: 100px 10px 30px;
+        padding: 100px 0 30px;
         margin-top: 5px;
     }
     .value_item {
@@ -1248,10 +1246,12 @@ figcaption:after {
     }
     .customer {
         background-size: auto 100%;
-        padding: 50px 10px;
+        padding: 50px 0;
     }
     .customer__item {
         margin: 10px auto;
+        text-align: center;
+        font-size: 14px;
     }
     .footer {
         padding: 45px 10px;
@@ -1269,120 +1269,67 @@ figcaption:after {
     .brands_bottom a {
         margin: 10px 15px;
     }
-    .days {
-        white-space: nowrap;
-    }
+
 }
 
 /* Custom, iPhone Retina */
+@media only screen and (max-width : 375px) {
+ a.button_small.delivery_cost, a.button_small.check_package {
+    display: block;
+  }
+ .button_small {
+    padding: 10px 20px;
+    margin: 5px 45px;
+ }
+ .copyright-min {
+    flex-direction: column;
+    justify-content: flex-start;
+ }
+ .block_title {
+    font-size: 24px;
+  }
+  .advantages__list {
+    margin-left: 5px;
+  }
+  .order .block_title:before, .order .block_title:after {
+    top: -2px;
+  }
+  .recall button {
+    margin-left: 0px;
+    padding: 20px 30px;
+  }
+  .recall {
+    margin: 0 8px;
+  }
+  .ratings a, .ratings-more {
+    text-align: center;
+  }
+  a.main_link {
+    font-size: 42px;
+  }
+  .button_black {
+    padding: 20px;
+  }
+  .brands_bottom {
+    margin: 20px 10px;
+  }
+  .logo {
+    margin: auto;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .footer_contacts__item {
+    margin-right: 10px;
+  }
+  .phone__item {
+    margin: 0 auto;
+  }
+   .copyright__item, .footer {
+    padding-bottom: 10px;
+  }  
+  .days {
+    white-space: pre;
+  } 
 
-@media only screen and (max-width: 375px) {
-    a.button_small.delivery_cost, a.button_small.check_package {
-        display: block;
-    }
-    .left_side {
-        padding-top: 30px;
-    }
-    .button_wrp .button_red {
-        padding: 0 15px;
-        margin-left: -30px;
-    }
-    .price {
-        font-size: 16px;
-        padding: 10px;
-        padding-right: 35px;
-    }
-    .icon_contacts {
-        width: 30px;
-        height: 30px;
-    }
-    .block_title_small {
-        font-size: 16px;
-    }
-    .button_small {
-        padding: 10px 20px;
-        margin: 5px 45px;
-    }
-    .copyright-min {
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    .block_title {
-        font-size: 24px;
-    }
-    .advantages__list {
-        margin-left: 5px;
-        margin: auto;
-    }
-    .advantages__list--item {
-        font-size: 16px;
-        position: relative;
-    }
-    .advantages__list--item:before {
-        background-image: url(/image/checked.png);
-        position: absolute;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 30px;
-        height: 30px;
-        content: '';
-        top: 0;
-        left: 0;
-    }
-    .advantages__list--item span {
-        margin-left: 20px;
-    }
-    .icon_contacts-big {
-        width: 50px;
-        height: 50px;
-    }
-    .step_descr .header_contacts {
-        margin: 20px 0;
-    }
-    .step_button {
-        margin: 20px auto;
-    }
-    .order .block_title:before, .order .block_title:after {
-        top: -2px;
-    }
-    .recall button {
-        margin-left: 0px;
-    }
-    .ratings a, .ratings-more {
-        text-align: center;
-    }
-    a.main_link {
-        font-size: 42px;
-    }
-    .button_black {
-        padding: 20px;
-    }
-    .brands_bottom {
-        margin: 20px 10px;
-    }
-    .logo {
-        margin: auto;
-        width: auto;
-    }
-    .logo img {
-        width: 200px;
-    }
-    .footer_contacts__item {
-        margin-right: 10px;
-    }
-    .phone__item {
-        margin: 0 auto;
-    }
-    .customer__item {
-        font-size: 16px;
-    }
-    .copyright__item, .footer {
-        padding-bottom: 10px;
-    }
-    .days {
-        white-space: pre;
-    }
-    /* .days, .time, .schedule_title {
-    margin: 5px 0;
-  }*/
 }
